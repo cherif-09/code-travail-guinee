@@ -1,0 +1,653 @@
+[
+{
+"label": "Licenciement",
+"q": "licenciement",
+"match": [
+"licenciement",
+"licencier",
+"licencie",
+"renvoi",
+"renvoyer"
+],
+"title": "Ce que le Code dit sur le licenciement",
+"body": [
+"Le licenciement est la rupture d'un CDI à l'initiative de l'employeur après la période d'essai (art. 172.1). Il n'est valable que s'il repose sur un motif objectivement vérifiable rendant impossible le maintien de la relation de travail (art. 172.6). La simple « perte de confiance » ne suffit pas : seuls des faits objectifs comptent (art. 172.5).",
+"Le Code distingue deux grandes familles : le licenciement pour motif personnel (faute, insuffisance professionnelle, inaptitude, état de santé — art. 172.7) et le licenciement pour motif économique (suppression ou transformation du poste liée à l'organisation, la restructuration ou la fermeture — art. 172.8), qui suit une procédure spéciale de consultation des délégués et d'information de l'Inspection (art. 172.16 à 172.22).",
+"La procédure pour motif personnel est stricte : convocation écrite à un entretien reçue au moins 5 jours avant (art. 172.11), pas de décision le jour même (délai de réflexion de 2 jours ouvrables — art. 172.12), puis notification écrite et motivée, au plus tôt le 3e jour après l'entretien (art. 172.13). La lettre fige les motifs : aucun autre motif ne pourra être invoqué ensuite, et c'est à l'employeur de prouver le motif (art. 172.9).",
+"Les sanctions sont lourdes : un licenciement injustifié coûte au moins 6 mois de salaire (art. 172.10) et un vice de procédure 3 mois de salaire (art. 172.14), les deux se cumulant. Le salarié licencié (hors faute grave) a droit à un préavis — 3 mois cadres, 2 mois maîtrise, 1 mois exécution (art. 172.23) — et, s'il a au moins 12 mois d'ancienneté, à une indemnité de licenciement (art. 172.30), cumulable avec l'indemnité de congés payés (art. 172.31)."
+],
+"refs": [
+"172.1",
+"172.5",
+"172.6",
+"172.7",
+"172.8",
+"172.9",
+"172.10",
+"172.11",
+"172.12",
+"172.13",
+"172.14",
+"172.15",
+"172.16",
+"172.23",
+"172.29",
+"172.30"
+]
+},
+{
+"label": "Contrat de travail",
+"q": "contrat",
+"match": [
+"contrat de travail",
+"contrat",
+"embauche",
+"embaucher"
+],
+"title": "Ce que le Code dit sur le contrat de travail",
+"body": [
+"Le contrat de travail se caractérise par trois éléments : une activité mise à disposition, un lien de subordination et une rémunération (art. 121.1). Il peut être à durée indéterminée (CDI) ou déterminée (CDD) ; le CDI est la forme de droit commun, et tout contrat non clairement qualifié est réputé CDI (art. 121.2 et 121.3).",
+"L'écrit n'est pas toujours obligatoire (la preuve se fait par tout moyen — art. 121.5), mais il est vivement recommandé. Certaines clauses exigent un écrit : la période d'essai (au plus 3 mois pour un cadre, 1 mois pour les autres — art. 121.6) et les CDD (art. 122.2). L'âge minimum pour contracter est de 16 ans (art. 121.4), et tout contrat exécuté en Guinée est soumis au droit guinéen (art. 121.7).",
+"Le salarié doit son activité à l'employeur (art. 121.8) ; une clause de non-concurrence après le contrat n'est valable que si la rupture vient du salarié ou d'une faute lourde, dans la limite d'un an et de 30 km. En cas de changement d'employeur (vente, fusion…), les contrats en cours se poursuivent automatiquement avec le repreneur (art. 160.3)."
+],
+"refs": [
+"121.1",
+"121.2",
+"121.3",
+"121.4",
+"121.5",
+"121.6",
+"121.7",
+"121.8",
+"122.1",
+"160.1",
+"160.3"
+]
+},
+{
+"label": "CDD",
+"q": "durée déterminée",
+"match": [
+"duree determinee",
+"durée déterminée",
+"cdd",
+"contrat à durée"
+],
+"title": "Ce que le Code dit sur le CDD (contrat à durée déterminée)",
+"body": [
+"Le CDD peut être à terme précis (date de fin fixée dès la signature — art. 122.1) ou à terme imprécis (saison, remplacement, chantier, surcroît de travail — art. 122.4). Il doit en principe être écrit avant le début du travail (art. 122.2).",
+"La durée totale d'un CDD à terme précis ne peut dépasser deux ans, renouvellement compris, et on ne peut conclure plus de deux CDD par an avec le même salarié ; le dépassement entraîne la requalification en CDI (art. 122.3). Les CDD à terme imprécis sont aussi plafonnés à deux ans, sauf chantiers, projets publics et dockers (art. 122.5). Si la relation se poursuit après l'échéance, le contrat devient un CDI (art. 122.7).",
+"À l'échéance, le salarié a droit à une indemnité de fin de contrat égale à 5% du total des rémunérations perçues, et à un certificat de travail (art. 171.2). La rupture anticipée n'est possible que d'un commun accord écrit, pour faute grave ou force majeure ; sinon elle ouvre droit aux salaires restant dus jusqu'au terme (art. 171.4)."
+],
+"refs": [
+"122.1",
+"122.2",
+"122.3",
+"122.4",
+"122.5",
+"122.6",
+"122.7",
+"171.1",
+"171.2",
+"171.4"
+]
+},
+{
+"label": "Période d'essai",
+"q": "période d'essai",
+"match": [
+"periode d'essai",
+"période d'essai",
+"essai",
+"engagement à l'essai"
+],
+"title": "Ce que le Code dit sur la période d'essai",
+"body": [
+"La période d'essai doit être prévue par écrit (contrat ou lettre d'embauche remise dans les 2 jours du début du travail), sauf lorsqu'une convention collective la rend obligatoire (art. 121.6). Sans écrit, il n'y a pas d'essai valable.",
+"Sa durée maximale, renouvellement compris, est de trois mois pour un cadre et d'un mois pour les autres salariés (art. 121.6). Pour un CDD à terme précis, l'essai se calcule à raison d'un jour par semaine de contrat, sans dépasser un mois (art. 122.3) ; pour un CDD à terme imprécis, il est limité à quinze jours (art. 122.4). En apprentissage, les deux premiers mois valent période d'essai (art. 142.12).",
+"Le licenciement au sens du Code ne concerne que les ruptures survenant après la période d'essai (art. 172.1) : pendant l'essai, la rupture est plus libre, mais elle ne doit jamais être discriminatoire (art. 4)."
+],
+"refs": [
+"121.6",
+"122.3",
+"122.4",
+"142.12",
+"172.1"
+]
+},
+{
+"label": "Préavis",
+"q": "préavis",
+"match": [
+"preavis",
+"préavis",
+"delai-conge",
+"délai-congé",
+"delai conge"
+],
+"title": "Ce que le Code dit sur le préavis (délai-congé)",
+"body": [
+"La rupture d'un CDI ne devient effective qu'à l'expiration d'un préavis, dont la durée dépend de la catégorie : trois mois pour les cadres et assimilés, deux mois pour les agents de maîtrise et contremaîtres, un mois pour le personnel d'exécution (art. 172.23). Le préavis court à compter de la réception de la notification écrite (art. 172.24).",
+"Pendant le préavis, le contrat continue normalement : l'employeur ne peut modifier ni le poste ni le salaire, et le salarié dispose de huit heures par semaine, sur son temps de travail, pour chercher un emploi (art. 172.25). L'employeur peut dispenser le salarié du préavis, mais doit alors le payer intégralement (art. 172.26).",
+"Aucun préavis n'est dû en cas de faute grave (art. 172.29). Le préavis s'applique aussi à la démission, avec les mêmes durées (art. 172.39). Le non-respect du préavis oblige la partie fautive à indemniser l'autre (art. 172.28 et 172.40)."
+],
+"refs": [
+"172.23",
+"172.24",
+"172.25",
+"172.26",
+"172.28",
+"172.29",
+"172.39",
+"172.40"
+]
+},
+{
+"label": "Démission",
+"q": "démission",
+"match": [
+"demission",
+"démission",
+"demissionner",
+"démissionner"
+],
+"title": "Ce que le Code dit sur la démission",
+"body": [
+"Le salarié peut démissionner librement, sans avoir à se justifier, mais sa volonté doit être expresse et non équivoque (art. 172.38). Une démission provoquée par l'employeur ou par une faute de celui-ci est requalifiée en licenciement, avec les indemnités correspondantes (art. 172.3).",
+"La démission suppose le respect d'un préavis, de même durée que pour le licenciement (art. 172.39). Le démissionnaire qui ne l'exécute pas doit une indemnité à l'employeur (art. 172.40) ; à l'inverse, l'employeur qui refuse le préavis doit le payer (art. 172.41). Les parties peuvent aussi convenir d'en être dispensées (art. 172.42).",
+"La femme enceinte ou venant d'accoucher peut, elle, rompre son contrat sans préavis jusqu'au 9e mois suivant la naissance (art. 153.6)."
+],
+"refs": [
+"172.3",
+"172.38",
+"172.39",
+"172.40",
+"172.41",
+"172.42",
+"153.6"
+]
+},
+{
+"label": "Maternité",
+"q": "maternité",
+"match": [
+"maternite",
+"maternité",
+"grossesse",
+"accouchement",
+"allaitement",
+"enceinte"
+],
+"title": "Ce que le Code dit sur la maternité",
+"body": [
+"La salariée a droit à un congé de maternité de quatorze semaines : six avant la date présumée de l'accouchement et huit après (art. 153.1). L'emploi d'une femme est interdit dans les six semaines qui suivent l'accouchement. Le congé est prolongé de deux semaines en cas de naissances multiples (art. 153.2) et allongé en cas d'état pathologique lié à la grossesse.",
+"Pendant ce congé, la salariée conserve la moitié de son salaire versée par l'employeur, l'autre moitié étant payée par la Caisse Nationale de Sécurité Sociale (art. 153.3). Après le congé, elle peut prendre un congé non rémunéré jusqu'à neuf mois, ou bénéficier d'une heure de repos par jour pour l'allaitement pendant neuf mois (art. 153.4).",
+"La protection est forte : l'employeur ne peut rompre le contrat pendant le congé que pour une faute grave sans lien avec la grossesse ou une impossibilité étrangère à la maternité (art. 153.5). La salariée peut aussi rompre librement, sans préavis, jusqu'au 9e mois après la naissance (art. 153.6)."
+],
+"refs": [
+"153.1",
+"153.2",
+"153.3",
+"153.4",
+"153.5",
+"153.6"
+]
+},
+{
+"label": "Harcèlement",
+"q": "harcèlement",
+"match": [
+"harcelement",
+"harcèlement",
+"harceler"
+],
+"title": "Ce que le Code dit sur le harcèlement",
+"body": [
+"Le Code distingue le harcèlement moral — conduites abusives et répétées portant atteinte à la dignité ou créant un environnement hostile (art. 7) — et le harcèlement sexuel — tout comportement à connotation sexuelle affectant la dignité ou créant un climat intimidant (art. 8). La violence au travail, physique ou verbale, est également définie (art. 6).",
+"La protection couvre les victimes comme les témoins : aucun salarié ne peut être sanctionné, licencié ou pénalisé pour avoir subi, refusé, dénoncé ou témoigné de tels agissements, et toute décision contraire est nulle de plein droit (art. 8).",
+"La charge de la preuve est aménagée : la victime établit des faits laissant présumer un harcèlement, puis c'est au mis en cause de prouver que ses décisions reposent sur des éléments objectifs étrangers à tout harcèlement (art. 9). Pour l'employeur, cela impose de tracer et motiver objectivement toutes ses décisions RH."
+],
+"refs": [
+"6",
+"7",
+"8",
+"9"
+]
+},
+{
+"label": "Discrimination",
+"q": "discrimination",
+"match": [
+"discrimination",
+"discriminatoire",
+"discriminer",
+"egalite",
+"égalité"
+],
+"title": "Ce que le Code dit sur la discrimination",
+"body": [
+"La discrimination est interdite sous toutes ses formes (art. 4). Un employeur ne peut fonder ses décisions (embauche, affectation, formation, promotion, rémunération, discipline, rupture) sur le sexe, l'âge, la nationalité, la race, la religion, la couleur, les opinions, l'origine sociale, l'appartenance syndicale ou le handicap. Le statut VIH, réel ou supposé, n'est pas un motif valable.",
+"Le droit au travail et l'égalité de chances et de traitement sont garantis à tous (art. 2). Tout acte discriminatoire est nul de plein droit, et la victime peut saisir directement le tribunal du travail (art. 4). Ne sont pas des discriminations les distinctions fondées sur les qualifications réellement exigées par l'emploi.",
+"En pratique, la meilleure protection pour l'employeur est d'objectiver toutes ses décisions par des critères vérifiables (compétences, performance, ancienneté) et d'en conserver la trace."
+],
+"refs": [
+"2",
+"4",
+"5"
+]
+},
+{
+"label": "Travailleurs étrangers",
+"q": "travailleur étranger",
+"match": [
+"etranger",
+"étranger",
+"permis de travail",
+"cedeao"
+],
+"title": "Ce que le Code dit sur les travailleurs étrangers",
+"body": [
+"Pour embaucher un travailleur étranger hors espace CEDEAO, l'employeur doit obtenir l'autorisation préalable du Service public d'emploi (art. 131.1). Le contrat doit être écrit et soumis au visa du Service public d'emploi ; le visa est réputé accordé si l'administration ne répond pas dans les 30 jours, et sans visa le contrat ne peut pas être exécuté (art. 131.3).",
+"La durée du contrat d'un travailleur étranger est plafonnée à quatre ans, renouvellement compris (art. 131.2). Un visa touristique ne permet pas de travailler, et le visa de séjour suppose un permis de travail préalable (art. 131.3).",
+"L'employeur qui fait travailler un étranger sans autorisation ni visa, après l'avoir fait venir de l'étranger, supporte l'intégralité des frais de rapatriement (art. 131.4). Les recrutements de nationaux guinéens, eux, ne sont soumis à aucune formalité préalable (art. 110.7)."
+],
+"refs": [
+"110.7",
+"131.1",
+"131.2",
+"131.3",
+"131.4"
+]
+},
+{
+"label": "Intérim / travail temporaire",
+"q": "travail temporaire",
+"match": [
+"travail temporaire",
+"interim",
+"intérim",
+"mission",
+"entreprise de travail temporaire"
+],
+"title": "Ce que le Code dit sur le travail temporaire (intérim)",
+"body": [
+"Le travail temporaire fait intervenir trois acteurs : l'entreprise de travail temporaire (l'employeur juridique), l'entreprise utilisatrice et le travailleur (art. 133.1). L'agence doit être autorisée par arrêté ministériel (art. 133.2), et le contrat de mise à disposition entre l'agence et l'utilisatrice doit être écrit et mentionner le motif (art. 133.9).",
+"On ne peut recourir à l'intérim que pour des tâches non durables, dans quatre cas : remplacement d'un absent, attente d'un remplaçant, travaux urgents de sécurité, ou surcroît exceptionnel de travail (art. 133.5). Il est interdit d'y recourir pour remplacer des grévistes, et l'usage est encadré après un licenciement économique récent (art. 133.6).",
+"Une mission ne peut dépasser six mois ; au-delà, le travailleur peut se prévaloir d'un CDI avec l'entreprise utilisatrice (art. 133.10). En cas d'insolvabilité de l'agence, l'entreprise utilisatrice doit payer le salaire à sa place (art. 133.8)."
+],
+"refs": [
+"133.1",
+"133.5",
+"133.6",
+"133.7",
+"133.8",
+"133.9",
+"133.10"
+]
+},
+{
+"label": "Apprentissage & stage",
+"q": "apprentissage",
+"match": [
+"apprentissage",
+"apprenti",
+"stage",
+"stagiaire"
+],
+"title": "Ce que le Code dit sur l'apprentissage et les stages",
+"body": [
+"Le contrat d'apprentissage engage un maître à donner une formation professionnelle complète à un apprenti ; il doit être écrit à peine de nullité (art. 142.1) et comporter des mentions précises (art. 142.2). L'apprenti doit avoir au moins 14 ans et le maître au moins 21 ans pour encadrer un mineur (art. 142.4). Les deux premiers mois valent période d'essai (art. 142.12).",
+"Le contrat de stage vise un demandeur de premier emploi ; il est écrit, avec copie au Service public d'emploi et à l'Inspection (art. 145.1). Le stage en alternance ne peut dépasser trois mois après la formation scolaire, le stage opérationnel un an renouvellement compris ; au-delà, il devient un CDI (art. 145.3). Une attestation de stage est remise à la fin (art. 145.4).",
+"L'employeur contribue au financement de la formation à hauteur de 1,5% de la masse salariale (art. 141.2), et le salarié envoyé en stage conserve son salaire, avec une éventuelle clause de maintien en poste (art. 144.2)."
+],
+"refs": [
+"141.2",
+"142.1",
+"142.2",
+"142.4",
+"142.12",
+"144.2",
+"145.1",
+"145.3",
+"145.4"
+]
+},
+{
+"label": "Maladie & accident du travail",
+"q": "maladie accident",
+"match": [
+"accident du travail",
+"maladie professionnelle",
+"inaptitude",
+"arret de travail",
+"arrêt de travail"
+],
+"title": "Ce que le Code dit sur la maladie et l'accident du travail",
+"body": [
+"La maladie ou l'accident suspendent le contrat sans le rompre (art. 151.1). Pour un accident du travail ou une maladie professionnelle (l'accident de trajet y étant assimilé), l'employeur doit déclarer à la sécurité sociale et informer l'Inspection dans les 48 heures, sous peine de supporter les frais de traitement (art. 152.1).",
+"Pendant la suspension, le CDI ne peut être rompu que pour faute grave ou force majeure (art. 152.2). À la reprise, le salarié apte retrouve son emploi ou un emploi similaire ; le défaut de réintégration coûte cher (jusqu'à deux ans de salaire après un an — art. 152.3). En cas d'inaptitude, l'employeur doit chercher un reclassement avant d'envisager un licenciement (art. 152.4).",
+"Pour une maladie non professionnelle, le licenciement n'est possible que si des absences d'au moins six mois désorganisent réellement l'entreprise (art. 152.5)."
+],
+"refs": [
+"151.1",
+"151.2",
+"152.1",
+"152.2",
+"152.3",
+"152.4",
+"152.5"
+]
+},
+{
+"label": "Chômage technique & économique",
+"q": "chômage technique",
+"match": [
+"chomage technique",
+"chômage technique",
+"chomage economique",
+"chômage économique",
+"chomage"
+],
+"title": "Ce que le Code dit sur le chômage technique et économique",
+"body": [
+"Le chômage technique permet une interruption collective du travail face à une cause conjoncturelle ou accidentelle (panne, sinistre, intempéries, pénurie…), après information des délégués syndicaux et, à défaut de régime conventionnel, de l'Inspection ; il ne peut dépasser six mois (art. 155.1).",
+"Le chômage économique vise à éviter des licenciements en cas de difficultés passagères, en suspendant les contrats pour trois mois au maximum sur douze mois (art. 155.2), après information des délégués (réponse sous 8 jours) et de l'Inspection (art. 155.3).",
+"Pendant ces périodes, l'employeur ne peut ni embaucher ni faire des heures supplémentaires dans les services concernés (art. 155.5), et verse au minimum 30% du salaire de base tout en maintenant les droits de sécurité sociale (art. 155.6). Au-delà des délais, c'est la procédure de licenciement économique qui s'applique (art. 155.8)."
+],
+"refs": [
+"155.1",
+"155.2",
+"155.3",
+"155.5",
+"155.6",
+"155.7",
+"155.8"
+]
+},
+{
+"label": "Congés payés",
+"q": "congé",
+"match": [
+"conge paye",
+"congé payé",
+"conges payes",
+"conge annuel",
+"congé"
+],
+"title": "Ce que le Code dit sur les congés payés",
+"body": [
+"Sauf convention collective plus favorable, le salarié acquiert 2,5 jours ouvrables de congé payé par mois de service effectif, soit 30 jours ouvrables par an (art. 222.8). Le droit de prendre son congé s'ouvre après un mois de service (art. 222.12).",
+"Certaines périodes comptent comme travail effectif pour le calcul (congés, formation, accident du travail, maternité — art. 222.9). Un congé d'au plus 12 jours doit être pris en continu, le salarié doit effectivement prendre ses jours chaque année, et il est interdit de remplacer le congé par une indemnité (art. 222.12). Maladie, accident du travail, repos de maternité et jours fériés ne se déduisent pas du congé (art. 222.13).",
+"Pendant le congé, l'employeur verse la rémunération habituelle, hors remboursements de frais (art. 222.15). En cas de rupture avant la prise des congés, une indemnité compensatrice est due (art. 222.16)."
+],
+"refs": [
+"222.8",
+"222.9",
+"222.10",
+"222.12",
+"222.13",
+"222.14",
+"222.15",
+"222.16"
+]
+},
+{
+"label": "Salaire & paie",
+"q": "salaire",
+"match": [
+"salaire",
+"paie",
+"paye",
+"remuneration",
+"rémunération",
+"bulletin",
+"smig"
+],
+"title": "Ce que le Code dit sur le salaire et son paiement",
+"body": [
+"Le salaire se négocie librement, dans le respect du SMIG fixé par décret et des minima conventionnels (art. 241.1 et 241.7). L'égalité de rémunération est obligatoire à travail égal ou de valeur égale, sans distinction d'origine, de sexe ou d'âge (art. 241.2 et 241.3).",
+"Le salaire est payé en monnaie légale (art. 242.2), à intervalles réguliers (au plus 15 ou 30 jours selon les cas), et intégralement dès la cessation du service en cas de rupture (art. 242.4). Un bulletin de paie détaillé est remis à chaque versement (art. 242.6), le paiement pouvant se faire par chèque ou virement avec l'accord du salarié (art. 242.7).",
+"La créance de salaire est fortement protégée : elle prime sur les autres créances, y compris celles du Trésor (art. 242.13). Seuls 30 % du salaire sont saisissables ou cessibles (art. 243.2), et toute retenue non prévue par la loi est nulle (art. 243.3). L'action en paiement se prescrit par 12 ou 24 mois (art. 242.17)."
+],
+"refs": [
+"241.1",
+"241.2",
+"241.7",
+"242.2",
+"242.4",
+"242.6",
+"242.13",
+"242.17",
+"243.2",
+"243.3"
+]
+},
+{
+"label": "Durée du travail & heures sup.",
+"q": "heures supplémentaires",
+"match": [
+"duree du travail",
+"durée du travail",
+"heures supplementaires",
+"heures supplémentaires",
+"travail de nuit",
+"horaire"
+],
+"title": "Ce que le Code dit sur la durée du travail",
+"body": [
+"La durée légale du travail effectif est de 40 heures par semaine (art. 221.1). Au-delà, l'employeur peut recourir aux heures supplémentaires (jusqu'à 100 h par an sans autorisation, au-delà avec l'accord de l'Inspection — art. 221.5), à la récupération, à l'équivalence ou à la modulation (accord avec les syndicats — art. 221.2 à 221.4).",
+"Les heures supplémentaires sont majorées de 30 % (4 premières heures) puis de 60 % (art. 221.6). La durée ne peut jamais dépasser 10 heures par jour ni 48 heures par semaine (art. 221.7).",
+"Le travail de nuit (21 h – 5 h) est majoré de 20 % (art. 221.8 et 221.9), interdit aux moins de 18 ans (art. 137.2) et encadré pour les femmes dans certains secteurs (art. 136.1). L'horaire est fixé après consultation des délégués, affiché et transmis à l'Inspection (art. 221.11)."
+],
+"refs": [
+"221.1",
+"221.5",
+"221.6",
+"221.7",
+"221.8",
+"221.9",
+"221.11"
+]
+},
+{
+"label": "Règlement intérieur & discipline",
+"q": "discipline",
+"match": [
+"reglement interieur",
+"règlement intérieur",
+"discipline",
+"sanction",
+"mise a pied",
+"mise à pied",
+"faute"
+],
+"title": "Ce que le Code dit sur la discipline et le règlement intérieur",
+"body": [
+"Le règlement intérieur est obligatoire dès 25 salariés (art. 211.1). Il fixe l'échelle des sanctions, la procédure garantissant les droits de la défense, et les règles d'hygiène et de sécurité (art. 211.3). Il est élaboré après consultation des délégués (15 jours) puis contrôle de l'Inspection (art. 211.6), et n'entre en vigueur qu'un mois après affichage (art. 211.7).",
+"Une sanction suppose une faute professionnelle (art. 212.1) et ne peut viser une faute connue depuis plus d'un mois (art. 212.2). Les sanctions pécuniaires sont interdites ; seules les sanctions prévues (ou, à défaut de règlement, avertissement, blâme, mise à pied ≤ 6 jours, licenciement) sont possibles, et toute sanction doit être notifiée par écrit et motivée (art. 212.3).",
+"La sanction doit être proportionnée à la faute, sous le contrôle du juge (art. 212.4), qui annule toute sanction irrégulière, prohibée ou disproportionnée (art. 212.5). La mise à pied conservatoire ne peut priver de salaire plus de 10 jours ouvrables (art. 172.15)."
+],
+"refs": [
+"211.1",
+"211.3",
+"211.6",
+"211.7",
+"212.1",
+"212.2",
+"212.3",
+"212.4",
+"212.5",
+"172.15"
+]
+},
+{
+"label": "Santé & sécurité au travail",
+"q": "sécurité",
+"match": [
+"securite",
+"sécurité",
+"sante au travail",
+"santé au travail",
+"hygiene",
+"hygiène",
+"accident",
+"medecine du travail",
+"médecine du travail"
+],
+"title": "Ce que le Code dit sur la santé et la sécurité au travail",
+"body": [
+"L'employeur a une obligation générale de sécurité : prendre toutes les mesures adaptées pour protéger la vie et la santé des salariés (art. 231.2). Un comité de sécurité et santé est obligatoire dès 25 salariés, et les travaux dangereux doivent être déclarés à l'Inspection et au médecin du travail (art. 231.2).",
+"Le Code impose de protéger les machines et parties mobiles (art. 231.13, 231.16), d'encadrer strictement les espaces confinés et de fournir gratuitement les équipements de protection (art. 231.14), de maintenir la propreté des locaux (art. 231.11) et d'interdire alcool et drogues sur les lieux de travail (art. 231.12). Une formation sécurité doit être organisée à l'embauche, au changement de poste et à la reprise après un arrêt long (art. 231.6).",
+"Toutes les entreprises doivent organiser la médecine du travail : visite d'embauche et visite annuelle d'aptitude, à la charge de l'employeur (art. 232.1, 232.3). Le médecin du travail peut proposer des aménagements que l'employeur doit prendre en compte (art. 232.7). En cas de danger grave et imminent, l'Inspecteur agit sans mise en demeure (art. 231.8)."
+],
+"refs": [
+"231.2",
+"231.6",
+"231.8",
+"231.11",
+"231.12",
+"231.13",
+"231.14",
+"232.1",
+"232.5",
+"232.7"
+]
+},
+{
+"label": "Délégués syndicaux",
+"q": "délégué syndical",
+"match": [
+"delegue syndical",
+"délégué syndical",
+"delegues",
+"délégués",
+"representant du personnel",
+"représentant du personnel"
+],
+"title": "Ce que le Code dit sur les délégués syndicaux",
+"body": [
+"L'élection de délégués syndicaux est obligatoire dès 25 salariés atteints pendant 12 mois continus (art. 330.1). Leur nombre dépend de l'effectif (art. 331.2). Sont électeurs les salariés ayant 3 mois d'ancienneté, éligibles ceux ayant 1 an (art. 331.3). Les délégués sont élus pour 2 ans à la proportionnelle, seules comptant les listes ayant obtenu au moins 20 % des voix (art. 331.6, 331.7, 331.9).",
+"Les délégués bénéficient d'un statut protecteur : leur licenciement (et celui des anciens délégués et candidats, pendant 6 mois) exige l'autorisation préalable de l'Inspecteur du travail (art. 332.2). Un licenciement sans autorisation coûte 24 mois de salaire en plus des indemnités habituelles (art. 332.6). La discrimination antisyndicale est interdite et pénalement sanctionnée (art. 332.7, 523.30).",
+"Chaque délégué dispose de 15 heures de délégation par mois, rémunérées (art. 333.3), d'un local (art. 333.4) et de droits d'affichage et de distribution de tracts (art. 333.2). Faire obstacle à leur mission est un délit d'entrave (art. 523.31)."
+],
+"refs": [
+"330.1",
+"331.2",
+"331.3",
+"331.9",
+"332.1",
+"332.2",
+"332.6",
+"332.7",
+"333.1",
+"333.3"
+]
+},
+{
+"label": "Retraite",
+"q": "retraite",
+"match": [
+"retraite",
+"depart a la retraite",
+"départ à la retraite",
+"mise a la retraite",
+"mise à la retraite",
+"pension"
+],
+"title": "Ce que le Code dit sur la retraite",
+"body": [
+"Tous les travailleurs ont droit à la retraite. Le CDI prend fin à l'âge légal de retraite ; le départ à la retraite n'est ni une démission ni un licenciement et relève du Code de la sécurité sociale (art. 172.34). Le salarié mis à la retraite a droit à une indemnité de départ fixée par arrêté.",
+"L'employeur doit notifier son intention (mise à la retraite ou prolongation) avant l'âge de retraite, avec un préavis d'au moins 6 mois si le salarié a plus de 10 ans d'ancienneté, 2 mois entre 2 et 10 ans, 1 mois sinon (art. 172.36).",
+"Dans les 5 années précédant l'âge de retraite, un salarié remplissant les conditions peut demander une retraite anticipée proportionnelle à sa période d'assurance, avec l'indemnité de départ (art. 172.37). En cas de prolongation d'activité, une faute grave permet de revenir aux règles du licenciement (art. 172.35)."
+],
+"refs": [
+"172.34",
+"172.35",
+"172.36",
+"172.37"
+]
+},
+{
+"label": "Convention collective",
+"q": "convention collective",
+"match": [
+"convention collective",
+"accord collectif",
+"branche",
+"extension"
+],
+"title": "Ce que le Code dit sur les conventions collectives",
+"body": [
+"La convention collective détermine les conditions de travail et d'emploi et règle les relations employeurs-travailleurs (art. 410.1). Elle est conclue entre organisations patronales et syndicales représentatives (art. 410.2) et peut viser un établissement, une entreprise, une branche ou plusieurs branches (art. 410.3). Elle ne peut qu'améliorer les droits légaux, jamais y déroger défavorablement (art. 410.5).",
+"Elle doit être écrite et déposée au greffe (art. 411.3), et s'applique à tous les salariés de l'employeur lié (art. 421.3). Une convention de branche peut être étendue par arrêté ministériel, la rendant obligatoire pour toute la branche (art. 424.1).",
+"Une convention à durée indéterminée doit être révisée au moins tous les 5 ans (art. 423.1) et peut être dénoncée avec un préavis de 3 mois (art. 423.2), en survivant jusqu'à un an après le préavis (art. 423.3)."
+],
+"refs": [
+"410.1",
+"410.2",
+"410.3",
+"410.5",
+"411.3",
+"421.3",
+"423.1",
+"423.2",
+"424.1"
+]
+},
+{
+"label": "Tribunal du travail",
+"q": "tribunal du travail",
+"match": [
+"tribunal du travail",
+"juridiction",
+"litige",
+"proces",
+"procès",
+"contentieux",
+"conciliation"
+],
+"title": "Ce que le Code dit sur les litiges et le tribunal du travail",
+"body": [
+"Les différends individuels de travail relèvent du tribunal du travail (art. 520.1), compétent pour tout ce qui touche au contrat, à la discipline, au règlement intérieur, aux élections et aux conflits collectifs (art. 521.1). En cas de rupture, le salarié peut choisir le tribunal du lieu d'exécution ou celui de son domicile (art. 521.2), et toute clause dérogeant à cette compétence est nulle (art. 521.4).",
+"Avant le procès, une conciliation facultative devant l'Inspecteur du travail est possible ; un accord acté par procès-verbal a force exécutoire (art. 523.1, 523.2). La procédure est rapide (comparution sous ~10 jours — art. 523.6), gratuite (art. 523.18), et l'employeur absent risque un jugement par défaut (art. 523.8).",
+"L'action en contestation du motif de licenciement se prescrit par 24 mois (art. 523.4). Les jugements peuvent faire l'objet d'un appel dans les 30 jours (art. 523.14) puis d'un pourvoi en cassation (art. 523.17). Un jugement peut être exécutoire immédiatement malgré l'appel (art. 523.13)."
+],
+"refs": [
+"520.1",
+"521.1",
+"521.2",
+"523.1",
+"523.4",
+"523.6",
+"523.8",
+"523.14",
+"523.18"
+]
+},
+{
+"label": "Travail des enfants",
+"q": "travail des enfants",
+"match": [
+"travail des enfants",
+"enfant",
+"mineur",
+"age minimum",
+"âge minimum"
+],
+"title": "Ce que le Code dit sur le travail des enfants",
+"body": [
+"Est un « enfant » toute personne de moins de 18 ans (art. 137.1). L'âge minimum d'emploi est de 16 ans, sauf apprentissage encadré dès 14 ans (art. 137.5, 142.4). Le travail de nuit est interdit à tous les moins de 18 ans (art. 137.2), qui conservent toujours le repos dominical (art. 222.4) et un repos quotidien d'au moins 12 heures (art. 221.10).",
+"Les travaux dangereux sont interdits aux enfants (art. 137.4), et les « pires formes » de travail des enfants (esclavage, exploitation, activités illicites) sont prohibées (art. 137.6). Les violations relèvent du pénal (art. 137.7).",
+"L'Inspecteur du travail peut faire examiner un mineur par un médecin pour vérifier que le travail n'excède pas ses forces ; un mineur inapte doit être réaffecté ou, à défaut, voir son contrat résilié avec préavis et indemnité (art. 137.8)."
+],
+"refs": [
+"137.1",
+"137.2",
+"137.4",
+"137.5",
+"137.6",
+"137.8",
+"142.4"
+]
+}
+]

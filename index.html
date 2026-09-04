@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Recherchez tout article du Code du travail guinéen par numéro ou mot-clé, avec le texte officiel, une explication en langage clair et un conseil RH.">
+<meta name="theme-color" content="#1f5d43">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Code du Travail — République de Guinée">
+<meta property="og:description" content="Recherchez tout article du Code du travail guinéen par numéro ou mot-clé, avec le texte officiel, une explication en langage clair et un conseil RH.">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<title>Code du Travail Guinée</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#f6f4ee; --surface:#fffdf8; --surface-2:#f0ede4; --ink:#22271f; --ink-soft:#54594c;
+  --line:#dfdacb; --line-strong:#cdc7b4;
+  --accent:#1f5d43; --accent-soft:#2c7a58; --accent-tint:#e6efe8; --accent-ink:#134030;
+  --exp-bg:#eef2f4; --exp-line:#c6d5dc; --exp-ink:#1c4451; --exp-accent:#1f6a80;
+  --rh-bg:#f7efdd; --rh-line:#e4cf9f; --rh-ink:#6a4c15; --rh-accent:#a9741a;
+  --mark:#ffe39c; --mark-ink:#4a3a06;
+  --shadow:0 1px 2px rgba(30,25,10,.05),0 6px 22px rgba(30,25,10,.06);
+  --shadow-sm:0 1px 2px rgba(30,25,10,.06);
+  --radius:14px; --radius-sm:9px;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#15171340; --paper:#141612; --surface:#1c1f19; --surface-2:#23271f; --ink:#eae7dc; --ink-soft:#a6a595;
+    --line:#33372c; --line-strong:#454a3a;
+    --accent:#5cae86; --accent-soft:#6dbf96; --accent-tint:#1e3329; --accent-ink:#9fdcbd;
+    --exp-bg:#182a30; --exp-line:#2c4650; --exp-ink:#a8d4e0; --exp-accent:#79bccf;
+    --rh-bg:#2a2413; --rh-line:#4d4225; --rh-ink:#e2c887; --rh-accent:#d1a24e;
+    --mark:#5a4a12; --mark-ink:#ffe8a8;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 26px rgba(0,0,0,.35);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141612; --surface:#1c1f19; --surface-2:#23271f; --ink:#eae7dc; --ink-soft:#a6a595;
+  --line:#33372c; --line-strong:#454a3a;
+  --accent:#5cae86; --accent-soft:#6dbf96; --accent-tint:#1e3329; --accent-ink:#9fdcbd;
+  --exp-bg:#182a30; --exp-line:#2c4650; --exp-ink:#a8d4e0; --exp-accent:#79bccf;
+  --rh-bg:#2a2413; --rh-line:#4d4225; --rh-ink:#e2c887; --rh-accent:#d1a24e;
+  --mark:#5a4a12; --mark-ink:#ffe8a8;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 26px rgba(0,0,0,.35);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+/* ---- Shell ---- */
+.app{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:100vh}
+.sidebar{border-right:1px solid var(--line);background:var(--surface);position:sticky;top:0;height:100vh;overflow-y:auto;padding:0}
+.brand{padding:20px 20px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--surface);z-index:2}
+.brand .flag{display:flex;gap:4px;margin-bottom:12px}
+.brand .flag i{width:16px;height:11px;border-radius:2px;display:block}
+.brand .flag i:nth-child(1){background:#ce1126}.brand .flag i:nth-child(2){background:#fcd116}.brand .flag i:nth-child(3){background:#009460}
+.brand h1{font-family:var(--serif);font-size:20px;font-weight:600;margin:0;line-height:1.2;letter-spacing:-.01em}
+.brand .sub{font-size:11.5px;color:var(--ink-soft);margin-top:4px;text-transform:uppercase;letter-spacing:.08em;font-weight:500}
+.nav{padding:10px 12px 40px}
+.nav .navtitle{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);font-weight:600;padding:14px 8px 6px}
+.nav-btn{width:100%;text-align:left;border:0;background:none;color:var(--ink);font-family:var(--sans);font-size:13.5px;font-weight:600;padding:9px 10px;border-radius:8px;cursor:pointer;display:flex;gap:9px;align-items:center;line-height:1.3;margin-bottom:2px}
+.nav-btn:hover{background:var(--surface-2)}
+.nav-btn.active{background:var(--accent-tint);color:var(--accent-ink)}
+.nav-btn.active .ln{color:var(--accent-ink)}
+.nav-btn svg{width:16px;height:16px;flex:none;stroke-width:2}
+.nav-home{margin-bottom:6px}
+.livre-btn .ln{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:600;flex:none;width:18px;text-align:center}
+.viewhead{margin:0 0 16px}
+.backbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-soft);font-family:var(--sans);font-size:13px;font-weight:600;padding:7px 14px 7px 10px;border-radius:9px;cursor:pointer;transition:all .13s}
+.backbtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
+.backbtn svg{width:16px;height:16px}
+.titre-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
+.tchip{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:500;cursor:pointer;transition:all .13s}
+.tchip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
+.tsec-h{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink);margin:30px 0 14px;padding-bottom:9px;border-bottom:2px solid var(--line);scroll-margin-top:160px}
+.tsec:first-of-type .tsec-h{margin-top:6px}
+
+/* ---- Main ---- */
+.backdrop{display:none}
+.main{min-width:0;display:flex;flex-direction:column}
+.topbar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:16px 28px}
+.searchrow{display:flex;gap:12px;align-items:center;max-width:900px;margin:0 auto}
+.searchbox{flex:1;position:relative;display:flex;align-items:center}
+.searchbox svg{position:absolute;left:14px;width:18px;height:18px;color:var(--ink-soft);pointer-events:none}
+#q{width:100%;font-family:var(--sans);font-size:16px;padding:13px 14px 13px 42px;border:1.5px solid var(--line-strong);border-radius:12px;background:var(--surface);color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s}
+#q:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-tint)}
+#q::placeholder{color:var(--ink-soft)}
+.clearbtn{position:absolute;right:10px;border:0;background:var(--surface-2);color:var(--ink-soft);width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:15px;line-height:1;display:none}
+.clearbtn:hover{color:var(--ink)}
+.themebtn{flex:none;border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-soft);width:44px;height:44px;border-radius:12px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
+.themebtn:hover{color:var(--accent);border-color:var(--accent)}
+.hint{max-width:900px;margin:8px auto 0;font-size:12px;color:var(--ink-soft);display:flex;gap:16px;flex-wrap:wrap}
+.hint b{color:var(--ink);font-weight:600}
+.hint code{font-family:var(--mono);background:var(--surface-2);padding:1px 6px;border-radius:5px;font-size:11.5px;color:var(--accent-ink)}
+
+.content{flex:1;padding:28px 28px 80px}
+.inner{max-width:860px;margin:0 auto}
+
+/* ---- Results meta ---- */
+.resmeta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:2px 0 18px;flex-wrap:wrap}
+.resmeta h2{font-family:var(--serif);font-size:22px;font-weight:600;margin:0;letter-spacing:-.01em}
+.resmeta .count{font-size:13px;color:var(--ink-soft);font-family:var(--mono)}
+
+/* ---- Theme summary banner ---- */
+.summary{background:linear-gradient(180deg,var(--accent-tint),var(--surface));border:1px solid var(--accent-soft);border-radius:var(--radius);padding:22px 24px;margin-bottom:26px;box-shadow:var(--shadow-sm)}
+.summary .cap{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:10px}
+.summary .cap svg{width:15px;height:15px}
+.summary h3{font-family:var(--serif);font-size:21px;margin:0 0 10px;font-weight:600}
+.summary p{margin:0 0 10px;font-size:14.5px;line-height:1.62;color:var(--ink)}
+.summary p:last-child{margin-bottom:0}
+.summary .refs{margin-top:14px;padding-top:14px;border-top:1px solid var(--accent-soft);font-size:12.5px;color:var(--ink-soft)}
+.summary .refs a{font-family:var(--mono);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:12px;background:var(--surface);border:1px solid var(--accent-soft);padding:2px 8px;border-radius:6px;margin:0 5px 5px 0;display:inline-block}
+.summary .refs a:hover{background:var(--accent);color:#fff}
+
+/* ---- Article card ---- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:18px;box-shadow:var(--shadow-sm);scroll-margin-top:150px}
+.card:target{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint)}
+.card .head{display:flex;align-items:flex-start;gap:14px;margin-bottom:6px}
+.badge{font-family:var(--mono);font-size:13px;font-weight:600;color:#fff;background:var(--accent);padding:5px 11px;border-radius:8px;white-space:nowrap;flex:none;line-height:1.3}
+.crumb{font-size:11.5px;color:var(--ink-soft);line-height:1.45;padding-top:3px}
+.crumb b{color:var(--ink-soft);font-weight:600}
+.crumb .sep{opacity:.5;margin:0 5px}
+.artbody{font-family:var(--serif);font-size:16.5px;line-height:1.68;color:var(--ink);margin-top:12px}
+.artbody p{margin:0 0 12px}
+.artbody p:last-child{margin-bottom:0}
+
+.panels{margin-top:18px;display:flex;flex-direction:column;gap:12px}
+.panel{border-radius:var(--radius-sm);padding:15px 17px;border:1px solid}
+.panel .lab{display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin-bottom:8px}
+.panel .lab svg{width:14px;height:14px}
+.panel p{margin:0;font-size:14px;line-height:1.6}
+.panel.exp{background:var(--exp-bg);border-color:var(--exp-line)}
+.panel.exp .lab{color:var(--exp-accent)}.panel.exp p{color:var(--exp-ink)}
+.panel.rh{background:var(--rh-bg);border-color:var(--rh-line)}
+.panel.rh .lab{color:var(--rh-accent)}.panel.rh p{color:var(--rh-ink)}
+.panel.pending{background:var(--surface-2);border-color:var(--line);border-style:dashed}
+.panel.pending p{color:var(--ink-soft);font-style:italic;font-size:13px}
+
+mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2px;font-weight:600}
+
+.empty{text-align:center;padding:70px 20px;color:var(--ink-soft)}
+.empty svg{width:46px;height:46px;opacity:.5;margin-bottom:14px}
+.empty h3{font-family:var(--serif);color:var(--ink);font-size:20px;margin:0 0 6px;font-weight:600}
+.empty p{margin:0;font-size:14px}
+
+/* ---- Home / welcome ---- */
+.welcome{padding:6px 0 0}
+.welcome .lead{font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--ink);max-width:640px;margin:0 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:34px}
+.chip{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 15px;font-size:13px;font-weight:500;cursor:pointer;transition:all .13s}
+.chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px;margin-bottom:36px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 18px}
+.stat .n{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--accent);line-height:1}
+.stat .l{font-size:12px;color:var(--ink-soft);margin-top:6px}
+.welcome h4{font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);font-weight:600;margin:0 0 14px}
+.booklist{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.bookcard{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:var(--radius-sm);padding:16px 18px;cursor:pointer;transition:all .13s}
+.bookcard:hover{border-color:var(--accent);box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+.bookcard .bn{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.bookcard .bt{font-family:var(--serif);font-size:16px;font-weight:600;margin:6px 0 4px;color:var(--ink)}
+.bookcard .bc{font-size:12px;color:var(--ink-soft)}
+
+.disclaimer{max-width:860px;margin:40px auto 0;padding:16px 18px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--surface-2);font-size:12px;color:var(--ink-soft);line-height:1.55}
+.disclaimer b{color:var(--ink)}
+
+.mobtoggle{display:none}
+@media (max-width:860px){
+  .app{grid-template-columns:1fr}
+  .sidebar{position:fixed;left:0;top:0;z-index:30;width:284px;transform:translateX(-100%);transition:transform .22s;box-shadow:var(--shadow)}
+  .sidebar.show{transform:translateX(0)}
+  .mobtoggle{display:flex;align-items:center;justify-content:center;flex:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink);cursor:pointer}
+  .backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:25}
+  .backdrop.show{display:block}
+  .content{padding:20px 16px 60px}
+  .topbar{padding:12px 16px}
+  .card{padding:18px 16px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="flag"><i></i><i></i><i></i></div>
+      <h1>Code du Travail</h1>
+      <div class="sub">République de Guinée</div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <div class="main">
+    <div class="topbar">
+      <div class="searchrow">
+        <button class="mobtoggle" id="mobtoggle" aria-label="Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="searchbox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+          <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Rechercher un article (ex. 172.6) ou un mot-clé (ex. licenciement)…">
+          <button class="clearbtn" id="clear" aria-label="Effacer">✕</button>
+        </div>
+        <button class="themebtn" id="themebtn" aria-label="Thème">◐</button>
+      </div>
+      <div class="hint">
+        <span><b>Par article&nbsp;:</b> tapez <code>172.6</code> ou <code>121</code> (tout le chapitre)</span>
+        <span><b>Par mot-clé&nbsp;:</b> <code>congé</code>, <code>salaire</code>, <code>préavis</code>…</span>
+      </div>
+    </div>
+    <div class="content"><div class="inner" id="results"></div></div>
+  </div>
+</div>
+
+<script>
+let DATA={articles:[]}, THEMES=[], A=[], byId={};
+
+const LIVRES = [
+ {ln:0, name:"Titre préliminaire", desc:"Dispositions générales, principes fondamentaux"},
+ {ln:1, name:"Livre 1 — Emploi", desc:"Recrutement, contrats, suspension, cessation"},
+ {ln:2, name:"Livre 2 — Conditions de travail", desc:"Discipline, durée, congés, santé, salaire"},
+ {ln:3, name:"Livre 3 — Partenaires sociaux", desc:"Organisations patronales et syndicales"},
+ {ln:4, name:"Livre 4 — Conventions & conflits collectifs", desc:"Conventions collectives, grève, conciliation"},
+ {ln:5, name:"Livre 5 — Administration & juridiction", desc:"Inspection, tribunaux du travail, sanctions"},
+];
+
+const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+
+/* ---------- Sidebar nav ---------- */
+function buildNav(){
+  const nav = document.getElementById('nav');
+  nav.innerHTML = '';
+  const home=document.createElement('button');
+  home.className='nav-btn nav-home'; home.id='nav-accueil';
+  home.innerHTML=`${iconHome()}<span>Accueil</span>`;
+  home.onclick=()=>{ qEl.value=''; showHome(); closeMobile(); };
+  nav.appendChild(home);
+  const nt=document.createElement('div'); nt.className='navtitle'; nt.textContent='Parcourir le code'; nav.appendChild(nt);
+  LIVRES.forEach(L=>{
+    const arts = A.filter(a=>a.ln===L.ln);
+    if(!arts.length) return;
+    const btn=document.createElement('button'); btn.className='nav-btn livre-btn'; btn.dataset.ln=L.ln;
+    const short = L.ln===0 ? 'Titre préliminaire' : L.name.split(' — ')[1] || L.name;
+    btn.innerHTML=`<span class="ln">${L.ln===0?'P':'L'+L.ln}</span><span>${esc(short)}</span>`;
+    btn.onclick=()=>{ showLivre(L.ln); closeMobile(); };
+    nav.appendChild(btn);
+  });
+}
+function setActiveNav(key){
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  let el;
+  if(key==='accueil') el=document.getElementById('nav-accueil');
+  else el=document.querySelector('.livre-btn[data-ln="'+key+'"]');
+  if(el) el.classList.add('active');
+}
+function backBar(){
+  return `<div class="viewhead"><button class="backbtn" id="backbtn">${iconArrow()} Retour à l'accueil</button></div>`;
+}
+function wireBack(){
+  const b=document.getElementById('backbtn');
+  if(b) b.onclick=()=>{ qEl.value=''; showHome(); };
+}
+function cleanTitre(t){ return t.replace(/^TITRE\s+[IVX0-9]*\s*[:\-–]?\s*/i,'').replace(/^TITRE PRELIMINAIRE\s*[:\-–]?\s*/i,'Dispositions générales').replace(/\.+$/,'').trim() || t; }
+function cleanLabel(t){ return t.replace(/\.{2,}.*$/,'').replace(/\s*\d+([\-–]\d+)?\s*$/,'').trim(); }
+
+/* ---------- Rendering ---------- */
+function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function paras(text){ return text.split('\n\n').map(p=>'<p>'+esc(p)+'</p>').join(''); }
+function highlight(html, term){
+  if(!term) return html;
+  const tn = norm(term); if(tn.length<2) return html;
+  // highlight on visible text nodes by working on escaped html safely
+  return html.replace(/>([^<]+)</g,(m,txt)=>{
+    let out=''; let i=0; const low=norm(txt);
+    let idx;
+    while((idx=low.indexOf(tn,i))!==-1){
+      out+=esc0(txt.slice(i,idx))+'<mark>'+esc0(txt.slice(idx,idx+tn.length))+'</mark>';
+      i=idx+tn.length;
+    }
+    out+=esc0(txt.slice(i));
+    return '>'+out+'<';
+  });
+}
+function esc0(s){return s;} // already escaped upstream
+
+function crumb(a){
+  const bits=[];
+  const L=LIVRES.find(x=>x.ln===a.ln);
+  if(L) bits.push('<b>'+esc(L.name.split(' — ')[0])+'</b>');
+  if(a.titre) bits.push(esc(cleanTitre(a.titre)));
+  if(a.chapitre) bits.push(esc(cleanLabel(a.chapitre.replace(/^CHAPITRE\s+[IVX0-9]*\s*[:\-–]?\s*/i,''))));
+  if(a.section) bits.push(esc(cleanLabel(a.section.replace(/^Section\s+[IVX0-9]*\s*[:\-–]?\s*/i,''))));
+  return bits.join('<span class="sep">›</span>');
+}
+
+function articleCard(a, term){
+  let body = paras(a.text);
+  let expHtml, rhHtml;
+  if(a.e){ expHtml = `<div class="panel exp"><span class="lab">${iconBook()} Explication</span><p>${esc(a.e)}</p></div>`; }
+  else { expHtml = `<div class="panel pending"><p>Explication en cours de rédaction.</p></div>`; }
+  rhHtml = a.r ? `<div class="panel rh"><span class="lab">${iconBriefcase()} Conseil RH</span><p>${esc(a.r)}</p></div>` : '';
+  let html = `<article class="card" id="art-${cssid(a.id)}">
+    <div class="head"><span class="badge">Art. ${esc(a.id)}</span><div class="crumb">${crumb(a)}</div></div>
+    <div class="artbody">${body}</div>
+    <div class="panels">${expHtml}${rhHtml}</div>
+  </article>`;
+  return term ? highlight(html, term) : html;
+}
+function cssid(id){return id.replace(/[^a-z0-9.]/gi,'-');}
+function iconBook(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg>';}
+function iconBriefcase(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>';}
+function iconLayers(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>';}
+function iconHome(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>';}
+function iconArrow(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>';}
+
+/* ---------- Views ---------- */
+const results = document.getElementById('results');
+
+function showHome(){
+  location.hash='';
+  setActiveNav('accueil');
+  const chips = THEMES.slice(0,10).map(t=>`<button class="chip" data-q="${esc(t.q)}">${esc(t.label)}</button>`).join('');
+  const books = LIVRES.map(L=>{
+    const n=A.filter(a=>a.ln===L.ln).length;
+    return `<button class="bookcard" data-livre="${L.ln}"><div class="bn">${L.ln===0?'Préliminaire':'Livre '+L.ln} · ${n} art.</div><div class="bt">${esc(L.name.split(' — ')[1]||'Dispositions générales')}</div><div class="bc">${esc(L.desc)}</div></button>`;
+  }).join('');
+  results.innerHTML = `<div class="welcome">
+    <p class="lead">Recherchez n'importe quel article du Code du travail guinéen par son numéro ou par mot-clé. Chaque article s'affiche tel qu'il figure dans le Code, accompagné d'une explication en langage clair et d'un conseil pratique pour les RH.</p>
+    <div class="stats">
+      <div class="stat"><div class="n">${A.length}</div><div class="l">articles</div></div>
+      <div class="stat"><div class="n">6</div><div class="l">livres / titre prélim.</div></div>
+      <div class="stat"><div class="n">${THEMES.length}</div><div class="l">thèmes de synthèse</div></div>
+    </div>
+    <h4>Thèmes fréquents</h4>
+    <div class="chips">${chips}</div>
+    <h4>Parcourir par livre</h4>
+    <div class="booklist">${books}</div>
+    <div class="disclaimer"><b>Note :</b> cet outil est une aide pédagogique et documentaire destinée à faciliter la consultation du Code du travail. Les explications et conseils RH sont des reformulations à but de compréhension ; ils ne remplacent pas le texte officiel ni l'avis d'un juriste. En cas de doute, référez-vous au texte de loi et à un conseil juridique qualifié.</div>
+  </div>`;
+  results.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{document.getElementById('q').value=c.dataset.q; doSearch();});
+  results.querySelectorAll('.bookcard').forEach(c=>c.onclick=()=>showLivre(+c.dataset.livre));
+}
+
+function showLivre(ln){
+  location.hash='livre='+ln;
+  setActiveNav(ln);
+  const L=LIVRES.find(x=>x.ln===ln);
+  const arts=A.filter(a=>a.ln===ln);
+  // group by titre, preserving order
+  const groups=[]; const idx={};
+  arts.forEach(a=>{ const k=a.titre||''; if(!(k in idx)){idx[k]=groups.length; groups.push({titre:k, items:[]});} groups[idx[k]].items.push(a); });
+  const chips = groups.length>1
+    ? `<div class="titre-chips">${groups.map((g,i)=>`<button class="tchip" data-i="${i}">${esc(cleanTitre(g.titre)||'Dispositions générales')}</button>`).join('')}</div>`
+    : '';
+  const secs = groups.map((g,i)=>{
+    const h = (groups.length>1 && (g.titre||groups.length>1)) ? `<h3 class="tsec-h" id="tsec-${i}">${esc(cleanTitre(g.titre)||'Dispositions générales')}</h3>` : `<span id="tsec-${i}"></span>`;
+    return `<section class="tsec">${h}${g.items.map(a=>articleCard(a)).join('')}</section>`;
+  }).join('');
+  results.innerHTML = backBar()
+    + `<div class="resmeta"><h2>${esc(L?L.name:'')}</h2><span class="count">${arts.length} article${arts.length>1?'s':''}</span></div>`
+    + chips + secs;
+  wireBack();
+  results.querySelectorAll('.tchip').forEach(c=>c.onclick=()=>{const el=document.getElementById('tsec-'+c.dataset.i); if(el) el.scrollIntoView();});
+  window.scrollTo(0,0);
+}
+
+function findTheme(qn){
+  return THEMES.find(t => t.match.some(m => qn.includes(norm(m))));
+}
+
+function doSearch(){
+  const raw=document.getElementById('q').value.trim();
+  const clr=document.getElementById('clear'); clr.style.display=raw?'block':'none';
+  if(!raw){ showHome(); return; }
+  location.hash='q='+encodeURIComponent(raw);
+
+  // Article-number query?
+  const numMatch = raw.match(/^(?:art\.?\s*|article\s*)?(\d+(?:er)?(?:\.\d+)?)$/i);
+  if(numMatch){
+    const key=numMatch[1].toLowerCase();
+    if(byId[key]){ renderList([byId[key]], `Article ${key}`, ''); return; }
+    // whole chapter: "121" -> 121.x
+    const fam=A.filter(a=>a.id===key || a.id.startsWith(key+'.'));
+    if(fam.length){ renderList(fam, `Articles ${key}.x`, ''); return; }
+    renderEmpty(raw); return;
+  }
+
+  // Keyword query
+  const qn=norm(raw);
+  const scored=[];
+  A.forEach(a=>{
+    const inCtx = norm(a.chapitre+' '+a.section+' '+a.titre).includes(qn);
+    const inTxt = norm(a.text).includes(qn);
+    const inExp = norm((a.e||'')+' '+(a.r||'')).includes(qn);
+    if(inCtx||inTxt||inExp){
+      let s=0; if(inCtx)s+=3; if(inTxt)s+=2; if(inExp)s+=1;
+      scored.push({a,s});
+    }
+  });
+  scored.sort((x,y)=> y.s-x.s || x.a.ln-y.a.ln);
+  const arts=scored.map(x=>x.a);
+  const theme=findTheme(qn);
+  renderList(arts, `« ${raw} »`, raw, theme);
+}
+
+function renderList(arts, title, term, theme){
+  if(!arts.length && !theme){ renderEmpty(term||title); return; }
+  setActiveNav(null);
+  let html=backBar();
+  if(theme){
+    const refs = (theme.refs||[]).map(r=>`<a href="#art-${cssid(r)}" data-goto="${esc(r)}">Art. ${esc(r)}</a>`).join('');
+    html += `<div class="summary"><span class="cap">${iconLayers()} Synthèse — ${esc(theme.label)}</span><h3>${esc(theme.title)}</h3>${theme.body.map(p=>'<p>'+esc(p)+'</p>').join('')}${refs?`<div class="refs"><b>Articles clés&nbsp;:</b> ${refs}</div>`:''}</div>`;
+  }
+  html += `<div class="resmeta"><h2>${esc(title)}</h2><span class="count">${arts.length} article${arts.length>1?'s':''}</span></div>`;
+  html += arts.map(a=>articleCard(a, term)).join('');
+  results.innerHTML=html;
+  wireBack();
+  results.querySelectorAll('.refs a').forEach(a=>a.onclick=e=>{
+    e.preventDefault(); const id=a.dataset.goto; const el=document.getElementById('art-'+cssid(id));
+    if(el){el.scrollIntoView(); el.style.transition='none';}
+  });
+  window.scrollTo(0,0);
+}
+
+function renderEmpty(term){
+  setActiveNav(null);
+  results.innerHTML=backBar()+`<div class="empty">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+    <h3>Aucun résultat pour « ${esc(term)} »</h3>
+    <p>Vérifiez l'orthographe, essayez un mot plus court, ou parcourez le code par livre dans le menu.</p>
+  </div>`;
+  wireBack();
+}
+
+/* ---------- Theme toggle ---------- */
+function initTheme(){
+  const btn=document.getElementById('themebtn');
+  let cur=null; try{cur=localStorage.getItem('ct-theme');}catch(e){}
+  if(cur) document.documentElement.setAttribute('data-theme',cur);
+  btn.onclick=()=>{
+    const isDark = document.documentElement.getAttribute('data-theme')==='dark'
+      || (!document.documentElement.getAttribute('data-theme') && matchMedia('(prefers-color-scheme:dark)').matches);
+    const next = isDark?'light':'dark';
+    document.documentElement.setAttribute('data-theme',next);
+    try{localStorage.setItem('ct-theme',next);}catch(e){}
+  };
+}
+
+/* ---------- Mobile ---------- */
+function closeMobile(){document.getElementById('sidebar').classList.remove('show');document.getElementById('backdrop').classList.remove('show');}
+document.getElementById('mobtoggle').onclick=()=>{document.getElementById('sidebar').classList.toggle('show');document.getElementById('backdrop').classList.toggle('show');};
+document.getElementById('backdrop').onclick=closeMobile;
+
+/* ---------- Wire up ---------- */
+let t=null;
+const qEl=document.getElementById('q');
+qEl.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(doSearch,140);});
+document.getElementById('clear').onclick=()=>{qEl.value='';qEl.focus();doSearch();};
+document.querySelector('.brand').style.cursor='pointer';
+document.querySelector('.brand').onclick=()=>{qEl.value='';showHome();};
+
+function route(){
+  const h=decodeURIComponent(location.hash.replace(/^#/,''));
+  if(h.startsWith('q=')){ qEl.value=h.slice(2); doSearch(); }
+  else if(h.startsWith('livre=')){ showLivre(parseInt(h.slice(6))||0); }
+  else showHome();
+}
+window.addEventListener('hashchange', ()=>{ if(A.length) route(); });
+initTheme();
+results.innerHTML='<div style="padding:70px 20px;text-align:center;color:var(--ink-soft)">Chargement du Code du travail\u2026</div>';
+Promise.all([
+  fetch('articles.json').then(r=>r.json()),
+  fetch('explanations.json').then(r=>r.json()),
+  fetch('themes.json').then(r=>r.json())
+]).then(([arts,exp,themes])=>{
+  arts.forEach(a=>{const e=exp[a.id]||{}; a.e=e.e||''; a.r=e.r||'';});
+  DATA={articles:arts}; A=arts; THEMES=themes; byId={}; A.forEach(a=>byId[a.id]=a);
+  buildNav(); route();
+}).catch(err=>{
+  results.innerHTML='<div style="padding:60px 24px;text-align:center;color:var(--ink-soft)"><h3 style="font-family:var(--serif);color:var(--ink)">Impossible de charger les donn\u00e9es</h3><p>Cette page doit \u00eatre servie par un serveur web (h\u00e9bergement en ligne), et non ouverte par double-clic depuis votre ordinateur.</p></div>';
+});
+</script>
+</body>
+</html>
