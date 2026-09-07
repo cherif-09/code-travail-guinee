@@ -1,0 +1,482 @@
+{
+ "terminologie": {
+  "e": "Cette section définit les sigles et les mots-clés employés dans toute la convention : les organisations patronales et syndicales signataires, les institutions (CNSS, IGT, AGUIPE, ONFPP…), les diplômes de référence, et des notions centrales comme « Opérations minières », « Salaire de base », « Sous-traitant », « Jour ouvrable » ou « Extension ».",
+  "r": "Gardez ce lexique sous la main : bien comprendre ce que la convention entend par « Opérations minières », « salaire de base » ou « sous-traitant » évite les erreurs d'interprétation quand vous appliquez un article précis."
+ },
+ "preambule": {
+  "e": "Le préambule pose l'esprit du texte : il s'agit d'une convention négociée librement entre le patronat minier et les syndicats, qui reprend le droit guinéen du travail et y ajoute des règles propres au secteur des mines. Les parties s'engagent au dialogue social, au respect des droits fondamentaux (liberté syndicale, non-discrimination, interdiction du travail forcé et du travail des enfants), à la sécurité et à la lutte contre le harcèlement. Une fois étendue, elle s'impose à toutes les entreprises minières et à leurs sous-traitants.",
+  "r": "Retenez le principe directeur : la convention s'ajoute au Code du travail pour le secteur minier et vise la paix sociale. Inscrivez vos pratiques RH dans cette logique de dialogue et de conformité, sous-traitants compris."
+ },
+ "1er": {
+  "e": "La convention encadre les relations de travail dans le secteur minier guinéen. Elle s'applique à tous les travailleurs des entreprises dont l'activité relève des « Opérations minières » : recherche et prospection, extraction et transport, exploitation de carrières, et transformation des substances minérales.",
+  "r": "Vérifiez d'abord que votre entreprise entre bien dans ce champ : si votre activité relève des opérations minières, la convention s'applique en plus du Code du travail à l'ensemble de vos salariés."
+ },
+ "2": {
+  "e": "La convention s'applique immédiatement aux contrats déjà en cours au jour de sa prise d'effet, et à tous les contrats signés ensuite. Ses règles constituent un plancher : on ne peut pas embaucher à des conditions inférieures.",
+  "r": "Traitez la convention comme le minimum applicable : passez en revue vos contrats en cours et vos modèles d'embauche pour qu'aucune clause ne descende sous ce socle."
+ },
+ "3": {
+  "e": "La convention est conclue dans le cadre du Code du travail. Entre deux règles, c'est toujours la plus avantageuse pour le travailleur qui s'applique : si la loi est plus favorable, c'est la loi ; si la convention est plus favorable, c'est la convention. Pour tout ce qu'elle ne prévoit pas, on revient au droit commun.",
+  "r": "Adoptez le réflexe de la comparaison : sur chaque sujet (salaire, préavis, congés…), appliquez la disposition la plus favorable au salarié entre le Code et la convention. En cas de silence de la convention, référez-vous au Code."
+ },
+ "4": {
+  "e": "Cette convention remplace l'ancienne convention minière du 14 juillet 1995 pour les activités visées à l'article 1er. Les contrats signés après elle sont soumis à ses règles minimales, sans clause restrictive possible ; elle s'applique aussi de plein droit aux contrats en cours.",
+  "r": "Ne vous appuyez plus sur la convention de 1995 : c'est ce texte de 2025 qui fait foi. Retirez de vos contrats toute clause qui restreindrait les droits qu'il garantit."
+ },
+ "5": {
+  "e": "La convention ne peut pas servir à réduire les avantages qu'un travailleur avait déjà acquis avant sa signature. Ses avantages ne se cumulent pas avec des avantages plus anciens ayant le même objet : si le nouvel avantage est supérieur, c'est lui qui s'applique, sans double compte. Des accords d'entreprise plus favorables restent possibles.",
+  "r": "Faites l'inventaire des avantages déjà accordés (usage, accord d'établissement) : la convention ne peut pas les rogner. Pour un même objet, retenez le plus favorable, sans le cumuler avec l'ancien."
+ },
+ "6": {
+  "e": "La convention est à durée indéterminée et révisable au moins tous les cinq ans. Chaque partie peut la dénoncer ou la réviser avec un préavis de trois mois par lettre recommandée (copie au Ministre du Travail), mais aucune dénonciation n'est possible avant cinq ans d'application. Elle reste en vigueur pendant tout le préavis.",
+  "r": "Sachez que ce cadre est stable : pas de remise en cause avant cinq ans. Si votre organisation patronale envisage une révision, la procédure passe par un préavis formel de trois mois."
+ },
+ "7": {
+  "e": "Le Ministre du Travail peut, par arrêté, étendre l'application de la convention à d'autres syndicats, employeurs ou entreprises dont l'activité entre dans son champ. Un syndicat signataire qui fusionne avec un autre garde ses droits de signataire, à condition de notifier la fusion et de rester représentatif dans la branche.",
+  "r": "Même si votre entreprise n'a pas signé, l'extension ministérielle peut vous rendre la convention obligatoire dès lors que vous relevez du secteur minier : anticipez cette application."
+ },
+ "8": {
+  "e": "Employeurs et travailleurs doivent respecter la liberté syndicale et la liberté d'opinion. L'employeur ne peut pas fonder ses décisions (embauche, salaire, discipline, avancement…) sur l'appartenance syndicale, les opinions politiques ou religieuses, le genre ou l'origine des travailleurs, ni exercer de pression syndicale. En retour, les syndicats reconnaissent le pouvoir de direction de l'employeur. Un licenciement de délégué violant le droit syndical se règle d'abord à l'amiable, puis devant l'Inspection ou les tribunaux.",
+  "r": "Bâtissez vos décisions RH sur des critères objectifs et traçables : l'appartenance syndicale ou les opinions d'un salarié ne doivent jamais entrer en ligne de compte, sous peine de contentieux pour discrimination syndicale."
+ },
+ "9": {
+  "e": "Les élus syndicaux ont droit à des autorisations d'absence pour participer aux assemblées de leur organisation, sur présentation d'une convocation écrite dans les 48 heures. Le temps passé aux commissions paritaires est payé comme du travail effectif et compte pour les congés. Les absences doivent gêner le moins possible la marche du travail, et les convocations aux organismes paritaires réglementaires doivent être communiquées à l'employeur sous 48 heures.",
+  "r": "Mettez en place une procédure simple de gestion de ces absences (réception de la convocation, délai de 48 h) : elles sont un droit et le temps de commission paritaire est rémunéré, mais vous pouvez en organiser le calendrier pour préserver l'activité."
+ },
+ "10": {
+  "e": "Chaque entreprise met à disposition des syndicats des panneaux d'affichage en nombre suffisant, placés près des entrées/sorties. Les communications (y compris digitales) doivent rester strictement professionnelles ou syndicales, sans caractère polémique, et un exemplaire est transmis à l'employeur avant affichage.",
+  "r": "Prévoyez des panneaux dédiés et un circuit clair : l'employeur reçoit une copie avant affichage. Vous ne contrôlez pas le contenu syndical, mais vous pouvez rappeler l'exigence d'un objet professionnel et non polémique."
+ },
+ "11": {
+  "e": "Pour permettre aux syndicats de jouer leur rôle, l'employeur leur apporte, dans la mesure du possible, une assistance technique, financière et matérielle, selon des modalités internes à chaque entreprise. Il doit aussi assurer la formation des délégués syndicaux pour qu'ils exercent efficacement leur mission.",
+  "r": "Formalisez par une procédure interne la nature de l'assistance apportée aux syndicats et le plan de formation des délégués : c'est une obligation, et des délégués bien formés facilitent un dialogue social de qualité."
+ },
+ "12": {
+  "e": "Les délégués syndicaux sont obligatoirement élus selon les règles légales. Si plusieurs établissements d'une même localité n'atteignent pas seuls le seuil d'effectif, on additionne leurs effectifs pour organiser l'élection. Les candidats inscrits bénéficient d'une protection dès l'affichage des listes, et le délégué reste protégé six mois après la fin de son mandat.",
+  "r": "Organisez les élections dans les règles et surveillez les seuils d'effectifs cumulés par localité. Attention : la protection court dès l'affichage des candidatures et se prolonge six mois après le mandat — intégrez-le avant toute décision touchant un (ex-)délégué."
+ },
+ "13": {
+  "e": "Être délégué syndical ne doit pénaliser ni la rémunération ni la promotion. Le délégué ne peut pas être muté de site contre son gré pendant son mandat sauf appréciation de l'Inspecteur du Travail, ne bénéficie d'aucun traitement de faveur, et dispose d'un crédit d'heures syndicales plafonné à 24 heures par mois, imputées sur son horaire normal.",
+  "r": "Traitez le délégué exactement comme les autres pour la paie et les promotions, sans faveur ni sanction déguisée. Respectez son crédit de 24 h/mois et ne le mutez pas sans son accord ni l'aval de l'Inspection."
+ },
+ "14": {
+  "e": "En cas de faute grave prouvée d'un délégué syndical, l'employeur peut le mettre à pied à titre conservatoire en attendant la décision de l'Inspecteur du Travail. Si l'autorisation de licencier est refusée, l'employeur peut renoncer ou passer outre, mais il s'expose alors à payer les droits fixés par le tribunal si le licenciement est jugé abusif.",
+  "r": "Ne licenciez jamais un délégué sans passer par l'Inspection du Travail. La mise à pied conservatoire est possible en cas de faute grave, mais licencier malgré un refus d'autorisation est un pari risqué et coûteux."
+ },
+ "15": {
+  "e": "Le délégué syndical représente l'ensemble des travailleurs de l'entreprise. Il peut se faire assister d'un responsable de sa hiérarchie syndicale lors de ses visites à la Direction ou à l'occasion des visites de l'Inspection. Les représentants s'efforcent de régler à l'amiable les conflits individuels ou collectifs avec l'employeur.",
+  "r": "Accueillez le délégué comme l'interlocuteur de tous les salariés et acceptez la présence d'un appui syndical externe lors des échanges : c'est un droit, et cela favorise un règlement amiable des différends."
+ },
+ "16": {
+  "e": "Un travailleur ayant au moins un an d'ancienneté, mandaté par un syndicat pour une fonction syndicale, peut réintégrer son entreprise à la fin de son mandat. Le détachement dure normalement 3 ans, renouvelable une fois ; au retour, il retrouve la catégorie correspondant à sa qualification. La demande de réintégration se fait entre un mois avant et un mois après la fin du mandat.",
+  "r": "Gérez le détaché syndical comme une suspension du contrat : conservez son dossier et sa qualification. À l'issue du mandat (dans la fenêtre d'un mois avant/après), réintégrez-le à sa catégorie antérieure."
+ },
+ "17": {
+  "e": "Avant tout recours à la justice, les parties s'engagent à épuiser les moyens de conciliation pour les différends liés à l'application ou à l'interprétation de la convention. Si la conciliation interne échoue, elles saisissent l'Administration du Travail.",
+  "r": "Privilégiez toujours la conciliation avant le contentieux : c'est une obligation conventionnelle, souvent plus rapide et moins coûteuse. Documentez vos tentatives de règlement amiable."
+ },
+ "18": {
+  "e": "Chaque entreprise institue une commission paritaire d'interprétation et de conciliation, composée de trois délégués syndicaux et trois représentants de l'employeur, présidée à tour de rôle. Elle se réunit dans les six jours ouvrables suivant une demande. Si elle ne trouve pas d'accord, elle saisit la commission de la Branche et l'Inspecteur du Travail avec un rapport.",
+  "r": "Mettez en place cette commission paritaire dans votre entreprise et respectez le délai de réunion de six jours : c'est le premier étage du règlement des désaccords d'interprétation."
+ },
+ "19": {
+  "e": "Au niveau de la branche, une commission d'interprétation et de conciliation (présidée par l'Inspection du Travail, avec trois représentants syndicaux et trois patronaux) traite les différends non réglés en entreprise. Un avis rendu à l'unanimité a la même valeur juridique que la convention elle-même. En parallèle, chaque entreprise met en place un comité des relations de travail qui réunit direction et délégués une fois par mois.",
+  "r": "Sachez que la commission de branche est l'échelon supérieur et que ses avis unanimes ont force conventionnelle. Installez aussi le comité mensuel des relations de travail : c'est un outil concret de prévention des conflits."
+ },
+ "20": {
+  "e": "La convention reconnaît le droit de grève dans les conditions prévues par la loi. La grève y est définie comme un arrêt collectif du travail, partiel ou total, décidé par les travailleurs via leur délégation syndicale pour faire aboutir des revendications professionnelles ou économiques non satisfaites. Elle doit reposer sur de telles revendications et être précédée d'un préavis.",
+  "r": "Retenez qu'une grève légale suppose des revendications professionnelles réelles et un préavis : une action sans ces conditions peut être contestée. Restez dans le cadre légal côté employeur comme côté salariés."
+ },
+ "21": {
+  "e": "Le préavis de grève se notifie par écrit à la direction, qui saisit l'administration du travail. Il doit indiquer les motifs et les revendications du syndicat. Sa durée est de dix jours ouvrables.",
+  "r": "Dès réception d'un préavis, transmettez-le sans délai à l'Inspection du Travail et utilisez les dix jours ouvrables pour négocier : ce délai est fait pour tenter d'éviter la grève."
+ },
+ "22": {
+  "e": "Dès la notification du préavis, l'administration du travail lance la négociation sous l'égide de l'Inspecteur. Les parties doivent se rendre à toutes les réunions de conciliation. Si aucun accord n'est trouvé au dixième et dernier jour, l'Inspecteur constate l'échec par procès-verbal ; les salariés peuvent alors cesser le travail tout en restant disponibles pour la négociation et pour le service minimum. L'avis de grève doit préciser la date de début.",
+  "r": "Participez à toutes les convocations de l'Inspection pendant le préavis : l'absence vous dessert. Ce n'est qu'après le PV d'échec que la grève peut démarrer, à la date annoncée."
+ },
+ "23": {
+  "e": "Même en grève, un service minimum doit être assuré là où l'arrêt mettrait en danger les personnes, les biens ou les installations : maintenance des équipements et fournitures (eau, électricité, carburants), sécurité et environnement, santé, hébergement et restauration. Trois jours avant l'arrêt, une commission paritaire (2 représentants de chaque partie) fixe l'effectif minimum ; à défaut d'accord, l'Inspecteur tranche. Le PV est adressé à l'Inspection.",
+  "r": "Identifiez à l'avance vos services essentiels et préparez le dialogue paritaire sur l'effectif minimum : cette anticipation protège la sécurité du site et évite un blocage total en cas de grève."
+ },
+ "24": {
+  "e": "Le travailleur réquisitionné pour assurer le service minimum et qui ne se présente pas à son poste commet une faute lourde.",
+  "r": "Notifiez clairement et par écrit les réquisitions de service minimum : l'absence à ce poste est une faute lourde, mais elle doit reposer sur une réquisition régulière et prouvée."
+ },
+ "25": {
+  "e": "Sont interdits pendant la grève : empêcher par menaces ou intimidations l'accès aux lieux de travail, inciter à la violence, impliquer les communautés dans un conflit interne, et les actes de sabotage. Le responsable de tels faits peut être licencié pour faute lourde. En cas d'occupation dangereuse des lieux, l'employeur peut demander l'intervention de la force publique. Nul ne peut, par la force, empêcher le travail de ceux qui veulent travailler.",
+  "r": "Rappelez ces limites au personnel : le droit de grève n'autorise ni le blocage par la force, ni le sabotage, ni les entraves. Documentez précisément tout fait de ce type avant d'engager une sanction pour faute lourde."
+ },
+ "26": {
+  "e": "La grève suspend le contrat, elle ne le rompt pas : le gréviste retrouve son emploi à la fin et ne peut être sanctionné pour avoir fait grève, sauf abus. Pendant la grève, l'employeur ne paie pas les salaires des grévistes. Ses obligations envers le personnel non gréviste resté à disposition restent entières.",
+  "r": "Ne payez pas les journées de grève des grévistes, mais n'en tirez aucune sanction ni discrimination : c'est un droit protégé. En revanche, vos obligations envers les non-grévistes disponibles demeurent."
+ },
+ "27": {
+  "e": "La grève ne suspend pas le mandat des délégués syndicaux : ils continuent d'exercer leurs fonctions pendant le conflit.",
+  "r": "Continuez à traiter les délégués syndicaux comme tels durant une grève : leur mandat et leur protection restent pleinement en vigueur."
+ },
+ "28": {
+  "e": "Avoir fait grève ne peut donner lieu à aucune mesure discriminatoire de l'employeur en matière de formation, d'évaluation, de rémunération ou d'avantages sociaux.",
+  "r": "Veillez à ce qu'après une grève, aucune décision (notation, formation, prime, avancement) ne défavorise les grévistes : ce serait une discrimination sanctionnable."
+ },
+ "29": {
+  "e": "L'apprentissage est une forme de formation destinée aux jeunes ayant un niveau scolaire donné, pour acquérir une qualification sanctionnée par un diplôme professionnel. Les règles du contrat d'apprentissage et de la formation sont celles de la loi.",
+  "r": "Si vous recourez à l'apprentissage, encadrez-le par un vrai contrat conforme à la loi : c'est un outil de formation, pas une main-d'œuvre à bas coût."
+ },
+ "30": {
+  "e": "Vu la spécificité du secteur minier, l'employeur s'engage à assurer la formation et le perfectionnement des travailleurs. Des stages et cours spécialisés peuvent être organisés pour les postes particuliers, en complément de la formation sur le tas. L'entreprise facilite l'acquisition de compétences dans les disciplines liées à son activité.",
+  "r": "Intégrez la formation professionnelle dans votre gestion RH : ce n'est pas une simple faculté mais un engagement de la convention, particulièrement utile sur les postes techniques du secteur minier."
+ },
+ "31": {
+  "e": "L'employeur peut exiger que le personnel suive les formations nécessaires à l'emploi et à l'évolution technique, sans baisse de salaire. Il prend en charge tous les frais de formation et verse la Contribution à la Formation Professionnelle. En contrepartie d'un stage, le travailleur doit rester au service de l'employeur au moins aussi longtemps que la durée du stage ; sinon, il rembourse les frais.",
+  "r": "Financez les formations que vous imposez, sans toucher au salaire. Pour les stages coûteux, prévoyez par écrit la clause de maintien en poste (durée équivalente au stage) et de remboursement en cas de départ anticipé."
+ },
+ "32": {
+  "e": "Échouer à l'examen d'une formation ne peut pas justifier un licenciement : le travailleur garde son poste et ses avantages. Obtenir un diplôme ne donne pas droit automatiquement à un classement supérieur : cela suppose un poste vacant, et même alors le reclassement n'est pas automatique ; mais les diplômés ont priorité à l'essai en cas de vacance ou de création de poste.",
+  "r": "Ne sanctionnez pas un échec en formation. Expliquez clairement à vos salariés qu'un nouveau diplôme ne vaut pas promotion automatique : il donne une priorité à l'essai lorsqu'un poste correspondant se libère."
+ },
+ "33": {
+  "e": "L'employeur peut recruter directement, mais doit donner la priorité aux Guinéens conformément à la législation sur le contenu local. Le travailleur licencié pour motif économique ou après une longue maladie conserve pendant deux ans la priorité d'embauche pour le même emploi.",
+  "r": "Documentez votre politique de contenu local et la priorité aux candidats guinéens. Tenez un registre des salariés licenciés pour motif économique ou longue maladie : ils gardent deux ans une priorité de réembauche."
+ },
+ "34": {
+  "e": "Les emplois vacants sont portés à la connaissance du personnel par affichage ou voie électronique. Le travailleur licencié pour suppression d'emploi garde un an la priorité de recrutement dans sa catégorie, prolongée une seconde année (avec possibilité d'un essai d'un mois), puis elle s'éteint. En cas de vacance, l'employeur prévient l'intéressé, qui doit se présenter sous huit jours ouvrables. Cette priorité s'étend au salarié parti exercer un mandat électif.",
+  "r": "Affichez systématiquement les postes vacants et tenez à jour les coordonnées des anciens salariés prioritaires. Respectez le délai de huit jours pour leur réponse et la durée de deux ans de la priorité."
+ },
+ "35": {
+  "e": "L'embauche définitive est précédée obligatoirement d'une visite médicale de pré-embauche et d'une période d'essai écrite, dans les limites du Code du travail. Pendant l'essai, chaque partie peut rompre sans indemnité ni préavis. Avant la fin de l'essai, l'employeur doit informer le travailleur de sa décision (confirmation, non-confirmation, renouvellement) ; à défaut, l'essai est réputé concluant.",
+  "r": "Formalisez toujours la période d'essai par écrit et organisez la visite médicale de pré-embauche. Surtout, notifiez votre décision avant le terme de l'essai : le silence vaut confirmation du salarié."
+ },
+ "36": {
+  "e": "Pour ses besoins, l'employeur peut conclure des contrats à terme imprécis via une lettre d'engagement, dans la limite de la durée légale. Il peut aussi recourir à des entreprises de travail temporaire dans les conditions du Code du travail.",
+  "r": "Encadrez les engagements occasionnels par une lettre écrite et surveillez la durée maximale légale : au-delà, le risque de requalification en contrat permanent est réel."
+ },
+ "37": {
+  "e": "L'engagement définitif fait suite à la période d'essai. Si l'employeur embauche à des conditions différentes de celles de l'essai, il doit préciser par écrit l'emploi, le classement, la rémunération et les avantages, que le travailleur signe avec la mention « lu et approuvé » s'il accepte.",
+  "r": "À la fin de l'essai, remettez un écrit clair détaillant emploi, classement, salaire et avantages, signé « lu et approuvé » : cela sécurise l'accord et prévient les litiges ultérieurs."
+ },
+ "38": {
+  "e": "À l'embauche de diplômés, l'employeur s'efforce de faire correspondre le poste au profil. Les diplômes de référence vont du CEP au diplôme universitaire (CEP, BEPC, CAP pour les ouvriers qualifiés, BTS pour l'encadrement moyen, DU pour l'encadrement supérieur). Avec l'accord écrit du candidat, on peut recruter en dessous du seuil ; le salarié ne pourra alors pas invoquer son diplôme pour un reclassement, mais pourra postuler à un poste équivalent en cas de vacance.",
+  "r": "Utilisez la grille des diplômes comme repère de classement. Si vous recrutez un diplômé sous son niveau, obtenez son accord écrit et expliquez-lui qu'il devra postuler à une vacance pour valoriser son diplôme."
+ },
+ "39": {
+  "e": "Toute modification importante du contrat doit être discutée et approuvée avant d'être notifiée par écrit. Pour raison d'inaptitude, de situation économique ou de réorganisation, l'employeur peut proposer une modification réduisant certains avantages ; avec l'accord de principe du salarié, elle prend effet après un mois. Si le salarié refuse, la rupture est imputée à l'employeur (préavis et indemnités de licenciement dus). Si l'ancien poste est rétabli, le salarié a un an de priorité pour le réoccuper.",
+  "r": "Ne modifiez jamais unilatéralement un élément essentiel du contrat : discutez, obtenez l'accord et notifiez par écrit. Sachez qu'un refus légitime du salarié transforme la rupture en licenciement à votre charge."
+ },
+ "40": {
+  "e": "Le reclassement affecte le travailleur à une catégorie supérieure, à condition que le poste soit vacant et qu'il ait les aptitudes requises ; il résulte d'une décision de la Direction et d'une évaluation professionnelle, et peut être précédé d'un essai. Il peut aussi servir à récompenser une performance exceptionnelle ou à retenir un salarié qui démissionne.",
+  "r": "Objectivez vos reclassements par une évaluation professionnelle et l'existence d'un poste vacant : c'est aussi un levier de rétention pour un salarié performant tenté de partir."
+ },
+ "41": {
+  "e": "En cas de nécessité de service, l'employeur peut affecter momentanément un travailleur à un poste de catégorie inférieure, pour trois mois maximum. Le salarié conserve alors le salaire qu'il percevait avant cette mutation provisoire.",
+  "r": "Une mutation provisoire vers un poste inférieur est possible mais limitée à trois mois et sans baisse de salaire : encadrez-la par écrit et respectez ce plafond de durée."
+ },
+ "42": {
+  "e": "L'intérim consiste à remplacer momentanément un collègue occupant un poste de niveau supérieur. Ce remplacement ne donne pas automatiquement les avantages du poste, mais le travailleur perçoit, après un mois d'intérim, une indemnité égale à la différence de salaire. L'intérim ne peut dépasser six mois (encadrement) ou trois mois (exécution/moyen), sauf maladie, accident ou formation du titulaire. Avant la fin du délai, l'employeur doit soit reclasser l'intérimaire, soit le rétablir dans ses fonctions.",
+  "r": "Suivez de près la durée des intérims et versez l'indemnité différentielle dès le deuxième mois. À l'approche du plafond (3 ou 6 mois), tranchez : reclassement ou retour au poste — ne laissez pas l'intérim s'éterniser."
+ },
+ "43": {
+  "e": "Une travailleuse enceinte mutée à un autre poste pour raison de santé conserve au moins son salaire antérieur pendant toute la mutation. À l'issue de la grossesse, elle reprend son poste habituel ou un poste équivalent.",
+  "r": "En cas de grossesse nécessitant un changement de poste, maintenez le salaire et garantissez le retour au poste (ou équivalent) : c'est une protection à appliquer sans discussion."
+ },
+ "44": {
+  "e": "Si les mutations ne sont pas prévues au contrat, aucun travailleur ne peut être muté sans son consentement vers un établissement situé dans une autre commune ou localité que son lieu de travail habituel.",
+  "r": "Insérez dès l'embauche une clause de mobilité si votre activité l'exige : sans clause, une mutation géographique hors localité requiert l'accord du salarié."
+ },
+ "45": {
+  "e": "Un travailleur ayant occupé plusieurs emplois dans des entreprises du secteur minier conserve l'ancienneté acquise avant sa dernière embauche, avec les avantages qui s'y rattachent — sauf si son départ précédent résultait d'une faute grave constatée par l'Inspection ou la justice.",
+  "r": "À l'embauche d'un profil venu d'une autre entreprise minière, reconstituez son ancienneté sectorielle : elle ouvre des droits (prime d'ancienneté, indemnités), sauf départ pour faute grave avérée."
+ },
+ "46": {
+  "e": "Les employeurs s'engagent à une politique effective de promotion du contenu local : dès le recrutement d'un expatrié sur un poste non statutaire, identifier le Guinéen appelé à le remplacer. La durée du contrat des expatriés ne peut dépasser celle prévue par les textes.",
+  "r": "Pour chaque expatrié recruté, désignez et formez son successeur guinéen : documentez ce plan de « localisation », attendu par la convention et la réglementation sur le contenu local."
+ },
+ "47": {
+  "e": "Toute sanction disciplinaire doit être prévue par le Code du travail ou le règlement intérieur et précédée d'une demande d'explication ou d'un entretien, où le salarié peut être assisté. L'échelle est : avertissement écrit, blâme, mise à pied de 1 à 6 jours, licenciement. Les sanctions doivent être proportionnelles à la faute, signifiées par écrit, et ne peuvent plus être invoquées après 3 mois (avertissement, blâme) ou 6 mois (mise à pied).",
+  "r": "Respectez toujours le contradictoire (demande d'explication ou entretien avec possibilité d'assistance) et écrivez la sanction. Veillez à la proportionnalité et aux délais de prescription (3 et 6 mois) avant de vous appuyer sur un antécédent."
+ },
+ "48": {
+  "e": "Les employeurs peuvent recourir au tâcheronnat et à la sous-traitance dans le cadre légal, pour régler des besoins ponctuels de main-d'œuvre et soutenir les PME. La sous-traitance vise plutôt des activités non liées au cœur de métier : les travaux du cœur de métier ou permanents ne peuvent être sous-traités si l'entreprise dispose des compétences et équipements, et la sous-traitance ne s'impose que faute de main-d'œuvre qualifiée en interne.",
+  "r": "Réservez la sous-traitance aux activités hors cœur de métier ou aux compétences absentes en interne : sous-traiter un travail permanent que vos équipes peuvent faire est contraire à la convention et fragilise vos relations sociales."
+ },
+ "49": {
+  "e": "Sauf clause du contrat ou autorisation écrite de l'employeur, le travailleur ne peut, même hors de ses heures, exercer une activité professionnelle concurrente ou nuisible à l'entreprise. Il lui est aussi interdit de divulguer les informations acquises au service de l'employeur.",
+  "r": "Rappelez par écrit l'obligation de non-concurrence et de confidentialité. Pour une véritable clause de non-concurrence post-contrat, référez-vous aussi au Code du travail sur ses conditions de validité."
+ },
+ "50": {
+  "e": "Le contrat peut être suspendu dans les cas prévus par la loi ou la convention. La suspension ne touche que les obligations principales (fournir le travail, le rémunérer). Les obligations secondaires — logement, discrétion, loyauté, soins médicaux, ravitaillement payant, autres avantages convenus — continuent quand la réglementation l'impose. Employeur et travailleur peuvent aussi convenir d'accords individuels de suspension.",
+  "r": "Pendant une suspension, cessez le versement du salaire mais continuez d'assurer les avantages secondaires imposés (logement, soins…). Formalisez par écrit tout accord individuel de suspension."
+ },
+ "51": {
+  "e": "Une absence de courte durée pour un événement grave et fortuit touchant le foyer (incendie du logement, décès, accident ou maladie grave du conjoint, d'un ascendant ou d'un descendant vivant avec le travailleur) suspend le contrat sans le rompre, à condition que l'employeur soit prévenu dans les trois jours et que la durée corresponde à l'événement, fixée en accord avec lui.",
+  "r": "Traitez ces absences exceptionnelles comme une simple suspension, pas une faute : exigez l'information sous trois jours et convenez d'une durée raisonnable au regard de l'événement."
+ },
+ "52": {
+  "e": "Une maladie ou un accident non professionnels justifiant l'incapacité suspendent le contrat, dans la limite de six mois. Si un remplacement s'impose, le remplaçant est informé — devant un délégué syndical — du caractère provisoire de son emploi. Le travailleur doit faire constater son état par le service médical sous 48 h ; sinon, prévenir l'employeur du motif sous trois jours ouvrables. S'il ne peut se déplacer, l'employeur peut envoyer un soignant ou organiser l'évacuation, et saisit la CNSS.",
+  "r": "Mettez en place une procédure claire de déclaration de maladie (constat médical sous 48 h, information sous 3 jours). Informez tout remplaçant du caractère provisoire de son poste, en présence d'un délégué."
+ },
+ "53": {
+  "e": "Pendant la suspension pour maladie ou accident non professionnels, le travailleur reçoit directement une allocation de l'employeur, qui se fait ensuite rembourser par la CNSS.",
+  "r": "Avancez l'allocation au salarié malade puis récupérez-la auprès de la CNSS : anticipez ce circuit de trésorerie et gardez les justificatifs pour le remboursement."
+ },
+ "54": {
+  "e": "Après un accident du travail, le contrat est suspendu jusqu'à consolidation de la blessure. Si le travailleur ne peut reprendre normalement, l'employeur cherche à le reclasser, après avis du médecin traitant. Pendant l'indemnisation, l'incapacité temporaire donne droit à une allocation calculée pour maintenir l'ancien salaire (hors heures supplémentaires), déduction faite des sommes dues au titre de la sécurité sociale et de la prévoyance.",
+  "r": "Après un accident du travail, priorisez le reclassement sur avis médical plutôt que la rupture. Coordonnez l'allocation avec les prestations CNSS pour garantir le maintien de revenu prévu, sans double paiement."
+ },
+ "55": {
+  "e": "En cas de détention provisoire d'un travailleur mis en cause dans un délit ou un crime, le contrat est suspendu pendant toute la détention : plus d'obligation de travailler ni de rémunérer. Les obligations secondaires (logement, soins, ravitaillement) continuent de produire leurs effets.",
+  "r": "Une détention provisoire suspend le contrat, elle ne le rompt pas automatiquement : ne licenciez pas sur ce seul fait. Maintenez les avantages secordaires dus et attendez l'issue judiciaire."
+ },
+ "56": {
+  "e": "La mise en disponibilité demandée par le travailleur dépend de l'accord de l'employeur, sauf cas légitimes prévus par la loi. Elle peut atteindre deux ans (renouvellement compris), plus longtemps pour une mission politique. Elle couvre notamment l'assistance à un proche malade, une mission politique, une formation non financée, l'allaitement après maternité, le veuvage, ou le suivi d'un conjoint muté. Réservée aux salariés ayant un an d'ancienneté, elle n'est pas rémunérée ; le retour s'annonce un mois avant la fin.",
+  "r": "Traitez chaque demande de disponibilité au cas par cas (sauf cas légitimes obligatoires), par écrit : vérifiez l'ancienneté d'un an, la durée (2 ans max) et rappelez qu'elle n'est pas payée. Notez la date de reprise attendue."
+ },
+ "57": {
+  "e": "Si, après les six mois de suspension pour maladie (renouvelables une fois pour trois mois sur rapport médical), le travailleur ne peut reprendre, l'employeur peut le remplacer définitivement après notification par lettre recommandée. La rupture pour maladie ouvre droit, dès un an de service, à une indemnité (un mois de salaire de base à un an d'ancienneté, puis calcul selon l'article 66) ; sans l'ancienneté requise, l'indemnité équivaut au préavis (un mois max). Le salarié remplacé garde un an de priorité de réembauche.",
+  "r": "Ne rompez pour maladie prolongée qu'après épuisement des délais (6 mois + 3) et par lettre recommandée. Calculez l'indemnité due selon l'ancienneté et informez le salarié de sa priorité de réembauche d'un an."
+ },
+ "58": {
+  "e": "Au décès du travailleur, le salaire des jours travaillés, l'allocation de congé et les indemnités acquises reviennent aux ayants droit. Avec au moins un an d'ancienneté, l'employeur verse une indemnité équivalente à l'indemnité de fin de carrière (retraite) ; sans l'ancienneté requise pour la retraite, elle équivaut à l'indemnité de licenciement. Seuls les ayants droit en ligne directe y ont droit. Si le travailleur avait été déplacé par l'employeur, celui-ci rapatrie le corps et les effets, sur demande avant l'enterrement.",
+  "r": "En cas de décès, calculez rapidement les sommes dues aux ayants droit en ligne directe et vérifiez l'ancienneté pour déterminer l'indemnité. Si vous aviez déplacé le salarié, prévoyez le rapatriement du corps si la famille le demande à temps."
+ },
+ "59": {
+  "e": "L'employeur peut rompre le contrat d'un salarié condamné par une décision de justice définitive, ou condamné à une peine de prison ferme pour délit ou crime (sans droit à réparation), ou poursuivi et condamné à la suite d'une faute professionnelle. Dans tous les cas de poursuites, le travailleur doit informer l'employeur de son absence sous 48 heures, l'employeur en appréciant les suites.",
+  "r": "Attendez une condamnation définitive avant de rompre sur ce fondement : une simple poursuite ne suffit pas. Exigez l'information de l'absence sous 48 h et conservez les pièces judiciaires au dossier."
+ },
+ "60": {
+  "e": "La perte de confiance ne suffit pas, à elle seule, à justifier un licenciement. En revanche, les faits précis qui la fondent peuvent constituer des fautes du travailleur et justifier la rupture, conformément à la loi.",
+  "r": "N'invoquez jamais « la perte de confiance » comme motif : appuyez-vous sur les faits fautifs concrets qui la sous-tendent, prouvés et qualifiés, sous peine de licenciement abusif."
+ },
+ "61": {
+  "e": "La rupture à l'initiative du travailleur prend deux formes. La démission doit être formelle et écrite (lettre, courriel), donnée librement à tout moment sous réserve du préavis — que les parties peuvent d'un commun accord ne pas exécuter. L'abandon de poste est une absence prolongée sans autorisation de huit jours ouvrables, traité selon le Code du travail ou le règlement intérieur.",
+  "r": "N'assimilez jamais une absence à une démission : la démission exige un écrit. Pour un abandon de poste (8 jours), suivez scrupuleusement la procédure du Code et du règlement intérieur avant toute décision."
+ },
+ "62": {
+  "e": "En cas de diminution d'activité ou de réorganisation, l'employeur peut procéder à des licenciements collectifs. Il fixe l'ordre des départs selon les aptitudes professionnelles, l'ancienneté, les charges de famille et le statut des délégués, après avis des délégués syndicaux. À aptitudes égales, les moins anciens partent d'abord (ancienneté majorée d'un an pour le mariage et par enfant à charge). Le projet est communiqué à l'Inspection pour contrôle et avis, et les licenciés ont une priorité de réengagement (article 34).",
+  "r": "Un licenciement collectif est très encadré : recueillez l'avis des délégués, établissez un ordre des licenciements objectif, transmettez le projet à l'Inspection avant d'agir, et tenez la liste des priorités de réembauche."
+ },
+ "63": {
+  "e": "La partie qui rompt le contrat notifie sa décision par écrit à l'autre : lettre recommandée avec accusé de réception, remise en mains propres contre décharge, ou, à défaut, par huissier. Le préavis court à compter de cette notification. Cette règle vaut pour tous les travailleurs.",
+  "r": "Notifiez toute rupture par un écrit daté et prouvable (recommandé, décharge ou huissier) : c'est le point de départ du préavis et votre première preuve en cas de litige."
+ },
+ "64": {
+  "e": "La durée minimale de préavis est d'un mois pour les ouvriers et employés, deux mois pour les contremaîtres et agents de maîtrise, trois mois pour les cadres et assimilés. Le travailleur qui ne respecte pas le préavis est traité selon le Code du travail.",
+  "r": "Appliquez ces durées selon la catégorie du salarié et vérifiez qu'elles ne sont pas inférieures au Code : en cas de différence, retenez la plus favorable au salarié."
+ },
+ "65": {
+  "e": "Chaque partie peut se dispenser du préavis en versant à l'autre une indemnité compensatrice égale à ce que le travailleur aurait perçu pendant le préavis restant. Le travailleur licencié pour faute grave ou lourde n'a droit ni au préavis ni à cette indemnité.",
+  "r": "Si vous dispensez le salarié de préavis, payez l'indemnité compensatrice correspondante. Seules la faute grave ou lourde, dûment établies, permettent de ne rien verser à ce titre."
+ },
+ "66": {
+  "e": "Le salarié licencié ayant au moins l'ancienneté ouvrant droit au congé annuel a droit à une indemnité de licenciement, distincte du préavis. Elle se calcule, par année de présence, en pourcentage du salaire brut moyen des trois derniers mois (hors bonus/gratification/prime annuelle) : 33 % pour les 5 premières années, 35 % de la 6e à la 10e, 40 % au-delà, en tenant compte des fractions d'année. Elle n'est pas due en cas de faute grave ou lourde.",
+  "r": "Maîtrisez ce barème (33/35/40 %) et la base de calcul (salaire brut moyen des 3 derniers mois, hors primes annuelles) : c'est la formule de référence pour chiffrer une indemnité de licenciement dans le secteur minier."
+ },
+ "67": {
+  "e": "À son départ, tout travailleur a droit à un certificat de travail mentionnant exclusivement le nom et l'adresse de l'employeur, les dates d'entrée et de sortie, la nature de l'emploi ou les postes successifs et leurs périodes, avec les catégories professionnelles correspondantes.",
+  "r": "Remettez systématiquement le certificat de travail à la sortie, limité aux mentions autorisées : n'y ajoutez aucune appréciation ni motif de départ."
+ },
+ "68": {
+  "e": "Le salaire dépend de l'emploi occupé et évolue avec les qualités professionnelles du salarié. Il peut être fixé au temps ou au rendement. La convention fixe le salaire de base minimum (seuil d'entrée) : pour les employés et ouvriers non qualifiés, 2 600 000 GNF en société mère et 1 820 000 GNF chez les sous-traitants (70 %) ; pour les agents de maîtrise, 8 500 000 GNF en société mère et 5 950 000 GNF chez les sous-traitants (70 %).",
+  "r": "Vérifiez que vos grilles respectent ces planchers, y compris la règle des 70 % pour les sous-traitants. Ces montants sont un minimum sectoriel : ne rémunérez jamais en dessous."
+ },
+ "69": {
+  "e": "À travail égal ou de valeur égale, l'employeur doit assurer l'égalité de rémunération entre tous les travailleurs, quels que soient l'origine, la nationalité, le sexe, l'âge ou le statut. Les surcoûts liés au recrutement d'expatriés à l'étranger peuvent toutefois être pris en compte pour fixer leur salaire.",
+  "r": "Auditez vos rémunérations pour détecter tout écart injustifié à poste équivalent : l'égalité salariale est une obligation. Les différences pour les expatriés doivent être objectivement justifiées par les contraintes de recrutement."
+ },
+ "70": {
+  "e": "La rémunération au rendement part du salaire minimum de la catégorie de l'emploi. Elle doit être calibrée pour qu'un ouvrier de capacité moyenne puisse dépasser ce minimum ; les normes de rendement sont fixées paritairement. Des mesures évitent le surmenage, les indications sont données à l'avance, et on ne peut imposer un rythme supérieur à celui de l'atelier ou du chantier, sauf dérogation réglementaire.",
+  "r": "Si vous payez au rendement, fixez les normes avec les représentants du personnel et garantissez qu'un rythme normal dépasse le minimum. Encadrez la charge pour prévenir le surmenage et donnez les objectifs à l'avance."
+ },
+ "71": {
+  "e": "Les salaires se paient selon la loi, pendant les heures et sur les lieux de travail, ou par virement bancaire ou via la microfinance sur le compte choisi par le travailleur. En cas de contestation du bulletin de paie, le travailleur peut demander la justification des éléments de calcul et se faire assister d'un responsable syndical.",
+  "r": "Privilégiez des moyens de paiement traçables et respectez les délais légaux. Soyez prêt à justifier tout élément du bulletin en cas de contestation : une paie transparente prévient les conflits."
+ },
+ "72": {
+  "e": "Le bulletin de paie doit comporter les mentions légales (identité, catégorie, taux, heures normales et supplémentaires, primes, indemnités, retenues, raison sociale…). L'employeur classe les emplois en catégories professionnelles selon la réglementation, tient une liste des postes par catégorie, et peut créer un système d'évolution par classes et échelons, voire une commission paritaire d'avancement. Un travailleur affecté à des travaux de catégories différentes garde le salaire minimum de la qualification la plus élevée exercée.",
+  "r": "Établissez et tenez à jour votre classification des emplois et une grille de salaires, idéalement concertée avec les syndicats. Émettez des bulletins complets et garantissez à chacun le salaire de la catégorie la plus élevée qu'il exerce réellement."
+ },
+ "73": {
+  "e": "Après un accident du travail ou une maladie professionnelle survenu pendant le contrat, l'employeur doit, après guérison, s'efforcer de trouver au travailleur un poste adapté à ses nouvelles aptitudes et de maintenir son salaire antérieur. Le cas du travailleur handicapé par la maladie est réglé par la CNSS après avis du Service de Santé au Travail.",
+  "r": "Après un accident du travail, cherchez activement un reclassement adapté en maintenant le salaire, plutôt que d'envisager la rupture. Associez le Service de Santé au Travail et la CNSS à la décision."
+ },
+ "74": {
+  "e": "La durée du travail est de 40 heures par semaine, sauf horaires d'équivalence ou de modulation. Les heures supplémentaires de jour sont majorées de 30 % (40e-44e h), 60 % (au-delà), 65 % (dimanches et fériés), avec +20 % pour l'heure de nuit en poste normal ; celles de nuit de 60 % en semaine et 100 % les dimanches et fériés. La nuit va de 20 h à 6 h. Des horaires d'équivalence existent (42 h hôpitaux/hôtellerie, 48 h chauffeurs, 52 h chauffeurs d'astreinte, 55 h surveillance/gardiennage). Un repos compensateur peut remplacer la majoration.",
+  "r": "Paramétrez précisément vos taux d'heures supplémentaires (30/60/65 %, nuit 60/100 %) et la plage de nuit 20 h-6 h. Vérifiez l'horaire d'équivalence applicable à chaque métier et tracez le choix majoration ou repos compensateur."
+ },
+ "75": {
+  "e": "Le travail de poste organise les travailleurs en équipes tournantes (rythme continu ou discontinu). Dans les entreprises fonctionnant sans interruption, les heures de « quart » (jour, nuit, dimanches et fériés) sont payées au même taux que le travail de jour en semaine, avec équivalence mensuelle et égalisation par le repos compensateur hebdomadaire. Au-delà de 8 heures continues, un casse-croûte et une boisson non alcoolisée sont fournis, ou à défaut une prime compensatrice.",
+  "r": "Organisez le travail posté avec un repos compensateur hebdomadaire qui rétablit l'équilibre, et prévoyez le casse-croûte (ou prime) au-delà de 8 heures continues : ces contreparties sont dues."
+ },
+ "76": {
+  "e": "Les primes sont des accessoires de salaire encadrés par la loi, destinés à motiver (production, qualité) ou à compenser des conditions de travail (salissure, chaleur, poussière, risques…). Leur liste n'est pas limitative et peut être modulée par accord paritaire entre syndicats et employeur dans chaque entreprise.",
+  "r": "Formalisez votre politique de primes par écrit et, pour les faire évoluer, passez par la négociation paritaire : cela sécurise juridiquement les primes et renforce leur effet mobilisateur."
+ },
+ "77": {
+  "e": "Tout travailleur du secteur a droit à une prime d'ancienneté, payée chaque mois avec le salaire et calculée en pourcentage du salaire minimum de sa catégorie de base : 2 % après deux ans, +1 % par an jusqu'à 15 ans, puis +0,5 % par an à partir de la 16e année. Les absences autorisées (congés, maladie dans la limite de 6 mois, accident du travail, permissions dans la limite de 11 jours, stage/mission, veuvage…) comptent dans l'ancienneté.",
+  "r": "Intégrez la prime d'ancienneté au calcul mensuel de la paie selon ce barème progressif. Tenez un décompte fiable de l'ancienneté en incluant les absences autorisées prévues."
+ },
+ "78": {
+  "e": "Une prime de panier est due au travailleur qu'une prolongation exceptionnelle du travail empêche de prendre son repas habituel ; son montant est fixé par l'entreprise. Elle n'est pas due si un casse-croûte au moins la remplace, et ne fait pas obstacle au paiement des heures supplémentaires.",
+  "r": "Fixez le montant de la prime de panier et déclenchez-la dès qu'une prolongation empêche le repas habituel. Elle se cumule avec les heures supplémentaires : ne les opposez pas."
+ },
+ "79": {
+  "e": "L'assiduité, c'est la présence régulière au poste et l'exécution normale des tâches. La prime d'assiduité, payée mensuellement ou annuellement, est instituée pour le personnel d'exécution qui remplit ces conditions (taux et modalités fixés par la Direction). Le personnel d'encadrement reçoit, lui, une gratification de fin d'année récompensant sa manière de servir, dont le montant est fixé par la Direction.",
+  "r": "Définissez clairement les critères d'assiduité et de gratification et communiquez-les : des règles transparentes rendent ces primes réellement motivantes et évitent le sentiment d'arbitraire."
+ },
+ "80": {
+  "e": "La prime d'intérim réajuste provisoirement le salaire du travailleur qui remplace un collègue à un poste de niveau supérieur. Elle est payée selon les modalités de l'article 42 et prend fin au terme de l'intérim.",
+  "r": "Reliez toujours la prime d'intérim aux règles de l'article 42 (indemnité différentielle après un mois, durée plafonnée) : c'est le même dispositif vu sous l'angle de la rémunération."
+ },
+ "81": {
+  "e": "Les risques particuliers du poste qui ne peuvent être éliminés (poussière, bruit, chaleur, effort, salissure…) imposent le port d'EPI et le respect des méthodes de travail, et ouvrent droit à une « prime de conditions de travail », dont le taux dépend de l'ampleur des risques (fixé par la Direction après avis du syndicat). Si les points de condition de travail (PCT) sont déjà intégrés au salaire de base, cette prime n'est pas payée séparément.",
+  "r": "Évaluez les risques poste par poste pour fixer, après avis syndical, la prime de conditions de travail — sans oublier les EPI qui restent obligatoires. Vérifiez si les PCT sont déjà intégrés au salaire pour éviter un double paiement."
+ },
+ "82": {
+  "e": "Pour le personnel en travail posté (système de quart), il est institué une prime de poste dont la modulation dépend du système de roulement ; son taux est fixé par la Direction après avis du Syndicat.",
+  "r": "Mettez en place une prime de poste pour vos équipes en quart, calibrée sur le roulement réel, et recueillez l'avis du syndicat avant d'en fixer le taux."
+ },
+ "83": {
+  "e": "Les indemnités compensent des frais liés au travail constituant des éléments de gêne : transport, expatriation, nourriture, logement, cherté de vie.",
+  "r": "Distinguez bien indemnités (remboursement/compensation de frais) et primes (accessoires de salaire) : leur régime social et fiscal diffère, et la confusion crée des erreurs de paie."
+ },
+ "84": {
+  "e": "Le travailleur envoyé en déplacement professionnel temporaire hors de son lieu habituel bénéficie d'une indemnité de déplacement ; les frais supplémentaires justifiés lui sont remboursés selon une procédure interne. Pendant le déplacement, il perçoit la même rémunération que s'il avait travaillé à l'horaire de l'entreprise.",
+  "r": "Adoptez une procédure interne claire de remboursement des frais de mission et garantissez le maintien de la rémunération pendant le déplacement : cela évite les litiges de notes de frais."
+ },
+ "85": {
+  "e": "L'employeur peut instituer d'autres primes ou indemnités améliorant la productivité. L'indemnité d'astreinte est due au travailleur qui, hors de son temps de travail ou pendant son repos hebdomadaire, doit rester en permanence à disposition (à domicile ou en un lieu déterminé) pour intervenir et assurer la continuité du service ou la sécurité ; son montant est fixé par la Direction selon la qualification et la durée de l'astreinte.",
+  "r": "Si vous imposez des astreintes, formalisez-les et indemnisez-les selon la qualification et la durée : une disponibilité permanente hors travail n'est jamais gratuite."
+ },
+ "86": {
+  "e": "Les jours et horaires de travail issus des récupérations et des heures supplémentaires sont fixés conformément aux dispositions légales, réglementaires et conventionnelles en vigueur.",
+  "r": "Alignez vos plannings de récupération et d'heures supplémentaires sur les textes en vigueur : cet article renvoie au cadre légal, à croiser avec l'article 74 pour les majorations."
+ },
+ "87": {
+  "e": "En cas d'interruption collective du travail due à un accident, à la force majeure ou aux intempéries, les heures perdues sont récupérées selon la réglementation. Le travailleur qui, sur ordre de l'employeur, est resté à disposition doit être payé au taux normal même s'il n'a pas effectivement travaillé.",
+  "r": "Si vous maintenez des salariés à disposition lors d'une interruption, payez-les au taux normal. Organisez la récupération des heures perdues dans le respect de la réglementation."
+ },
+ "88": {
+  "e": "Les jours fériés, chômés et payés sont ceux fixés par la loi et la réglementation. Les parties peuvent convenir à l'avance de « ponts » de jours fériés et de leurs modalités de récupération.",
+  "r": "Communiquez à l'avance votre calendrier de fériés et, si vous instaurez des ponts, fixez clairement les modalités de récupération avec les représentants du personnel."
+ },
+ "89": {
+  "e": "Les conditions particulières du travail des femmes et le congé de maternité sont réglés conformément à la loi et à la réglementation en vigueur.",
+  "r": "Reportez-vous au Code du travail pour les règles de maternité (congé, protection contre le licenciement, allaitement) : la convention y renvoie sans les réduire."
+ },
+ "90": {
+  "e": "Le travail des enfants et des jeunes est réglé par la loi. L'enfant (moins de 18 ans) ne peut travailler la nuit ; les moins de 18 ans ne peuvent occuper des postes insalubres ou dangereux (exposition à sévices, substances, bruit ou vibrations nocifs). Pas d'emploi avant 16 ans sauf apprenti. Le Code proscrit les pires formes de travail des enfants (esclavage, traite, recrutement forcé, prostitution) et protège les jeunes apprentis.",
+  "r": "Vérifiez rigoureusement l'âge et l'affectation des jeunes travailleurs : aucun mineur sur un poste dangereux ou de nuit, pas d'emploi avant 16 ans hors apprentissage. Le non-respect expose à de lourdes sanctions."
+ },
+ "91": {
+  "e": "Les travailleurs bénéficient de congés payés selon la loi, calculés à raison de deux jours et demi ouvrables par mois de service effectif. La date de départ est fixée par l'employeur après consultation du salarié. Certaines absences (accident du travail, maternité, appel sous les drapeaux dans la limite de 6 mois, maladie constatée, permissions exceptionnelles) ne sont pas déduites. Le cumul est interdit : chaque année, le salarié doit prendre les congés acquis, éventuellement fractionnés.",
+  "r": "Planifiez les congés en consultant les salariés et faites-les effectivement prendre chaque année : le cumul est interdit. Décomptez correctement les absences qui ne réduisent pas le droit à congé."
+ },
+ "92": {
+  "e": "L'allocation de congé annuel est calculée conformément aux dispositions du Code du travail.",
+  "r": "Pour le calcul de l'allocation de congé, référez-vous à la méthode du Code du travail : la convention n'y déroge pas."
+ },
+ "93": {
+  "e": "En cas de rupture ou d'expiration du contrat, quel que soit le motif, le travailleur qui n'a pas encore pris son congé a droit à une indemnité compensatrice, calculée sur les droits acquis depuis son dernier congé selon les textes en vigueur.",
+  "r": "À chaque départ, calculez l'indemnité compensatrice de congé sur les droits acquis non pris : elle est due même en cas de faute (contrairement à l'indemnité de licenciement)."
+ },
+ "94": {
+  "e": "Les voyages des travailleurs et de leur famille et le transport de leurs bagages à l'expiration du contrat relèvent des dispositions du contrat individuel ou, à défaut, de la politique de l'employeur.",
+  "r": "Précisez dans le contrat individuel (surtout pour les salariés déplacés ou expatriés) les modalités de voyage et de transport de fin de contrat : à défaut, c'est votre politique interne qui s'applique."
+ },
+ "95": {
+  "e": "Des permissions exceptionnelles d'absence, non déduites du congé et sans retenue de salaire, sont accordées pour événements familiaux, sur justificatif : mariage du salarié (3 jours) ; mariage d'un enfant, frère ou sœur (1 jour) ; décès du conjoint, d'un descendant ou ascendant direct (3 jours) ; décès d'un frère ou d'une sœur (2 jours) ; décès d'un beau-père ou d'une belle-mère (2 jours) ; naissance (2 jours) ; baptême (1 jour). L'employeur est avisé au plus tard dans les huit jours ; un déplacement peut prolonger la durée, sans rémunération.",
+  "r": "Intégrez ce barème de permissions à votre gestion des absences : elles sont payées et ne s'imputent pas sur les congés. Exigez les justificatifs (état civil) et l'information sous huit jours."
+ },
+ "96": {
+  "e": "En cas de déplacement de service prolongé au-delà de trois mois, le travailleur chef de famille dont la famille est restée sur place peut bénéficier d'un congé de détente rémunéré pour la rejoindre : 2 jours (60-200 km) ou 3 jours (au-delà de 200 km) par mois à partir du 3e mois, plus des délais de route (2 ou 3 jours). Il n'est accordé que si sa date se situe au moins deux semaines avant la fin du déplacement, et la rémunération est maintenue (hors périodes de formation).",
+  "r": "Pour les missions longues (plus de 3 mois), prévoyez le congé de détente selon la distance : c'est un droit rémunéré pour maintenir le lien familial. Anticipez son organisation dans le planning de mission."
+ },
+ "97": {
+  "e": "Quand l'employeur déplace un salarié de sa résidence habituelle pour exécuter le contrat, il doit lui fournir un logement correspondant à sa catégorie et conforme aux règles d'hygiène, ou lui payer une indemnité. Le logement doit convenir au travailleur et à sa famille ; le détail des avantages figure au contrat, et l'employeur peut accepter de transporter, à ses frais, les gros meubles personnels.",
+  "r": "Pour tout salarié déplacé, formalisez au contrat l'avantage logement (nature, standing, ou indemnité) : c'est une obligation quand le déplacement résulte de votre décision."
+ },
+ "98": {
+  "e": "La libération d'un logement de fonction obéit à des délais : au moins un mois après le préavis en cas de rupture ; immédiate en cas de départ sans préavis ou de condamnation pour crime/délit ; différée jusqu'à deux mois en cas de licenciement sans préavis (hors faute lourde) ; jusqu'à six mois pour la famille en cas de décès ; et à la retraite, quatre mois (prolongé jusqu'à la fin de l'année scolaire) sans aide à l'habitat, un mois avec aide. Ces délais peuvent être améliorés par accord.",
+  "r": "Appliquez ces délais de libération du logement selon le motif de départ, en tenant compte de la scolarité des enfants à la retraite : les gérer humainement et par écrit évite bien des tensions."
+ },
+ "99": {
+  "e": "Les parties instituent un entretien professionnel annuel entre le travailleur et sa hiérarchie, pour échanger sur l'activité de l'année écoulée à partir d'objectifs de performance définis à l'avance. Le salarié peut apporter des éclaircissements, formuler des suggestions et signaler ce qui influence son activité. C'est un outil de dialogue pour éviter préjugés, malentendus et incompréhensions.",
+  "r": "Mettez en place un entretien annuel structuré, fondé sur des objectifs fixés à l'avance : bien mené, c'est un puissant levier de motivation, d'équité d'évaluation et de prévention des conflits."
+ },
+ "100": {
+  "e": "Les parties reconnaissent l'importance des activités culturelles et de loisirs pour l'épanouissement des travailleurs et la qualité des relations professionnelles, et s'engagent à les promouvoir comme moyen de renforcer les bons rapports entre salariés, sans distinction.",
+  "r": "Soutenez des activités culturelles et de loisirs ouvertes à tous : au-delà du bien-être, c'est un investissement dans le climat social et la cohésion des équipes."
+ },
+ "101": {
+  "e": "Les conditions d'hygiène, de santé et de sécurité, au poste comme dans le cadre de vie, sont celles de la loi et des textes en vigueur. Les parties s'engagent à collaborer pour assurer la sécurité et la santé sur tous les lieux. Les salariés ne doivent subir ni violence, ni persécution, ni harcèlement moral, qu'il vienne de collègues ou de la hiérarchie.",
+  "r": "Faites de la santé-sécurité une responsabilité partagée et affichez une tolérance zéro pour la violence et le harcèlement moral, y compris managérial : mettez en place un dispositif de signalement et de traitement."
+ },
+ "102": {
+  "e": "L'employeur veille au respect des règles d'hygiène, de santé, de sécurité et d'environnement. Les parties créent des « Comités de Santé & Sécurité au travail » chargés d'élaborer des programmes et de soutenir les mesures protégeant l'intégrité physique des travailleurs ; les syndicats s'engagent à y participer activement, notamment pour la formation et l'information, y compris dans les cités d'habitation.",
+  "r": "Installez un Comité de Santé & Sécurité fonctionnel et associez-y les syndicats : c'est l'organe clé de la prévention. Documentez ses programmes et ses actions de formation."
+ },
+ "103": {
+  "e": "L'employeur fournit gratuitement les EPI et tenues nécessaires, selon une périodicité fixée par la Direction. Le travailleur est tenu de les porter et d'en assurer le bon entretien ; les conditions d'attribution, de renouvellement et de restitution sont précisées par l'employeur. Tout travailleur sur un poste à risque bénéficie d'une sensibilisation, et l'entreprise peut organiser une compétition de sécurité récompensée par des primes.",
+  "r": "Fournissez gratuitement les EPI et exigez leur port : c'est une double obligation. Formalisez le circuit d'attribution/renouvellement et documentez les sensibilisations, essentielles en cas d'accident."
+ },
+ "104": {
+  "e": "Le service de santé au travail et les services médicaux d'entreprise relèvent des dispositions légales et réglementaires, sans empêcher des avantages supérieurs par contrat ou accord d'entreprise. Les parties s'engagent à appliquer les dispositions du Code du travail relatives à la santé au travail.",
+  "r": "Assurez-vous de disposer d'un service de santé au travail conforme au Code : c'est un socle, sur lequel vous pouvez ajouter des avantages (couverture médicale renforcée, etc.)."
+ },
+ "105": {
+  "e": "Un guide général et des guides spéciaux d'hygiène, de sécurité, de santé et d'environnement sont distribués à tous les travailleurs présents sur site (y compris le personnel hors convention), pour leur faire connaître les procédures existantes et les risques liés au travail ainsi que les moyens de les éviter.",
+  "r": "Rédigez et diffusez des guides de sécurité clairs à tout le personnel sur site, sous-traitants compris : la traçabilité de cette information est précieuse en cas de contrôle ou d'accident."
+ },
+ "106": {
+  "e": "Sur chaque site, la Direction organise périodiquement des exercices pratiques d'application des procédures d'urgence, pour que le personnel sache quoi faire, quand, où et comment en situation critique.",
+  "r": "Programmez et consignez des exercices d'urgence réguliers (évacuation, premiers secours…) : la préparation concrète des équipes réduit la gravité des incidents."
+ },
+ "107": {
+  "e": "Des campagnes de sensibilisation, des compétitions entre unités et d'autres activités peuvent être organisées périodiquement par la Direction en matière d'hygiène, santé, sécurité et environnement, selon la politique interne, après avis du Comité compétent le cas échéant.",
+  "r": "Faites vivre la culture sécurité par des campagnes et défis réguliers : au-delà de la conformité, cela ancre durablement les bons réflexes chez les travailleurs."
+ },
+ "108": {
+  "e": "L'admission de personnes étrangères sur le site est soumise à autorisation préalable de la Direction. Toute personne autorisée doit respecter la réglementation et les instructions données pour préserver sa sécurité, celle des travailleurs et du site.",
+  "r": "Encadrez strictement les accès de visiteurs et prestataires (autorisation, consignes, accompagnement) : c'est une exigence de sécurité et une protection de votre responsabilité."
+ },
+ "109": {
+  "e": "Sur les sites employant des travailleurs illettrés ou de langues différentes, l'employeur doit prendre des mesures pour qu'ils comprennent les règlements, instructions et consignes, afin de réduire les risques pour eux-mêmes et pour les autres.",
+  "r": "Adaptez la communication des consignes de sécurité (pictogrammes, traductions, démonstrations) à un personnel multilingue ou illettré : une consigne non comprise est une consigne inutile et un risque réel."
+ },
+ "110": {
+  "e": "Au travail, chaque salarié doit : prendre raisonnablement soin de son hygiène, de sa santé et de sa sécurité ainsi que de celles des autres ; respecter les consignes ; utiliser correctement les dispositifs de sécurité et les EPI ; signaler immédiatement toute situation à risque qu'il ne maîtrise pas ; et signaler tout accident ou atteinte à la santé/sécurité survenant au travail.",
+  "r": "Rappelez que la sécurité est aussi une obligation du salarié : intégrez ces devoirs au règlement intérieur et aux formations, et encouragez le signalement immédiat des risques et incidents."
+ },
+ "111": {
+  "e": "Partir à la retraite n'est pas un licenciement et n'ouvre donc pas droit à une indemnité de licenciement. L'âge de départ est fixé à 60 ans pour les tâches de manutention/force physique, l'exécution et l'encadrement moyen, et 65 ans pour les cadres et assimilés en fonctions supérieures. L'employeur peut maintenir en activité un travailleur au-delà, en réglant avec la CNSS les conditions (cotisations, prestations).",
+  "r": "Distinguez retraite et licenciement : la retraite relève de l'indemnité de départ (article 113), pas de l'indemnité de licenciement. Anticipez les départs selon l'âge (60/65 ans) et coordonnez avec la CNSS."
+ },
+ "112": {
+  "e": "Tout travailleur assuré remplissant les conditions peut demander une retraite anticipée dans les cinq ans précédant l'âge normal, sur la base des périodes d'assurance. Pour raisons personnelles, un travailleur ayant au moins quinze ans de cotisation peut aussi la demander ; à défaut d'accord d'entreprise plus favorable, elle est accordée dans ces cinq dernières années, avec la CNSS. En cas de mise à la retraite anticipée pour motif économique, l'employeur verse à la CNSS les cotisations restantes jusqu'à l'âge normal, calculées sur le dernier salaire.",
+  "r": "Pour toute retraite anticipée pour motif économique, budgétez le versement à la CNSS des cotisations manquantes jusqu'à l'âge normal : c'est une charge à ne pas oublier dans un plan de restructuration."
+ },
+ "113": {
+  "e": "Le travailleur partant à la retraite reçoit une indemnité conventionnelle de départ égale à un minimum de six mois du dernier salaire de base, majorée selon l'ancienneté : +1 mois (0-5 ans), +3 mois (6-10 ans), +6 mois (11-15 ans), +10 mois (16-20 ans), +15 mois (plus de 20 ans). Chaque employeur peut améliorer cette indemnité par négociation avec les syndicats.",
+  "r": "Provisionnez l'indemnité de départ à la retraite : au minimum six mois de salaire de base plus le palier d'ancienneté. C'est un engagement significatif à anticiper dans vos comptes."
+ },
+ "114": {
+  "e": "Conformément aux textes, le travailleur admis à la retraite perçoit une pension de vieillesse calculée et payée par la CNSS.",
+  "r": "Rappelez au salarié que la pension elle-même vient de la CNSS (distincte de l'indemnité de départ que vous versez) : d'où l'importance d'avoir cotisé et déclaré correctement tout au long de la carrière."
+ },
+ "115": {
+  "e": "L'employeur doit assister le futur retraité et le retraité par anticipation dans la constitution du dossier ouvrant droit à la pension.",
+  "r": "Prévoyez un accompagnement RH pour monter les dossiers de retraite (attestations, relevés de carrière) : c'est une obligation et un geste qui valorise la fin de carrière."
+ },
+ "116": {
+  "e": "Pour détecter d'éventuels problèmes de santé d'origine professionnelle, un examen médical est réalisé chez tout travailleur un an avant son départ à la retraite. Si une affection professionnelle est révélée, l'employeur apporte l'assistance requise par la loi. Les résultats sont conservés vingt ans.",
+  "r": "Organisez la visite médicale de fin de carrière un an avant le départ et conservez les résultats vingt ans : c'est une protection pour le salarié comme pour votre responsabilité en cas de maladie professionnelle."
+ },
+ "117": {
+  "e": "Le salaire de base minimum (seuil d'entrée) entre en vigueur le 1er août 2025 pour les entreprises en exploitation, et le 1er avril 2026 pour les entreprises en développement, en construction ou en phase de recherche.",
+  "r": "Repérez à quelle catégorie appartient votre entreprise pour connaître votre date d'application des minima (1er août 2025 ou 1er avril 2026) et mettez vos grilles en conformité en conséquence."
+ },
+ "118": {
+  "e": "La convention annule et remplace celle du 14 juillet 1995 et prend effet le jour suivant son dépôt au greffe du Tribunal du Travail de Conakry. Elle a été signée à Conakry le 14 février 2025 par les organisations patronales et syndicales du secteur, sous l'égide de l'Inspection Générale du Travail, et visée par les Ministres des Mines et du Travail.",
+  "r": "C'est le texte de référence en vigueur pour le secteur minier : datez vos pratiques par rapport à sa prise d'effet et abandonnez toute référence à la convention de 1995."
+ }
+}

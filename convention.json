@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "terminologie",
+  "titre_court": "Terminologie et sigles",
+  "livre": "PRÉLIMINAIRES",
+  "chapitre": "",
+  "text": "Sigles utilisés dans la Convention : PRG (Président de la République de Guinée) ; CNT (Conseil National de Transition) ; CGE-GUI (Confédération Générale des Entreprises de Guinée) ; FEPAMGUI (Fédération Patronale des Guinéens du secteur Minier) ; CMG (Chambre des Mines de Guinée) ; CNTG (Confédération Nationale des Travailleurs de Guinée) ; USTG (Union Syndicale des Travailleurs de Guinée) ; UGTG (Union Générale des Travailleurs de Guinée) ; CNSS (Caisse Nationale de Sécurité Sociale) ; METFPE (Ministère de l'Enseignement Technique, de la Formation Professionnelle et de l'Emploi) ; DNTLS (Direction Nationale du Travail et des Lois Sociales) ; CAB (Cabinet) ; ONFPP (Office National de Formation et de Perfectionnement Professionnels) ; IGT (Inspection Générale du Travail) ; AGUIPE (Agence Guinéenne de la Promotion de l'Emploi) ; CEP (Certificat d'Étude Primaire) ; BEPC (Brevet d'Étude de Premier Cycle) ; CAP (Certificat d'Aptitude Professionnelle) ; BTS (Brevet de Technicien Supérieur) ; DU (Diplômes Universitaires) ; PCT (Points de Condition de Travail) ; EPI (Équipements de Protection Individuelle) ; CA (Conseil d'Administration) ; FSPMCICA (Fédération Syndicale Professionnelle des Mines, Carrières, Industries Chimiques et Assimilées) ; FESAMICAG (Fédération Syndicale Autonome des Mines, Carrières, Industries Chimiques et Assimilées de Guinée) ; FMCIC (Fédération des Mines, Carrières et Industries Chimiques).\n\nDéfinitions principales :\n— Convention collective : désigne la Convention conclue entre les Organisations patronales du secteur des mines, carrières, industries minières et assimilées et les Organisations syndicales représentatives du secteur, ayant pour objet de déterminer les conditions de travail et d'emploi des salariés et de régler les relations entre les employeurs et les travailleurs.\n— Extension : désigne la procédure par laquelle le Ministère en charge du travail rend obligatoire l'application de la Convention à toute personne physique ou morale non-signataire mais qui entre dans son champ d'application.\n— Jour ouvrable : désigne tous les jours de la semaine qui peuvent être travaillés à l'exception du jour de repos légal.\n— Opérations minières : désigne toutes les opérations de recherche, de développement, de construction des infrastructures minières, d'exploitation des gisements (y compris les produits de carrières), de transport, de traitement, de transformation en produits semi-finis et finis, d'exportation et de commercialisation.\n— Parties : désigne les Organisations patronales du secteur des mines, carrières, industries minières et assimilées et leurs membres adhérents réalisant des Opérations minières ; et les Organisations syndicales représentatives du secteur.\n— Salaire de base : désigne la rémunération fixe qu'un employé perçoit pour les tâches définies dans son poste, à l'exclusion des accessoires de salaire.\n— Sous-traitant : désigne toute personne physique ou morale travaillant pour le compte du titulaire d'un titre minier ou d'une autorisation.",
+  "src": "ccmc",
+  "num": "Terminologie et sigles",
+  "label": "Terminologie et sigles"
+ },
+ {
+  "id": "preambule",
+  "titre_court": "Préambule",
+  "livre": "PRÉLIMINAIRES",
+  "chapitre": "",
+  "text": "La présente Convention régit les relations de travail entre les Employeurs et les Travailleurs dans les secteurs des Mines, Carrières, Industries Minières et Assimilées en République de Guinée. Elle est le résultat de négociations libres et volontaires entre les Organisations Patronales du secteur minier (CMG, FEPAMGUI), sous l'égide de la Confédération Générale des Entreprises de Guinée (CGE-GUI), et les Organisations Syndicales qui sont les Fédérations des Mines, Carrières, Industries Chimiques et Assimilées de la CNTG, de l'USTG et de l'UGTG.\n\nLe respect de la législation Guinéenne du travail et de la protection sociale s'impose aux différentes parties. La présente Convention collective fait sienne les dispositions légales et règlementaires régissant les relations professionnelles en République de Guinée. Elle ambitionne, au-delà du cadre normatif national, de réglementer toutes les problématiques spécifiques au secteur des mines, carrières, industries minières et assimilées.\n\nLes parties s'engagent notamment à : œuvrer dans un climat de confiance réciproque pour le développement, la prospérité des entreprises et la rentabilité de leurs activités (respecter la législation du travail et de la protection sociale ; promouvoir l'entreprise, sa durabilité, sa productivité et sa compétitivité ; promouvoir une politique de progrès social ; développer des relations professionnelles garantissant une paix sociale durable) ; se conformer aux principes et droits fondamentaux au travail (liberté d'association et droit à la négociation collective, non-discrimination en matière d'emploi et de profession, interdiction du travail forcé, interdiction du travail des enfants, milieu de travail sain et sûr) ; proscrire la violence et le harcèlement en milieu de travail ; promouvoir le genre ; rechercher le dialogue social ; respecter les obligations déclaratives (CNSS, IGT, AGUIPE, ONFPP).\n\nUne fois étendue, la présente Convention s'impose à tous les opérateurs économiques en République de Guinée dont les activités relèvent de l'ensemble des Opérations minières, aussi bien les sociétés mères que leurs sous-traitants.",
+  "src": "ccmc",
+  "num": "Préambule",
+  "label": "Préambule"
+ },
+ {
+  "id": "1er",
+  "titre_court": "Objet et champ d'application",
+  "livre": "TITRE PREMIER : DISPOSITIONS GÉNÉRALES",
+  "chapitre": "",
+  "text": "La présente Convention régit les rapports de travail entre les travailleurs et les employeurs tels que définis par le Code du travail.\n\nElle s'applique à l'ensemble des travailleurs des Entreprises installées ou qui viendraient à s'installer sur le territoire guinéen, dont les activités relèvent des Opérations minières.\n\nSont notamment comprises dans ces activités : les activités de recherche et de prospection minière ; la production minière (extraction, préparation et transport) ; la production de matériaux de carrière (extraction et préparation) ; les activités de transformation des substances minérales.",
+  "src": "ccmc",
+  "num": "Article 1er",
+  "label": "Article 1er — Objet et champ d'application"
+ },
+ {
+  "id": "2",
+  "titre_court": "Bénéficiaires",
+  "livre": "TITRE PREMIER : DISPOSITIONS GÉNÉRALES",
+  "chapitre": "",
+  "text": "La présente Convention s'applique de plein droit aux personnels dont les contrats sont en cours d'exécution au jour de sa prise d'effet.\n\nLes contrats de travail conclus postérieurement seront soumis à ses dispositions, lesquelles seront considérées comme conditions minimales d'engagement.",
+  "src": "ccmc",
+  "num": "Article 2",
+  "label": "Article 2 — Bénéficiaires"
+ },
+ {
+  "id": "3",
+  "titre_court": "Cadre juridique",
+  "livre": "TITRE PREMIER : DISPOSITIONS GÉNÉRALES",
+  "chapitre": "",
+  "text": "La présente Convention collective est conclue conformément aux dispositions du Code du travail.\n\nLes dispositions arrêtées par la présente Convention prévalent sur toutes celles qui pourraient résulter de l'application des dispositions légales et règlementaires, en termes d'avantage.\n\nPour ce faire, si les dispositions légales et réglementaires devaient être plus avantageuses, elles seraient appliquées à la place de celles de la présente Convention. En revanche, si lesdites dispositions étaient moins avantageuses, les dispositions de la présente Convention collective continueraient d'être appliquées dans les conditions qu'elles prévoient.\n\nPour toutes les questions non expressément prévues par la présente Convention, les parties doivent se référer aux dispositions légales et règlementaires en vigueur.",
+  "src": "ccmc",
+  "num": "Article 3",
+  "label": "Article 3 — Cadre juridique"
+ },
+ {
+  "id": "4",
+  "titre_court": "Abrogation de la Convention collective du 14 juillet 1995 pour les secteurs d'activités définis à l'article 1er",
+  "livre": "TITRE PREMIER : DISPOSITIONS GÉNÉRALES",
+  "chapitre": "",
+  "text": "La présente Convention remplace la Convention collective de la branche d'activité mines, carrières, industries minières et assimilées du 14 juillet 1995 en ce qui concerne les employeurs et les travailleurs visés à l'article 1er, conformément aux dispositions légales et règlementaires en vigueur.\n\nLes contrats de travail qui interviendront postérieurement à la signature de la présente Convention seront soumis à ses dispositions considérées comme conditions minimales d'engagement. Aucune clause restrictive ne pourra donc être insérée dans lesdits contrats individuels.\n\nLa présente Convention s'applique de plein droit aux contrats en cours d'exécution à compter de la date de sa prise d'effet.",
+  "src": "ccmc",
+  "num": "Article 4",
+  "label": "Article 4 — Abrogation de la Convention collective du 14 juillet 1995 pour les secteurs d'activités définis à l'article 1er"
+ },
+ {
+  "id": "5",
+  "titre_court": "Avantages acquis",
+  "livre": "TITRE PREMIER : DISPOSITIONS GÉNÉRALES",
+  "chapitre": "",
+  "text": "La présente Convention ne peut, en aucun cas, être la cause de restrictions aux avantages individuels acquis antérieurement à sa date de signature par un travailleur, soit à titre personnel, soit dans le cadre d'usages de Convention ou d'accord d'Établissement.\n\nLes avantages reconnus par la présente Convention collective ne peuvent s'interpréter comme s'ajoutant aux avantages déjà accordés pour le même objet à la suite d'usage ou en application des textes législatifs, réglementaires ou conventionnels antérieurement en vigueur.\n\nSi les avantages nouveaux sont supérieurs, le travailleur en bénéficiera sans que, pour le même objet, il puisse cumuler les deux avantages.\n\nLes dispositions de la présente Convention ne font pas obstacle à l'application d'accords plus favorables qui pourraient être conclus au niveau d'une Entreprise ou d'un Établissement.",
+  "src": "ccmc",
+  "num": "Article 5",
+  "label": "Article 5 — Avantages acquis"
+ },
+ {
+  "id": "6",
+  "titre_court": "Durée et dénonciation de la Convention",
+  "livre": "TITRE PREMIER : DISPOSITIONS GÉNÉRALES",
+  "chapitre": "",
+  "text": "La présente Convention est conclue pour une durée indéterminée et sera soumise à révision au moins tous les cinq ans, conformément aux dispositions légales applicables, à compter de la date d'entrée en vigueur.\n\nElle peut être dénoncée ou révisée en tout ou en partie par l'une des parties, moyennant un préavis de trois (3) mois signifié aux autres parties par lettre recommandée, dont copie sera adressée au Ministre en charge du Travail.\n\nToutefois, la dénonciation ne pourra intervenir avant l'expiration d'une période de cinq (5) ans à compter de la date de mise en application de la présente Convention.",
+  "src": "ccmc",
+  "num": "Article 6",
+  "label": "Article 6 — Durée et dénonciation de la Convention"
+ },
+ {
+  "id": "7",
+  "titre_court": "Adhésions ultérieures",
+  "livre": "TITRE PREMIER : DISPOSITIONS GÉNÉRALES",
+  "chapitre": "",
+  "text": "Le Ministre en charge du Travail prend un arrêté qui élargit l'application de la Convention Collective à tout syndicat ou groupement professionnel de travailleurs, à tout employeur ou groupement professionnel d'employeurs et à toute Entreprise dont l'objet social rentre dans le champ d'application de la présente Convention.\n\nToute organisation syndicale, signataire de la présente Convention, qui fusionnera avec une autre organisation syndicale, conservera les droits attachés à la qualité de signataire, à la double condition de notifier cette fusion aux autres parties et de conserver son caractère représentatif dans la branche des « Industries minières ».",
+  "src": "ccmc",
+  "num": "Article 7",
+  "label": "Article 7 — Adhésions ultérieures"
+ },
+ {
+  "id": "8",
+  "titre_court": "Respect réciproque des droits syndicaux et de la liberté d'opinion",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "Les parties reconnaissent le droit pour tous de s'associer et d'agir librement pour la défense collective de leurs intérêts professionnels.\n\nL'entreprise étant un lieu de travail, les employeurs, pour arrêter leurs décisions en ce qui concerne l'embauchage, la rémunération, la conduite ou la répartition du travail, les mesures de discipline, de congédiement ou d'avancement, s'engagent à : ne pas prendre en considération le fait d'appartenir ou non à un syndicat, d'exercer ou non des fonctions syndicales ; ne pas tenir compte des opinions politiques ou philosophiques, des croyances religieuses, du genre, de l'origine sociale ou raciale des travailleurs ; ne faire aucune pression sur les travailleurs en faveur d'un syndicat.\n\nLes travailleurs s'engagent, de leur côté, à ne pas prendre en considération, tant au travail qu'en matière d'avantages sociaux et de formation professionnelle : l'appartenance ou non à un syndicat déterminé ; la liberté d'opinion et les opinions des autres travailleurs ; le libre exercice syndical au sein de la profession et au sein de l'entreprise.\n\nLes organisations syndicales des travailleurs reconnaissent le libre exercice du pouvoir de direction de l'employeur. Elles s'engagent à assurer la formation de leurs membres, notamment les responsables élus avec l'appui de l'employeur, afin de préserver et de maintenir la paix sociale.\n\nEn cas de licenciement d'un délégué syndical, en violation du droit syndical tel que défini dans le Code du travail, les parties s'emploieront à analyser les faits et à apporter au cas litigieux une solution équitable. En cas de désaccord, la partie qui s'estime lésée pourrait faire recours à l'Inspection du travail du ressort ou aux tribunaux.",
+  "src": "ccmc",
+  "num": "Article 8",
+  "label": "Article 8 — Respect réciproque des droits syndicaux et de la liberté d'opinion"
+ },
+ {
+  "id": "9",
+  "titre_court": "Absence pour activités syndicales",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "Pour faciliter la participation des travailleurs ayant qualité d'élus syndicaux aux assemblées statutaires de leurs organisations syndicales, des autorisations d'absence devront leur être accordées sur présentation, dans un délai de 48 heures, d'une convocation écrite nominative émanant de l'organisation intéressée, sauf cas de force majeure dûment prouvée.\n\nLes parties s'emploieront à ce que ces absences n'apportent pas d'obstacle à la marche normale du travail.\n\nChaque fois que des travailleurs seront appelés à participer à une commission paritaire décidée entre les organisations signataires ou celles qui leur sont affiliées, il appartiendra aux syndicats patronaux et de travailleurs ayant organisé la réunion de déterminer de quelle façon et dans quelles limites (nombre de participants, durée, etc.) il conviendra de faciliter cette participation.\n\nLe temps de travail ainsi perdu sera payé par l'employeur comme temps de travail effectif ; il ne sera pas récupérable et sera considéré comme temps de service effectif pour la détermination des droits du travailleur aux congés payés.\n\nSi cette participation entraîne pour l'employeur un coût autre que le temps de travail perdu, la prise en charge de ce coût devra faire l'objet d'une approbation préalable de la Direction de l'Entreprise.\n\nLes travailleurs appelés à participer aux organismes consultatifs paritaires règlementaires (Commissions consultatives, Comités techniques consultatifs d'hygiène, Sécurité, Santé et Environnement ou Assesseurs au Tribunal du Travail) devront communiquer à l'employeur la convocation les désignant dans un délai de 48 heures après sa réception, sauf cas de force majeure dûment prouvée.",
+  "src": "ccmc",
+  "num": "Article 9",
+  "label": "Article 9 — Absence pour activités syndicales"
+ },
+ {
+  "id": "10",
+  "titre_court": "Panneaux d'affichage",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "Les panneaux d'affichage, en nombre suffisant, sont mis dans chaque entreprise à la disposition des organisations syndicales de travailleurs pour leurs communications au personnel. Ils sont apposés à l'intérieur de l'entreprise dans un endroit proche de l'entrée ou de la sortie du personnel ou en tout autre endroit jugé plus favorable, en accord avec les parties.\n\nLes communications, y compris celles en dehors des panneaux d'affichage, notamment les moyens digitaux ou électroniques, doivent avoir un objet exclusivement professionnel ou syndical et ne revêtir aucun caractère polémique.\n\nLes communications sont affichées par un représentant du syndicat travaillant dans l'entreprise après communication d'un exemplaire à l'employeur.",
+  "src": "ccmc",
+  "num": "Article 10",
+  "label": "Article 10 — Panneaux d'affichage"
+ },
+ {
+  "id": "11",
+  "titre_court": "Assistance aux syndicats",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "En vue de permettre aux syndicats de l'entreprise de participer à la promotion et à la protection du travailleur, il est demandé à l'employeur de leur apporter assistance technique, financière, matérielle et la mise à disposition de certains objets de récupération, dans la mesure du possible. Les formes et modalités de cette assistance feront l'objet de procédures internes à chaque entreprise.\n\nEn outre, l'employeur doit assurer la formation des délégués syndicaux pour leur permettre d'exercer efficacement leurs fonctions de représentation et de négociations au sein de l'entreprise.",
+  "src": "ccmc",
+  "num": "Article 11",
+  "label": "Article 11 — Assistance aux syndicats"
+ },
+ {
+  "id": "12",
+  "titre_court": "Élection des délégués syndicaux",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "Dans chaque entreprise régie par la présente Convention, les délégués syndicaux sont obligatoirement élus dans les conditions fixées par la loi et les règlements en vigueur.\n\nLorsque plusieurs établissements d'une même entreprise situés dans une même localité ne comportent pas, pris séparément, le nombre règlementaire de travailleurs imposant des élections de délégués syndicaux, les effectifs de ces établissements seront totalisés en vue de la constitution d'un collège électoral qui élira son ou ses délégués.\n\nPeuvent être électeurs et éligibles les travailleurs qui remplissent les critères fixés par la réglementation.\n\nPendant la période comprise entre la date de l'affichage des listes électorales et celles du scrutin, les travailleurs inscrits sur les listes affichées bénéficient des mesures de protection édictées par le Code du travail. Le bénéfice de cette mesure est également étendu au délégué syndical pour une période de six mois après l'expiration de son mandat.",
+  "src": "ccmc",
+  "num": "Article 12",
+  "label": "Article 12 — Élection des délégués syndicaux"
+ },
+ {
+  "id": "13",
+  "titre_court": "Protection des délégués syndicaux",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "La fonction de délégué syndical ne peut être, pour celui qui l'exerce, une entrave à une amélioration de sa rémunération ou de sa promotion.\n\nLe délégué syndical ne peut être muté d'un site géographique à un autre contre son gré pendant la durée de son mandat, sauf appréciation de l'Inspecteur du Travail de son ressort.\n\nUn travailleur ne peut jouir d'un traitement de faveur en raison de sa fonction syndicale.\n\nL'horaire de travail du délégué syndical est l'horaire normal de l'entreprise. Ses heures règlementaires d'activités syndicales, qui ne peuvent dépasser vingt-quatre (24) heures par mois, sont imputées sur cet horaire.\n\nLes attributions du délégué syndical sont celles prévues par les lois et règlements en vigueur.",
+  "src": "ccmc",
+  "num": "Article 13",
+  "label": "Article 13 — Protection des délégués syndicaux"
+ },
+ {
+  "id": "14",
+  "titre_court": "Licenciement des délégués syndicaux",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "En cas de faute grave dûment prouvée d'un délégué syndical, dans l'exercice de ses activités professionnelles, l'employeur peut prononcer immédiatement sa mise à pied conservatoire en attendant la décision définitive de l'Inspecteur du Travail du ressort ou de l'Inspecteur Général du Travail.\n\nEn cas de refus de délivrer cette autorisation, l'employeur peut renoncer ou poursuivre sa procédure de licenciement du délégué syndical. Dans ce cas, il s'expose au paiement des droits qui seront fixés par la juridiction de travail lorsqu'elle déclare le licenciement abusif.",
+  "src": "ccmc",
+  "num": "Article 14",
+  "label": "Article 14 — Licenciement des délégués syndicaux"
+ },
+ {
+  "id": "15",
+  "titre_court": "Compétence des délégués syndicaux",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "La compétence du délégué syndical s'étend à l'ensemble des travailleurs de l'entreprise. Tout délégué syndical peut, à sa demande, se faire assister d'un représentant de sa hiérarchie syndicale supérieure, soit à l'occasion de sa visite à la Direction de l'Entreprise, soit à l'occasion des visites de l'Inspection du Travail.\n\nEn cas de divergence dans le règlement d'un conflit individuel ou collectif au sein de l'entreprise, les représentants des syndicats régis par la présente Convention s'efforceront de l'aplanir avec l'employeur ou son représentant.",
+  "src": "ccmc",
+  "num": "Article 15",
+  "label": "Article 15 — Compétence des délégués syndicaux"
+ },
+ {
+  "id": "16",
+  "titre_court": "Détaché syndical",
+  "livre": "TITRE II : EXERCICE DU DROIT SYNDICAL ET RESPONSABLES SYNDICAUX",
+  "chapitre": "",
+  "text": "Le travailleur, ayant déjà acquis dans l'entreprise une ancienneté au moins égale à un (1) an, qui aura été mandaté par une organisation syndicale légalement constituée pour remplir les fonctions syndicales, a le droit, à l'expiration de son mandat, de réintégrer son ancienne entreprise.\n\nÀ l'issue de cette période de détachement d'une durée normale de 3 ans renouvelable une seule fois, le travailleur est repris à la catégorie correspondant à sa précédente qualification professionnelle.\n\nPour la réintégration du travailleur, la demande doit être présentée en son nom par l'organisation syndicale au moins un mois avant l'expiration de son mandat syndical et, au plus tard, un mois après cette expiration.",
+  "src": "ccmc",
+  "num": "Article 16",
+  "label": "Article 16 — Détaché syndical"
+ },
+ {
+  "id": "17",
+  "titre_court": "Dialogue et conciliation",
+  "livre": "TITRE III : DIALOGUE – COMMISSION PARITAIRE D'INTERPRÉTATION ET DE CONCILIATION",
+  "chapitre": "",
+  "text": "Les parties s'engagent à épuiser tous les moyens de conciliation en leurs pouvoirs avant de faire recours à la procédure légale pour le règlement des différends individuels et collectifs du travail liés à l'application ou à l'interprétation de la présente Convention.\n\nPour cela, elles conviennent de faire cette conciliation par la recherche de toutes les possibilités d'examen, en commun desdits différends, en vue de faciliter leur solution.\n\nSi la tentative de conciliation, sur le plan interne, ne donne pas des résultats satisfaisants, les parties s'engagent à faire recours à l'Administration du Travail en vue du règlement des points de désaccord.",
+  "src": "ccmc",
+  "num": "Article 17",
+  "label": "Article 17 — Dialogue et conciliation"
+ },
+ {
+  "id": "18",
+  "titre_court": "Commission paritaire d'interprétation et de conciliation au niveau de l'entreprise",
+  "livre": "TITRE III : DIALOGUE – COMMISSION PARITAIRE D'INTERPRÉTATION ET DE CONCILIATION",
+  "chapitre": "",
+  "text": "Une commission paritaire d'interprétation et de conciliation est instituée dans chacune des entreprises. Son rôle est d'aboutir au règlement des difficultés d'interprétation et d'application de la présente Convention.\n\nElle est constituée de la façon suivante : trois délégués des organisations syndicales d'entreprise relevant des organisations syndicales professionnelles régies par la présente Convention ; trois représentants de l'employeur.\n\nUne note décisionnelle de l'Inspecteur Général du Travail instruit les directions des entreprises à la mise en place de ladite commission.\n\nElle est présidée alternativement par un représentant de l'une des parties. Elle se réunit à la demande d'une des parties, dans un délai de six (6) jours ouvrables après réception de la demande par l'autre partie.\n\nAu cas où les membres de la commission ne peuvent parvenir à un accord, ils saisissent ensemble la commission d'interprétation et de conciliation de la Branche Professionnelle et l'Inspecteur du Travail du ressort, en leur adressant un rapport indiquant la nature du litige et les positions des parties en présence.",
+  "src": "ccmc",
+  "num": "Article 18",
+  "label": "Article 18 — Commission paritaire d'interprétation et de conciliation au niveau de l'entreprise"
+ },
+ {
+  "id": "19",
+  "titre_court": "Commission d'interprétation et de conciliation de la Branche Professionnelle",
+  "livre": "TITRE III : DIALOGUE – COMMISSION PARITAIRE D'INTERPRÉTATION ET DE CONCILIATION",
+  "chapitre": "",
+  "text": "La Commission d'interprétation et de conciliation de la Branche Professionnelle a pour rôle de rechercher une solution à l'amiable aux différends pouvant résulter de l'interprétation et de l'application de la présente Convention qui n'auraient pu être réglés par la Commission d'Entreprise.\n\nLa composition de la commission de la Branche Professionnelle est la suivante : un représentant de l'Inspection du Travail, Président ; trois responsables des organisations syndicales professionnelles ; trois représentants des organisations d'employeurs.\n\nUne décision de l'Inspecteur Général du Travail met en place ladite commission. Elle se réunit dix (10) jours ouvrables après avoir été saisie par la commission d'entreprise.\n\nLorsque la commission a donné un avis à l'unanimité, le texte de cet avis signé par les membres de la commission a les mêmes effets juridiques que les clauses de la présente Convention.\n\nLes noms des membres sont communiqués à l'Inspection Générale du Travail. Les Commissions d'entreprise et la Commission de la branche professionnelle n'ont pas à connaître des litiges individuels qui ne mettent pas en cause le sens et la portée de la présente Convention.\n\nComité des Relations de Travail : au sein de chaque entreprise, dans le but de pacifier les relations entre les partenaires sociaux que sont les directions d'entreprises et les syndicats, un comité des relations de travail est mis en place. Il sera composé de représentants de la direction générale et des délégués syndicaux qui se réuniront une fois par mois pour passer en revue les questions relatives aux relations de travail.",
+  "src": "ccmc",
+  "num": "Article 19",
+  "label": "Article 19 — Commission d'interprétation et de conciliation de la Branche Professionnelle"
+ },
+ {
+  "id": "20",
+  "titre_court": "Généralités",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "",
+  "text": "Alinéa 1 – De la reconnaissance du droit de Grève : les parties de la présente Convention reconnaissent le libre exercice du droit de grève dans les conditions prévues par la loi. Les règles relatives à la conciliation et à l'arbitrage sont prévues par le Code du travail.\n\nAlinéa 2 – Définition : la grève est un arrêt collectif du travail de nature partielle ou complète décidée par les travailleurs à travers leur délégation syndicale en vue de faire aboutir des revendications d'ordre professionnel et/ou économique qui n'ont pas été satisfaites.\n\nAlinéa 3 – Fondement : la grève repose, en tout état de cause, sur des revendications professionnelles non satisfaites. Elle est annoncée à travers un préavis de grève déposé auprès de la direction de l'entreprise, de l'établissement ou des organisations patronales, conformément aux dispositions légales en la matière.",
+  "src": "ccmc",
+  "num": "Article 20",
+  "label": "Article 20 — Généralités"
+ },
+ {
+  "id": "21",
+  "titre_court": "Les Conditions du Préavis",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "CHAPITRE I : DE L'EXERCICE DU DROIT DE GRÈVE",
+  "text": "Le préavis de grève est notifié par écrit à la direction de l'entreprise ou de l'établissement qui, à son tour, saisit l'autorité compétente de l'administration du travail. Le préavis doit mentionner les raisons et les revendications formulées par l'organisation syndicale le déposant.\n\nLe préavis de grève est d'une durée de dix (10) jours ouvrables.",
+  "src": "ccmc",
+  "num": "Article 21",
+  "label": "Article 21 — Les Conditions du Préavis"
+ },
+ {
+  "id": "22",
+  "titre_court": "Effets de la notification du Préavis",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "CHAPITRE I : DE L'EXERCICE DU DROIT DE GRÈVE",
+  "text": "Dès la notification du préavis, l'administration du travail prend l'initiative de la négociation avec les organisations syndicales sous l'égide de l'Inspecteur du Travail dans le ressort duquel le conflit a pris naissance ou de l'Inspecteur Général du Travail.\n\nLa négociation entre les parties en conflit se déroule sans arrêt, avec obligation de se rendre à toutes les convocations et réunions de concertation et de conciliation organisées par l'Inspection du Travail. Si les parties n'ont pas pu parvenir à un accord au dixième (10e) et dernier jour ouvrable du préavis, l'Inspecteur du Travail constate l'échec des négociations par un procès-verbal dressé expressément.\n\nEn conséquence, les salariés ont alors, après le dépôt de l'avis de grève, le droit de cesser complètement le travail tout en demeurant disponibles pour les négociations et pour l'application d'un minimum de mesures de sécurité et de services essentiels. Cet avis doit mentionner la date de début de la grève.",
+  "src": "ccmc",
+  "num": "Article 22",
+  "label": "Article 22 — Effets de la notification du Préavis"
+ },
+ {
+  "id": "23",
+  "titre_court": "Des services essentiels",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "CHAPITRE I : DE L'EXERCICE DU DROIT DE GRÈVE",
+  "text": "Compte tenu des risques de dégradation susceptibles de survenir à la vie des personnes, à la sécurité des biens, des installations techniques et de production, un service minimum doit être assuré dans les services ci-après : les services chargés du fonctionnement, de la réparation et de l'entretien des appareils et équipements de maintien de l'usine, de fournitures d'eau, d'électricité et de carburants ; le service chargé de la sécurité des lieux de travail, de l'environnement, de l'hygiène et de la gestion des déchets ; le service de santé ; le service chargé de l'hébergement et de la restauration.\n\nTrois jours au moins avant la date de cessation effective du travail, une commission mixte paritaire composée de deux (2) représentants de la Direction et de deux (2) représentants du syndicat détermine de commun accord un effectif minimum de travailleurs par service essentiel chargé d'assurer la permanence pendant la durée de la grève. En cas de désaccord, l'inspecteur du travail du ressort ou l'inspecteur général du travail peut, sur demande d'une partie, déterminer l'effectif qu'il approuve pour le service minimum.\n\nUne copie du procès-verbal de la réunion de ladite Commission mixte est immédiatement adressée à l'Inspecteur du Travail du ressort par les soins de la Direction de l'entreprise.",
+  "src": "ccmc",
+  "num": "Article 23",
+  "label": "Article 23 — Des services essentiels"
+ },
+ {
+  "id": "24",
+  "titre_court": "Exigences de la réquisition",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "CHAPITRE I : DE L'EXERCICE DU DROIT DE GRÈVE",
+  "text": "Le travailleur réquisitionné pour assurer un service minimum, conformément à l'article précédent, et qui ne se présente pas à son poste, commet une faute lourde.",
+  "src": "ccmc",
+  "num": "Article 24",
+  "label": "Article 24 — Exigences de la réquisition"
+ },
+ {
+  "id": "25",
+  "titre_court": "Interdits durant la période de grève",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "CHAPITRE I : DE L'EXERCICE DU DROIT DE GRÈVE",
+  "text": "Sont interdits parce que contraires à l'exercice du droit de grève : le fait d'empêcher par des menaces ou par des intimidations l'accès du personnel aux lieux de travail ; le fait d'inciter les travailleurs à la violence ; le fait d'inciter et d'impliquer les communautés dans les grèves internes à l'entreprise ; les actes de sabotage.\n\nTout syndicaliste ou employé responsable de l'un de ces faits sus-décrits peut être licencié pour faute lourde.\n\nLorsque la grève s'accompagne d'un envahissement ou d'une occupation des lieux de travail entraînant des risques sérieux de trouble, des menaces pour la sécurité des personnes et des biens, l'employeur peut saisir l'autorité compétente pour obtenir l'intervention de la force publique, en vue du rétablissement de l'ordre.\n\nMême en période de grève, il est interdit à toute personne, à tout travailleur de s'opposer, sous peine de sanction pénale ou disciplinaire, par la force ou sous la menace, au libre exercice de l'activité professionnelle des salariés ou des employeurs de la même entreprise ou non.",
+  "src": "ccmc",
+  "num": "Article 25",
+  "label": "Article 25 — Interdits durant la période de grève"
+ },
+ {
+  "id": "26",
+  "titre_court": "Effet suspensif de la grève",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "CHAPITRE II : DES CONSÉQUENCES DE LA GRÈVE",
+  "text": "La grève ne rompt pas le contrat de travail, elle le suspend. Le salarié recouvre son emploi en fin de grève et ne peut pas être sanctionné du fait de sa participation à la grève sauf abus de droit de grève.\n\nDurant la grève, l'employeur est libéré du paiement des salaires des grévistes pendant toute la durée d'interruption du travail.\n\nLes obligations de l'employeur vis-à-vis du personnel non gréviste demeuré à sa disposition sont entières et inchangées.",
+  "src": "ccmc",
+  "num": "Article 26",
+  "label": "Article 26 — Effet suspensif de la grève"
+ },
+ {
+  "id": "27",
+  "titre_court": "Non effet sur le mandat des délégués syndicaux",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "CHAPITRE II : DES CONSÉQUENCES DE LA GRÈVE",
+  "text": "La grève ne suspend pas le mandat des délégués syndicaux.",
+  "src": "ccmc",
+  "num": "Article 27",
+  "label": "Article 27 — Non effet sur le mandat des délégués syndicaux"
+ },
+ {
+  "id": "28",
+  "titre_court": "Effet non discriminatoire de la période de grève",
+  "livre": "TITRE IV : DU DROIT DE GRÈVE",
+  "chapitre": "CHAPITRE II : DES CONSÉQUENCES DE LA GRÈVE",
+  "text": "L'exercice du droit de grève ne saurait donner lieu, de la part de l'employeur, à des mesures discriminatoires en matière de formation, d'appréciation, de rémunération et d'avantages sociaux.",
+  "src": "ccmc",
+  "num": "Article 28",
+  "label": "Article 28 — Effet non discriminatoire de la période de grève"
+ },
+ {
+  "id": "29",
+  "titre_court": "Apprentissage et formation",
+  "livre": "TITRE V : APPRENTISSAGE ET FORMATION",
+  "chapitre": "",
+  "text": "L'apprentissage est une forme de formation. Il a pour but de donner aux jeunes travailleurs ayant satisfait à un niveau scolaire donné, une formation générale théorique et pratique en vue de l'obtention d'une qualification professionnelle sanctionnée par l'un des diplômes de l'enseignement professionnel.\n\nLes dispositions relatives au contrat d'apprentissage et à la formation sont fixées par la législation en vigueur.",
+  "src": "ccmc",
+  "num": "Article 29",
+  "label": "Article 29 — Apprentissage et formation"
+ },
+ {
+  "id": "30",
+  "titre_court": "Formation professionnelle",
+  "livre": "TITRE V : APPRENTISSAGE ET FORMATION",
+  "chapitre": "",
+  "text": "Compte tenu de la spécificité des activités minières, les parties reconnaissent la nécessité d'une formation professionnelle des travailleurs.\n\nEn conséquence, l'employeur s'attachera à assurer la formation professionnelle et le perfectionnement des travailleurs. Si l'employeur l'estime nécessaire, et dans ces cas bien particuliers liés aux spécificités de certains postes, des stages professionnels et des cours spécialisés pourront être organisés au profit des travailleurs jugés aptes à assurer des fonctions précises au sein de l'entreprise concernée. Ce mode de formation viendra s'ajouter à la formation sur le tas.\n\nL'entreprise favorise la formation professionnelle dans toute la mesure compatible avec les nécessités du service. Elle accorde en conséquence toute facilité aux agents pour leur permettre d'acquérir des capacités ou de compléter cette formation dans les disciplines correspondant aux activités de l'entreprise.",
+  "src": "ccmc",
+  "num": "Article 30",
+  "label": "Article 30 — Formation professionnelle"
+ },
+ {
+  "id": "31",
+  "titre_court": "Charges de la Formation professionnelle",
+  "livre": "TITRE V : APPRENTISSAGE ET FORMATION",
+  "chapitre": "",
+  "text": "L'employeur est en droit d'exiger du personnel qu'il suive des formations professionnelles ou des perfectionnements que nécessitent l'exercice de son emploi et l'adaptation à l'évolution technique et technologique, sans qu'il puisse en résulter une diminution quelconque de son salaire.\n\nL'employeur prend en charge l'intégralité des frais occasionnés par cette formation, et cela, même s'il dispose d'un centre de formation ; il s'acquittera également de la Contribution à la Formation Professionnelle. En contrepartie, l'organisme représentant les sociétés minières et reconnu par le Ministère des Mines et de la Géologie disposera de deux sièges dans le CA de l'entité désignée par l'État pour la gestion des fonds destinés à la formation professionnelle. Les désignations des membres siégeant dans le CA doivent être approuvées par le Ministre en charge des Mines.\n\nÀ la fin de la période de formation ou de perfectionnement, le travailleur bénéficiaire dudit stage est tenu de rester au service de son employeur pour une durée au moins équivalente à celle du stage. À défaut, il doit rembourser à l'employeur tous les frais encourus pour sa formation ou son perfectionnement, sous peine de poursuites judiciaires.",
+  "src": "ccmc",
+  "num": "Article 31",
+  "label": "Article 31 — Charges de la Formation professionnelle"
+ },
+ {
+  "id": "32",
+  "titre_court": "Effets de la Formation professionnelle",
+  "livre": "TITRE V : APPRENTISSAGE ET FORMATION",
+  "chapitre": "",
+  "text": "Si la formation ou le perfectionnement professionnel comporte un examen, l'échec du travailleur à cet examen ne peut être la cause d'un licenciement ; le travailleur conserve son emploi précédent et bénéficie de tous les avantages qui s'y rattachent.\n\nL'accession à un diplôme professionnel ou universitaire, reconnu comme le fait d'avoir suivi avec succès la formation dispensée, ne peut avoir pour effet un classement à la catégorie supérieure que dans la mesure où il existe des postes vacants. En tout état de cause, ce classement, même en cas de postes vacants, n'est pas automatique ; mais les agents diplômés ou ayant suivi la formation avec succès ont priorité à l'essai en cas de vacances ou de création de poste.",
+  "src": "ccmc",
+  "num": "Article 32",
+  "label": "Article 32 — Effets de la Formation professionnelle"
+ },
+ {
+  "id": "33",
+  "titre_court": "Priorité d'embauche",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Les employeurs peuvent, conformément à la réglementation en vigueur, recourir à l'embauchage direct. La priorité doit être accordée aux Guinéens conformément à la Législation du Travail et du Contenu local.\n\nLe travailleur licencié pour motif économique ou par suite de maladie de longue durée conserve pendant deux (2) ans la priorité d'embauche pour le même emploi.",
+  "src": "ccmc",
+  "num": "Article 33",
+  "label": "Article 33 — Priorité d'embauche"
+ },
+ {
+  "id": "34",
+  "titre_court": "Condition de la priorité d'embauchage",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Le personnel est informé, par voie d'affichage ou électronique, des emplois vacants et des catégories professionnelles dans lesquelles ces postes sont classés.\n\nLe travailleur licencié par suite de suppression d'emploi ou de compression de personnel conserve, pendant un (1) an, la priorité de recrutement dans la même catégorie d'emploi.\n\nPassé ce délai, il continue à bénéficier de la même priorité pendant une seconde année, mais son embauchage peut être subordonné à un essai professionnel ou à un stage probatoire d'un (1) mois. La priorité d'embauche s'éteint à la fin de la 2e année.\n\nEn cas de vacance de poste, l'employeur avise l'intéressé à travers la dernière adresse connue ou son contact. Celui-ci devra se présenter à l'entreprise dans un délai maximum de huit (8) jours ouvrables, après réception de la convocation.\n\nLes dispositions ci-dessus concernant la priorité d'embauche sont étendues au travailleur qui a quitté son emploi pour exercer un mandat électif ou une fonction politique. Cette priorité de réembauche perdure pendant la durée du mandat ou de la fonction et s'éteint à l'expiration du mandat ou de la fonction.\n\nL'ancien travailleur bénéficiant d'une priorité d'embauche est tenu de communiquer à l'employeur tout changement d'adresse survenu après son départ de l'entreprise.",
+  "src": "ccmc",
+  "num": "Article 34",
+  "label": "Article 34 — Condition de la priorité d'embauchage"
+ },
+ {
+  "id": "35",
+  "titre_court": "Période d'essai",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "L'embauche définitive du travailleur est précédée obligatoirement : d'une visite médicale de pré-embauche dans le but d'assurer la compatibilité entre les exigences du Poste et les aptitudes physiques dudit travailleur, conformément à la réglementation en vigueur ; d'une période d'essai stipulée par écrit, dans les limites prévues par les dispositions du Code du travail.\n\nLa durée de la période d'essai varie conformément à la loi.\n\nPendant la période d'essai, les parties ont la faculté réciproque de rompre le contrat, sans indemnité ni préavis.\n\nAvant l'expiration de la période d'essai, le travailleur doit avoir connaissance de la décision de l'employeur (Confirmation, Non-confirmation ou Renouvellement). À défaut, la période d'essai est réputée concluante.",
+  "src": "ccmc",
+  "num": "Article 35",
+  "label": "Article 35 — Période d'essai"
+ },
+ {
+  "id": "36",
+  "titre_court": "Engagement occasionnel",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Pour les besoins des activités dans les domaines couverts par la présente Convention, l'employeur peut conclure des contrats à termes imprécis. Dans ce cas, il sera établi une lettre d'engagement pour une durée qui ne pourra excéder la durée légale prévue par le Code du travail.\n\nLes employeurs peuvent, dans les conditions prévues par le Code du travail, recourir au service des entreprises de mise à disposition de personnel temporaire.",
+  "src": "ccmc",
+  "num": "Article 36",
+  "label": "Article 36 — Engagement occasionnel"
+ },
+ {
+  "id": "37",
+  "titre_court": "Engagement définitif",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "L'engagement définitif survient à la suite de la période d'essai définie dans le contrat de travail.\n\nLorsqu'un travailleur finit sa période d'essai et que l'employeur se propose de l'embaucher définitivement à des conditions autres que celles stipulées pour la période d'essai, il doit spécifier au travailleur l'emploi, le classement, la rémunération projetée, ainsi que tous les autres avantages éventuels par un écrit que le travailleur signe avec la mention « lu et approuvé », s'il accepte les conditions proposées.",
+  "src": "ccmc",
+  "num": "Article 37",
+  "label": "Article 37 — Engagement définitif"
+ },
+ {
+  "id": "38",
+  "titre_court": "Seuil d'accueil à l'embauche",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Lorsque l'employeur recrute des diplômés ayant satisfait aux tests d'usage, il s'attachera à respecter, dans toute la mesure du possible, la correspondance entre les exigences du Poste et le profil du candidat.\n\nLes principaux diplômes de référence sont : CEP – Certificat d'Étude Primaire équivalent à six (6) années de scolarité ; BEPC – Brevet d'Étude de Premier Cycle équivalent à quatre (4) ans après le CEP ; CAP – Certificat d'Aptitude Professionnelle ou équivalent pour les postes d'ouvriers qualifiés ; BTS – Brevet de Techniciens Supérieurs (Bac + 2 ou 3 ans) ou équivalent pour les postes d'encadrement moyen ; DU – Diplômes Universitaires (Bac+3 ou 4 ans) pour les postes d'encadrement supérieur (cadres et assimilés).\n\nCependant, et sur accord écrit du candidat, l'employeur peut recruter le diplômé pour un poste de niveau inférieur au seuil indiqué plus haut. Le candidat qui aura alors été recruté à ce niveau ne pourra, après embauche définitive, faire prévaloir le diplôme dont il est titulaire en vue d'un reclassement à un poste de niveau supérieur.\n\nIl reste entendu qu'en cas de vacance d'un poste équivalent à son diplôme, il peut faire acte de candidature aux tests de sélection.",
+  "src": "ccmc",
+  "num": "Article 38",
+  "label": "Article 38 — Seuil d'accueil à l'embauche"
+ },
+ {
+  "id": "39",
+  "titre_court": "Modifications aux clauses du contrat de travail",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Toute modification substantielle apportée à l'un des éléments du contrat de travail doit, au préalable, faire l'objet de discussion, d'approbation avant notification écrite au travailleur.\n\nPour des raisons tenant à l'incapacité physique du travailleur résultant d'un accident ou maladie non professionnelle, à la situation économique ou à la réorganisation de l'entreprise, l'employeur peut proposer à un travailleur une modification substantielle de son contrat de travail comportant une réduction de certains avantages. Si le travailleur donne son accord de principe, cette modification ne peut intervenir qu'à l'issue d'une période d'un mois.\n\nSi le travailleur refuse cette modification, la rupture du contrat de travail sera considérée comme résultant de l'initiative de l'employeur ; ce dernier étant dès lors tenu d'observer les règles de préavis et d'accorder les avantages prévus par la présente Convention en cas de licenciement.\n\nAu cas où l'ancien emploi du travailleur, supprimé par suite de la situation économique ou de la réorganisation de l'entreprise, serait rétabli, le travailleur conservera pendant un an une priorité pour le réoccuper.",
+  "src": "ccmc",
+  "num": "Article 39",
+  "label": "Article 39 — Modifications aux clauses du contrat de travail"
+ },
+ {
+  "id": "40",
+  "titre_court": "Promotion et Reclassement",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Le reclassement a pour objet de constater l'affectation du travailleur à un emploi de catégorie supérieure à condition que ce nouvel emploi soit déclaré vacant et que le travailleur concerné réunisse les aptitudes exigées pour l'occuper. Il intervient par décision de la Direction et peut être précédé d'une période d'essai.\n\nCe reclassement d'une catégorie à une catégorie supérieure s'opère par voie d'évaluation professionnelle.\n\nLe reclassement ou le changement d'emploi peut survenir en cas de performance exceptionnelle ou dans le cadre d'une action de rétention de l'employé à la suite d'une démission.",
+  "src": "ccmc",
+  "num": "Article 40",
+  "label": "Article 40 — Promotion et Reclassement"
+ },
+ {
+  "id": "41",
+  "titre_court": "Mutation provisoire",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "En cas de nécessité de service, l'employeur pourra affecter momentanément le travailleur à un emploi relevant d'une catégorie inférieure à celle de son classement habituel. Dans ce cas, et par dérogation à l'article 39 de la présente Convention, le travailleur conserve le salaire perçu avant la période de mutation provisoire qui ne peut excéder trois (03) mois.",
+  "src": "ccmc",
+  "num": "Article 41",
+  "label": "Article 41 — Mutation provisoire"
+ },
+ {
+  "id": "42",
+  "titre_court": "Intérim d'un emploi supérieur",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "L'intérim d'un emploi supérieur est le fait de remplacer momentanément un autre travailleur dont le poste est classé à un niveau organique supérieur.\n\nLe fait pour le travailleur d'assurer un remplacement de courte durée à un poste supérieur dans la hiérarchie professionnelle ne lui confère pas automatiquement le droit aux avantages pécuniaires ou autres attachés au poste.\n\nEn tout état de cause, le travailleur concerné percevra pour la durée de remplacement une indemnité égale à la différence entre son salaire de base et celui du poste occupé en intérim. Cette prime est due après une durée égale à un mois d'intérim.\n\nToutefois, la durée de cet intérim ne saurait excéder six (6) mois pour le personnel d'encadrement et trois (3) mois pour le personnel d'exécution et moyen, sauf dans les cas de maladie, d'accident ou d'absence pour formation du titulaire de poste.\n\nIl reste entendu que dix (10) jours ouvrables avant la fin de ce délai et sauf les cas visés à l'alinéa précédent, l'employeur doit régler définitivement la situation du travailleur concerné, c'est-à-dire : soit le reclasser dans la catégorie correspondant au poste d'intérim ; soit le rétablir dans ses anciennes fonctions.",
+  "src": "ccmc",
+  "num": "Article 42",
+  "label": "Article 42 — Intérim d'un emploi supérieur"
+ },
+ {
+  "id": "43",
+  "titre_court": "Mutation des femmes en état de grossesse",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Les travailleuses en état de grossesse, mutées à un autre poste en raison de leur état de santé, conserveront au moins le bénéfice de leur salaire antérieur pendant toute la durée de leur mutation. À l'issue de la période de grossesse, la travailleuse reprendra son poste habituel ou un poste équivalent.",
+  "src": "ccmc",
+  "num": "Article 43",
+  "label": "Article 43 — Mutation des femmes en état de grossesse"
+ },
+ {
+  "id": "44",
+  "titre_court": "Affectation à un autre lieu d'emploi",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Lorsque les mutations ne sont pas prévues dans les conditions d'engagement, aucun travailleur ne peut être muté sans son consentement dans un autre établissement de l'employeur situé dans une commune ou une localité autre que celle de son lieu de travail habituel.",
+  "src": "ccmc",
+  "num": "Article 44",
+  "label": "Article 44 — Affectation à un autre lieu d'emploi"
+ },
+ {
+  "id": "45",
+  "titre_court": "Ancienneté du travailleur",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Les parties reconnaissent à tout travailleur du secteur des mines, carrières, industries minières et assimilées qui auront tenu plusieurs emplois dans l'une ou l'autre des entreprises régies par la présente Convention, l'ancienneté déjà acquise avant la dernière embauche. Les avantages liés à cette ancienneté lui seront de plein droit consentis, si le motif de séparation de son dernier employeur ne résulte pas d'une faute grave dûment constatée par l'Inspection du travail ou par l'autorité judiciaire compétente.",
+  "src": "ccmc",
+  "num": "Article 45",
+  "label": "Article 45 — Ancienneté du travailleur"
+ },
+ {
+  "id": "46",
+  "titre_court": "Promotion des employés guinéens",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Les employeurs s'engagent à mettre en œuvre dans leur entreprise une politique effective et diligente des emplois conformément aux orientations du Gouvernement dans la promotion du contenu local. Ainsi, les employeurs s'engagent à identifier, dès le recrutement d'un expatrié devant occuper un poste non statutaire, le candidat Guinéen à son remplacement.\n\nÀ préciser que la durée du contrat des expatriés ne peut en aucun cas être supérieure à celle prévue par les textes législatifs et réglementaires applicables.",
+  "src": "ccmc",
+  "num": "Article 46",
+  "label": "Article 46 — Promotion des employés guinéens"
+ },
+ {
+  "id": "47",
+  "titre_court": "Échelle des sanctions",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Toute sanction disciplinaire prise par l'employeur ou par son représentant doit être prévue par le Code du travail ou par le règlement intérieur. Ces sanctions sont prises à l'issue d'une demande d'explication ou d'un entretien convoqué par l'employeur ou par son représentant en présence du travailleur concerné, assisté, s'il le souhaite, de son syndicat ou d'une personne de son choix appartenant à l'entreprise.\n\nL'échelle des sanctions est la suivante : avertissement écrit ; blâme ; mise à pied évolutive de 1 à 6 jours ; licenciement.\n\nLe Règlement intérieur peut prévoir d'autres échelles de sanctions par voie de négociation sans cependant déroger au Code du travail. En tout état de cause, les sanctions doivent être proportionnelles à la gravité des fautes.\n\nL'avertissement écrit et le blâme ne sauraient être invoqués à l'encontre du travailleur à l'expiration d'un délai de trois (3) mois suivant la date d'intervention de l'une de ces deux sanctions. Ce délai est forclos après six (6) mois pour la mise à pied évolutive de 1 à 6 jours.\n\nDans tous les cas, la sanction est signifiée par écrit au travailleur. La suppression du salaire pour absence non justifiée ne fait pas obstacle à l'application de sanctions disciplinaires.",
+  "src": "ccmc",
+  "num": "Article 47",
+  "label": "Article 47 — Échelle des sanctions"
+ },
+ {
+  "id": "48",
+  "titre_court": "Tâcheronnat – Sous-traitance",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Les parties de la présente Convention reconnaissent aux employeurs le droit de faire recours au tâcheronnat et à la sous-traitance conformément à la législation en vigueur ; dans le double but de régler des problèmes ponctuels de main-d'œuvre et de participer au développement des Petites et Moyennes Entreprises en République de Guinée.\n\nLa sous-traitance peut notamment s'inscrire dans le cadre d'un désengagement de l'entreprise de certaines activités qui ne sont pas en relation directe avec son objet social. La formation et l'exécution des contrats de sous-traitance s'effectueront conformément aux lois et règlements en vigueur.\n\nIl reste entendu que : pour les entreprises en activités, les travaux entrant dans la ligne d'exploitation de l'entreprise, c'est-à-dire ceux qui constituent son cœur de métier ou qui sont à caractère permanent, ne sauraient être sous-traités si les compétences et expertises nécessaires ainsi que les équipements requis sont disponibles au sein de l'entreprise (exception faite de certains travaux d'entretien, dans la mesure où une interruption volontaire de travail par le fait du sous-traitant, pour cause de réclamation quelconque, ne saurait pénaliser le processus de production) ; la sous-traitance ne saurait intervenir que si, pour une tâche donnée, il n'existe pas de main-d'œuvre qualifiée au sein de l'entreprise.",
+  "src": "ccmc",
+  "num": "Article 48",
+  "label": "Article 48 — Tâcheronnat – Sous-traitance"
+ },
+ {
+  "id": "49",
+  "titre_court": "Clause de non-concurrence",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE I : FORMATION ET EXÉCUTION DU CONTRAT",
+  "text": "Sauf stipulation spécifique insérée dans le contrat ou autorisation particulière écrite de l'employeur, il est interdit au travailleur d'exercer, même en dehors des heures de travail, toute activité à caractère professionnel susceptible de concurrencer l'entreprise ou de nuire à la bonne exécution des services convenus.\n\nIl est également interdit au travailleur de divulguer les informations acquises au service de l'employeur.",
+  "src": "ccmc",
+  "num": "Article 49",
+  "label": "Article 49 — Clause de non-concurrence"
+ },
+ {
+  "id": "50",
+  "titre_court": "Effet de la suspension",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE II : SUSPENSION DU CONTRAT DE TRAVAIL",
+  "text": "Conformément aux dispositions prévues par la loi en vigueur, le contrat de travail peut être suspendu pour l'une des causes que la loi ou la présente Convention prévoit. Cette suspension n'affecte que les obligations principales des parties au contrat de travail : l'obligation pour le travailleur de fournir une prestation de travail et l'obligation pour l'employeur de rémunérer ce travail.\n\nLes obligations secondaires, notamment celles relatives au logement, à la discrétion, à la loyauté, aux soins médicaux, au ravitaillement payant et à tous les autres avantages convenus entre l'employeur et le travailleur, continuent à produire leurs effets au cours de la période de suspension lorsqu'une telle poursuite est imposée par la réglementation.\n\nL'employeur et le travailleur peuvent aussi conclure des accords individuels, selon les clauses qu'ils définissent, leur permettant de suspendre le contrat de travail dans les conditions et termes déterminés dans lesdits accords, conformément à la législation et la règlementation en vigueur.",
+  "src": "ccmc",
+  "num": "Article 50",
+  "label": "Article 50 — Effet de la suspension"
+ },
+ {
+  "id": "51",
+  "titre_court": "Absences exceptionnelles",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE II : SUSPENSION DU CONTRAT DE TRAVAIL",
+  "text": "Les absences de courte durée, justifiées par un événement grave et fortuit dûment constaté, concernant directement le foyer du travailleur – tel qu'incendie de l'habitation, décès, accident ou maladie grave du conjoint, d'un ascendant ou décès d'un descendant habitant avec lui – ne peuvent entraîner la rupture du contrat de travail, mais simplement sa suspension ; pourvu que l'employeur ait été avisé, au plus tard, dans les trois jours, et que la durée de l'absence soit en rapport avec l'événement qui l'a motivé. Cette durée devra être déterminée en accord avec l'employeur.",
+  "src": "ccmc",
+  "num": "Article 51",
+  "label": "Article 51 — Absences exceptionnelles"
+ },
+ {
+  "id": "52",
+  "titre_court": "Absence pour maladie et accident non professionnels",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE II : SUSPENSION DU CONTRAT DE TRAVAIL",
+  "text": "1) Suspension du contrat : les absences justifiées par l'incapacité résultant de maladie et d'accident non professionnels peuvent constituer un motif de suspension du contrat de travail, dans la limite de six (6) mois. Pendant ce délai, au cas où le remplacement du travailleur s'imposerait, le remplaçant devrait être informé, en présence d'un délégué syndical, du caractère provisoire de son emploi.\n\n2) Formalités à remplir : si le travailleur malade fait constater son état par le service médical de l'entreprise, dans un délai de 48 heures, il n'aura pas d'autres formalités à remplir. Dans le cas contraire, il doit, sauf cas de force majeure, avertir l'employeur du motif de son absence dans un délai maximum de trois (3) jours ouvrables, à compter du premier jour de l'indisponibilité.\n\nSi le travailleur malade ne peut se déplacer, il en avise l'employeur. Ce dernier peut lui envoyer un infirmier, un médecin ou assurer son évacuation vers le centre hospitalier le plus proche. L'employeur soumet formellement le cas à la Caisse Nationale de Sécurité Sociale en vue d'un traitement approprié.",
+  "src": "ccmc",
+  "num": "Article 52",
+  "label": "Article 52 — Absence pour maladie et accident non professionnels"
+ },
+ {
+  "id": "53",
+  "titre_court": "Indemnisation du travailleur malade ou accidenté",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "Le travailleur, dont le contrat de travail se trouve suspendu pour cause de maladie et d'accident non professionnels, reçoit directement une allocation de l'employeur qui se fera rembourser par la Caisse Nationale de Sécurité Sociale.",
+  "src": "ccmc",
+  "num": "Article 53",
+  "label": "Article 53 — Indemnisation du travailleur malade ou accidenté"
+ },
+ {
+  "id": "54",
+  "titre_court": "Maladie professionnelle et Accident du travail",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "Suite à un accident du travail, le contrat de la victime est suspendu jusqu'à consolidation de la blessure.\n\nAu cas où, après consolidation de la blessure, le travailleur accidenté ne serait plus à même de reprendre son service ou de l'assurer dans les conditions normales, l'employeur recherchera la possibilité de reclasser l'intéressé dans un autre emploi, après avis du médecin traitant.\n\nDurant la période prévue pour l'indemnisation, le travailleur malade ou accidenté, en état d'incapacité temporaire, reçoit une allocation calculée de manière à lui assurer son ancien salaire, heures supplémentaires non comprises, déduction faite de la somme qui lui est due, en vertu des dispositions du Code de Sécurité Sociale sur les accidents du travail et maladies professionnelles, pour cette même période et le cas échéant des indemnités versées par une prévoyance sociale.",
+  "src": "ccmc",
+  "num": "Article 54",
+  "label": "Article 54 — Maladie professionnelle et Accident du travail"
+ },
+ {
+  "id": "55",
+  "titre_court": "Détention provisoire",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "En cas de détention provisoire, le contrat du travailleur mis en cause dans un délit ou un crime est suspendu pendant toute la durée de la détention provisoire ; d'où la suspension des obligations principales de fournir une prestation et l'obligation de rémunérer le travail qu'il aurait effectué. Les obligations secondaires relatives au logement, aux soins de santé et au ravitaillement continuent à produire leurs effets.",
+  "src": "ccmc",
+  "num": "Article 55",
+  "label": "Article 55 — Détention provisoire"
+ },
+ {
+  "id": "56",
+  "titre_court": "Mise en disponibilité",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "La disponibilité librement demandée par le travailleur est subordonnée à la libre appréciation de l'employeur, sauf pour les cas légitimes autorisés par la loi.\n\nLes parties s'accordent à reconnaître à tout travailleur la possibilité d'obtenir, pour des raisons personnelles, une mise en disponibilité d'une durée maximale de deux ans, renouvellement y compris ; sauf pour le cas de missions politiques dont la durée sera fonction du mandat désignant le travailleur.\n\nIl s'agit de : assistance d'un enfant malade en ligne directe ; assistance d'un ascendant malade en ligne directe ; assistance d'un conjoint malade ; mission politique (nominative par décret ou par voie électorale) ; une formation non financée par l'employeur ; cas de disponibilité prévus par les dispositions du Code du travail ; allaitement à l'issue d'un congé de maternité ; congé pour veuvage de la femme dans la limite de six (6) mois ; congé pour un travailleur dont le conjoint(e), employé(e) chez le même employeur, a fait l'objet d'une mutation pour nécessité de service entraînant un changement de résidence.\n\nIl reste entendu que cette disponibilité n'est offerte qu'aux travailleurs ayant une ancienneté minimale d'un (1) an au sein de l'entreprise. L'absence pour la disponibilité n'est pas rémunérée. Un mois avant la fin de la disponibilité, le travailleur doit informer son employeur de son intention de reprendre ses activités professionnelles.",
+  "src": "ccmc",
+  "num": "Article 56",
+  "label": "Article 56 — Mise en disponibilité"
+ },
+ {
+  "id": "57",
+  "titre_court": "Rupture du contrat du travailleur malade (maladie non professionnelle)",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "Si, à l'expiration du délai de six mois prévus à l'article 52 de la présente Convention, le travailleur dont le contrat de travail est suspendu pour cause de maladie se trouve dans l'incapacité de reprendre son travail, l'employeur peut le remplacer définitivement après lui avoir signifié, par lettre recommandée, qu'il prend acte de la rupture du contrat de travail du fait de son absence prolongée à son poste de travail.\n\nCe délai de six (6) mois est néanmoins renouvelable une fois (une seule) pour une durée ne dépassant pas trois (3) mois et sur la base d'un rapport médical soumis à l'appréciation du médecin de l'employeur.\n\nDans tous les cas, la rupture du contrat de travail pour cause de maladie ouvre droit, au profit du travailleur ayant au moins un (1) an de service, à une indemnité dont le montant est déterminé ainsi qu'il suit : 1. Cas du travailleur remplissant les conditions d'ancienneté requises pour l'attribution de l'indemnité de licenciement : cette indemnité est égale à un (1) mois de salaire de base pour le travailleur ayant un (1) an d'ancienneté. Au-delà d'un (1) an d'ancienneté, l'indemnité sera calculée conformément aux dispositions de l'article 66 de la présente Convention. 2. Cas du travailleur ne remplissant pas les conditions d'ancienneté requises pour l'attribution de l'indemnité de licenciement : l'indemnité est égale au montant de l'indemnité compensatrice de préavis, dans la limite d'un (1) mois si le délai de préavis dépasse cette durée.\n\nLe travailleur remplacé dans les conditions indiquées au paragraphe premier conserve, pendant un délai d'un (1) an, un droit de priorité de réembauchage.",
+  "src": "ccmc",
+  "num": "Article 57",
+  "label": "Article 57 — Rupture du contrat du travailleur malade (maladie non professionnelle)"
+ },
+ {
+  "id": "58",
+  "titre_court": "Rupture du contrat du travailleur décédé",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "En cas de décès du travailleur, le salaire de présence (jours travaillés), l'allocation compensatrice de congé et les indemnités de toute nature acquis à la date du décès reviennent à ses ayants droit.\n\nSi le travailleur comptait, au jour du décès, une année au moins d'ancienneté dans l'entreprise, l'employeur est tenu de verser aux ayants droit une indemnité d'un montant équivalent à celui de l'indemnité de fin de carrière, à laquelle le travailleur aurait eu droit en partant à la retraite à cette date.\n\nCependant, si au jour du décès, ce travailleur n'a pas atteint l'ancienneté requise pour bénéficier de l'allocation de retraite, l'indemnité allouée aux ayants droit sera d'un montant équivalent à celui de l'indemnité de licenciement qui serait revenu au travailleur en cas de rupture du contrat.\n\nNe peuvent prétendre à ces indemnités que les ayants-droit en ligne directe du travailleur, conformément aux dispositions du Code de la Sécurité Sociale.\n\nSi le travailleur avait été déplacé par le fait de l'employeur, ce dernier assure, à ses frais, le transport du corps du défunt et de ses effets personnels au lieu de résidence d'origine ; à condition que les ayants droit en formulent la demande avant l'enterrement.",
+  "src": "ccmc",
+  "num": "Article 58",
+  "label": "Article 58 — Rupture du contrat du travailleur décédé"
+ },
+ {
+  "id": "59",
+  "titre_court": "Rupture du contrat de travail par suite de poursuites judiciaires",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "Dans le cadre des infractions nées des relations de travail, l'employeur est fondé à rompre le contrat de travail du salarié qui aura été condamné par une décision judiciaire devenue définitive.\n\nL'employeur peut également rompre le contrat du travailleur qui aura été condamné à la suite d'un délit ou crime, par une juridiction répressive, à une peine de prison ferme et définitive. La rupture du contrat intervenant dans cette condition n'ouvre pas droit à réparation.\n\nLe contrat de travail peut être également rompu par l'employeur si, à la suite d'une faute professionnelle, l'employé est poursuivi pénalement et condamné par une juridiction répressive.\n\nIl reste entendu que, dans tous les cas de poursuites judiciaires, le travailleur est tenu d'informer l'employeur dans un délai de 48 heures des raisons de son absence. Il appartiendra à l'employeur d'en apprécier.",
+  "src": "ccmc",
+  "num": "Article 59",
+  "label": "Article 59 — Rupture du contrat de travail par suite de poursuites judiciaires"
+ },
+ {
+  "id": "60",
+  "titre_court": "Rupture du contrat de travail suite à une perte de confiance",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "La perte de confiance ne saurait être en elle-même un motif légitime et suffisant de licenciement.\n\nToutefois, les faits justifiant cette perte de confiance peuvent constituer des fautes du travailleur et justifier la rupture des relations contractuelles, conformément à la loi en vigueur.",
+  "src": "ccmc",
+  "num": "Article 60",
+  "label": "Article 60 — Rupture du contrat de travail suite à une perte de confiance"
+ },
+ {
+  "id": "61",
+  "titre_court": "Rupture du contrat de travail du fait du travailleur",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "1) La démission : la démission du travailleur ne se présume pas, elle doit être formelle (écrit), quelle que soit la forme de l'écrit (lettre, courrier électronique). Le travailleur peut démissionner librement et à tout moment, sous réserve d'exécuter son obligation de préavis. Toutefois, l'employeur et le travailleur démissionnaire peuvent, d'un commun accord, décider de ne pas exécuter le préavis et se libérer de leurs obligations réciproques.\n\n2) L'abandon de poste : c'est l'absence prolongée du travailleur à son poste de travail sans autorisation pendant une période de huit (8) jours ouvrables (jour de travail effectif du salarié). Il sera traité suivant les dispositions du Code du travail ou du Règlement intérieur de chaque entreprise régie par la présente Convention.",
+  "src": "ccmc",
+  "num": "Article 61",
+  "label": "Article 61 — Rupture du contrat de travail du fait du travailleur"
+ },
+ {
+  "id": "62",
+  "titre_court": "Licenciements collectifs",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE III : RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "Si, en raison d'une diminution d'activité de l'entreprise ou d'une réorganisation intérieure, l'employeur peut être amené à procéder à des licenciements collectifs. Il établit l'ordre des licenciements en tenant compte des qualités professionnelles, de l'ancienneté dans l'entreprise, des charges de famille des travailleurs et du statut particulier des délégués syndicaux.\n\nL'employeur est tenu de recueillir, au préalable, l'avis des délégués syndicaux de l'entreprise.\n\nSeront licenciés, en premier lieu, les travailleurs présentant les moindres aptitudes professionnelles pour les emplois maintenus et, en cas d'égalité d'aptitudes professionnelles, les travailleurs les moins anciens ; l'ancienneté étant majorée d'un an pour le travailleur marié et d'un an pour chaque enfant à charge aux termes de la réglementation relative aux allocations familiales.\n\nConformément à la réglementation en vigueur, l'employeur doit communiquer, à cet effet, le projet définitif de licenciement à l'Inspecteur du Travail pour contrôle, observations et avis avant de procéder aux licenciements projetés. L'employeur est tenu de respecter la procédure des licenciements collectifs édictée par le Code du travail. Les travailleurs ainsi licenciés bénéficieront d'une priorité de réengagement dans les conditions prévues à l'article 34 de la présente Convention.",
+  "src": "ccmc",
+  "num": "Article 62",
+  "label": "Article 62 — Licenciements collectifs"
+ },
+ {
+  "id": "63",
+  "titre_court": "Modalités",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE IV : MODALITÉS DE RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "La partie qui prend l'initiative de la rupture du contrat doit notifier sa décision par écrit à l'autre partie.\n\nCette notification doit être faite, soit par envoi d'une lettre recommandée à la dernière adresse connue du destinataire contre accusé de réception sur la copie donnée par la personne qui reçoit, soit par remise en mains propres de la lettre au destinataire avec accusé de réception, ou, en cas d'impossibilité, par voie d'huissier de justice.\n\nLe délai de préavis commence à courir à compter de la notification de la rupture (date d'envoi du courrier ou de remise en mains propres ou par voie d'huissier). Le présent article s'applique à tous les travailleurs de l'entreprise.",
+  "src": "ccmc",
+  "num": "Article 63",
+  "label": "Article 63 — Modalités"
+ },
+ {
+  "id": "64",
+  "titre_court": "Durée et déroulement du préavis",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE IV : MODALITÉS DE RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "La durée minimum du préavis est convenue comme suit : pour le personnel ouvrier / employé : un (1) mois ; pour les contremaîtres et agents de maîtrise : deux (2) mois ; pour le personnel cadre et assimilé : trois (3) mois.\n\nLe travailleur qui ne respecte pas le préavis sera traité suivant les dispositions du Code du travail.",
+  "src": "ccmc",
+  "num": "Article 64",
+  "label": "Article 64 — Durée et déroulement du préavis"
+ },
+ {
+  "id": "65",
+  "titre_court": "Indemnité compensatrice de préavis",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE IV : MODALITÉS DE RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "Chacune des parties peut se dégager de l'obligation de préavis en versant à l'autre une indemnité compensatrice dont aurait bénéficié le travailleur pendant la durée du préavis restant à courir, s'il avait travaillé.\n\nLe travailleur licencié pour faute grave ou pour faute lourde n'a droit ni au préavis ni à l'indemnité compensatrice de préavis.",
+  "src": "ccmc",
+  "num": "Article 65",
+  "label": "Article 65 — Indemnité compensatrice de préavis"
+ },
+ {
+  "id": "66",
+  "titre_court": "Indemnité de licenciement",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE IV : MODALITÉS DE RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "En cas de licenciement, le travailleur ayant accompli dans l'entreprise une durée de service continu au moins égale à la période de référence ouvrant droit de jouissance au congé annuel, telle que fixée par la législation en vigueur, a droit à une indemnité de licenciement distincte du préavis.\n\nLes travailleurs sont admis au bénéfice de l'indemnité de licenciement, à la suite de plusieurs embauches dans la même entreprise, si leurs départs précédents ont été provoqués par une compression d'effectifs ou une suppression d'emplois. Dans ce cas, le montant de l'indemnité de licenciement est déterminé, déduction faite des sommes qui ont pu être versées à ce titre lors des licenciements antérieurs.\n\nCette indemnité est représentée, pour chaque année de présence accomplie dans l'entreprise, par un pourcentage déterminé du salaire brut moyen des trois (3) derniers mois qui ont précédé la date du licenciement. On entend par dernier salaire mensuel brut, la rémunération de toutes les prestations constituant la contrepartie du travail, à l'exclusion de celles présentant le caractère d'un remboursement de frais : bonus annuel, gratification ou prime de performance annuelle.\n\nLe pourcentage est fixé à : 33 % pour les 5 premières années ; 35 % pour la période comprise entre la 6e et la 10e année incluse ; 40 % pour la période s'étendant au-delà de la 10e année.\n\nDans le décompte effectué sur les bases indiquées ci-dessus, il doit être tenu compte des fractions d'année. L'indemnité de licenciement n'est pas due en cas de rupture du contrat de travail résultant d'une faute grave ou d'une faute lourde du travailleur.",
+  "src": "ccmc",
+  "num": "Article 66",
+  "label": "Article 66 — Indemnité de licenciement"
+ },
+ {
+  "id": "67",
+  "titre_court": "Certificat de travail",
+  "livre": "TITRE VI : CONTRAT DE TRAVAIL",
+  "chapitre": "CHAPITRE IV : MODALITÉS DE RUPTURE DU CONTRAT DE TRAVAIL",
+  "text": "Tout travailleur a droit, au moment de son départ, à un certificat de travail contenant exclusivement le nom et l'adresse de l'employeur, la date d'entrée du travailleur, celle de sa sortie et la nature de l'emploi ou, s'il y a lieu, les postes successivement occupés, ainsi que les périodes pendant lesquelles ces postes ont été tenus avec les catégories professionnelles correspondantes.",
+  "src": "ccmc",
+  "num": "Article 67",
+  "label": "Article 67 — Certificat de travail"
+ },
+ {
+  "id": "68",
+  "titre_court": "Dispositions générales",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Le salaire de chaque travailleur est déterminé en fonction de l'emploi qui lui est attribué dans l'entreprise. Sa définition comme son évolution sont toujours liées aux qualités professionnelles du salarié.\n\nLes salaires sont fixés soit au temps, soit au rendement. L'employeur a la faculté d'appliquer toute forme de rémunération du travail au temps ou au rendement qu'il juge utile pour la bonne marche de l'entreprise.\n\nLe salaire de base minimum (seuil d'entrée) est fixé comme suit : pour les Postes d'employés et d'ouvriers non qualifiés, 2 600 000 GNF dans les sociétés mères et 1 820 000 GNF chez les sous-traitants (70 % du salaire de base minimum) ; pour les Agents de maîtrise, 8 500 000 GNF dans les sociétés mères et 5 950 000 GNF chez les sous-traitants (70 % du salaire de base minimum).",
+  "src": "ccmc",
+  "num": "Article 68",
+  "label": "Article 68 — Dispositions générales"
+ },
+ {
+  "id": "69",
+  "titre_court": "Application du principe « à travail égal, salaire égal »",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Tout employeur doit assurer pour un même travail ou pour un travail de valeur égale, l'égalité de rémunération pour tous les travailleurs quels que soient leur origine, leur nationalité, leur sexe, leur âge et leur statut. Il reste entendu que les différences résultant des contraintes de recrutement du personnel expatrié à l'extérieur sont prises en compte pour la fixation du salaire de ce personnel.\n\nLes employeurs reconnaissent ce principe et s'engagent à l'appliquer conformément à la Législation et à la réglementation en vigueur.",
+  "src": "ccmc",
+  "num": "Article 69",
+  "label": "Article 69 — Application du principe « à travail égal, salaire égal »"
+ },
+ {
+  "id": "70",
+  "titre_court": "Rémunération du travail au rendement, à la pièce, à la chaîne",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "La rémunération du travail au rendement est établie sur la base du salaire minimum de la catégorie dont relève l'emploi considéré.\n\nLes salaires au rendement sont établis de façon que l'ouvrier de capacité moyenne et travaillant normalement ait la possibilité de dépasser le salaire minimum de sa catégorie. Les normes de rendement seront fixées paritairement.\n\nDes mesures doivent être prises pour éviter tout surmenage d'un personnel travaillant au rendement ; toutes les indications lui seront données préalablement à l'exécution du travail, de façon à lui permettre de calculer facilement le salaire correspondant.\n\nIl ne peut lui être imposé un rythme de travail supérieur à celui de son atelier ou chantier, sauf dérogation prévue par la réglementation.",
+  "src": "ccmc",
+  "num": "Article 70",
+  "label": "Article 70 — Rémunération du travail au rendement, à la pièce, à la chaîne"
+ },
+ {
+  "id": "71",
+  "titre_court": "Paiement du salaire",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Les salaires sont payés conformément aux prescriptions légales et règlementaires.\n\nLe paiement des salaires a lieu pendant les heures de travail et sur les lieux de travail. Il peut aussi se faire par virement bancaire sur le compte ouvert par le travailleur dans la banque de son choix ou chez les intermédiaires de micro finance.\n\nEn cas de contestation sur le contenu du bulletin de paye, le travailleur peut demander la justification des éléments ayant servi à l'établissement de son bulletin. Il peut se faire assister d'un responsable syndical.",
+  "src": "ccmc",
+  "num": "Article 71",
+  "label": "Article 71 — Paiement du salaire"
+ },
+ {
+  "id": "72",
+  "titre_court": "Catégories professionnelles",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Le bulletin de salaire doit comporter, outre le prénom et le nom du travailleur, sa catégorie professionnelle, son taux horaire ou mensuel de salaire, les heures normales et supplémentaires, les primes et indemnités, la raison sociale de l'entreprise, le détail des différentes retenues, ainsi que toutes autres mentions prescrites par la législation et la réglementation en vigueur.\n\nEn utilisant la méthode d'évaluation qu'ils jugent la plus appropriée, les employeurs classent les emplois de leurs activités dans les catégories professionnelles convenables conformément à la règlementation en vigueur. Le classement du travailleur dans une catégorie professionnelle est fonction du poste qu'il occupe au sein de l'entreprise.\n\nChaque entreprise doit établir et tenir disponible la liste des postes par catégorie et hiérarchie existant dans ses structures.\n\nTout employeur peut créer, pour les besoins de la gestion normale et durable de ses ressources humaines, un mode d'évolution par classes et échelons dans chaque catégorie, ainsi que le passage d'une catégorie inférieure à une catégorie supérieure. Ce mouvement assure un avancement régulier en classes et échelons et consacre des augmentations salariales selon l'ancienneté. Dans cette optique, élaborer les critères de notation et d'évaluation des travailleurs peut s'avérer aussi utile que mettre en place une commission paritaire d'avancement (entreprise – délégation syndicale) pour décider, en toute justice, entre tous les prétendants.\n\nLa Direction de chaque entreprise régie par cette Convention peut, sur la base de la classification de ses emplois, élaborer une grille des salaires en concertation avec la représentation syndicale pour fixer les salaires minimums ainsi que les accessoires de salaires de chaque catégorie professionnelle plus avantageux.\n\nLe travailleur habituellement affecté à des travaux relevant de catégories différentes aura la garantie du salaire minimum de la catégorie correspondant à la qualification la plus élevée qu'il est appelé à mettre en œuvre dans son travail.",
+  "src": "ccmc",
+  "num": "Article 72",
+  "label": "Article 72 — Catégories professionnelles"
+ },
+ {
+  "id": "73",
+  "titre_court": "Effets de l'accident du travail et de la maladie professionnelle",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Pour le travailleur qui vient à subir un accident du travail ou une maladie professionnelle pendant l'exécution d'un contrat, l'employeur doit s'efforcer, après guérison du travailleur : à lui trouver un poste répondant à ses nouvelles aptitudes ; à maintenir son salaire antérieur.\n\nPour le travailleur handicapé par une maladie, le cas sera réglé par la Caisse Nationale de Sécurité Sociale après avis du Service de Santé au Travail.",
+  "src": "ccmc",
+  "num": "Article 73",
+  "label": "Article 73 — Effets de l'accident du travail et de la maladie professionnelle"
+ },
+ {
+  "id": "74",
+  "titre_court": "Durée du travail",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "La durée du travail est fixée à 40 heures par semaine sous réserve de l'application des horaires d'équivalence ou de modulation telles que prévues par la présente Convention. Sont considérées comme heures supplémentaires, toutes les heures accomplies par le travailleur au-delà de la durée légale qui ne sont ni des heures d'équivalence, ni des heures de récupération, ni des heures de modulation ; elles font l'objet d'une majoration de salaire dans les conditions suivantes :\n\na) Heures supplémentaires du jour : 30 % du taux de la 40e à la 44e heure ; 60 % du taux au-delà de la 44e heure ; 65 % du taux les dimanches et jours fériés ; heure de nuit poste normal : plus 20 %.\n\nb) Heures supplémentaires de nuit : 60 % du taux en semaine ; 100 % du taux les dimanches et jours fériés.\n\nLa nuit est décomptée de vingt (20) heures à six (6) heures du matin. Les heures de semaine sont décomptées à partir du lundi à 6 heures du matin.\n\nLe personnel soumis aux horaires d'équivalence bénéficiera des heures supplémentaires conformément aux dispositions règlementaires en vigueur pour l'ensemble des professions après accomplissement de l'horaire équivalent, présenté comme suit : 42 heures pour le personnel des hôpitaux, boulangeries, hôtels, restaurants et assimilés ; 48 heures pour les chauffeurs de transport du personnel d'entreprise ; 52 heures pour les chauffeurs d'astreinte ; 55 heures pour le personnel de surveillance, gardiennage, sapeurs-pompiers et assimilés.\n\nToutefois, les parties concernées peuvent, à la place de la majoration de salaire, convenir de l'octroi d'un repos compensateur.",
+  "src": "ccmc",
+  "num": "Article 74",
+  "label": "Article 74 — Durée du travail"
+ },
+ {
+  "id": "75",
+  "titre_court": "Service en poste",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "On appelle travail de poste, le mode d'organisation des heures de travail répartissant les travailleurs en équipes tournantes selon un certain rythme horaire continu ou discontinu, dans la semaine.\n\nDans les entreprises qui ont à fonctionner sans interruption, jour et nuit y compris éventuellement les dimanches et jours fériés, les heures de travail assurées par un service de « quart », par roulement de jour et de nuit, dimanches et jours fériés éventuellement compris, sont rétribuées au même taux que celui prévu pour le travail de jour en semaine, en référence à l'équivalence mensuelle et à l'égalisation par le repos compensateur hebdomadaire.\n\nLorsque les ouvriers travaillent de façon ininterrompue dans un poste d'une durée supérieure à 8 heures par jour, il leur sera accordé un casse-croûte plus un rafraîchissant non alcoolisé à consommer sur le lieu de travail. À défaut, une prime compensatrice sera payée.",
+  "src": "ccmc",
+  "num": "Article 75",
+  "label": "Article 75 — Service en poste"
+ },
+ {
+  "id": "76",
+  "titre_court": "Primes",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Les primes constituent des accessoires de salaire dont le principe et l'application sont fixés par la loi. Elles sont destinées à motiver le travailleur dans son travail pour une production et une qualité accrue. Elles concernent également les conditions de travail (salissure, chaleur, poussière, risques, etc.).\n\nLa liste des primes n'est pas limitative et peut être modulée par décision paritaire suite à des négociations entre syndicats et employeurs dans chaque entreprise du secteur minier, carrières et assimilés.",
+  "src": "ccmc",
+  "num": "Article 76",
+  "label": "Article 76 — Primes"
+ },
+ {
+  "id": "77",
+  "titre_court": "Prime d'ancienneté",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Conformément aux dispositions de l'article 45 ci-dessus, tout travailleur, ayant été employé dans l'une des entreprises du secteur minier, carrières et assimilées, a droit à une prime d'ancienneté dont le mode de calcul et l'attribution s'établissent comme suit : la prime d'ancienneté est payée chaque mois au travailleur lors du paiement de son salaire ; elle est calculée en pourcentage du salaire minimum de la catégorie de classement de base du travailleur. Elle est attribuée après deux ans de présence effective dans l'entreprise au taux de 2 %. Sa progression est de 1 % par année de présence jusqu'à 15 ans, et de 0,5 % par an à partir de la 16e année.\n\nToute période d'absence autorisée est prise en compte pour le calcul de l'ancienneté dans les cas suivants : absences pour raisons personnelles, dans la limite d'un mois, en cas de veuvage pour la femme travailleuse, avec limite de six mois ; absences pour congés payés ou, dans la limite de 11 jours, pour les permissions exceptionnelles prévues à l'article 95 de la présente Convention ; absences pour maladie, dans la limite de six (6) mois ; absences pour accidents de travail ou maladies professionnelles quelle que soit la durée ; absences pour stage professionnel ou mission officielle.",
+  "src": "ccmc",
+  "num": "Article 77",
+  "label": "Article 77 — Prime d'ancienneté"
+ },
+ {
+  "id": "78",
+  "titre_court": "Prime de panier",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Une prime de panier est due à tout travailleur qu'une prolongation exceptionnelle de la durée du travail empêche de prendre un repas à l'habituel. Son montant est fixé par chaque entreprise.\n\nElle n'est pas attribuée lorsqu'elle est remplacée par au moins un casse-croûte. Cette prime ne fait pas obstacle au paiement des heures supplémentaires.",
+  "src": "ccmc",
+  "num": "Article 78",
+  "label": "Article 78 — Prime de panier"
+ },
+ {
+  "id": "79",
+  "titre_court": "Prime d'assiduité et gratification",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Il y a assiduité d'un travailleur quand celui-ci est régulièrement présent à son poste de travail et exécute normalement les tâches qui lui sont dévolues.\n\nLa prime d'assiduité est payée mensuellement ou annuellement. Elle est instituée en faveur du personnel d'exécution qui remplit de telles conditions. Son taux et ses modalités de paiement sont fixés par la Direction de l'entreprise.\n\nPour ce qui concerne le personnel d'encadrement, l'employeur lui attribue une gratification de fin d'année. La gratification constitue un encouragement individuel pour le travailleur dans sa manière de servir au cours de l'année écoulée. Le montant de cette gratification est fixé par la Direction de l'entreprise.",
+  "src": "ccmc",
+  "num": "Article 79",
+  "label": "Article 79 — Prime d'assiduité et gratification"
+ },
+ {
+  "id": "80",
+  "titre_court": "Prime d'intérim",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Sa raison d'être est de pouvoir réajuster, à titre provisoire, le salaire du travailleur assurant l'intérim à un emploi d'un niveau supérieur à celui de l'emploi qu'il occupe de façon permanente.\n\nElle est payée suivant les modalités définies à l'article 42 de la présente Convention ; elle prend fin au terme de la période de l'intérim.",
+  "src": "ccmc",
+  "num": "Article 80",
+  "label": "Article 80 — Prime d'intérim"
+ },
+ {
+  "id": "81",
+  "titre_court": "Prime de conditions de travail",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Les risques particuliers attachés au poste de travail qui ne peuvent être éliminés (poussière, bruit, chaleur, effort physique, salissure, etc.) doivent faire l'objet de port d'équipements de protection et du respect des méthodes de travail. Une prime appelée « prime de conditions de travail » est attribuée. Le taux est fonction de l'ampleur des risques et nuisances et est fixé par la Direction après avis du syndicat.\n\nCependant, lorsque les points de condition de travail (PCT) sont intégrés au salaire de base, la prime de condition de travail ne fait pas l'objet d'un paiement séparé.",
+  "src": "ccmc",
+  "num": "Article 81",
+  "label": "Article 81 — Prime de conditions de travail"
+ },
+ {
+  "id": "82",
+  "titre_court": "Prime d'horaire ou de poste",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Pour le personnel travaillant en continu par système de quart (travail posté), il est institué une prime de poste dont la modulation est fonction du système de roulement. Le taux est fixé par la Direction de l'entreprise après avis du Syndicat.",
+  "src": "ccmc",
+  "num": "Article 82",
+  "label": "Article 82 — Prime d'horaire ou de poste"
+ },
+ {
+  "id": "83",
+  "titre_court": "Indemnités",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Les indemnités constituent des montants alloués au travailleur en vue de compenser des frais inhérents à son travail et qui constituent des éléments de gêne tels que : transport, expatriation, nourriture, logement, cherté de vie.",
+  "src": "ccmc",
+  "num": "Article 83",
+  "label": "Article 83 — Indemnités"
+ },
+ {
+  "id": "84",
+  "titre_court": "Indemnités de Déplacement",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "Lorsque le travailleur est astreint par obligation professionnelle à un déplacement pour une mission temporaire hors de son lieu habituel d'emploi, il bénéficie d'une indemnité de déplacement. S'il en résulte pour lui des frais supplémentaires justifiés, le travailleur se fera rembourser le montant équivalent, suivant une procédure interne à chaque entreprise.\n\nPendant le déplacement, le travailleur perçoit la même rémunération qu'il aurait obtenue s'il avait travaillé selon l'horaire de l'entreprise.",
+  "src": "ccmc",
+  "num": "Article 84",
+  "label": "Article 84 — Indemnités de Déplacement"
+ },
+ {
+  "id": "85",
+  "titre_court": "Autres indemnités et primes",
+  "livre": "TITRE VII : SALAIRE",
+  "chapitre": "",
+  "text": "L'employeur a la faculté d'instituer toutes autres primes ou indemnités susceptibles d'améliorer la productivité et le rendement.\n\nIndemnité d'astreinte : elle est accordée au travailleur qui, en dehors de son temps de travail quotidien ou pendant son repos hebdomadaire, doit rester d'une façon permanente soit à son domicile, soit à un endroit déterminé, en vue : de se tenir à la disposition de ses supérieurs hiérarchiques ; d'intervenir directement dans le cadre de son travail afin d'assurer la continuité du service ou de la sécurité. Le montant de l'indemnité d'astreinte est fixé par la Direction de l'entreprise en fonction du niveau de qualification du poste de travail et de la durée de l'astreinte.",
+  "src": "ccmc",
+  "num": "Article 85",
+  "label": "Article 85 — Autres indemnités et primes"
+ },
+ {
+  "id": "86",
+  "titre_court": "Durée du travail, récupération, heures supplémentaires",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Les jours et horaires de travail, résultant des récupérations et des heures supplémentaires, sont fixés conformément aux dispositions légales, réglementaires et conventionnelles en vigueur.",
+  "src": "ccmc",
+  "num": "Article 86",
+  "label": "Article 86 — Durée du travail, récupération, heures supplémentaires"
+ },
+ {
+  "id": "87",
+  "titre_court": "Interruptions collectives du travail",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "En cas d'interruption collective du travail résultant soit de causes accidentelles ou de force majeure, soit d'intempéries, les récupérations des heures de travail perdues sont effectuées conformément à la réglementation en vigueur.\n\nLe travailleur qui, sur l'ordre de son employeur, s'est tenu à la disposition de l'entreprise, doit recevoir son salaire calculé au taux normal, même s'il n'a pas effectivement travaillé.",
+  "src": "ccmc",
+  "num": "Article 87",
+  "label": "Article 87 — Interruptions collectives du travail"
+ },
+ {
+  "id": "88",
+  "titre_court": "Jours fériés, chômés et payés",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Les jours fériés, chômés et payés sont ceux prévus et fixés par la législation et la règlementation en vigueur.\n\nEn cas de possibilité, les parties peuvent convenir, à l'avance, de l'institution de pont de jours fériés et de modalités de récupération.",
+  "src": "ccmc",
+  "num": "Article 88",
+  "label": "Article 88 — Jours fériés, chômés et payés"
+ },
+ {
+  "id": "89",
+  "titre_court": "Travail des femmes et congé de maternité",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Les conditions particulières du travail des femmes sont réglées conformément à la loi et à la réglementation en vigueur.",
+  "src": "ccmc",
+  "num": "Article 89",
+  "label": "Article 89 — Travail des femmes et congé de maternité"
+ },
+ {
+  "id": "90",
+  "titre_court": "Travail des enfants et des jeunes travailleurs",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Les conditions particulières du travail des enfants et des jeunes travailleurs sont réglées conformément à la loi. L'enfant est tout individu âgé de moins de 18 ans à qui le travail de nuit est interdit. Apprentis et jeunes travailleurs de moins de 18 ans ne peuvent être employés dans des établissements insalubres ou dangereux. Le Code du travail définit les travaux dangereux comme ceux qui exposent les enfants à des sévices physiques, psychologiques ou sexuels, ou qui exposent les enfants à des substances, des agents ou procédés dangereux ou à des conditions de température, de bruit ou de vibration préjudiciables à leur santé. Pas d'emploi avant l'âge de 16 ans sauf comme apprenti.\n\nDes dispositions du Code du travail proscrivent les pires formes de travail des enfants, toutes formes d'esclavage ou de pratiques analogues (traite ou vente d'enfants, recrutement forcé dans les armées, prostitutions).\n\nDes dispositions du même Code du travail assurent la protection des jeunes apprentis avec des maîtres célibataires ou divorcés ou ayant été condamnés pour crime ou pour atteinte aux bonnes mœurs ou avec une peine ferme.",
+  "src": "ccmc",
+  "num": "Article 90",
+  "label": "Article 90 — Travail des enfants et des jeunes travailleurs"
+ },
+ {
+  "id": "91",
+  "titre_court": "Durée et organisation du congé annuel",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Les travailleurs bénéficient de congés payés dans les conditions prévues par les lois et règlements en vigueur. La durée du congé est celle prévue dans le Code du travail. Elle est calculée à raison de deux jours et demi ouvrables par mois de service effectif.\n\nLa date de départ en congé est fixée par l'employeur après consultation du travailleur.\n\nConformément à la réglementation en vigueur, pour le calcul de la durée du congé acquis, ne seront pas déduites les absences pour accidents du travail ou maladies professionnelles, les périodes d'absence légales des femmes en couche, les périodes d'appel sous le drapeau dans la limite de six mois, les absences ou maladies dûment constatées par certificat médical, les permissions exceptionnelles. Le cumul du congé est interdit. Le travailleur doit effectivement prendre chaque année tous les jours de congés qu'il a acquis. Les périodes de congé peuvent être fractionnées dans une seule année soit par nécessité de service, soit par convenance personnelle.",
+  "src": "ccmc",
+  "num": "Article 91",
+  "label": "Article 91 — Durée et organisation du congé annuel"
+ },
+ {
+  "id": "92",
+  "titre_court": "Allocation de congé annuel",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "L'allocation de congé est calculée conformément aux dispositions du Code du travail.",
+  "src": "ccmc",
+  "num": "Article 92",
+  "label": "Article 92 — Allocation de congé annuel"
+ },
+ {
+  "id": "93",
+  "titre_court": "Indemnité compensatrice de congé annuel",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "En cas de rupture ou d'expiration du contrat de travail, quel que soit le motif, le travailleur, qui n'a pas encore bénéficié de la jouissance du congé annuel, a droit à une indemnité compensatrice calculée sur la base des droits acquis depuis son dernier congé d'après les dispositions légales, règlementaires et conventionnelles en vigueur.",
+  "src": "ccmc",
+  "num": "Article 93",
+  "label": "Article 93 — Indemnité compensatrice de congé annuel"
+ },
+ {
+  "id": "94",
+  "titre_court": "Voyage et transport",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Les dispositions afférentes aux voyages des travailleurs et des membres de leurs familles, ainsi qu'au transport de leurs bagages, à l'expiration du contrat de travail, sont celles fixées par le contrat individuel de travail ou, à défaut, par la politique de l'employeur.",
+  "src": "ccmc",
+  "num": "Article 94",
+  "label": "Article 94 — Voyage et transport"
+ },
+ {
+  "id": "95",
+  "titre_court": "Permissions exceptionnelles",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Sous réserve des dispositions plus favorables décidées par l'employeur, des permissions exceptionnelles d'absence, non déductibles du congé règlementaire et n'entraînant aucune retenue de salaire, sont accordées au travailleur pour les événements familiaux suivants, à justifier par la présentation de pièces d'état civil ou d'une attestation délivrée par l'autorité administrative qualifiée : mariage de l'employé(e) : trois (3) jours ; mariage d'un de ses enfants, d'un frère ou d'une sœur : un (1) jour ; décès du conjoint, d'un descendant ou d'un ascendant en ligne directe : trois (3) jours ; décès d'un frère ou d'une sœur : deux (2) jours ; décès d'un beau-père ou d'une belle-mère : deux (2) jours ; naissance d'un enfant : deux (2) jours ; baptême d'un enfant : un (1) jour.\n\nDans ce cas, le travailleur doit aviser son employeur dans le plus bref délai et, au plus tard, dans les huit (8) jours après l'événement.\n\nSi l'événement se produit hors du lieu d'emploi et nécessite le déplacement du travailleur, les durées ci-dessus pourront être prolongées d'accord parties. Cette prolongation ne sera pas rémunérée.",
+  "src": "ccmc",
+  "num": "Article 95",
+  "label": "Article 95 — Permissions exceptionnelles"
+ },
+ {
+  "id": "96",
+  "titre_court": "Congé de détente en cas de déplacement",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "En cas de déplacement temporaire prolongé au-delà de trois (3) mois pour raison de service, le travailleur, chef de famille, dont la famille est restée au lieu habituel d'emploi, peut bénéficier d'un congé de détente rémunéré lui permettant de revenir régulièrement auprès de sa famille.\n\nCe congé de détente peut être pris tous les mois à partir du troisième mois de déplacement, soit chaque mois ou le cumuler. Il est de : deux (2) jours pour la distance comprise entre 60 et 200 kilomètres ; trois (3) jours au-delà de 200 kilomètres.\n\nLes délais de route « aller et retour » entre le lieu habituel et le lieu occasionnel d'emploi sont fixés à : deux (2) jours dans le 1er cas ; trois (3) jours dans le 2e cas.\n\nLe congé de détente ne sera accordé que si sa date normale se situe au moins deux (2) semaines avant la fin du déplacement temporaire.\n\nPendant les voyages motivés par le déplacement pour un congé de détente, le travailleur perçoit, outre l'indemnité de déplacement à laquelle il pourrait prétendre, la même rémunération que s'il avait travaillé pendant l'horaire normal de l'entreprise. Les périodes de formation ne sont pas concernées par cette disposition.",
+  "src": "ccmc",
+  "num": "Article 96",
+  "label": "Article 96 — Congé de détente en cas de déplacement"
+ },
+ {
+  "id": "97",
+  "titre_court": "Logement et ameublement",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Lorsque l'employé(e) est déplacé du lieu de sa résidence habituelle, par le fait de l'employeur, en vue d'exécuter un contrat de travail, l'employeur est tenu de mettre à sa disposition un logement correspondant à sa catégorie et répondant aux règles d'hygiène ou de lui payer une indemnité.\n\nLa commodité du logement fourni par l'employeur doit répondre aux besoins du travailleur et de sa famille (conjoint et enfants), compte tenu des usages et des possibilités du lieu d'emploi en matière de logement.\n\nLe détail des avantages fournis en matière de logement doit figurer au contrat du travailleur. Le travailleur disposant à titre personnel de gros meubles pourra obtenir de l'employeur son accord pour leur transport aux frais de ce dernier.",
+  "src": "ccmc",
+  "num": "Article 97",
+  "label": "Article 97 — Logement et ameublement"
+ },
+ {
+  "id": "98",
+  "titre_court": "Libération du logement fourni par l'employeur",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "La libération du logement peut s'opérer dans les conditions suivantes : en cas de rupture du contrat de travail, l'évacuation, à l'expiration de la période de préavis, ne peut se faire dans un délai inférieur à un (1) mois ; en cas de rupture de la relation de travail par le travailleur sans observation d'un préavis ou en cas de condamnation pour crime ou délit, la libération du logement est immédiate et sans délai ; en cas de licenciement par l'employeur sans préavis, à l'exception du cas de faute lourde, la libération du logement est différée dans la limite de deux (02) mois, à compter de la notification du licenciement ; en cas de décès du travailleur, la libération du logement de fonction par la famille du défunt se fera dans la limite maximale de six (6) mois, à compter de la date de signature du certificat de décès ; en cas de départ à la retraite, le travailleur logé par l'entreprise devra libérer les lieux au bout d'une période maximale de : quatre (4) mois pour le travailleur qui n'a pas bénéficié d'aide à l'habitat, ce délai est prolongé jusqu'à la fin de l'année scolaire en cours ; un (1) mois pour le travailleur ayant bénéficié de l'aide à l'habitat avant le départ à la retraite.\n\nSuivant les réalités propres de chaque entreprise, ces délais peuvent être améliorés d'accord parties.",
+  "src": "ccmc",
+  "num": "Article 98",
+  "label": "Article 98 — Libération du logement fourni par l'employeur"
+ },
+ {
+  "id": "99",
+  "titre_court": "Entretien professionnel annuel",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Les parties reconnaissent le grand intérêt pour l'entreprise que le travailleur et sa hiérarchie puissent échanger, une fois par an, sur son activité professionnelle ; dans le souci primordial de préserver l'outil de travail, d'entretenir un climat social sain et des ressources humaines motivées pour les objectifs de l'entreprise.\n\nÀ cette occasion, la hiérarchie fait état au travailleur concerné de son appréciation générale de son activité au cours de l'année écoulée ; activité normalement fondée sur des objectifs de performance préalablement définis. Le travailleur a, à son tour, l'occasion d'apporter tout éclaircissement, de formuler des suggestions et de faire état des facteurs qui influencent son activité. C'est aussi l'occasion pour la Direction de connaître directement ceux qui agissent en son nom. C'est, pour tous, un outil irremplaçable pour éviter les préjugés, les suppositions, les incompréhensions et les mépris.\n\nAinsi, les parties conviennent de l'institution de l'entretien professionnel annuel.",
+  "src": "ccmc",
+  "num": "Article 99",
+  "label": "Article 99 — Entretien professionnel annuel"
+ },
+ {
+  "id": "100",
+  "titre_court": "Activités culturelles et loisirs",
+  "livre": "TITRE VIII : CONDITIONS DE TRAVAIL",
+  "chapitre": "",
+  "text": "Les parties reconnaissent l'importance des activités culturelles et des loisirs pour l'épanouissement des travailleurs et, partant, pour la qualité des relations professionnelles.\n\nElles se déclarent favorables à la promotion et au développement de ces activités par tous moyens utiles et s'engagent à faire de ces activités un moyen pour renforcer les bonnes relations entre les travailleurs de l'entreprise sans aucune distinction.",
+  "src": "ccmc",
+  "num": "Article 100",
+  "label": "Article 100 — Activités culturelles et loisirs"
+ },
+ {
+  "id": "101",
+  "titre_court": "Dispositions Générales",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "Les dispositions relatives aux conditions d'hygiène, de santé, de sécurité, tant au poste de travail que dans le cadre de vie, sont celles prévues par la législation et les textes réglementaires en vigueur.\n\nLes parties à la présente Convention s'engagent à collaborer conjointement en vue d'assurer la sécurité et la santé au travail sur tous les lieux, conformément aux textes en vigueur.\n\nLes salariés ne doivent pas subir de violence ou de persécution en milieu de travail. Il en est de même des comportements de harcèlement moral tant des collaborateurs que des membres de la hiérarchie donneur d'ordre ou contrôlant l'exécution des tâches.",
+  "src": "ccmc",
+  "num": "Article 101",
+  "label": "Article 101 — Dispositions Générales"
+ },
+ {
+  "id": "102",
+  "titre_court": "Mesures d'hygiène, de santé, de sécurité et d'environnement",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "L'employeur s'engage à veiller tout particulièrement au respect des règles d'hygiène, de santé, de sécurité et d'environnement dans l'entreprise, conformément à la réglementation en vigueur.\n\nLes parties à la présente Convention s'engagent à créer des « Comités de Santé & Sécurité au travail » qui ont pour objectifs d'élaborer des programmes de santé et de sécurité au travail, de supporter l'implantation des mesures d'application des activités visant à préserver l'intégrité physique des travailleurs.\n\nDe leur côté, les organisations syndicales des travailleurs s'engagent à participer activement aux travaux de ces Comités, notamment, à la diffusion des programmes de formation et d'information des travailleurs. Cela, de manière à stimuler le développement de comportements positifs en matière de santé, de sécurité et d'environnement, notamment, dans les cités d'habitation construites pour les travailleurs.",
+  "src": "ccmc",
+  "num": "Article 102",
+  "label": "Article 102 — Mesures d'hygiène, de santé, de sécurité et d'environnement"
+ },
+ {
+  "id": "103",
+  "titre_court": "Fourniture du matériel et d'Équipements de Protection Individuelle (EPI)",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "Le matériel de protection individuelle nécessaire pour l'exécution du travail et les tenues particulières seront fournis gratuitement par l'employeur suivant une périodicité arrêtée par la Direction de l'entreprise et imposée au travailleur par mesure de Santé et de Sécurité ou d'hygiène.\n\nLe travailleur est tenu de les porter. Il est responsable de leur bon entretien. Les conditions d'attribution, de renouvellement et de restitution, dans le cas de départ de l'entreprise ou de mutation, doivent être spécifiées par l'employeur.\n\nTout travailleur, affecté à un poste comportant des risques, doit bénéficier, après leur évaluation, d'une sensibilisation à ces risques ; si nécessaire, une indemnité pourrait être incluse dans la prime de conditions de travail.\n\nChaque entreprise pourrait organiser une compétition mensuelle de sécurité et de santé au travail entre tous les services techniques avec allocation de primes au trimestre échu pour les services indemnes ou préservés d'accident.",
+  "src": "ccmc",
+  "num": "Article 103",
+  "label": "Article 103 — Fourniture du matériel et d'Équipements de Protection Individuelle (EPI)"
+ },
+ {
+  "id": "104",
+  "titre_court": "Service de santé au travail & services médicaux d'entreprise",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "En ces matières, les parties se réfèrent aux dispositions légales et règlementaires en vigueur. Cela, sans que lesdites dispositions puissent faire obstacle à l'attribution d'avantages supérieurs dans le cadre du contrat individuel de travail ou d'accord d'entreprise.\n\nEn particulier, les parties s'engagent à appliquer les dispositions pertinentes du Code du travail relatif à la santé au travail.",
+  "src": "ccmc",
+  "num": "Article 104",
+  "label": "Article 104 — Service de santé au travail & services médicaux d'entreprise"
+ },
+ {
+  "id": "105",
+  "titre_court": "Des guides de sécurité",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "Un guide général et des guides spéciaux portant sur l'hygiène, la sécurité, la santé et l'environnement au travail seront distribués aux travailleurs en activité sur site et autres lieux de travail (y compris le personnel ne relevant pas de la présente Convention) pour leur permettre de mieux connaître : les procédures existantes en matière d'hygiène, de sécurité et de santé au travail ; les risques liés à l'exécution du travail et les moyens de les éviter.",
+  "src": "ccmc",
+  "num": "Article 105",
+  "label": "Article 105 — Des guides de sécurité"
+ },
+ {
+  "id": "106",
+  "titre_court": "De l'application de la procédure d'urgence",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "Sur chaque site, il sera organisé périodiquement, sous l'égide de la Direction, des exercices pratiques d'application et de procédure afin d'initier le personnel à ce qu'il doit faire : quand, où et comment dans ce type de situation.",
+  "src": "ccmc",
+  "num": "Article 106",
+  "label": "Article 106 — De l'application de la procédure d'urgence"
+ },
+ {
+  "id": "107",
+  "titre_court": "Des moyens d'éducation et de sensibilisation",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "Des campagnes de sensibilisation, des compétitions entre différentes unités de travail ou toute autre activité du genre pourront être organisées périodiquement par la Direction dans le domaine de l'hygiène, de la santé, de la sécurité et de l'environnement au travail sur le site.\n\nL'organisation de ces activités est déterminée par la politique interne de l'entreprise, après le cas échéant, avis du Comité d'Hygiène, de Santé, de Sécurité et d'Environnement.",
+  "src": "ccmc",
+  "num": "Article 107",
+  "label": "Article 107 — Des moyens d'éducation et de sensibilisation"
+ },
+ {
+  "id": "108",
+  "titre_court": "Admission de personnes étrangères sur le site",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "L'admission de personnes étrangères sur le site est subordonnée à une autorisation préalable de la Direction. Toute personne ainsi autorisée doit se conformer aux dispositions de la règlementation en vigueur et observer toutes les instructions qui lui sont données de façon à préserver sa propre sécurité, celle des travailleurs et du site.",
+  "src": "ccmc",
+  "num": "Article 108",
+  "label": "Article 108 — Admission de personnes étrangères sur le site"
+ },
+ {
+  "id": "109",
+  "titre_court": "Emploi des travailleurs illettrés ou parlant des langues différentes",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "Sur les sites où sont employés des travailleurs illettrés ou parlant des langues différentes, l'employeur doit prescrire des mesures leur permettant de comprendre les règlements, instructions et consignes se rapportant à la bonne exécution de leurs tâches, de manière à éviter ou à minimiser les risques tant pour leur sécurité et leur santé que pour celles des autres.",
+  "src": "ccmc",
+  "num": "Article 109",
+  "label": "Article 109 — Emploi des travailleurs illettrés ou parlant des langues différentes"
+ },
+ {
+  "id": "110",
+  "titre_court": "Des obligations des travailleurs dans le domaine de l'hygiène, de la santé, de la sécurité et de l'environnement",
+  "livre": "TITRE IX : HYGIÈNE, SANTÉ, SÉCURITÉ ET ENVIRONNEMENT",
+  "chapitre": "",
+  "text": "Tout travailleur, lorsqu'il est au travail, est tenu de : prendre raisonnablement soin de son hygiène, de sa santé, de sa sécurité, et de celles des autres personnes auxquelles ses actes ou ses négligences pourraient porter préjudice ; respecter les consignes qui lui sont données pour sa sécurité et sa santé ainsi que pour celles des autres ; utiliser correctement les dispositifs de sécurité et les équipements de protection conformément aux instructions qui lui ont été données ; signaler immédiatement à son supérieur hiérarchique toute situation dont il a des raisons de penser qu'elle peut présenter un risque dont il n'a pas la maîtrise ; signaler tout accident ou toute atteinte à sa sécurité ou à sa santé et à celles des autres survenant au cours du travail ou s'y rapportant.",
+  "src": "ccmc",
+  "num": "Article 110",
+  "label": "Article 110 — Des obligations des travailleurs dans le domaine de l'hygiène, de la santé, de la sécurité et de l'environnement"
+ },
+ {
+  "id": "111",
+  "titre_court": "Retraite normale",
+  "livre": "TITRE X : RETRAITE",
+  "chapitre": "",
+  "text": "Les parties reconnaissent que l'admission au bénéfice d'une retraite ne constitue pas un licenciement et ne peut, par conséquent, justifier l'octroi d'une indemnité de licenciement.\n\nLes conditions de départ à la retraite sont fixées conformément à la loi. Toutefois, les parties fixent l'âge de départ à la retraite ainsi qu'il suit : 60 ans pour les agents occupés aux tâches de manutention ou de force physique, pour les ouvriers et employés occupés aux tâches d'exécution et pour les agents d'encadrement moyen ; 65 ans pour les cadres et assimilés assumant des fonctions supérieures.\n\nDans le cadre de la présente Convention, les employeurs peuvent maintenir en activité rémunérée des travailleurs ayant dépassé l'âge de la retraite tel que fixé ci-dessus ; à charge pour les employeurs de convenir avec la CNSS des conditions de fonctionnement des travailleurs concernés (cotisations, prestations).",
+  "src": "ccmc",
+  "num": "Article 111",
+  "label": "Article 111 — Retraite normale"
+ },
+ {
+  "id": "112",
+  "titre_court": "Retraite anticipée",
+  "livre": "TITRE X : RETRAITE",
+  "chapitre": "",
+  "text": "Tel que le prévoit la législation sociale en vigueur, les parties s'engagent à reconnaître que tout travailleur assuré, remplissant les conditions, peut, et dans les cinq (5) années précédant sa date de départ à la retraite normale, demander à bénéficier d'une retraite par anticipation sur la base des périodes d'assurance accomplies.\n\nAussi, les parties conviennent que, pour des raisons personnelles, tout travailleur, ayant complété au moins quinze (15) années de cotisation, peut demander à bénéficier d'une retraite par anticipation sur la base des périodes d'assurance accomplies. Les modalités de mise en œuvre de cette retraite anticipée peuvent être décidées librement par chaque entreprise ou par accord conclu entre la Direction et la Délégation Syndicale de l'entreprise. Mais en l'absence d'une règlementation particulière (décision unilatérale ou accord d'entreprise) plus favorable au travailleur, la retraite anticipée pour raison personnelle sera accordée au travailleur dans les cinq (5) dernières années précédant son départ à la retraite normale, avec implication de la CNSS.\n\nToutefois, en cas de mise à la retraite anticipée d'un travailleur assuré pour cause économique dans les cinq (5) ans qui précèdent l'âge normal d'admissibilité à la pension, l'employeur devra verser à la caisse nationale de sécurité sociale (CNSS) l'ensemble des cotisations patronales et ouvrières afférentes à la période restante pour la totalisation de l'âge normal de la retraite. Ces cotisations seront calculées sur la base du dernier salaire perçu par le travailleur admis à la retraite anticipée.",
+  "src": "ccmc",
+  "num": "Article 112",
+  "label": "Article 112 — Retraite anticipée"
+ },
+ {
+  "id": "113",
+  "titre_court": "Indemnité Conventionnelle de départ à la retraite",
+  "livre": "TITRE X : RETRAITE",
+  "chapitre": "",
+  "text": "Pour le travailleur qui va à la retraite, une allocation spéciale dite indemnité Conventionnelle de départ à la retraite sera payée. Son montant équivaut à un minimum de six (6) mois du dernier salaire de base auquel s'ajoutera, suivant l'ancienneté du travailleur dans l'entreprise, le palier correspondant : de 0 à 5 ans : un (1) mois de salaire de base ; de 6 à 10 ans : trois (3) mois de salaire de base ; de 11 à 15 ans : six (6) mois de salaire de base ; de 16 à 20 ans : dix (10) mois de salaire de base ; plus de 20 ans : quinze (15) mois de salaire de base.\n\nToutefois, chaque employeur conserve la faculté d'améliorer cette indemnité par voie de négociation interne avec les syndicats.",
+  "src": "ccmc",
+  "num": "Article 113",
+  "label": "Article 113 — Indemnité Conventionnelle de départ à la retraite"
+ },
+ {
+  "id": "114",
+  "titre_court": "Pension de vieillesse",
+  "livre": "TITRE X : RETRAITE",
+  "chapitre": "",
+  "text": "Conformément aux dispositions légales et règlementaires, le travailleur admis à la retraite percevra une pension calculée et payée par la Caisse Nationale de Sécurité Sociale (CNSS).",
+  "src": "ccmc",
+  "num": "Article 114",
+  "label": "Article 114 — Pension de vieillesse"
+ },
+ {
+  "id": "115",
+  "titre_court": "Support à la constitution du dossier de retraite",
+  "livre": "TITRE X : RETRAITE",
+  "chapitre": "",
+  "text": "L'employeur est tenu d'assister le futur retraité et le retraité par anticipation pour la constitution du dossier ouvrant droit à la pension.",
+  "src": "ccmc",
+  "num": "Article 115",
+  "label": "Article 115 — Support à la constitution du dossier de retraite"
+ },
+ {
+  "id": "116",
+  "titre_court": "Visites médicales de départ à la retraite",
+  "livre": "TITRE X : RETRAITE",
+  "chapitre": "",
+  "text": "Dans le but de détecter des problèmes de santé qui pourraient avoir été causés par une exposition professionnelle, un examen médical sera réalisé chez tous les travailleurs partant à la retraite, un (1) an avant leur départ définitif de l'entreprise. Si cet examen révèle l'existence d'une affection d'origine professionnelle, l'employeur apportera au futur retraité l'assistance requise conformément à la législation en vigueur.\n\nLes résultats de cet examen seront conservés pendant une période de 20 ans.",
+  "src": "ccmc",
+  "num": "Article 116",
+  "label": "Article 116 — Visites médicales de départ à la retraite"
+ },
+ {
+  "id": "117",
+  "titre_court": "Entrée en vigueur du Salaire de base minimum (seuil d'entrée)",
+  "livre": "TITRE XI : DISPOSITIONS TRANSITOIRES ET FINALES",
+  "chapitre": "",
+  "text": "Le salaire de base entre en vigueur à compter du 1er août 2025 pour les entreprises en exploitation ; le 1er avril 2026 pour les entreprises en développement ou construction et en phase de recherche.",
+  "src": "ccmc",
+  "num": "Article 117",
+  "label": "Article 117 — Entrée en vigueur du Salaire de base minimum (seuil d'entrée)"
+ },
+ {
+  "id": "118",
+  "titre_court": "Prise d'effet de la Convention",
+  "livre": "TITRE XI : DISPOSITIONS TRANSITOIRES ET FINALES",
+  "chapitre": "",
+  "text": "La présente Convention annule et remplace celle conclue et signée par les parties, le 14 juillet 1995. Elle prendra effet à partir du jour qui suivra son dépôt au greffe du Tribunal du Travail de Conakry.\n\nFait à Conakry, le 14 février 2025. Signée pour les employeurs (Chambre des Mines de Guinée, FEPAMGUI, CGE-GUI), pour les organisations syndicales (CNTG/FSPMCICA, USTG/FESAMICAG, UGTG/FMCIC) et par le Président de la Commission de Négociation (Inspecteur Général du Travail) ; visée par le Ministre des Mines et de la Géologie et le Ministre du Travail et de la Fonction Publique.",
+  "src": "ccmc",
+  "num": "Article 118",
+  "label": "Article 118 — Prise d'effet de la Convention"
+ }
+]

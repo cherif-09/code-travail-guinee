@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Recherchez tout article du Code du travail guinéen par numéro ou mot-clé, avec le texte officiel, une explication en langage clair et un conseil RH.">
+<meta name="description" content="Recherchez le Code du travail guinéen et la Convention collective des mines et carrières par numéro d'article ou mot-clé : texte officiel, explication en langage clair et conseil RH.">
 <meta name="theme-color" content="#1f5d43">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Code du Travail — République de Guinée">
-<meta property="og:description" content="Recherchez tout article du Code du travail guinéen par numéro ou mot-clé, avec le texte officiel, une explication en langage clair et un conseil RH.">
+<meta property="og:title" content="Code du Travail & Convention minière — Guinée">
+<meta property="og:description" content="Le Code du travail guinéen et la Convention collective des mines et carrières : recherche par article ou mot-clé, texte officiel, explication claire et conseil RH.">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary">
 <title>Code du Travail Guinée</title>
@@ -27,6 +27,7 @@
   --paper:#f6f4ee; --surface:#fffdf8; --surface-2:#f0ede4; --ink:#22271f; --ink-soft:#54594c;
   --line:#dfdacb; --line-strong:#cdc7b4;
   --accent:#1f5d43; --accent-soft:#2c7a58; --accent-tint:#e6efe8; --accent-ink:#134030;
+  --conv:#4a4a9e; --conv-soft:#5f5fbf; --conv-tint:#ebebf7; --conv-ink:#33327a;
   --exp-bg:#eef2f4; --exp-line:#c6d5dc; --exp-ink:#1c4451; --exp-accent:#1f6a80;
   --rh-bg:#f7efdd; --rh-line:#e4cf9f; --rh-ink:#6a4c15; --rh-accent:#a9741a;
   --mark:#ffe39c; --mark-ink:#4a3a06;
@@ -40,9 +41,10 @@
 :root:not([data-theme="light"]){}
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#15171340; --paper:#141612; --surface:#1c1f19; --surface-2:#23271f; --ink:#eae7dc; --ink-soft:#a6a595;
+    --paper:#141612; --surface:#1c1f19; --surface-2:#23271f; --ink:#eae7dc; --ink-soft:#a6a595;
     --line:#33372c; --line-strong:#454a3a;
     --accent:#5cae86; --accent-soft:#6dbf96; --accent-tint:#1e3329; --accent-ink:#9fdcbd;
+    --conv:#9a93e6; --conv-soft:#8a82df; --conv-tint:#26234a; --conv-ink:#c5bff0;
     --exp-bg:#182a30; --exp-line:#2c4650; --exp-ink:#a8d4e0; --exp-accent:#79bccf;
     --rh-bg:#2a2413; --rh-line:#4d4225; --rh-ink:#e2c887; --rh-accent:#d1a24e;
     --mark:#5a4a12; --mark-ink:#ffe8a8;
@@ -54,6 +56,7 @@
   --paper:#141612; --surface:#1c1f19; --surface-2:#23271f; --ink:#eae7dc; --ink-soft:#a6a595;
   --line:#33372c; --line-strong:#454a3a;
   --accent:#5cae86; --accent-soft:#6dbf96; --accent-tint:#1e3329; --accent-ink:#9fdcbd;
+  --conv:#9a93e6; --conv-soft:#8a82df; --conv-tint:#26234a; --conv-ink:#c5bff0;
   --exp-bg:#182a30; --exp-line:#2c4650; --exp-ink:#a8d4e0; --exp-accent:#79bccf;
   --rh-bg:#2a2413; --rh-line:#4d4225; --rh-ink:#e2c887; --rh-accent:#d1a24e;
   --mark:#5a4a12; --mark-ink:#ffe8a8;
@@ -76,13 +79,17 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 .brand .sub{font-size:11.5px;color:var(--ink-soft);margin-top:4px;text-transform:uppercase;letter-spacing:.08em;font-weight:500}
 .nav{padding:10px 12px 40px}
 .nav .navtitle{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);font-weight:600;padding:14px 8px 6px}
+.nav .navtitle.conv{color:var(--conv-ink)}
 .nav-btn{width:100%;text-align:left;border:0;background:none;color:var(--ink);font-family:var(--sans);font-size:13.5px;font-weight:600;padding:9px 10px;border-radius:8px;cursor:pointer;display:flex;gap:9px;align-items:center;line-height:1.3;margin-bottom:2px}
 .nav-btn:hover{background:var(--surface-2)}
 .nav-btn.active{background:var(--accent-tint);color:var(--accent-ink)}
 .nav-btn.active .ln{color:var(--accent-ink)}
 .nav-btn svg{width:16px;height:16px;flex:none;stroke-width:2}
 .nav-home{margin-bottom:6px}
-.livre-btn .ln{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:600;flex:none;width:18px;text-align:center}
+.livre-btn .ln{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:600;flex:none;width:20px;text-align:center}
+.conv-btn .ln{font-family:var(--mono);font-size:10.5px;color:var(--conv);font-weight:600;flex:none;width:24px;text-align:center}
+.conv-btn.active{background:var(--conv-tint);color:var(--conv-ink)}
+.conv-btn.active .ln{color:var(--conv-ink)}
 .viewhead{margin:0 0 16px}
 .backbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-soft);font-family:var(--sans);font-size:13px;font-weight:600;padding:7px 14px 7px 10px;border-radius:9px;cursor:pointer;transition:all .13s}
 .backbtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
@@ -107,7 +114,15 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 .clearbtn:hover{color:var(--ink)}
 .themebtn{flex:none;border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-soft);width:44px;height:44px;border-radius:12px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
 .themebtn:hover{color:var(--accent);border-color:var(--accent)}
-.hint{max-width:900px;margin:8px auto 0;font-size:12px;color:var(--ink-soft);display:flex;gap:16px;flex-wrap:wrap}
+.filterrow{max-width:900px;margin:11px auto 0;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.srcfilter{display:inline-flex;background:var(--surface-2);border:1px solid var(--line-strong);border-radius:10px;padding:3px;gap:2px}
+.srcfilter button{border:0;background:none;font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--ink-soft);padding:6px 13px;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:6px}
+.srcfilter button .dot{width:8px;height:8px;border-radius:50%;flex:none}
+.srcfilter button[data-src="code"] .dot{background:var(--accent)}
+.srcfilter button[data-src="ccmc"] .dot{background:var(--conv)}
+.srcfilter button.active{background:var(--surface);color:var(--ink);box-shadow:var(--shadow-sm)}
+.filterlabel{font-size:11.5px;color:var(--ink-soft);font-weight:500}
+.hint{max-width:900px;margin:10px auto 0;font-size:12px;color:var(--ink-soft);display:flex;gap:16px;flex-wrap:wrap}
 .hint b{color:var(--ink);font-weight:600}
 .hint code{font-family:var(--mono);background:var(--surface-2);padding:1px 6px;border-radius:5px;font-size:11.5px;color:var(--accent-ink)}
 
@@ -118,6 +133,14 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 .resmeta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:2px 0 18px;flex-wrap:wrap}
 .resmeta h2{font-family:var(--serif);font-size:22px;font-weight:600;margin:0;letter-spacing:-.01em}
 .resmeta .count{font-size:13px;color:var(--ink-soft);font-family:var(--mono)}
+
+/* ---- Source block header (search, two sources) ---- */
+.srcblock-h{display:flex;align-items:center;gap:10px;font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#fff;padding:10px 16px;border-radius:10px;margin:30px 0 16px;scroll-margin-top:150px}
+.srcblock-h:first-child{margin-top:4px}
+.srcblock-h.code{background:var(--accent)}
+.srcblock-h.conv{background:var(--conv)}
+.srcblock-h svg{width:16px;height:16px;flex:none}
+.srcblock-h .c{margin-left:auto;font-family:var(--mono);font-weight:600;letter-spacing:0;text-transform:none;opacity:.9}
 
 /* ---- Theme summary banner ---- */
 .summary{background:linear-gradient(180deg,var(--accent-tint),var(--surface));border:1px solid var(--accent-soft);border-radius:var(--radius);padding:22px 24px;margin-bottom:26px;box-shadow:var(--shadow-sm)}
@@ -132,13 +155,20 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 
 /* ---- Article card ---- */
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:18px;box-shadow:var(--shadow-sm);scroll-margin-top:150px}
+.card.ccmc{border-left:3px solid var(--conv)}
 .card:target{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint)}
+.card.ccmc:target{border-color:var(--conv);box-shadow:0 0 0 3px var(--conv-tint)}
 .card .head{display:flex;align-items:flex-start;gap:14px;margin-bottom:6px}
 .badge{font-family:var(--mono);font-size:13px;font-weight:600;color:#fff;background:var(--accent);padding:5px 11px;border-radius:8px;white-space:nowrap;flex:none;line-height:1.3}
-.crumb{font-size:11.5px;color:var(--ink-soft);line-height:1.45;padding-top:3px}
+.badge.conv{background:var(--conv)}
+.crumb{font-size:11.5px;color:var(--ink-soft);line-height:1.5;padding-top:2px}
 .crumb b{color:var(--ink-soft);font-weight:600}
 .crumb .sep{opacity:.5;margin:0 5px}
-.artbody{font-family:var(--serif);font-size:16.5px;line-height:1.68;color:var(--ink);margin-top:12px}
+.srcpill{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:2px 8px;border-radius:999px;margin-right:8px;vertical-align:middle}
+.srcpill.code{background:var(--accent-tint);color:var(--accent-ink)}
+.srcpill.conv{background:var(--conv-tint);color:var(--conv-ink)}
+.arttitle{font-family:var(--serif);font-size:17px;font-weight:600;margin:12px 0 0;color:var(--ink);line-height:1.35}
+.artbody{font-family:var(--serif);font-size:16.5px;line-height:1.68;color:var(--ink);margin-top:10px}
 .artbody p{margin:0 0 12px}
 .artbody p:last-child{margin-bottom:0}
 
@@ -163,19 +193,32 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 
 /* ---- Home / welcome ---- */
 .welcome{padding:6px 0 0}
-.welcome .lead{font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--ink);max-width:640px;margin:0 0 26px}
+.welcome .lead{font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--ink);max-width:660px;margin:0 0 20px}
+.scopebox{display:flex;flex-direction:column;gap:10px;max-width:660px;margin:0 0 28px}
+.scoperow{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 16px}
+.scoperow .tag{font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:3px 9px;border-radius:999px;flex:none;margin-top:1px}
+.scoperow.code .tag{background:var(--accent-tint);color:var(--accent-ink)}
+.scoperow.conv .tag{background:var(--conv-tint);color:var(--conv-ink)}
+.scoperow .txt{font-size:13.5px;color:var(--ink);line-height:1.5}
+.scoperow .txt b{font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:34px}
 .chip{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 15px;font-size:13px;font-weight:500;cursor:pointer;transition:all .13s}
 .chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px;margin-bottom:36px}
 .stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 18px}
 .stat .n{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--accent);line-height:1}
+.stat.conv .n{color:var(--conv)}
 .stat .l{font-size:12px;color:var(--ink-soft);margin-top:6px}
-.welcome h4{font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);font-weight:600;margin:0 0 14px}
-.booklist{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.welcome h4{font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);font-weight:600;margin:0 0 14px;display:flex;align-items:center;gap:8px}
+.welcome h4 .dot{width:9px;height:9px;border-radius:50%}
+.welcome h4 .dot.code{background:var(--accent)}
+.welcome h4 .dot.conv{background:var(--conv)}
+.booklist{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:30px}
 .bookcard{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:var(--radius-sm);padding:16px 18px;cursor:pointer;transition:all .13s}
 .bookcard:hover{border-color:var(--accent);box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+.bookcard.conv:hover{border-color:var(--conv)}
 .bookcard .bn{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.bookcard.conv .bn{color:var(--conv)}
 .bookcard .bt{font-family:var(--serif);font-size:16px;font-weight:600;margin:6px 0 4px;color:var(--ink)}
 .bookcard .bc{font-size:12px;color:var(--ink-soft)}
 
@@ -202,7 +245,7 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
     <div class="brand">
       <div class="flag"><i></i><i></i><i></i></div>
       <h1>Code du Travail</h1>
-      <div class="sub">République de Guinée</div>
+      <div class="sub">Guinée · + Convention minière</div>
     </div>
     <nav class="nav" id="nav"></nav>
   </aside>
@@ -221,9 +264,17 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
         </div>
         <button class="themebtn" id="themebtn" aria-label="Thème">◐</button>
       </div>
+      <div class="filterrow">
+        <span class="filterlabel">Source&nbsp;:</span>
+        <div class="srcfilter" id="srcfilter">
+          <button data-src="all" class="active">Tout</button>
+          <button data-src="code"><span class="dot"></span>Code du travail</button>
+          <button data-src="ccmc"><span class="dot"></span>Convention minière</button>
+        </div>
+      </div>
       <div class="hint">
-        <span><b>Par article&nbsp;:</b> tapez <code>172.6</code> ou <code>121</code> (tout le chapitre)</span>
-        <span><b>Par mot-clé&nbsp;:</b> <code>congé</code>, <code>salaire</code>, <code>préavis</code>…</span>
+        <span><b>Par article&nbsp;:</b> tapez <code>172.6</code> (Code) ou <code>66</code> (Convention)</span>
+        <span><b>Par mot-clé&nbsp;:</b> <code>licenciement</code>, <code>prime</code>, <code>retraite</code>…</span>
       </div>
     </div>
     <div class="content"><div class="inner" id="results"></div></div>
@@ -231,7 +282,8 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 </div>
 
 <script>
-let DATA={articles:[]}, THEMES=[], A=[], byId={};
+let CODE=[], CONV=[], THEMES=[], A=[], CONV_TITRES=[];
+let SRC='all';
 
 const LIVRES = [
  {ln:0, name:"Titre préliminaire", desc:"Dispositions générales, principes fondamentaux"},
@@ -243,6 +295,26 @@ const LIVRES = [
 ];
 
 const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function cssid(id){return (id||'').replace(/[^a-z0-9.]/gi,'-');}
+function elId(a){return 'art-'+a.src+'-'+cssid(a.id);}
+function isSpecial(a){return a.id==='terminologie'||a.id==='preambule';}
+
+/* ---------- Convention titre helpers ---------- */
+function convShort(t){
+  if(/PRÉLIMINAIRES/i.test(t)) return {rom:'—', label:'Préliminaires'};
+  const m=t.match(/^TITRE\s+([IVXLC]+|PREMIER)/i);
+  let rom=m?m[1].toUpperCase():'';
+  if(rom==='PREMIER') rom='I';
+  let label=t.replace(/^TITRE\s+[^:]*:\s*/i,'').trim();
+  label=label.charAt(0)+label.slice(1).toLowerCase();
+  return {rom, label};
+}
+function cleanConvChap(t){ return (t||'').replace(/^CHAPITRE\s+[IVXLC0-9]*\s*[:\-–]?\s*/i,'').replace(/^(.)/,(m,c)=>c).trim(); }
+function buildConvTitres(){
+  CONV_TITRES=[]; const idx={};
+  CONV.forEach(a=>{ const k=a.livre||''; if(!(k in idx)){idx[k]=CONV_TITRES.length; CONV_TITRES.push({key:k, items:[]});} CONV_TITRES[idx[k]].items.push(a); });
+}
 
 /* ---------- Sidebar nav ---------- */
 function buildNav(){
@@ -253,9 +325,10 @@ function buildNav(){
   home.innerHTML=`${iconHome()}<span>Accueil</span>`;
   home.onclick=()=>{ qEl.value=''; showHome(); closeMobile(); };
   nav.appendChild(home);
-  const nt=document.createElement('div'); nt.className='navtitle'; nt.textContent='Parcourir le code'; nav.appendChild(nt);
+
+  const nt=document.createElement('div'); nt.className='navtitle'; nt.textContent='Code du travail'; nav.appendChild(nt);
   LIVRES.forEach(L=>{
-    const arts = A.filter(a=>a.ln===L.ln);
+    const arts = CODE.filter(a=>a.ln===L.ln);
     if(!arts.length) return;
     const btn=document.createElement('button'); btn.className='nav-btn livre-btn'; btn.dataset.ln=L.ln;
     const short = L.ln===0 ? 'Titre préliminaire' : L.name.split(' — ')[1] || L.name;
@@ -263,11 +336,21 @@ function buildNav(){
     btn.onclick=()=>{ showLivre(L.ln); closeMobile(); };
     nav.appendChild(btn);
   });
+
+  const nt2=document.createElement('div'); nt2.className='navtitle conv'; nt2.textContent='Convention des mines & carrières'; nav.appendChild(nt2);
+  CONV_TITRES.forEach((T,i)=>{
+    const cs=convShort(T.key);
+    const btn=document.createElement('button'); btn.className='nav-btn conv-btn'; btn.dataset.ct=i;
+    btn.innerHTML=`<span class="ln">${esc(cs.rom)}</span><span>${esc(cs.label)}</span>`;
+    btn.onclick=()=>{ showConv(i); closeMobile(); };
+    nav.appendChild(btn);
+  });
 }
 function setActiveNav(key){
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   let el;
   if(key==='accueil') el=document.getElementById('nav-accueil');
+  else if(typeof key==='string' && key.startsWith('ct')) el=document.querySelector('.conv-btn[data-ct="'+key.slice(2)+'"]');
   else el=document.querySelector('.livre-btn[data-ln="'+key+'"]');
   if(el) el.classList.add('active');
 }
@@ -278,58 +361,76 @@ function wireBack(){
   const b=document.getElementById('backbtn');
   if(b) b.onclick=()=>{ qEl.value=''; showHome(); };
 }
-function cleanTitre(t){ return t.replace(/^TITRE\s+[IVX0-9]*\s*[:\-–]?\s*/i,'').replace(/^TITRE PRELIMINAIRE\s*[:\-–]?\s*/i,'Dispositions générales').replace(/\.+$/,'').trim() || t; }
-function cleanLabel(t){ return t.replace(/\.{2,}.*$/,'').replace(/\s*\d+([\-–]\d+)?\s*$/,'').trim(); }
+function cleanTitre(t){ return (t||'').replace(/^TITRE\s+[IVX0-9]*\s*[:\-–]?\s*/i,'').replace(/^TITRE PRELIMINAIRE\s*[:\-–]?\s*/i,'Dispositions générales').replace(/\.+$/,'').trim() || t; }
+function cleanLabel(t){ return (t||'').replace(/\.{2,}.*$/,'').replace(/\s*\d+([\-–]\d+)?\s*$/,'').trim(); }
 
 /* ---------- Rendering ---------- */
-function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
-function paras(text){ return text.split('\n\n').map(p=>'<p>'+esc(p)+'</p>').join(''); }
+function paras(text){ return (text||'').split('\n\n').map(p=>'<p>'+esc(p)+'</p>').join(''); }
 function highlight(html, term){
   if(!term) return html;
   const tn = norm(term); if(tn.length<2) return html;
-  // highlight on visible text nodes by working on escaped html safely
   return html.replace(/>([^<]+)</g,(m,txt)=>{
-    let out=''; let i=0; const low=norm(txt);
-    let idx;
+    let out=''; let i=0; const low=norm(txt); let idx;
     while((idx=low.indexOf(tn,i))!==-1){
-      out+=esc0(txt.slice(i,idx))+'<mark>'+esc0(txt.slice(idx,idx+tn.length))+'</mark>';
+      out+=txt.slice(i,idx)+'<mark>'+txt.slice(idx,idx+tn.length)+'</mark>';
       i=idx+tn.length;
     }
-    out+=esc0(txt.slice(i));
+    out+=txt.slice(i);
     return '>'+out+'<';
   });
 }
-function esc0(s){return s;} // already escaped upstream
 
 function crumb(a){
   const bits=[];
-  const L=LIVRES.find(x=>x.ln===a.ln);
-  if(L) bits.push('<b>'+esc(L.name.split(' — ')[0])+'</b>');
-  if(a.titre) bits.push(esc(cleanTitre(a.titre)));
-  if(a.chapitre) bits.push(esc(cleanLabel(a.chapitre.replace(/^CHAPITRE\s+[IVX0-9]*\s*[:\-–]?\s*/i,''))));
-  if(a.section) bits.push(esc(cleanLabel(a.section.replace(/^Section\s+[IVX0-9]*\s*[:\-–]?\s*/i,''))));
-  return bits.join('<span class="sep">›</span>');
+  if(a.src==='ccmc'){
+    bits.push('<span class="srcpill conv">Convention minière</span>');
+    const cs=convShort(a.livre);
+    if(cs.rom==='—') bits.push('Préliminaires');
+    else bits.push('Titre '+esc(cs.rom)+' — '+esc(cs.label));
+    if(a.chapitre) bits.push('<span class="sep">›</span>'+esc(cleanConvChap(a.chapitre)));
+    return bits.join(' ');
+  } else {
+    bits.push('<span class="srcpill code">Code du travail</span>');
+    const L=LIVRES.find(x=>x.ln===a.ln);
+    let tail=[];
+    if(L) tail.push('<b>'+esc(L.name.split(' — ')[0])+'</b>');
+    if(a.titre) tail.push(esc(cleanTitre(a.titre)));
+    if(a.chapitre) tail.push(esc(cleanLabel(a.chapitre.replace(/^CHAPITRE\s+[IVX0-9]*\s*[:\-–]?\s*/i,''))));
+    if(a.section) tail.push(esc(cleanLabel(a.section.replace(/^Section\s+[IVX0-9]*\s*[:\-–]?\s*/i,''))));
+    return bits.join(' ') + tail.join('<span class="sep">›</span>');
+  }
+}
+
+function badgeText(a){
+  if(a.id==='terminologie') return 'Terminologie';
+  if(a.id==='preambule') return 'Préambule';
+  return 'Art. '+a.id;
 }
 
 function articleCard(a, term){
-  let body = paras(a.text);
-  let expHtml, rhHtml;
-  if(a.e){ expHtml = `<div class="panel exp"><span class="lab">${iconBook()} Explication</span><p>${esc(a.e)}</p></div>`; }
-  else { expHtml = `<div class="panel pending"><p>Explication en cours de rédaction.</p></div>`; }
-  rhHtml = a.r ? `<div class="panel rh"><span class="lab">${iconBriefcase()} Conseil RH</span><p>${esc(a.r)}</p></div>` : '';
-  let html = `<article class="card" id="art-${cssid(a.id)}">
-    <div class="head"><span class="badge">Art. ${esc(a.id)}</span><div class="crumb">${crumb(a)}</div></div>
+  const isConv = a.src==='ccmc';
+  const body = paras(a.text);
+  const expHtml = a.e
+    ? `<div class="panel exp"><span class="lab">${iconBook()} Explication</span><p>${esc(a.e)}</p></div>`
+    : `<div class="panel pending"><p>Explication en cours de rédaction.</p></div>`;
+  const rhHtml = a.r ? `<div class="panel rh"><span class="lab">${iconBriefcase()} Conseil RH</span><p>${esc(a.r)}</p></div>` : '';
+  const title = (isConv && a.titre_court && !isSpecial(a)) ? `<div class="arttitle">${esc(a.titre_court)}</div>` : '';
+  const html = `<article class="card${isConv?' ccmc':''}" id="${elId(a)}">
+    <div class="head"><span class="badge${isConv?' conv':''}">${esc(badgeText(a))}</span><div class="crumb">${crumb(a)}</div></div>
+    ${title}
     <div class="artbody">${body}</div>
     <div class="panels">${expHtml}${rhHtml}</div>
   </article>`;
   return term ? highlight(html, term) : html;
 }
-function cssid(id){return id.replace(/[^a-z0-9.]/gi,'-');}
+
 function iconBook(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg>';}
 function iconBriefcase(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>';}
 function iconLayers(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>';}
 function iconHome(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>';}
 function iconArrow(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>';}
+function iconScale(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M3 7h18"/><path d="M6 3 3 7l3 4 3-4z"/><path d="M18 3l-3 4 3 4 3-4z"/></svg>';}
+function iconPick(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12 3 21"/><path d="M3.5 8.5C7 6 12 5 20.5 5.5c-2 4-6 7.5-12 8"/><path d="M12 12c-.5-3 .5-6 2-8"/></svg>';}
 
 /* ---------- Views ---------- */
 const results = document.getElementById('results');
@@ -337,48 +438,82 @@ const results = document.getElementById('results');
 function showHome(){
   location.hash='';
   setActiveNav('accueil');
+  const convArts = CONV.filter(a=>!isSpecial(a)).length;
   const chips = THEMES.slice(0,10).map(t=>`<button class="chip" data-q="${esc(t.q)}">${esc(t.label)}</button>`).join('');
-  const books = LIVRES.map(L=>{
-    const n=A.filter(a=>a.ln===L.ln).length;
+  const codeBooks = LIVRES.map(L=>{
+    const n=CODE.filter(a=>a.ln===L.ln).length;
     return `<button class="bookcard" data-livre="${L.ln}"><div class="bn">${L.ln===0?'Préliminaire':'Livre '+L.ln} · ${n} art.</div><div class="bt">${esc(L.name.split(' — ')[1]||'Dispositions générales')}</div><div class="bc">${esc(L.desc)}</div></button>`;
   }).join('');
-  results.innerHTML = `<div class="welcome">
-    <p class="lead">Recherchez n'importe quel article du Code du travail guinéen par son numéro ou par mot-clé. Chaque article s'affiche tel qu'il figure dans le Code, accompagné d'une explication en langage clair et d'un conseil pratique pour les RH.</p>
+  const convBooks = CONV_TITRES.map((T,i)=>{
+    const cs=convShort(T.key);
+    return `<button class="bookcard conv" data-ct="${i}"><div class="bn">${cs.rom==='—'?'Préliminaires':'Titre '+esc(cs.rom)} · ${T.items.length} art.</div><div class="bt">${esc(cs.label)}</div></button>`;
+  }).join('');
+
+  const showCode = SRC!=='ccmc', showConvB = SRC!=='code';
+
+  let html = `<div class="welcome">
+    <p class="lead">Recherchez dans le <b>Code du travail</b> guinéen et dans la <b>Convention collective des mines et carrières</b>, par numéro d'article ou par mot-clé. Chaque article s'affiche tel qu'il figure dans le texte officiel, avec une explication en langage clair et un conseil pratique pour les RH.</p>
+    <div class="scopebox">
+      <div class="scoperow code"><span class="tag">Code du travail</span><span class="txt">S'applique à <b>tout le secteur privé</b> guinéen — les mines et carrières comprises.</span></div>
+      <div class="scoperow conv"><span class="tag">Convention minière</span><span class="txt">S'applique <b>uniquement au secteur des mines et carrières</b>, en plus du Code. Pour ce secteur, les deux textes se lisent ensemble.</span></div>
+    </div>
     <div class="stats">
-      <div class="stat"><div class="n">${A.length}</div><div class="l">articles</div></div>
-      <div class="stat"><div class="n">6</div><div class="l">livres / titre prélim.</div></div>
+      <div class="stat"><div class="n">${CODE.length}</div><div class="l">articles du Code</div></div>
+      <div class="stat conv"><div class="n">${convArts}</div><div class="l">articles de la Convention</div></div>
       <div class="stat"><div class="n">${THEMES.length}</div><div class="l">thèmes de synthèse</div></div>
     </div>
     <h4>Thèmes fréquents</h4>
-    <div class="chips">${chips}</div>
-    <h4>Parcourir par livre</h4>
-    <div class="booklist">${books}</div>
-    <div class="disclaimer"><b>Note :</b> cet outil est une aide pédagogique et documentaire destinée à faciliter la consultation du Code du travail. Les explications et conseils RH sont des reformulations à but de compréhension ; ils ne remplacent pas le texte officiel ni l'avis d'un juriste. En cas de doute, référez-vous au texte de loi et à un conseil juridique qualifié.</div>
+    <div class="chips">${chips}</div>`;
+  if(showCode) html += `<h4><span class="dot code"></span>Parcourir le Code du travail</h4><div class="booklist">${codeBooks}</div>`;
+  if(showConvB) html += `<h4><span class="dot conv"></span>Parcourir la Convention des mines &amp; carrières</h4><div class="booklist">${convBooks}</div>`;
+  html += `<div class="disclaimer"><b>Note :</b> cet outil est une aide pédagogique et documentaire destinée à faciliter la consultation du Code du travail et de la Convention collective des mines et carrières. Les explications et conseils RH sont des reformulations à but de compréhension ; ils ne remplacent pas les textes officiels ni l'avis d'un juriste. En cas de doute, référez-vous aux textes et à un conseil juridique qualifié.</div>
   </div>`;
-  results.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{document.getElementById('q').value=c.dataset.q; doSearch();});
-  results.querySelectorAll('.bookcard').forEach(c=>c.onclick=()=>showLivre(+c.dataset.livre));
+  results.innerHTML = html;
+  results.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{qEl.value=c.dataset.q; doSearch();});
+  results.querySelectorAll('.bookcard[data-livre]').forEach(c=>c.onclick=()=>showLivre(+c.dataset.livre));
+  results.querySelectorAll('.bookcard[data-ct]').forEach(c=>c.onclick=()=>showConv(+c.dataset.ct));
+  window.scrollTo(0,0);
 }
 
 function showLivre(ln){
   location.hash='livre='+ln;
   setActiveNav(ln);
   const L=LIVRES.find(x=>x.ln===ln);
-  const arts=A.filter(a=>a.ln===ln);
-  // group by titre, preserving order
+  const arts=CODE.filter(a=>a.ln===ln);
   const groups=[]; const idx={};
   arts.forEach(a=>{ const k=a.titre||''; if(!(k in idx)){idx[k]=groups.length; groups.push({titre:k, items:[]});} groups[idx[k]].items.push(a); });
   const chips = groups.length>1
     ? `<div class="titre-chips">${groups.map((g,i)=>`<button class="tchip" data-i="${i}">${esc(cleanTitre(g.titre)||'Dispositions générales')}</button>`).join('')}</div>`
     : '';
   const secs = groups.map((g,i)=>{
-    const h = (groups.length>1 && (g.titre||groups.length>1)) ? `<h3 class="tsec-h" id="tsec-${i}">${esc(cleanTitre(g.titre)||'Dispositions générales')}</h3>` : `<span id="tsec-${i}"></span>`;
+    const h = groups.length>1 ? `<h3 class="tsec-h" id="tsec-${i}">${esc(cleanTitre(g.titre)||'Dispositions générales')}</h3>` : `<span id="tsec-${i}"></span>`;
     return `<section class="tsec">${h}${g.items.map(a=>articleCard(a)).join('')}</section>`;
   }).join('');
   results.innerHTML = backBar()
-    + `<div class="resmeta"><h2>${esc(L?L.name:'')}</h2><span class="count">${arts.length} article${arts.length>1?'s':''}</span></div>`
+    + `<div class="resmeta"><h2><span class="srcpill code">Code</span>${esc(L?L.name:'')}</h2><span class="count">${arts.length} article${arts.length>1?'s':''}</span></div>`
     + chips + secs;
   wireBack();
   results.querySelectorAll('.tchip').forEach(c=>c.onclick=()=>{const el=document.getElementById('tsec-'+c.dataset.i); if(el) el.scrollIntoView();});
+  window.scrollTo(0,0);
+}
+
+function showConv(i){
+  location.hash='conv='+i;
+  setActiveNav('ct'+i);
+  const T=CONV_TITRES[i]; if(!T){ showHome(); return; }
+  const cs=convShort(T.key);
+  const arts=T.items;
+  const groups=[]; const idx={};
+  arts.forEach(a=>{ const k=a.chapitre||''; if(!(k in idx)){idx[k]=groups.length; groups.push({chap:k, items:[]});} groups[idx[k]].items.push(a); });
+  const secs = groups.map((g,gi)=>{
+    const h = (groups.length>1 && g.chap) ? `<h3 class="tsec-h" id="tsec-${gi}">${esc(cleanConvChap(g.chap))}</h3>` : `<span id="tsec-${gi}"></span>`;
+    return `<section class="tsec">${h}${g.items.map(a=>articleCard(a)).join('')}</section>`;
+  }).join('');
+  const heading = cs.rom==='—' ? 'Préliminaires' : 'Titre '+esc(cs.rom)+' — '+esc(cs.label);
+  results.innerHTML = backBar()
+    + `<div class="resmeta"><h2><span class="srcpill conv">Convention</span>${heading}</h2><span class="count">${arts.length} article${arts.length>1?'s':''}</span></div>`
+    + secs;
+  wireBack();
   window.scrollTo(0,0);
 }
 
@@ -387,27 +522,27 @@ function findTheme(qn){
 }
 
 function doSearch(){
-  const raw=document.getElementById('q').value.trim();
+  const raw=qEl.value.trim();
   const clr=document.getElementById('clear'); clr.style.display=raw?'block':'none';
   if(!raw){ showHome(); return; }
   location.hash='q='+encodeURIComponent(raw);
+
+  const pool = SRC==='all' ? A : (SRC==='code'?CODE:CONV);
 
   // Article-number query?
   const numMatch = raw.match(/^(?:art\.?\s*|article\s*)?(\d+(?:er)?(?:\.\d+)?)$/i);
   if(numMatch){
     const key=numMatch[1].toLowerCase();
-    if(byId[key]){ renderList([byId[key]], `Article ${key}`, ''); return; }
-    // whole chapter: "121" -> 121.x
-    const fam=A.filter(a=>a.id===key || a.id.startsWith(key+'.'));
-    if(fam.length){ renderList(fam, `Articles ${key}.x`, ''); return; }
+    const fam=pool.filter(a=>a.id===key || a.id.startsWith(key+'.'));
+    if(fam.length){ renderSearch(fam, `Article ${esc(key)}`, ''); return; }
     renderEmpty(raw); return;
   }
 
   // Keyword query
   const qn=norm(raw);
   const scored=[];
-  A.forEach(a=>{
-    const inCtx = norm(a.chapitre+' '+a.section+' '+a.titre).includes(qn);
+  pool.forEach(a=>{
+    const inCtx = norm((a.chapitre||'')+' '+(a.section||'')+' '+(a.titre||'')+' '+(a.livre||'')+' '+(a.titre_court||'')).includes(qn);
     const inTxt = norm(a.text).includes(qn);
     const inExp = norm((a.e||'')+' '+(a.r||'')).includes(qn);
     if(inCtx||inTxt||inExp){
@@ -415,39 +550,62 @@ function doSearch(){
       scored.push({a,s});
     }
   });
-  scored.sort((x,y)=> y.s-x.s || x.a.ln-y.a.ln);
+  scored.sort((x,y)=> y.s-x.s);
   const arts=scored.map(x=>x.a);
-  const theme=findTheme(qn);
-  renderList(arts, `« ${raw} »`, raw, theme);
+  const theme = SRC==='ccmc' ? null : findTheme(qn);
+  renderSearch(arts, `« ${esc(raw)} »`, raw, theme);
 }
 
-function renderList(arts, title, term, theme){
-  if(!arts.length && !theme){ renderEmpty(term||title); return; }
+function renderSearch(arts, title, term, theme){
+  if(!arts.length && !theme){ renderEmpty(term||title.replace(/[«»]/g,'').trim()); return; }
   setActiveNav(null);
+  const code = arts.filter(a=>a.src==='code');
+  const conv = arts.filter(a=>a.src==='ccmc');
+
   let html=backBar();
   if(theme){
-    const refs = (theme.refs||[]).map(r=>`<a href="#art-${cssid(r)}" data-goto="${esc(r)}">Art. ${esc(r)}</a>`).join('');
-    html += `<div class="summary"><span class="cap">${iconLayers()} Synthèse — ${esc(theme.label)}</span><h3>${esc(theme.title)}</h3>${theme.body.map(p=>'<p>'+esc(p)+'</p>').join('')}${refs?`<div class="refs"><b>Articles clés&nbsp;:</b> ${refs}</div>`:''}</div>`;
+    const refs = (theme.refs||[]).map(r=>`<a href="#art-code-${cssid(r)}" data-goto="${esc(r)}">Art. ${esc(r)}</a>`).join('');
+    html += `<div class="summary"><span class="cap">${iconLayers()} Synthèse — ${esc(theme.label)}</span><h3>${esc(theme.title)}</h3>${theme.body.map(p=>'<p>'+esc(p)+'</p>').join('')}${refs?`<div class="refs"><b>Articles clés (Code)&nbsp;:</b> ${refs}</div>`:''}</div>`;
   }
-  html += `<div class="resmeta"><h2>${esc(title)}</h2><span class="count">${arts.length} article${arts.length>1?'s':''}</span></div>`;
-  html += arts.map(a=>articleCard(a, term)).join('');
+  html += `<div class="resmeta"><h2>${title}</h2><span class="count">${arts.length} résultat${arts.length>1?'s':''}</span></div>`;
+
+  if(SRC==='all' && code.length && conv.length){
+    html += `<div class="srcblock-h code" id="blk-code">${iconScale()} Code du travail <span class="c">${code.length} article${code.length>1?'s':''}</span></div>`;
+    html += code.map(a=>articleCard(a, term)).join('');
+    html += `<div class="srcblock-h conv" id="blk-conv">${iconPick()} Convention des mines &amp; carrières <span class="c">${conv.length} article${conv.length>1?'s':''}</span></div>`;
+    html += conv.map(a=>articleCard(a, term)).join('');
+  } else {
+    html += arts.map(a=>articleCard(a, term)).join('');
+  }
   results.innerHTML=html;
   wireBack();
   results.querySelectorAll('.refs a').forEach(a=>a.onclick=e=>{
-    e.preventDefault(); const id=a.dataset.goto; const el=document.getElementById('art-'+cssid(id));
-    if(el){el.scrollIntoView(); el.style.transition='none';}
+    e.preventDefault(); const el=document.getElementById('art-code-'+cssid(a.dataset.goto));
+    if(el){el.scrollIntoView();}
   });
   window.scrollTo(0,0);
 }
 
 function renderEmpty(term){
   setActiveNav(null);
+  const scope = SRC==='code'?' dans le Code du travail':SRC==='ccmc'?' dans la Convention minière':'';
   results.innerHTML=backBar()+`<div class="empty">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-    <h3>Aucun résultat pour « ${esc(term)} »</h3>
-    <p>Vérifiez l'orthographe, essayez un mot plus court, ou parcourez le code par livre dans le menu.</p>
+    <h3>Aucun résultat pour « ${esc(term)} »${scope}</h3>
+    <p>Vérifiez l'orthographe, essayez un mot plus court, changez de source ci-dessus, ou parcourez les textes dans le menu.</p>
   </div>`;
   wireBack();
+}
+
+/* ---------- Source filter ---------- */
+function initFilter(){
+  document.querySelectorAll('#srcfilter button').forEach(b=>{
+    b.onclick=()=>{
+      SRC=b.dataset.src;
+      document.querySelectorAll('#srcfilter button').forEach(x=>x.classList.toggle('active',x===b));
+      if(qEl.value.trim()) doSearch(); else showHome();
+    };
+  });
 }
 
 /* ---------- Theme toggle ---------- */
@@ -481,21 +639,28 @@ function route(){
   const h=decodeURIComponent(location.hash.replace(/^#/,''));
   if(h.startsWith('q=')){ qEl.value=h.slice(2); doSearch(); }
   else if(h.startsWith('livre=')){ showLivre(parseInt(h.slice(6))||0); }
+  else if(h.startsWith('conv=')){ showConv(parseInt(h.slice(5))||0); }
   else showHome();
 }
 window.addEventListener('hashchange', ()=>{ if(A.length) route(); });
 initTheme();
-results.innerHTML='<div style="padding:70px 20px;text-align:center;color:var(--ink-soft)">Chargement du Code du travail\u2026</div>';
+initFilter();
+results.innerHTML='<div style="padding:70px 20px;text-align:center;color:var(--ink-soft)">Chargement des textes…</div>';
 Promise.all([
   fetch('articles.json').then(r=>r.json()),
   fetch('explanations.json').then(r=>r.json()),
-  fetch('themes.json').then(r=>r.json())
-]).then(([arts,exp,themes])=>{
-  arts.forEach(a=>{const e=exp[a.id]||{}; a.e=e.e||''; a.r=e.r||'';});
-  DATA={articles:arts}; A=arts; THEMES=themes; byId={}; A.forEach(a=>byId[a.id]=a);
+  fetch('themes.json').then(r=>r.json()),
+  fetch('convention.json').then(r=>r.json()),
+  fetch('convention_explanations.json').then(r=>r.json())
+]).then(([arts,exp,themes,conv,cexp])=>{
+  arts.forEach(a=>{const e=exp[a.id]||{}; a.e=e.e||''; a.r=e.r||''; a.src='code';});
+  conv.forEach(a=>{const e=cexp[a.id]||{}; a.e=e.e||''; a.r=e.r||''; a.src='ccmc';});
+  CODE=arts; CONV=conv; THEMES=themes;
+  A=CODE.concat(CONV);
+  buildConvTitres();
   buildNav(); route();
 }).catch(err=>{
-  results.innerHTML='<div style="padding:60px 24px;text-align:center;color:var(--ink-soft)"><h3 style="font-family:var(--serif);color:var(--ink)">Impossible de charger les donn\u00e9es</h3><p>Cette page doit \u00eatre servie par un serveur web (h\u00e9bergement en ligne), et non ouverte par double-clic depuis votre ordinateur.</p></div>';
+  results.innerHTML='<div style="padding:60px 24px;text-align:center;color:var(--ink-soft)"><h3 style="font-family:var(--serif);color:var(--ink)">Impossible de charger les données</h3><p>Cette page doit être servie par un serveur web (hébergement en ligne), et non ouverte par double-clic depuis votre ordinateur.</p></div>';
 });
 
 /* Service worker : active l'usage hors connexion. */
