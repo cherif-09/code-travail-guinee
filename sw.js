@@ -1,7 +1,7 @@
 /* Service worker — Code du Travail Guinée
    Rend la plateforme utilisable hors connexion.
    À chaque mise à jour du contenu, incrémentez CACHE_VERSION. */
-const CACHE_VERSION = 'ctg-v2';
+const CACHE_VERSION = 'ctg-v3';
 const CACHE = CACHE_VERSION;
 
 /* Fichiers de l'application à garder en cache (« app shell » + données) */
@@ -14,6 +14,7 @@ const PRECACHE = [
   './themes.json',
   './convention.json',
   './convention_explanations.json',
+  './lexique.json',
   './icon-192.png',
   './icon-512.png',
   './icon-512-maskable.png',

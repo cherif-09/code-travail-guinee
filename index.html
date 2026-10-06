@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Recherchez le Code du travail guinéen et la Convention collective des mines et carrières par numéro d'article ou mot-clé : texte officiel, explication en langage clair et conseil RH.">
+<meta name="description" content="Recherchez le Code du travail guinéen et la Convention collective des mines et carrières par numéro d'article ou mot-clé : texte officiel, explication en langage clair, conseil RH et lexique juridique.">
 <meta name="theme-color" content="#1f5d43">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Code du Travail & Convention minière — Guinée">
-<meta property="og:description" content="Le Code du travail guinéen et la Convention collective des mines et carrières : recherche par article ou mot-clé, texte officiel, explication claire et conseil RH.">
+<meta property="og:description" content="Le Code du travail guinéen et la Convention collective des mines et carrières : recherche par article ou mot-clé, texte officiel, explication claire, conseil RH et lexique.">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary">
 <title>Code du Travail Guinée</title>
@@ -85,11 +85,13 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 .nav-btn.active{background:var(--accent-tint);color:var(--accent-ink)}
 .nav-btn.active .ln{color:var(--accent-ink)}
 .nav-btn svg{width:16px;height:16px;flex:none;stroke-width:2}
-.nav-home{margin-bottom:6px}
+.nav-home{margin-bottom:2px}
 .livre-btn .ln{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:600;flex:none;width:20px;text-align:center}
 .conv-btn .ln{font-family:var(--mono);font-size:10.5px;color:var(--conv);font-weight:600;flex:none;width:24px;text-align:center}
 .conv-btn.active{background:var(--conv-tint);color:var(--conv-ink)}
 .conv-btn.active .ln{color:var(--conv-ink)}
+.nav-lex svg{color:var(--exp-accent)}
+.nav-btn.active.nav-lex svg{color:var(--accent-ink)}
 .viewhead{margin:0 0 16px}
 .backbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-soft);font-family:var(--sans);font-size:13px;font-weight:600;padding:7px 14px 7px 10px;border-radius:9px;cursor:pointer;transition:all .13s}
 .backbtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
@@ -153,6 +155,15 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 .summary .refs a{font-family:var(--mono);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:12px;background:var(--surface);border:1px solid var(--accent-soft);padding:2px 8px;border-radius:6px;margin:0 5px 5px 0;display:inline-block}
 .summary .refs a:hover{background:var(--accent);color:#fff}
 
+/* ---- Lexicon banner (search) ---- */
+.lexbanner{background:var(--exp-bg);border:1px solid var(--exp-line);border-left:3px solid var(--exp-accent);border-radius:var(--radius-sm);padding:15px 18px;margin-bottom:22px}
+.lexbanner .cap{display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--exp-accent);margin-bottom:7px}
+.lexbanner .cap svg{width:14px;height:14px}
+.lexbanner .lt{font-family:var(--serif);font-size:17px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.lexbanner .ld{font-size:13.5px;line-height:1.55;color:var(--exp-ink);margin:0}
+.lexbanner .pl{margin-top:9px;background:none;border:0;padding:0;font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--exp-accent);cursor:pointer}
+.lexbanner .pl:hover{text-decoration:underline}
+
 /* ---- Article card ---- */
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:18px;box-shadow:var(--shadow-sm);scroll-margin-top:150px}
 .card.ccmc{border-left:3px solid var(--conv)}
@@ -186,6 +197,36 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 
 mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2px;font-weight:600}
 
+/* ---- Lexicon terms in text + popover ---- */
+.term{border-bottom:1.5px dotted var(--exp-accent);cursor:help}
+.term:hover{background:var(--exp-bg)}
+#lexpop{position:absolute;z-index:60;max-width:330px;background:var(--surface);border:1px solid var(--exp-line);border-left:3px solid var(--exp-accent);border-radius:10px;box-shadow:var(--shadow);padding:14px 16px;font-family:var(--sans);display:none}
+#lexpop .pt{font-family:var(--serif);font-weight:600;font-size:15px;color:var(--ink);margin-bottom:5px;padding-right:18px}
+#lexpop .pd{font-size:13px;line-height:1.55;color:var(--ink-soft)}
+#lexpop .pl{margin-top:10px;font-size:12px;font-weight:600;color:var(--exp-accent);cursor:pointer;background:none;border:0;padding:0;font-family:var(--sans)}
+#lexpop .pl:hover{text-decoration:underline}
+#lexpop .px{position:absolute;top:7px;right:10px;border:0;background:none;color:var(--ink-soft);cursor:pointer;font-size:16px;line-height:1}
+
+/* ---- Lexicon view ---- */
+.lexintro{font-family:var(--serif);font-size:16px;line-height:1.6;color:var(--ink-soft);max-width:660px;margin:2px 0 18px}
+.lexsearch{position:relative;max-width:460px;margin:0 0 14px}
+.lexsearch input{width:100%;font-family:var(--sans);font-size:15px;padding:11px 14px 11px 40px;border:1.5px solid var(--line-strong);border-radius:11px;background:var(--surface);color:var(--ink);outline:none}
+.lexsearch input:focus{border-color:var(--exp-accent);box-shadow:0 0 0 4px var(--exp-bg)}
+.lexsearch svg{position:absolute;left:13px;top:12px;width:17px;height:17px;color:var(--ink-soft)}
+.lexalpha{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 18px}
+.lexalpha button{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-soft);min-width:30px;height:30px;padding:0 6px;border-radius:7px;font-family:var(--mono);font-size:12px;font-weight:600;cursor:pointer}
+.lexalpha button:hover{border-color:var(--exp-accent);color:var(--exp-accent)}
+.lexletter{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--exp-accent);margin:22px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line);scroll-margin-top:150px}
+.lexcard{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--exp-accent);border-radius:var(--radius-sm);padding:16px 18px;margin-bottom:12px;scroll-margin-top:150px}
+.lexcard:target{box-shadow:0 0 0 3px var(--exp-bg)}
+.lexcard .lt{font-family:var(--serif);font-size:17px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.lexcard .ld{font-size:14px;line-height:1.6;color:var(--ink);margin:0}
+.lexcard .lr{margin-top:11px;font-size:12px;color:var(--ink-soft)}
+.lexcard .lr a{font-family:var(--mono);text-decoration:none;font-weight:600;font-size:11.5px;padding:2px 8px;border-radius:6px;margin:0 5px 5px 0;display:inline-block;border:1px solid;cursor:pointer}
+.lexcard .lr a.code{color:var(--accent-ink);background:var(--accent-tint);border-color:var(--accent-soft)}
+.lexcard .lr a.ccmc{color:var(--conv-ink);background:var(--conv-tint);border-color:var(--conv-soft)}
+.lexnone{color:var(--ink-soft);font-size:14px;padding:20px 0}
+
 .empty{text-align:center;padding:70px 20px;color:var(--ink-soft)}
 .empty svg{width:46px;height:46px;opacity:.5;margin-bottom:14px}
 .empty h3{font-family:var(--serif);color:var(--ink);font-size:20px;margin:0 0 6px;font-weight:600}
@@ -204,10 +245,13 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 .chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:34px}
 .chip{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 15px;font-size:13px;font-weight:500;cursor:pointer;transition:all .13s}
 .chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px;margin-bottom:36px}
+.chip.lex{border-style:dashed;border-color:var(--exp-line);color:var(--exp-accent)}
+.chip.lex:hover{background:var(--exp-bg);border-color:var(--exp-accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:14px;margin-bottom:36px}
 .stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 18px}
 .stat .n{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--accent);line-height:1}
 .stat.conv .n{color:var(--conv)}
+.stat.lex .n{color:var(--exp-accent)}
 .stat .l{font-size:12px;color:var(--ink-soft);margin-top:6px}
 .welcome h4{font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);font-weight:600;margin:0 0 14px;display:flex;align-items:center;gap:8px}
 .welcome h4 .dot{width:9px;height:9px;border-radius:50%}
@@ -280,9 +324,11 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
     <div class="content"><div class="inner" id="results"></div></div>
   </div>
 </div>
+<div id="lexpop"></div>
 
 <script>
 let CODE=[], CONV=[], THEMES=[], A=[], CONV_TITRES=[];
+let GLOSS=[], GMAP={}, GRE=null, UIDS=new Set();
 let SRC='all';
 
 const LIVRES = [
@@ -294,11 +340,12 @@ const LIVRES = [
  {ln:5, name:"Livre 5 — Administration & juridiction", desc:"Inspection, tribunaux du travail, sanctions"},
 ];
 
-const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function cssid(id){return (id||'').replace(/[^a-z0-9.]/gi,'-');}
 function elId(a){return 'art-'+a.src+'-'+cssid(a.id);}
 function isSpecial(a){return a.id==='terminologie'||a.id==='preambule';}
+function apos(s){return (s||'').replace(/[’ʼ]/g,"'");}
 
 /* ---------- Convention titre helpers ---------- */
 function convShort(t){
@@ -310,10 +357,41 @@ function convShort(t){
   label=label.charAt(0)+label.slice(1).toLowerCase();
   return {rom, label};
 }
-function cleanConvChap(t){ return (t||'').replace(/^CHAPITRE\s+[IVXLC0-9]*\s*[:\-–]?\s*/i,'').replace(/^(.)/,(m,c)=>c).trim(); }
+function cleanConvChap(t){ return (t||'').replace(/^CHAPITRE\s+[IVXLC0-9]*\s*[:\-–]?\s*/i,'').trim(); }
 function buildConvTitres(){
   CONV_TITRES=[]; const idx={};
   CONV.forEach(a=>{ const k=a.livre||''; if(!(k in idx)){idx[k]=CONV_TITRES.length; CONV_TITRES.push({key:k, items:[]});} CONV_TITRES[idx[k]].items.push(a); });
+}
+
+/* ---------- Glossary build ---------- */
+function reEsc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function buildGloss(){
+  GMAP={}; const surfaces=[];
+  GLOSS.forEach(g=>{
+    (g.m||[g.t]).forEach(sf=>{
+      const key=apos(sf).toLowerCase();
+      if(!GMAP[key]) GMAP[key]=g.id;
+      surfaces.push(sf);
+    });
+  });
+  surfaces.sort((a,b)=>b.length-a.length);
+  const alt=surfaces.map(s=>reEsc(apos(s)).replace(/'/g,"['\\u2019\\u02bc]")).join('|');
+  try{ GRE=new RegExp("(^|[^0-9A-Za-zÀ-ÿ])("+alt+")(?![0-9A-Za-zÀ-ÿ])","gi"); }catch(e){ GRE=null; }
+}
+function glossById(id){ return GLOSS.find(g=>g.id===id); }
+
+function linkTermsText(txt, seen){
+  if(!GRE) return txt;
+  GRE.lastIndex=0;
+  return txt.replace(GRE,(m,pre,word)=>{
+    const id=GMAP[apos(word).toLowerCase()];
+    if(!id || seen.has(id)) return m;
+    seen.add(id);
+    return pre+'<span class="term" data-t="'+id+'">'+word+'</span>';
+  });
+}
+function linkTermsHtml(html, seen){
+  return html.replace(/>([^<]+)</g,(m,txt)=> '>'+linkTermsText(txt,seen)+'<');
 }
 
 /* ---------- Sidebar nav ---------- */
@@ -325,6 +403,12 @@ function buildNav(){
   home.innerHTML=`${iconHome()}<span>Accueil</span>`;
   home.onclick=()=>{ qEl.value=''; showHome(); closeMobile(); };
   nav.appendChild(home);
+
+  const lex=document.createElement('button');
+  lex.className='nav-btn nav-lex'; lex.id='nav-lex';
+  lex.innerHTML=`${iconDict()}<span>Lexique juridique</span>`;
+  lex.onclick=()=>{ showLexique(); closeMobile(); };
+  nav.appendChild(lex);
 
   const nt=document.createElement('div'); nt.className='navtitle'; nt.textContent='Code du travail'; nav.appendChild(nt);
   LIVRES.forEach(L=>{
@@ -350,6 +434,7 @@ function setActiveNav(key){
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   let el;
   if(key==='accueil') el=document.getElementById('nav-accueil');
+  else if(key==='lexique') el=document.getElementById('nav-lex');
   else if(typeof key==='string' && key.startsWith('ct')) el=document.querySelector('.conv-btn[data-ct="'+key.slice(2)+'"]');
   else el=document.querySelector('.livre-btn[data-ln="'+key+'"]');
   if(el) el.classList.add('active');
@@ -409,7 +494,8 @@ function badgeText(a){
 
 function articleCard(a, term){
   const isConv = a.src==='ccmc';
-  const body = paras(a.text);
+  const seen=new Set();
+  const body = linkTermsHtml(paras(a.text), seen);
   const expHtml = a.e
     ? `<div class="panel exp"><span class="lab">${iconBook()} Explication</span><p>${esc(a.e)}</p></div>`
     : `<div class="panel pending"><p>Explication en cours de rédaction.</p></div>`;
@@ -431,6 +517,7 @@ function iconHome(){return '<svg viewBox="0 0 24 24" fill="none" stroke="current
 function iconArrow(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>';}
 function iconScale(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M3 7h18"/><path d="M6 3 3 7l3 4 3-4z"/><path d="M18 3l-3 4 3 4 3-4z"/></svg>';}
 function iconPick(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12 3 21"/><path d="M3.5 8.5C7 6 12 5 20.5 5.5c-2 4-6 7.5-12 8"/><path d="M12 12c-.5-3 .5-6 2-8"/></svg>';}
+function iconDict(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/><path d="M10 7h5M10 10h5"/></svg>';}
 
 /* ---------- Views ---------- */
 const results = document.getElementById('results');
@@ -439,7 +526,8 @@ function showHome(){
   location.hash='';
   setActiveNav('accueil');
   const convArts = CONV.filter(a=>!isSpecial(a)).length;
-  const chips = THEMES.slice(0,10).map(t=>`<button class="chip" data-q="${esc(t.q)}">${esc(t.label)}</button>`).join('');
+  const chips = THEMES.slice(0,10).map(t=>`<button class="chip" data-q="${esc(t.q)}">${esc(t.label)}</button>`).join('')
+    + `<button class="chip lex" id="chip-lex">${'Lexique juridique'}</button>`;
   const codeBooks = LIVRES.map(L=>{
     const n=CODE.filter(a=>a.ln===L.ln).length;
     return `<button class="bookcard" data-livre="${L.ln}"><div class="bn">${L.ln===0?'Préliminaire':'Livre '+L.ln} · ${n} art.</div><div class="bt">${esc(L.name.split(' — ')[1]||'Dispositions générales')}</div><div class="bc">${esc(L.desc)}</div></button>`;
@@ -460,16 +548,18 @@ function showHome(){
     <div class="stats">
       <div class="stat"><div class="n">${CODE.length}</div><div class="l">articles du Code</div></div>
       <div class="stat conv"><div class="n">${convArts}</div><div class="l">articles de la Convention</div></div>
+      <div class="stat lex"><div class="n">${GLOSS.length}</div><div class="l">mots au lexique</div></div>
       <div class="stat"><div class="n">${THEMES.length}</div><div class="l">thèmes de synthèse</div></div>
     </div>
     <h4>Thèmes fréquents</h4>
     <div class="chips">${chips}</div>`;
   if(showCode) html += `<h4><span class="dot code"></span>Parcourir le Code du travail</h4><div class="booklist">${codeBooks}</div>`;
   if(showConvB) html += `<h4><span class="dot conv"></span>Parcourir la Convention des mines &amp; carrières</h4><div class="booklist">${convBooks}</div>`;
-  html += `<div class="disclaimer"><b>Note :</b> cet outil est une aide pédagogique et documentaire destinée à faciliter la consultation du Code du travail et de la Convention collective des mines et carrières. Les explications et conseils RH sont des reformulations à but de compréhension ; ils ne remplacent pas les textes officiels ni l'avis d'un juriste. En cas de doute, référez-vous aux textes et à un conseil juridique qualifié.</div>
+  html += `<div class="disclaimer"><b>Note :</b> cet outil est une aide pédagogique et documentaire destinée à faciliter la consultation du Code du travail et de la Convention collective des mines et carrières. Les explications, conseils RH et définitions du lexique sont des reformulations à but de compréhension ; ils ne remplacent pas les textes officiels ni l'avis d'un juriste. En cas de doute, référez-vous aux textes et à un conseil juridique qualifié.</div>
   </div>`;
   results.innerHTML = html;
-  results.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{qEl.value=c.dataset.q; doSearch();});
+  results.querySelectorAll('.chip[data-q]').forEach(c=>c.onclick=()=>{qEl.value=c.dataset.q; doSearch();});
+  const cl=document.getElementById('chip-lex'); if(cl) cl.onclick=()=>showLexique();
   results.querySelectorAll('.bookcard[data-livre]').forEach(c=>c.onclick=()=>showLivre(+c.dataset.livre));
   results.querySelectorAll('.bookcard[data-ct]').forEach(c=>c.onclick=()=>showConv(+c.dataset.ct));
   window.scrollTo(0,0);
@@ -517,8 +607,78 @@ function showConv(i){
   window.scrollTo(0,0);
 }
 
+/* ---------- Lexicon view ---------- */
+function refLink(uid){
+  const [src,id]=uid.split(':');
+  if(!UIDS.has(uid)) return '';
+  const label = (src==='ccmc'?'Conv. ':'Code ') + (id==='terminologie'?'Terminologie':id==='preambule'?'Préambule':'art. '+id);
+  return `<a class="${src}" data-uid="${esc(uid)}">${esc(label)}</a>`;
+}
+function lexCardHtml(g){
+  const refs=(g.refs||[]).map(refLink).filter(Boolean).join('');
+  return `<div class="lexcard" id="lex-${esc(g.id)}"><div class="lt">${esc(g.t)}</div><p class="ld">${esc(g.d)}</p>${refs?`<div class="lr">${refs}</div>`:''}</div>`;
+}
+function showLexique(filter){
+  location.hash = filter?('lexq='+encodeURIComponent(filter)):'lex';
+  setActiveNav('lexique');
+  const terms=[...GLOSS].sort((a,b)=>norm(a.t).localeCompare(norm(b.t)));
+  const fn = norm(filter||'');
+  const shown = fn ? terms.filter(g=> norm(g.t).includes(fn) || (g.m||[]).some(s=>norm(s).includes(fn)) || norm(g.d).includes(fn)) : terms;
+  // group by first letter
+  const groups={}; const order=[];
+  shown.forEach(g=>{ const L=norm(g.t).charAt(0).toUpperCase(); if(!groups[L]){groups[L]=[];order.push(L);} groups[L].push(g); });
+  const alpha = order.map(L=>`<button data-l="${L}">${L}</button>`).join('');
+  const body = shown.length
+    ? order.map(L=>`<div class="lexletter" id="lexL-${L}">${L}</div>`+groups[L].map(lexCardHtml).join('')).join('')
+    : `<div class="lexnone">Aucun terme ne correspond à « ${esc(filter||'')} ».</div>`;
+  results.innerHTML = backBar()
+    + `<div class="resmeta"><h2>Lexique juridique</h2><span class="count">${GLOSS.length} termes</span></div>`
+    + `<p class="lexintro">Les définitions en langage simple des termes juridiques et RH employés dans le Code du travail et la Convention minière. Dans les articles, les mots <span class="term" style="cursor:default">soulignés en pointillés</span> ouvrent leur définition d'un clic.</p>`
+    + `<div class="lexsearch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg><input id="lexq" type="search" autocomplete="off" placeholder="Filtrer un terme…" value="${esc(filter||'')}"></div>`
+    + `<div class="lexalpha">${alpha}</div>`
+    + `<div id="lexbody">${body}</div>`;
+  wireBack();
+  const li=document.getElementById('lexq');
+  let lt=null;
+  li.addEventListener('input',()=>{clearTimeout(lt);lt=setTimeout(()=>{ renderLexBody(li.value); },160);});
+  li.focus();
+  results.querySelectorAll('.lexalpha button').forEach(b=>b.onclick=()=>{const el=document.getElementById('lexL-'+b.dataset.l); if(el) el.scrollIntoView();});
+  wireLexRefs();
+  window.scrollTo(0,0);
+}
+function renderLexBody(filter){
+  const terms=[...GLOSS].sort((a,b)=>norm(a.t).localeCompare(norm(b.t)));
+  const fn=norm(filter||'');
+  const shown = fn ? terms.filter(g=> norm(g.t).includes(fn) || (g.m||[]).some(s=>norm(s).includes(fn)) || norm(g.d).includes(fn)) : terms;
+  const groups={}; const order=[];
+  shown.forEach(g=>{ const L=norm(g.t).charAt(0).toUpperCase(); if(!groups[L]){groups[L]=[];order.push(L);} groups[L].push(g); });
+  const bodyEl=document.getElementById('lexbody');
+  bodyEl.innerHTML = shown.length
+    ? order.map(L=>`<div class="lexletter" id="lexL-${L}">${L}</div>`+groups[L].map(lexCardHtml).join('')).join('')
+    : `<div class="lexnone">Aucun terme ne correspond à « ${esc(filter||'')} ».</div>`;
+  wireLexRefs();
+}
+function wireLexRefs(){
+  results.querySelectorAll('.lexcard .lr a').forEach(a=>a.onclick=()=>{ gotoArticle(a.dataset.uid); });
+}
+function gotoArticle(uid){
+  const [src,id]=uid.split(':');
+  const a=(src==='ccmc'?CONV:CODE).find(x=>x.id===id);
+  if(!a) return;
+  if(src==='ccmc'){ const i=CONV_TITRES.findIndex(T=>T.items.includes(a)); if(i>=0) showConv(i); }
+  else { showLivre(a.ln); }
+  setTimeout(()=>{ const el=document.getElementById(elId(a)); if(el){ el.scrollIntoView(); history.replaceState(null,'','#'+elId(a)); } },60);
+}
+
 function findTheme(qn){
   return THEMES.find(t => t.match.some(m => qn.includes(norm(m))));
+}
+function findGlossExact(qn){
+  for(const g of GLOSS){
+    if(norm(g.t)===qn) return g;
+    if((g.m||[]).some(s=>norm(s)===qn)) return g;
+  }
+  return null;
 }
 
 function doSearch(){
@@ -529,16 +689,14 @@ function doSearch(){
 
   const pool = SRC==='all' ? A : (SRC==='code'?CODE:CONV);
 
-  // Article-number query?
   const numMatch = raw.match(/^(?:art\.?\s*|article\s*)?(\d+(?:er)?(?:\.\d+)?)$/i);
   if(numMatch){
     const key=numMatch[1].toLowerCase();
     const fam=pool.filter(a=>a.id===key || a.id.startsWith(key+'.'));
-    if(fam.length){ renderSearch(fam, `Article ${esc(key)}`, ''); return; }
+    if(fam.length){ renderSearch(fam, `Article ${esc(key)}`, '', null, null); return; }
     renderEmpty(raw); return;
   }
 
-  // Keyword query
   const qn=norm(raw);
   const scored=[];
   pool.forEach(a=>{
@@ -553,16 +711,20 @@ function doSearch(){
   scored.sort((x,y)=> y.s-x.s);
   const arts=scored.map(x=>x.a);
   const theme = SRC==='ccmc' ? null : findTheme(qn);
-  renderSearch(arts, `« ${esc(raw)} »`, raw, theme);
+  const gloss = findGlossExact(qn);
+  renderSearch(arts, `« ${esc(raw)} »`, raw, theme, gloss);
 }
 
-function renderSearch(arts, title, term, theme){
-  if(!arts.length && !theme){ renderEmpty(term||title.replace(/[«»]/g,'').trim()); return; }
+function renderSearch(arts, title, term, theme, gloss){
+  if(!arts.length && !theme && !gloss){ renderEmpty(term||title.replace(/[«»]/g,'').trim()); return; }
   setActiveNav(null);
   const code = arts.filter(a=>a.src==='code');
   const conv = arts.filter(a=>a.src==='ccmc');
 
   let html=backBar();
+  if(gloss){
+    html += `<div class="lexbanner"><span class="cap">${iconDict()} Définition</span><div class="lt">${esc(gloss.t)}</div><p class="ld">${esc(gloss.d)}</p><button class="pl" id="lexmore">Ouvrir dans le lexique →</button></div>`;
+  }
   if(theme){
     const refs = (theme.refs||[]).map(r=>`<a href="#art-code-${cssid(r)}" data-goto="${esc(r)}">Art. ${esc(r)}</a>`).join('');
     html += `<div class="summary"><span class="cap">${iconLayers()} Synthèse — ${esc(theme.label)}</span><h3>${esc(theme.title)}</h3>${theme.body.map(p=>'<p>'+esc(p)+'</p>').join('')}${refs?`<div class="refs"><b>Articles clés (Code)&nbsp;:</b> ${refs}</div>`:''}</div>`;
@@ -579,7 +741,8 @@ function renderSearch(arts, title, term, theme){
   }
   results.innerHTML=html;
   wireBack();
-  results.querySelectorAll('.refs a').forEach(a=>a.onclick=e=>{
+  const lm=document.getElementById('lexmore'); if(lm && gloss) lm.onclick=()=>showLexique(gloss.t);
+  results.querySelectorAll('.summary .refs a').forEach(a=>a.onclick=e=>{
     e.preventDefault(); const el=document.getElementById('art-code-'+cssid(a.dataset.goto));
     if(el){el.scrollIntoView();}
   });
@@ -592,10 +755,36 @@ function renderEmpty(term){
   results.innerHTML=backBar()+`<div class="empty">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
     <h3>Aucun résultat pour « ${esc(term)} »${scope}</h3>
-    <p>Vérifiez l'orthographe, essayez un mot plus court, changez de source ci-dessus, ou parcourez les textes dans le menu.</p>
+    <p>Vérifiez l'orthographe, essayez un mot plus court, changez de source ci-dessus, ou consultez le lexique dans le menu.</p>
   </div>`;
   wireBack();
 }
+
+/* ---------- Term popover ---------- */
+const pop=document.getElementById('lexpop');
+function hidePop(){ pop.style.display='none'; }
+function showPop(span){
+  const id=span.dataset.t; const g=glossById(id); if(!g) return;
+  pop.innerHTML=`<button class="px" aria-label="Fermer">✕</button><div class="pt">${esc(g.t)}</div><div class="pd">${esc(g.d)}</div><button class="pl">Ouvrir dans le lexique →</button>`;
+  pop.style.display='block';
+  const r=span.getBoundingClientRect();
+  const pw=pop.offsetWidth, ph=pop.offsetHeight;
+  let left=window.scrollX + r.left;
+  left=Math.min(left, window.scrollX + document.documentElement.clientWidth - pw - 12);
+  left=Math.max(left, window.scrollX + 8);
+  let top=window.scrollY + r.bottom + 6;
+  if(r.bottom + ph + 12 > window.innerHeight && r.top - ph - 6 > 0) top=window.scrollY + r.top - ph - 6;
+  pop.style.left=left+'px'; pop.style.top=top+'px';
+  pop.querySelector('.px').onclick=hidePop;
+  pop.querySelector('.pl').onclick=()=>{ hidePop(); showLexique(g.t); };
+}
+document.addEventListener('click',e=>{
+  const sp=e.target.closest('.term');
+  if(sp && sp.dataset.t){ e.stopPropagation(); showPop(sp); return; }
+  if(!e.target.closest('#lexpop')) hidePop();
+});
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') hidePop(); });
+window.addEventListener('scroll',hidePop,true);
 
 /* ---------- Source filter ---------- */
 function initFilter(){
@@ -640,9 +829,12 @@ function route(){
   if(h.startsWith('q=')){ qEl.value=h.slice(2); doSearch(); }
   else if(h.startsWith('livre=')){ showLivre(parseInt(h.slice(6))||0); }
   else if(h.startsWith('conv=')){ showConv(parseInt(h.slice(5))||0); }
+  else if(h.startsWith('lexq=')){ showLexique(h.slice(5)); }
+  else if(h==='lex'){ showLexique(); }
+  else if(h.startsWith('art-')){ showHome(); }
   else showHome();
 }
-window.addEventListener('hashchange', ()=>{ if(A.length) route(); });
+window.addEventListener('hashchange', ()=>{ if(A.length && !location.hash.startsWith('#art-')) route(); });
 initTheme();
 initFilter();
 results.innerHTML='<div style="padding:70px 20px;text-align:center;color:var(--ink-soft)">Chargement des textes…</div>';
@@ -651,13 +843,15 @@ Promise.all([
   fetch('explanations.json').then(r=>r.json()),
   fetch('themes.json').then(r=>r.json()),
   fetch('convention.json').then(r=>r.json()),
-  fetch('convention_explanations.json').then(r=>r.json())
-]).then(([arts,exp,themes,conv,cexp])=>{
+  fetch('convention_explanations.json').then(r=>r.json()),
+  fetch('lexique.json').then(r=>r.json())
+]).then(([arts,exp,themes,conv,cexp,lex])=>{
   arts.forEach(a=>{const e=exp[a.id]||{}; a.e=e.e||''; a.r=e.r||''; a.src='code';});
   conv.forEach(a=>{const e=cexp[a.id]||{}; a.e=e.e||''; a.r=e.r||''; a.src='ccmc';});
-  CODE=arts; CONV=conv; THEMES=themes;
+  CODE=arts; CONV=conv; THEMES=themes; GLOSS=lex;
   A=CODE.concat(CONV);
-  buildConvTitres();
+  UIDS=new Set(A.map(a=>a.src+':'+a.id));
+  buildConvTitres(); buildGloss();
   buildNav(); route();
 }).catch(err=>{
   results.innerHTML='<div style="padding:60px 24px;text-align:center;color:var(--ink-soft)"><h3 style="font-family:var(--serif);color:var(--ink)">Impossible de charger les données</h3><p>Cette page doit être servie par un serveur web (hébergement en ligne), et non ouverte par double-clic depuis votre ordinateur.</p></div>';
