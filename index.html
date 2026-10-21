@@ -266,6 +266,16 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 .calcdisc{font-size:11.5px;color:var(--ink-soft);margin-top:16px;line-height:1.5}
 @media (max-width:560px){ .calcgrid{grid-template-columns:1fr} }
 
+/* ---- Comparateur ---- */
+.cmptopics{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.cmptopics .tchip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cmpnote{background:var(--accent-tint);border:1px solid var(--accent-soft);border-radius:var(--radius);padding:16px 20px;margin-bottom:10px}
+.cmpnote .cap{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:7px}
+.cmpnote .cap svg{width:15px;height:15px}
+.cmpnote p{margin:0;font-size:14.5px;line-height:1.6;color:var(--ink)}
+.nav-cmp svg{color:var(--conv)}
+.nav-btn.active.nav-cmp svg{color:var(--accent-ink)}
+
 /* ---- Lexicon terms in text + popover ---- */
 .term{border-bottom:1.5px dotted var(--exp-accent);cursor:help}
 .term:hover{background:var(--exp-bg)}
@@ -504,6 +514,12 @@ function buildNav(){
   calc.onclick=()=>{ showCalc(); closeMobile(); };
   nav.appendChild(calc);
 
+  const cmp=document.createElement('button');
+  cmp.className='nav-btn nav-cmp'; cmp.id='nav-cmp';
+  cmp.innerHTML=`${iconCompare()}<span>Comparateur</span>`;
+  cmp.onclick=()=>{ showCompare(0); closeMobile(); };
+  nav.appendChild(cmp);
+
   const nt=document.createElement('div'); nt.className='navtitle'; nt.textContent='Code du travail'; nav.appendChild(nt);
   LIVRES.forEach(L=>{
     const arts = CODE.filter(a=>a.ln===L.ln);
@@ -531,6 +547,7 @@ function setActiveNav(key){
   else if(key==='lexique') el=document.getElementById('nav-lex');
   else if(key==='mine') el=document.getElementById('nav-mine');
   else if(key==='calc') el=document.getElementById('nav-calc');
+  else if(key==='cmp') el=document.getElementById('nav-cmp');
   else if(typeof key==='string' && key.startsWith('ct')) el=document.querySelector('.conv-btn[data-ct="'+key.slice(2)+'"]');
   else el=document.querySelector('.livre-btn[data-ln="'+key+'"]');
   if(el) el.classList.add('active');
@@ -896,6 +913,46 @@ function showCalc(){
   setSrc('code');
   window.scrollTo(0,0);
 }
+
+/* ---------- Comparateur Code <-> Convention ---------- */
+const COMPARE=[
+ {label:"Indemnité de licenciement", code:["172.30"], ccmc:["66"], note:"La Convention (art. 66) fixe un barème précis : 33/35/40 % par année sur le salaire moyen des 3 derniers mois. Le Code (art. 172.30) renvoie, lui, les modalités à un arrêté du Ministre."},
+ {label:"Préavis", code:["172.23","172.24","172.25"], ccmc:["63","64","65"], note:"Le Code pose le principe du préavis ; la Convention en fixe la durée minimale selon la catégorie : 1 mois (ouvriers/employés), 2 mois (maîtrise), 3 mois (cadres)."},
+ {label:"Période d'essai", code:["121.6","122.3","122.4"], ccmc:["35","37"], note:"Mêmes principes, mais la Convention ajoute une visite médicale de pré-embauche obligatoire et impose de notifier la décision avant la fin de l'essai (sinon l'essai est réputé concluant)."},
+ {label:"Congés payés", code:["222.8","222.9","222.12"], ccmc:["91","92","93"], note:"Dans les deux textes, 2,5 jours ouvrables par mois de service. La Convention précise l'allocation de congé et l'indemnité compensatrice en cas de départ."},
+ {label:"Durée du travail & heures sup.", code:["221.1","221.5","221.7"], ccmc:["74","75"], note:"40 heures par semaine dans les deux textes. La Convention détaille les majorations propres au secteur (30/60/65 %, nuit) et des horaires d'équivalence par métier."},
+ {label:"Salaire & rémunération", code:["241.1","241.2","242.2"], ccmc:["68","69","70"], note:"Le Code pose l'égalité de rémunération et le salaire minimum ; la Convention fixe des seuils d'entrée chiffrés propres au secteur minier, dont 70 % du minimum pour les sous-traitants."},
+ {label:"Licenciement économique", code:["155.1","155.2","155.3"], ccmc:["62","34"], note:"Procédure encadrée dans les deux textes ; la Convention insiste sur l'ordre des licenciements, l'avis des délégués et la priorité de réembauche."},
+ {label:"Délégués syndicaux", code:["330.1","331.2","332.7"], ccmc:["12","13","14"], note:"Protection renforcée des délégués dans les deux textes ; la Convention précise le crédit de 24 h/mois et l'autorisation de l'Inspection avant tout licenciement."},
+ {label:"Retraite", code:["172.34","172.35","172.36"], ccmc:["111","112","113"], note:"Le Code règle le départ à la retraite ; la Convention fixe les âges (60/65 ans), ajoute une indemnité conventionnelle de départ (≥ 6 mois + palier d'ancienneté) et la retraite anticipée."},
+ {label:"Maternité & travail des femmes", code:["153.1","153.2","153.3"], ccmc:["89","43"], note:"Le Code règle le congé de maternité ; la Convention garantit en plus le maintien du salaire en cas de mutation de la femme enceinte et le retour au poste."},
+ {label:"Discipline & sanctions", code:["211.1","212.1","212.2"], ccmc:["47"], note:"Même logique disciplinaire ; la Convention détaille l'échelle (avertissement, blâme, mise à pied de 1 à 6 jours, licenciement) et les délais de prescription (3 et 6 mois)."},
+ {label:"Maladie & accident", code:["151.1","152.1","152.4"], ccmc:["52","54","57"], note:"Suspension du contrat et prise en charge CNSS dans les deux cas ; la Convention fixe des délais (6 mois renouvelables) et le reclassement après consolidation."},
+ {label:"Santé & sécurité", code:["231.2","231.6","232.1"], ccmc:["101","102","103"], note:"Obligations renforcées dans la Convention pour le secteur minier : EPI fournis gratuitement, comités santé-sécurité, guides et exercices d'urgence sur site."},
+ {label:"Travail des enfants", code:["137.1","137.2","137.8"], ccmc:["90"], note:"Mêmes interdictions de fond : pas d'emploi avant 16 ans (sauf apprenti), travaux dangereux et travail de nuit interdits aux moins de 18 ans."},
+ {label:"Intérim & travail temporaire", code:["133.1","133.5"], ccmc:["36","42"], note:"Recours au travail temporaire encadré ; la Convention traite en plus l'intérim d'un emploi supérieur (prime différentielle, durée plafonnée)."}
+];
+function iconCompare(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4 4 8l4 4"/><path d="M4 8h15"/><path d="m16 20 4-4-4-4"/><path d="M20 16H5"/></svg>';}
+function showCompare(ti){
+  ti=parseInt(ti); if(isNaN(ti)||ti<0||ti>=COMPARE.length) ti=0;
+  location.hash='cmp='+ti;
+  setActiveNav('cmp');
+  const T=COMPARE[ti];
+  const chips=`<div class="cmptopics">${COMPARE.map((c,i)=>`<button class="tchip${i===ti?' on':''}" data-i="${i}">${esc(c.label)}</button>`).join('')}</div>`;
+  const codeArts=T.code.map(id=>artByUid('code:'+id)).filter(Boolean);
+  const convArts=T.ccmc.map(id=>artByUid('ccmc:'+id)).filter(Boolean);
+  let html=backBar()
+    +`<div class="resmeta"><h2>Comparateur · ${esc(T.label)}</h2></div>`
+    +chips
+    +`<div class="cmpnote"><span class="cap">${iconCompare()} Différence clé</span><p>${esc(T.note)}</p></div>`;
+  if(codeArts.length) html+=`<div class="srcblock-h code">${iconScale()} Code du travail <span class="c">${codeArts.length} article${codeArts.length>1?'s':''}</span></div>`+codeArts.map(a=>articleCard(a)).join('');
+  if(convArts.length) html+=`<div class="srcblock-h conv">${iconPick()} Convention des mines &amp; carrières <span class="c">${convArts.length} article${convArts.length>1?'s':''}</span></div>`+convArts.map(a=>articleCard(a)).join('');
+  if(!codeArts.length && !convArts.length) html+=`<div class="lexnone">Articles indisponibles pour ce thème.</div>`;
+  results.innerHTML=html;
+  wireBack();
+  results.querySelectorAll('.cmptopics .tchip').forEach(b=>b.onclick=()=>showCompare(+b.dataset.i));
+  window.scrollTo(0,0);
+}
 function findTheme(qn){
   return THEMES.find(t => t.match.some(m => qn.includes(norm(m))));
 }
@@ -1225,6 +1282,8 @@ function route(){
   else if(h.startsWith('mine=')){ showMine(h.slice(5)); }
   else if(h==='mine'){ showMine('fav'); }
   else if(h==='calc'){ showCalc(); }
+  else if(h.startsWith('cmp=')){ showCompare(h.slice(4)); }
+  else if(h==='cmp'){ showCompare(0); }
   else if(h.startsWith('a=')){ showArticle(h.slice(2)); }
   else if(h.startsWith('art-')){ showHome(); }
   else showHome();
