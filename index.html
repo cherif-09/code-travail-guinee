@@ -508,12 +508,6 @@ function buildNav(){
   mine.onclick=()=>{ showMine('fav'); closeMobile(); };
   nav.appendChild(mine);
 
-  const calc=document.createElement('button');
-  calc.className='nav-btn nav-calc'; calc.id='nav-calc';
-  calc.innerHTML=`${iconCalc()}<span>Calculateurs</span>`;
-  calc.onclick=()=>{ showCalc(); closeMobile(); };
-  nav.appendChild(calc);
-
   const cmp=document.createElement('button');
   cmp.className='nav-btn nav-cmp'; cmp.id='nav-cmp';
   cmp.innerHTML=`${iconCompare()}<span>Comparateur</span>`;
@@ -546,7 +540,6 @@ function setActiveNav(key){
   if(key==='accueil') el=document.getElementById('nav-accueil');
   else if(key==='lexique') el=document.getElementById('nav-lex');
   else if(key==='mine') el=document.getElementById('nav-mine');
-  else if(key==='calc') el=document.getElementById('nav-calc');
   else if(key==='cmp') el=document.getElementById('nav-cmp');
   else if(typeof key==='string' && key.startsWith('ct')) el=document.querySelector('.conv-btn[data-ct="'+key.slice(2)+'"]');
   else el=document.querySelector('.livre-btn[data-ln="'+key+'"]');
@@ -1281,7 +1274,6 @@ function route(){
   else if(h==='lex'){ showLexique(); }
   else if(h.startsWith('mine=')){ showMine(h.slice(5)); }
   else if(h==='mine'){ showMine('fav'); }
-  else if(h==='calc'){ showCalc(); }
   else if(h.startsWith('cmp=')){ showCompare(h.slice(4)); }
   else if(h==='cmp'){ showCompare(0); }
   else if(h.startsWith('a=')){ showArticle(h.slice(2)); }
