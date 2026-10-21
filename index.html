@@ -536,6 +536,8 @@ function iconShare(){return '<svg viewBox="0 0 24 24" fill="none" stroke="curren
 function iconWhatsapp(){return '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.2 8.2 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm-2.34 4.3c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.77 2.7 4.3 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.16-.48-.29-.25-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.38-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42z"/></svg>';}
 function iconLink(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>';}
 function iconCopy(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';}
+function iconImage(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>';}
+function iconDownload(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>';}
 
 /* ---------- Views ---------- */
 const results = document.getElementById('results');
@@ -834,9 +836,8 @@ function openShare(btn){
   const shareText=titleLine;
   const fullText=titleLine+'\n\n'+a.text+'\n\nSource : '+url;
   const items=[];
-  if(navigator.share) items.push({cls:'',icon:iconShare(),lab:'Partager…',act:()=>{ navigator.share({title:label,text:shareText,url}).catch(()=>{}); }});
-  items.push({cls:'wa',icon:iconWhatsapp(),lab:'Partager sur WhatsApp',act:()=>{ window.open('https://wa.me/?text='+encodeURIComponent(shareText+'\n'+url),'_blank'); }});
-  items.push({cls:'',icon:iconLink(),lab:'Copier le lien',act:()=>{ copyText(url).then(()=>toast('Lien copié')).catch(()=>toast('Impossible de copier')); }});
+  items.push({cls:'',icon:iconImage(),lab:"Partager l'image",act:()=>shareImage(a,'share')});
+  items.push({cls:'',icon:iconDownload(),lab:"Télécharger l'image (JPEG)",act:()=>shareImage(a,'download')});
   items.push({cls:'',icon:iconCopy(),lab:"Copier le texte de l'article",act:()=>{ copyText(fullText).then(()=>toast('Texte copié')).catch(()=>toast('Impossible de copier')); }});
   shareMenu.innerHTML='';
   items.forEach(it=>{ const b=document.createElement('button'); b.className=it.cls; b.innerHTML=it.icon+'<span>'+it.lab+'</span>'; b.onclick=()=>{ hideShareMenu(); it.act(); }; shareMenu.appendChild(b); });
@@ -856,6 +857,107 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') hideShareMenu(); });
 window.addEventListener('scroll',hideShareMenu,true);
+
+/* ---------- Article → image (JPEG) ---------- */
+let LOGO_IMG=null;
+(function preloadLogo(){ try{ const im=new Image(); im.onload=()=>{LOGO_IMG=im;}; im.src='icon-192.png'; }catch(e){} })();
+function roundRect(ctx,x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+function wrapLines(ctx, text, maxW){
+  const out=[];
+  (text||'').split('\n\n').forEach((para,pi,arr)=>{
+    const words=para.split(/\s+/); let line='';
+    words.forEach(w=>{
+      const test=line?line+' '+w:w;
+      if(ctx.measureText(test).width>maxW && line){ out.push(line); line=w; } else line=test;
+    });
+    if(line) out.push(line);
+    if(pi<arr.length-1) out.push('');
+  });
+  return out;
+}
+function truncateLine(ctx,t,maxW){ if(ctx.measureText(t).width<=maxW) return t; let s=t; while(s.length>1 && ctx.measureText(s+'…').width>maxW) s=s.slice(0,-1); return s+'…'; }
+function imgContext(a){
+  if(a.src==='ccmc'){ const cs=convShort(a.livre); let s=cs.rom==='—'?'Préliminaires':'Titre '+cs.rom+' — '+cs.label; if(a.chapitre) s+=' · '+cleanConvChap(a.chapitre); return s; }
+  const L=LIVRES.find(x=>x.ln===a.ln); let s=L?L.name:''; if(a.titre) s+=(s?' · ':'')+cleanTitre(a.titre); return s;
+}
+async function buildArticleCanvas(a){
+  if(document.fonts && document.fonts.ready){ try{ await document.fonts.ready; }catch(e){} }
+  const W=1080, PAD=56, CW=W-PAD*2, S=2, PP=24;
+  const isConv=a.src==='ccmc';
+  const accent=isConv?'#4a4a9e':'#1f5d43';
+  const srcLabel=isConv?'CONVENTION DES MINES & CARRIÈRES':'CODE DU TRAVAIL GUINÉEN';
+  const badge=(a.id==='terminologie'?'Terminologie':a.id==='preambule'?'Préambule':'Art. '+a.id);
+  const titleText=(a.titre_court && !isSpecial(a))?a.titre_court:'';
+  const SERIF='Georgia, "Spectral", serif', SANS='"IBM Plex Sans", system-ui, sans-serif';
+  const c=document.createElement('canvas'); const ctx=c.getContext('2d');
+  // measure
+  ctx.font='600 34px '+SERIF; const titleLines=titleText?wrapLines(ctx,titleText,CW):[];
+  ctx.font='29px '+SERIF; const textLines=wrapLines(ctx,a.text,CW);
+  ctx.font='25px '+SANS; const expLines=a.e?wrapLines(ctx,a.e,CW-PP*2):[]; const rhLines=a.r?wrapLines(ctx,a.r,CW-PP*2):[];
+  const LHt=44, LHp=37, LHtt=46;
+  const ctxText=imgContext(a);
+  const CTXH=ctxText?34:0;
+  let H=PAD+30+46+16; // top + source + badge
+  H+=CTXH;
+  H+=titleLines.length*LHtt+12;
+  H+=18+textLines.length*LHt+8;
+  if(expLines.length) H+=18+PP*2+32+expLines.length*LHp;
+  if(rhLines.length) H+=14+PP*2+32+rhLines.length*LHp;
+  H+=30+70+PAD; // footer
+  c.width=W*S; c.height=Math.round(H)*S; ctx.scale(S,S);
+  // bg
+  ctx.fillStyle='#fffdf8'; ctx.fillRect(0,0,W,H);
+  ctx.fillStyle=accent; ctx.fillRect(0,0,10,H);
+  let y=PAD;
+  ctx.textBaseline='alphabetic';
+  ctx.fillStyle=accent; ctx.font='700 18px '+SANS; ctx.fillText(srcLabel, PAD, y+16); y+=36;
+  ctx.font='600 22px '+SANS; const bw=ctx.measureText(badge).width+28;
+  roundRect(ctx,PAD,y,bw,40,9); ctx.fillStyle=accent; ctx.fill();
+  ctx.fillStyle='#fff'; ctx.fillText(badge,PAD+14,y+27); y+=40+16;
+  if(ctxText){ ctx.fillStyle='#54594c'; ctx.font='20px '+SANS; ctx.fillText(truncateLine(ctx,ctxText,CW), PAD, y+14); y+=CTXH; }
+  ctx.fillStyle='#22271f'; ctx.font='600 34px '+SERIF;
+  titleLines.forEach(l=>{ ctx.fillText(l,PAD,y+32); y+=LHtt; }); y+=6;
+  ctx.fillStyle='#22271f'; ctx.font='29px '+SERIF;
+  textLines.forEach(l=>{ if(l) ctx.fillText(l,PAD,y+30); y+=LHt; }); y+=8;
+  if(expLines.length){ const ph=PP*2+32+expLines.length*LHp;
+    roundRect(ctx,PAD,y,CW,ph,12); ctx.fillStyle='#eef2f4'; ctx.fill();
+    ctx.fillStyle='#1f6a80'; ctx.font='700 17px '+SANS; ctx.fillText('EXPLICATION',PAD+PP,y+PP+8);
+    ctx.fillStyle='#1c4451'; ctx.font='25px '+SANS; let yy=y+PP+34; expLines.forEach(l=>{ ctx.fillText(l,PAD+PP,yy); yy+=LHp; }); y+=ph+14; }
+  if(rhLines.length){ const ph=PP*2+32+rhLines.length*LHp;
+    roundRect(ctx,PAD,y,CW,ph,12); ctx.fillStyle='#f7efdd'; ctx.fill();
+    ctx.fillStyle='#a9741a'; ctx.font='700 17px '+SANS; ctx.fillText('CONSEIL RH',PAD+PP,y+PP+8);
+    ctx.fillStyle='#6a4c15'; ctx.font='25px '+SANS; let yy=y+PP+34; rhLines.forEach(l=>{ ctx.fillText(l,PAD+PP,yy); yy+=LHp; }); y+=ph+14; }
+  // footer
+  const fy=H-PAD-54;
+  ctx.strokeStyle='#dfdacb'; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(PAD,fy); ctx.lineTo(W-PAD,fy); ctx.stroke();
+  let tx=PAD; const ly=fy+14;
+  if(LOGO_IMG){ try{ ctx.drawImage(LOGO_IMG,PAD,ly,42,42); tx=PAD+54; }catch(e){} }
+  ctx.fillStyle='#22271f'; ctx.font='600 21px '+SANS; ctx.fillText('Code du Travail & Convention minière — Guinée', tx, ly+18);
+  ctx.fillStyle='#54594c'; ctx.font='18px '+SANS; ctx.fillText('code-travail-guinee.vercel.app', tx, ly+40);
+  // tiny flag
+  const fx=W-PAD-54; ['#ce1126','#fcd116','#009460'].forEach((col,i)=>{ ctx.fillStyle=col; ctx.fillRect(fx+i*18, ly+12, 16, 20); });
+  // subtle frame
+  ctx.strokeStyle='#e4dfd0'; ctx.lineWidth=2; ctx.strokeRect(1,1,W-2,H-2);
+  return c;
+}
+async function shareImage(a, mode){
+  toast('Génération de l’image…');
+  let c; try{ c=await buildArticleCanvas(a); }catch(e){ toast('Échec de la génération'); return; }
+  const name='article-'+a.src+'-'+String(a.id).replace(/[^a-z0-9]/gi,'-');
+  c.toBlob(blob=>{
+    if(!blob){ toast('Échec de la génération'); return; }
+    const file=new File([blob], name+'.jpg', {type:'image/jpeg'});
+    if(mode==='share' && navigator.canShare && navigator.canShare({files:[file]}) && navigator.share){
+      navigator.share({files:[file], title:artLabel(a)}).catch(()=>{});
+    } else {
+      const url=URL.createObjectURL(blob);
+      const link=document.createElement('a'); link.href=url; link.download=name+'.jpg';
+      document.body.appendChild(link); link.click(); link.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),5000);
+      toast('Image enregistrée');
+    }
+  },'image/jpeg',0.92);
+}
 
 /* ---------- Source filter ---------- */
 function initFilter(){
