@@ -229,6 +229,42 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 .clearhist:hover{border-color:#c0392b;color:#c0392b}
 .ctxlink{border:0;background:none;color:var(--accent);font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer;padding:0}
 .ctxlink:hover{text-decoration:underline}
+.nav-calc svg{color:var(--accent)}
+
+/* ---- Calculator ---- */
+.calcintro{font-family:var(--serif);font-size:16px;line-height:1.6;color:var(--ink-soft);max-width:660px;margin:2px 0 20px}
+.calccard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;max-width:680px;box-shadow:var(--shadow-sm)}
+.calctitle{font-family:var(--serif);font-size:19px;font-weight:600;margin:0 0 4px}
+.calcsub{font-size:12.5px;color:var(--ink-soft);margin:0 0 18px}
+.calcseg{display:flex;background:var(--surface-2);border:1px solid var(--line-strong);border-radius:10px;padding:3px;gap:2px;margin-bottom:18px;flex-wrap:wrap}
+.calcseg button{flex:1;border:0;background:none;font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--ink-soft);padding:8px 12px;border-radius:8px;cursor:pointer;white-space:nowrap}
+.calcseg button.on{background:var(--surface);color:var(--ink);box-shadow:var(--shadow-sm)}
+.calcgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.calcfield{display:flex;flex-direction:column;gap:5px}
+.calcfield.full{grid-column:1/-1}
+.calcfield label{font-size:12.5px;font-weight:600;color:var(--ink-soft)}
+.calcfield input{font-family:var(--sans);font-size:15px;padding:10px 12px;border:1.5px solid var(--line-strong);border-radius:9px;background:var(--surface);color:var(--ink);outline:none;width:100%}
+.calcfield input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint)}
+.calccheck{display:flex;align-items:center;gap:9px;font-size:13.5px;color:var(--ink);margin:2px 0 16px}
+.calccheck input{width:17px;height:17px}
+.calcrates{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;margin-bottom:14px}
+.calcrates .rh{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px}
+.calcrates .rr{display:flex;gap:10px;flex-wrap:wrap}
+.calcrates .rr>div{flex:1;min-width:110px;display:flex;flex-direction:column;gap:4px}
+.calcrates .rr label{font-size:11.5px;color:var(--ink-soft)}
+.calcrates .rr input{font-family:var(--sans);font-size:14px;padding:8px 10px;border:1.5px solid var(--line-strong);border-radius:8px;background:var(--surface);color:var(--ink);width:100%}
+.calcrates .rr input[readonly]{background:var(--surface-2);color:var(--ink-soft)}
+.calcnote{font-size:12px;line-height:1.55;color:var(--rh-ink);background:var(--rh-bg);border:1px solid var(--rh-line);border-radius:9px;padding:11px 13px;margin-bottom:16px}
+.calcresult{border-top:1px solid var(--line);padding-top:16px}
+.calctotal{font-family:var(--serif);font-size:14px;color:var(--ink-soft)}
+.calctotal b{font-family:var(--sans);font-size:29px;font-weight:700;color:var(--accent);display:block;margin-top:4px;letter-spacing:-.01em}
+.calcbreak{margin-top:14px;font-size:13px;color:var(--ink-soft)}
+.calcbreak table{width:100%;border-collapse:collapse}
+.calcbreak td{padding:6px 0;border-bottom:1px solid var(--line)}
+.calcbreak td:last-child{text-align:right;font-family:var(--mono);color:var(--ink)}
+.calcwarn{color:var(--rh-accent);font-weight:600}
+.calcdisc{font-size:11.5px;color:var(--ink-soft);margin-top:16px;line-height:1.5}
+@media (max-width:560px){ .calcgrid{grid-template-columns:1fr} }
 
 /* ---- Lexicon terms in text + popover ---- */
 .term{border-bottom:1.5px dotted var(--exp-accent);cursor:help}
@@ -462,6 +498,12 @@ function buildNav(){
   mine.onclick=()=>{ showMine('fav'); closeMobile(); };
   nav.appendChild(mine);
 
+  const calc=document.createElement('button');
+  calc.className='nav-btn nav-calc'; calc.id='nav-calc';
+  calc.innerHTML=`${iconCalc()}<span>Calculateurs</span>`;
+  calc.onclick=()=>{ showCalc(); closeMobile(); };
+  nav.appendChild(calc);
+
   const nt=document.createElement('div'); nt.className='navtitle'; nt.textContent='Code du travail'; nav.appendChild(nt);
   LIVRES.forEach(L=>{
     const arts = CODE.filter(a=>a.ln===L.ln);
@@ -488,6 +530,7 @@ function setActiveNav(key){
   if(key==='accueil') el=document.getElementById('nav-accueil');
   else if(key==='lexique') el=document.getElementById('nav-lex');
   else if(key==='mine') el=document.getElementById('nav-mine');
+  else if(key==='calc') el=document.getElementById('nav-calc');
   else if(typeof key==='string' && key.startsWith('ct')) el=document.querySelector('.conv-btn[data-ct="'+key.slice(2)+'"]');
   else el=document.querySelector('.livre-btn[data-ln="'+key+'"]');
   if(el) el.classList.add('active');
@@ -769,6 +812,88 @@ function showMine(tab){
   results.querySelectorAll('.minetabs button').forEach(b=>b.onclick=()=>showMine(b.dataset.t));
   results.querySelectorAll('.chips .chip[data-q]').forEach(c=>c.onclick=()=>{ qEl.value=c.dataset.q; doSearch(); });
   const ch=document.getElementById('clearhist'); if(ch) ch.onclick=()=>{ HIST=[];QHIST=[]; lsSet('ctg-hist',[]); lsSet('ctg-q',[]); showMine('hist'); };
+  window.scrollTo(0,0);
+}
+
+/* ---------- Calculateurs ---------- */
+function iconCalc(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="18"/><line x1="8" y1="18" x2="12" y2="18"/></svg>';}
+function fmtGNF(n){ try{ return Math.round(n).toLocaleString('fr-FR')+' GNF'; }catch(e){ return Math.round(n)+' GNF'; } }
+function showCalc(){
+  location.hash='calc';
+  setActiveNav('calc');
+  let src='code';
+  results.innerHTML = backBar()
+    + `<div class="resmeta"><h2>Calculateurs RH</h2></div>`
+    + `<p class="calcintro">Estimez une indemnité à partir des barèmes du Code du travail et de la Convention minière. Résultat <b>indicatif</b> : il ne remplace pas un calcul officiel ni l'avis d'un juriste.</p>`
+    + `<div class="calccard">
+        <div class="calctitle">Indemnité de licenciement</div>
+        <div class="calcsub">Choisissez le texte applicable, puis saisissez le salaire et l'ancienneté.</div>
+        <div class="calcseg" id="calc-seg">
+          <button data-cs="code" class="on">Code du travail · art. 172.30</button>
+          <button data-cs="ccmc">Convention minière · art. 66</button>
+        </div>
+        <div class="calcgrid">
+          <div class="calcfield full"><label id="calc-sal-l">Salaire brut mensuel</label><input type="number" id="calc-sal" min="0" step="1000" inputmode="numeric" placeholder="ex. 2600000"></div>
+        </div>
+        <div class="calcgrid">
+          <div class="calcfield"><label>Ancienneté — années</label><input type="number" id="calc-y" min="0" step="1" inputmode="numeric" placeholder="0"></div>
+          <div class="calcfield"><label>Ancienneté — mois</label><input type="number" id="calc-m" min="0" max="11" step="1" inputmode="numeric" placeholder="0"></div>
+        </div>
+        <label class="calccheck"><input type="checkbox" id="calc-fg"> Licenciement pour faute grave ou lourde</label>
+        <div class="calcrates" id="calc-rates">
+          <div class="rh">Barème appliqué — % du salaire par année d'ancienneté</div>
+          <div class="rr">
+            <div><label>1 à 5 ans</label><input type="number" id="calc-r1" value="33" min="0" step="0.5" inputmode="decimal"></div>
+            <div><label>6ᵉ à 10ᵉ année</label><input type="number" id="calc-r2" value="35" min="0" step="0.5" inputmode="decimal"></div>
+            <div><label>au-delà de 10 ans</label><input type="number" id="calc-r3" value="40" min="0" step="0.5" inputmode="decimal"></div>
+          </div>
+        </div>
+        <div class="calcnote" id="calc-note"></div>
+        <div class="calcresult" id="calc-result"></div>
+        <div class="calcdisc">Les fractions d'année sont prises en compte. Aucune indemnité en cas de faute grave ou lourde, ni en dessous de 12 mois d'ancienneté. Estimation fournie à titre indicatif.</div>
+      </div>`;
+  wireBack();
+  const g=id=>document.getElementById(id);
+  const seg=g('calc-seg');
+  function setSrc(s){
+    src=s;
+    seg.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.cs===s));
+    if(s==='ccmc'){
+      g('calc-sal-l').textContent='Salaire brut mensuel (moyenne des 3 derniers mois)';
+      [['calc-r1',33],['calc-r2',35],['calc-r3',40]].forEach(p=>{ g(p[0]).value=p[1]; g(p[0]).readOnly=true; });
+      g('calc-note').innerHTML=`Barème de la <b>Convention des mines & carrières (art. 66)</b> : 33 % de la 1ʳᵉ à la 5ᵉ année, 35 % de la 6ᵉ à la 10ᵉ, 40 % au-delà, sur le salaire brut moyen des 3 derniers mois. Taux fixés par la Convention.`;
+    } else {
+      g('calc-sal-l').textContent='Salaire brut mensuel (moyenne des 12 derniers mois)';
+      ['calc-r1','calc-r2','calc-r3'].forEach(id=>{ g(id).readOnly=false; });
+      g('calc-note').innerHTML=`⚠️ Le <b>Code du travail (art. 172.30)</b> renvoie les modalités à un <b>arrêté du Ministre</b> : il ne fixe pas lui-même les taux. Les valeurs ci-dessus sont un barème <b>indicatif</b> couramment rapporté — vous pouvez les ajuster selon l'arrêté en vigueur.`;
+    }
+    recompute();
+  }
+  function recompute(){
+    const sal=parseFloat(g('calc-sal').value)||0;
+    const y=Math.max(0,parseInt(g('calc-y').value)||0);
+    const m=Math.max(0,Math.min(11,parseInt(g('calc-m').value)||0));
+    const fg=g('calc-fg').checked;
+    const v1=parseFloat(g('calc-r1').value)||0, v2=parseFloat(g('calc-r2').value)||0, v3=parseFloat(g('calc-r3').value)||0;
+    const r1=v1/100, r2=v2/100, r3=v3/100;
+    const months=y*12+m, anc=months/12;
+    const res=g('calc-result');
+    if(sal<=0 || months<=0){ res.innerHTML=`<div class="calcbreak">Saisissez un salaire et une ancienneté pour voir l'estimation.</div>`; return; }
+    if(fg){ res.innerHTML=`<div class="calctotal">Indemnité estimée<b>0 GNF</b></div><div class="calcbreak calcwarn">Aucune indemnité de licenciement n'est due en cas de faute grave ou lourde.</div>`; return; }
+    if(months<12){ res.innerHTML=`<div class="calctotal">Indemnité estimée<b>0 GNF</b></div><div class="calcbreak calcwarn">Pas de droit à l'indemnité : moins de 12 mois d'ancienneté.</div>`; return; }
+    const t1=Math.min(anc,5), t2=Math.max(0,Math.min(anc-5,5)), t3=Math.max(0,anc-10);
+    const a1=t1*r1*sal, a2=t2*r2*sal, a3=t3*r3*sal, tot=a1+a2+a3;
+    const yf=x=>x.toFixed(2).replace(/\.?0+$/,'').replace('.',',');
+    let rows='';
+    if(t1>0) rows+=`<tr><td>${yf(t1)} an(s) × ${v1} %</td><td>${fmtGNF(a1)}</td></tr>`;
+    if(t2>0) rows+=`<tr><td>${yf(t2)} an(s) × ${v2} %</td><td>${fmtGNF(a2)}</td></tr>`;
+    if(t3>0) rows+=`<tr><td>${yf(t3)} an(s) × ${v3} %</td><td>${fmtGNF(a3)}</td></tr>`;
+    res.innerHTML=`<div class="calctotal">Indemnité estimée · ${src==='ccmc'?'Convention art. 66':'Code art. 172.30 (indicatif)'}<b>${fmtGNF(tot)}</b></div><div class="calcbreak"><table>${rows}</table><div style="margin-top:10px">Ancienneté : ${y} an(s) ${m} mois · salaire : ${fmtGNF(sal)}</div></div>`;
+  }
+  seg.querySelectorAll('button').forEach(b=>b.onclick=()=>setSrc(b.dataset.cs));
+  ['calc-sal','calc-y','calc-m','calc-r1','calc-r2','calc-r3'].forEach(id=>g(id).addEventListener('input',recompute));
+  g('calc-fg').addEventListener('change',recompute);
+  setSrc('code');
   window.scrollTo(0,0);
 }
 function findTheme(qn){
@@ -1099,6 +1224,7 @@ function route(){
   else if(h==='lex'){ showLexique(); }
   else if(h.startsWith('mine=')){ showMine(h.slice(5)); }
   else if(h==='mine'){ showMine('fav'); }
+  else if(h==='calc'){ showCalc(); }
   else if(h.startsWith('a=')){ showArticle(h.slice(2)); }
   else if(h.startsWith('art-')){ showHome(); }
   else showHome();
