@@ -198,7 +198,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2px;font-weight:600}
 
 /* ---- Share button + menu + toast ---- */
-.sharebtn{margin-left:auto;flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);width:32px;height:32px;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .13s}
+.sharebtn{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);width:32px;height:32px;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .13s}
 .sharebtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
 .sharebtn svg{width:16px;height:16px}
 #sharemenu{position:absolute;z-index:60;min-width:210px;background:var(--surface);border:1px solid var(--line-strong);border-radius:11px;box-shadow:var(--shadow);padding:6px;display:none}
@@ -208,6 +208,27 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 #sharemenu .wa svg{color:#25d366}
 #toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--accent);color:#fff;font-family:var(--sans);font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:80}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---- Favorites / actions / Mes articles ---- */
+.cardactions{margin-left:auto;display:flex;gap:7px;flex:none}
+.badgebtn{border:0;cursor:pointer}
+.badgebtn:hover{filter:brightness(1.1)}
+.favbtn{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);width:32px;height:32px;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .13s}
+.favbtn:hover{border-color:#d9a400;color:#d9a400}
+.favbtn svg{width:16px;height:16px}
+.favbtn.on{border-color:#e6b800;color:#c98a00;background:#fdf4dd}
+.favbtn.on svg{fill:#edb400}
+.nav-mine svg{color:#c98a00}
+.nav-btn.active.nav-mine svg{color:var(--accent-ink)}
+.minetabs{display:flex;gap:8px;margin:0 0 22px;border-bottom:1px solid var(--line)}
+.minetabs button{border:0;background:none;font-family:var(--sans);font-size:14px;font-weight:600;color:var(--ink-soft);padding:10px 2px;margin-right:18px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.minetabs button.on{color:var(--accent-ink);border-bottom-color:var(--accent)}
+.minesec{margin-bottom:26px}
+.minesec h4{font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);font-weight:600;margin:0 0 12px}
+.clearhist{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-soft);font-family:var(--sans);font-size:13px;font-weight:600;padding:8px 14px;border-radius:9px;cursor:pointer;margin-top:4px}
+.clearhist:hover{border-color:#c0392b;color:#c0392b}
+.ctxlink{border:0;background:none;color:var(--accent);font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer;padding:0}
+.ctxlink:hover{text-decoration:underline}
 
 /* ---- Lexicon terms in text + popover ---- */
 .term{border-bottom:1.5px dotted var(--exp-accent);cursor:help}
@@ -345,6 +366,17 @@ let CODE=[], CONV=[], THEMES=[], A=[], CONV_TITRES=[];
 let GLOSS=[], GMAP={}, GRE=null, UIDS=new Set();
 let SRC='all';
 
+/* ---- Local storage: favorites + history ---- */
+function lsGet(k,def){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):def; }catch(e){ return def; } }
+function lsSet(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
+let FAV=lsGet('ctg-fav',[]), HIST=lsGet('ctg-hist',[]), QHIST=lsGet('ctg-q',[]);
+if(!Array.isArray(FAV))FAV=[]; if(!Array.isArray(HIST))HIST=[]; if(!Array.isArray(QHIST))QHIST=[];
+function isFav(uid){ return FAV.indexOf(uid)>=0; }
+function toggleFav(uid){ const i=FAV.indexOf(uid); if(i>=0)FAV.splice(i,1); else FAV.unshift(uid); lsSet('ctg-fav',FAV); return i<0; }
+function logArt(uid){ HIST=HIST.filter(x=>x!==uid); HIST.unshift(uid); if(HIST.length>40)HIST=HIST.slice(0,40); lsSet('ctg-hist',HIST); }
+function logQ(q){ q=(q||'').trim(); if(!q)return; QHIST=QHIST.filter(x=>x.toLowerCase()!==q.toLowerCase()); QHIST.unshift(q); if(QHIST.length>15)QHIST=QHIST.slice(0,15); lsSet('ctg-q',QHIST); }
+function artByUid(uid){ const i=(uid||'').indexOf(':'); if(i<0)return null; const s=uid.slice(0,i), id=uid.slice(i+1); return (s==='ccmc'?CONV:CODE).find(x=>x.id===id); }
+
 const LIVRES = [
  {ln:0, name:"Titre préliminaire", desc:"Dispositions générales, principes fondamentaux"},
  {ln:1, name:"Livre 1 — Emploi", desc:"Recrutement, contrats, suspension, cessation"},
@@ -424,6 +456,12 @@ function buildNav(){
   lex.onclick=()=>{ showLexique(); closeMobile(); };
   nav.appendChild(lex);
 
+  const mine=document.createElement('button');
+  mine.className='nav-btn nav-mine'; mine.id='nav-mine';
+  mine.innerHTML=`${iconBookmark()}<span>Mes articles</span>`;
+  mine.onclick=()=>{ showMine('fav'); closeMobile(); };
+  nav.appendChild(mine);
+
   const nt=document.createElement('div'); nt.className='navtitle'; nt.textContent='Code du travail'; nav.appendChild(nt);
   LIVRES.forEach(L=>{
     const arts = CODE.filter(a=>a.ln===L.ln);
@@ -449,6 +487,7 @@ function setActiveNav(key){
   let el;
   if(key==='accueil') el=document.getElementById('nav-accueil');
   else if(key==='lexique') el=document.getElementById('nav-lex');
+  else if(key==='mine') el=document.getElementById('nav-mine');
   else if(typeof key==='string' && key.startsWith('ct')) el=document.querySelector('.conv-btn[data-ct="'+key.slice(2)+'"]');
   else el=document.querySelector('.livre-btn[data-ln="'+key+'"]');
   if(el) el.classList.add('active');
@@ -516,7 +555,7 @@ function articleCard(a, term){
   const rhHtml = a.r ? `<div class="panel rh"><span class="lab">${iconBriefcase()} Conseil RH</span><p>${esc(a.r)}</p></div>` : '';
   const title = (isConv && a.titre_court && !isSpecial(a)) ? `<div class="arttitle">${esc(a.titre_court)}</div>` : '';
   const html = `<article class="card${isConv?' ccmc':''}" id="${elId(a)}">
-    <div class="head"><span class="badge${isConv?' conv':''}">${esc(badgeText(a))}</span><div class="crumb">${crumb(a)}</div><button class="sharebtn" data-asrc="${a.src}" data-aid="${esc(a.id)}" title="Partager cet article" aria-label="Partager">${iconShare()}</button></div>
+    <div class="head"><button class="badge badgebtn${isConv?' conv':''}" data-open="${a.src}:${esc(a.id)}" title="Ouvrir cet article">${esc(badgeText(a))}</button><div class="crumb">${crumb(a)}</div><div class="cardactions"><button class="favbtn${isFav(a.src+':'+a.id)?' on':''}" data-fav="${a.src}:${esc(a.id)}" title="Favori" aria-label="Favori">${iconStar()}</button><button class="sharebtn" data-asrc="${a.src}" data-aid="${esc(a.id)}" title="Partager cet article" aria-label="Partager">${iconShare()}</button></div></div>
     ${title}
     <div class="artbody">${body}</div>
     <div class="panels">${expHtml}${rhHtml}</div>
@@ -538,6 +577,8 @@ function iconLink(){return '<svg viewBox="0 0 24 24" fill="none" stroke="current
 function iconCopy(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';}
 function iconImage(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>';}
 function iconDownload(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>';}
+function iconStar(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><polygon points="12 2.5 15 9 22 9.6 16.6 14.2 18.4 21 12 17.2 5.6 21 7.4 14.2 2 9.6 9 9"/></svg>';}
+function iconBookmark(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-5-7 5V4a1 1 0 0 1 1-1z"/></svg>';}
 
 /* ---------- Views ---------- */
 const results = document.getElementById('results');
@@ -679,7 +720,7 @@ function renderLexBody(filter){
   wireLexRefs();
 }
 function wireLexRefs(){
-  results.querySelectorAll('.lexcard .lr a').forEach(a=>a.onclick=()=>{ gotoArticle(a.dataset.uid); });
+  results.querySelectorAll('.lexcard .lr a').forEach(a=>a.onclick=()=>{ showArticle(a.dataset.uid); });
 }
 function gotoArticle(uid){
   const [src,id]=uid.split(':');
@@ -690,6 +731,46 @@ function gotoArticle(uid){
   setTimeout(()=>{ const el=document.getElementById(elId(a)); if(el){ el.scrollIntoView(); history.replaceState(null,'','#'+elId(a)); } },60);
 }
 
+/* ---------- Single article (focused) ---------- */
+function showArticle(uid){
+  const a=artByUid(uid); if(!a){ showHome(); return; }
+  logArt(uid);
+  history.replaceState(null,'','#a='+uid);
+  setActiveNav(null);
+  const pill = a.src==='ccmc'?'<span class="srcpill conv">Convention</span>':'<span class="srcpill code">Code</span>';
+  results.innerHTML = backBar()
+    + `<div class="resmeta"><h2>${pill}${esc(badgeText(a))}</h2><button class="ctxlink" id="ctxlink">Voir dans son ${a.src==='ccmc'?'titre':'livre'} ›</button></div>`
+    + articleCard(a);
+  wireBack();
+  const cl=document.getElementById('ctxlink'); if(cl) cl.onclick=()=>gotoArticle(uid);
+  window.scrollTo(0,0);
+}
+
+/* ---------- Mes articles (favoris + historique) ---------- */
+function showMine(tab){
+  tab=(tab==='hist')?'hist':'fav';
+  location.hash='mine='+tab;
+  setActiveNav('mine');
+  const tabs=`<div class="minetabs"><button data-t="fav" class="${tab==='fav'?'on':''}">Favoris${FAV.length?' ('+FAV.length+')':''}</button><button data-t="hist" class="${tab==='hist'?'on':''}">Historique</button></div>`;
+  let body='';
+  if(tab==='fav'){
+    const arts=FAV.map(artByUid).filter(Boolean);
+    body = arts.length ? arts.map(a=>articleCard(a)).join('')
+      : `<div class="lexnone">Aucun favori pour le moment. Touchez l'étoile ☆ en haut d'un article pour l'enregistrer ici et le retrouver facilement.</div>`;
+  } else {
+    const qs = QHIST.length ? `<div class="minesec"><h4>Recherches récentes</h4><div class="chips">${QHIST.map(q=>`<button class="chip" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div></div>` : '';
+    const arts=HIST.map(artByUid).filter(Boolean);
+    const al = arts.length ? `<div class="minesec"><h4>Articles consultés récemment</h4>${arts.map(a=>articleCard(a)).join('')}</div>` : '';
+    const clr = (QHIST.length||HIST.length) ? `<button class="clearhist" id="clearhist">Effacer l'historique</button>` : '';
+    body = (qs||al) ? (qs+al+clr) : `<div class="lexnone">Votre historique est vide. Les articles que vous ouvrez (en touchant leur numéro) et vos recherches apparaîtront ici.</div>`;
+  }
+  results.innerHTML = backBar()+`<div class="resmeta"><h2>Mes articles</h2></div>`+tabs+body;
+  wireBack();
+  results.querySelectorAll('.minetabs button').forEach(b=>b.onclick=()=>showMine(b.dataset.t));
+  results.querySelectorAll('.chips .chip[data-q]').forEach(c=>c.onclick=()=>{ qEl.value=c.dataset.q; doSearch(); });
+  const ch=document.getElementById('clearhist'); if(ch) ch.onclick=()=>{ HIST=[];QHIST=[]; lsSet('ctg-hist',[]); lsSet('ctg-q',[]); showMine('hist'); };
+  window.scrollTo(0,0);
+}
 function findTheme(qn){
   return THEMES.find(t => t.match.some(m => qn.includes(norm(m))));
 }
@@ -706,6 +787,7 @@ function doSearch(){
   const clr=document.getElementById('clear'); clr.style.display=raw?'block':'none';
   if(!raw){ showHome(); return; }
   location.hash='q='+encodeURIComponent(raw);
+  logQ(raw);
 
   const pool = SRC==='all' ? A : (SRC==='code'?CODE:CONV);
 
@@ -959,6 +1041,17 @@ async function shareImage(a, mode){
   },'image/jpeg',0.92);
 }
 
+/* ---------- Open article / toggle favorite ---------- */
+document.addEventListener('click',e=>{
+  const ob=e.target.closest('[data-open]');
+  if(ob){ e.preventDefault(); showArticle(ob.dataset.open); return; }
+  const fb=e.target.closest('[data-fav]');
+  if(fb){ e.preventDefault(); const uid=fb.dataset.fav; const added=toggleFav(uid);
+    fb.classList.toggle('on',added); toast(added?'Ajouté aux favoris':'Retiré des favoris');
+    if((location.hash||'').indexOf('mine=fav')>=0) showMine('fav');
+    return; }
+});
+
 /* ---------- Source filter ---------- */
 function initFilter(){
   document.querySelectorAll('#srcfilter button').forEach(b=>{
@@ -1004,7 +1097,9 @@ function route(){
   else if(h.startsWith('conv=')){ showConv(parseInt(h.slice(5))||0); }
   else if(h.startsWith('lexq=')){ showLexique(h.slice(5)); }
   else if(h==='lex'){ showLexique(); }
-  else if(h.startsWith('a=')){ gotoArticle(h.slice(2)); }
+  else if(h.startsWith('mine=')){ showMine(h.slice(5)); }
+  else if(h==='mine'){ showMine('fav'); }
+  else if(h.startsWith('a=')){ showArticle(h.slice(2)); }
   else if(h.startsWith('art-')){ showHome(); }
   else showHome();
 }
