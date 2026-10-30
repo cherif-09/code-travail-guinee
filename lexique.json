@@ -1,94 +1,2784 @@
 [
-{"id":"preavis","t":"Préavis","m":["préavis"],"d":"Délai à respecter avant que la rupture du contrat (licenciement ou démission) prenne réellement effet. Pendant ce délai, le contrat continue normalement. Sa durée dépend de la catégorie du salarié.","refs":["ccmc:64","ccmc:63","ccmc:65"]},
-{"id":"ind-preavis","t":"Indemnité compensatrice de préavis","m":["indemnité compensatrice de préavis"],"d":"Somme versée à la place du préavis lorsqu'on dispense le salarié de l'effectuer : elle équivaut au salaire qu'il aurait perçu pendant ce préavis.","refs":["ccmc:65"]},
-{"id":"faute-grave","t":"Faute grave","m":["faute grave"],"d":"Manquement sérieux du salarié qui rend impossible la poursuite du travail et peut justifier un licenciement. Moins lourde que la faute lourde, mais elle prive en principe des indemnités de préavis.","refs":["ccmc:65","ccmc:14","ccmc:45"]},
-{"id":"faute-lourde","t":"Faute lourde","m":["faute lourde"],"d":"Faute la plus grave, commise avec l'intention de nuire (sabotage, violences, abandon d'un service minimum réquisitionné…). Elle prive le salarié du préavis et de l'indemnité de licenciement.","refs":["ccmc:24","ccmc:25","ccmc:65","ccmc:66"]},
-{"id":"mise-a-pied","t":"Mise à pied","m":["mise à pied"],"d":"Sanction (ou mesure conservatoire) qui suspend temporairement le travail et le salaire. Elle va de 1 à 6 jours ; en cas de faute grave d'un délégué, elle peut être conservatoire en attendant la décision de l'Inspection.","refs":["ccmc:47","ccmc:14"]},
-{"id":"avertissement","t":"Avertissement","m":["avertissement"],"d":"Sanction disciplinaire légère, notifiée par écrit. C'est le premier échelon de l'échelle des sanctions ; il ne peut plus être invoqué après 3 mois.","refs":["ccmc:47"]},
-{"id":"blame","t":"Blâme","m":["blâme"],"d":"Sanction disciplinaire écrite, plus forte que l'avertissement. Comme lui, il ne peut plus être invoqué après 3 mois.","refs":["ccmc:47"]},
-{"id":"sanction","t":"Sanction disciplinaire","m":["sanction disciplinaire","sanctions disciplinaires"],"d":"Mesure prise par l'employeur en réponse à une faute : avertissement, blâme, mise à pied ou licenciement. Elle doit être prévue par le règlement intérieur, proportionnée et précédée d'une explication du salarié.","refs":["ccmc:47"]},
-{"id":"reglement-interieur","t":"Règlement intérieur","m":["règlement intérieur"],"d":"Document interne à l'entreprise qui fixe les règles de discipline, d'hygiène et de sécurité. Il ne peut pas déroger au Code du travail.","refs":["ccmc:47"]},
-{"id":"periode-essai","t":"Période d'essai","m":["période d'essai","periode d'essai"],"d":"Première phase du contrat permettant à chacun de vérifier si l'emploi convient. Pendant l'essai, chacun peut rompre sans préavis ni indemnité ; elle doit être écrite et limitée dans le temps.","refs":["ccmc:35","ccmc:37"]},
-{"id":"abandon-poste","t":"Abandon de poste","m":["abandon de poste"],"d":"Absence prolongée et non autorisée du salarié à son poste (8 jours ouvrables dans la convention). Elle est traitée selon le Code du travail et le règlement intérieur.","refs":["ccmc:61"]},
-{"id":"demission","t":"Démission","m":["démission","démissionner"],"d":"Rupture du contrat à l'initiative du salarié. Elle ne se présume pas : elle doit être formelle et écrite, et suppose en principe d'exécuter un préavis.","refs":["ccmc:61"]},
-{"id":"licenciement","t":"Licenciement","m":["licenciement"],"d":"Rupture du contrat à l'initiative de l'employeur. Il doit reposer sur un motif réel et sérieux et respecter une procédure (notification écrite, préavis, parfois consultation).","refs":["ccmc:66","ccmc:62","code:172.6"]},
-{"id":"licenciement-eco","t":"Licenciement collectif (motif économique)","m":["licenciement collectif","licenciements collectifs","motif économique"],"d":"Licenciement de plusieurs salariés pour diminution d'activité ou réorganisation. Il suit un ordre (aptitudes, ancienneté, charges de famille) et passe par l'avis des délégués et de l'Inspection.","refs":["ccmc:62","ccmc:33","ccmc:34"]},
-{"id":"ind-licenciement","t":"Indemnité de licenciement","m":["indemnité de licenciement"],"d":"Somme due au salarié licencié ayant assez d'ancienneté, calculée en pourcentage du salaire moyen par année de présence (33 %, 35 %, 40 %). Elle n'est pas due en cas de faute grave ou lourde.","refs":["ccmc:66"]},
-{"id":"retraite-anticipee","t":"Retraite anticipée","m":["retraite anticipée","retraite par anticipation"],"d":"Départ à la retraite avant l'âge normal, possible sous conditions (années de cotisation, motif économique…), avec intervention de la CNSS.","refs":["ccmc:112"]},
-{"id":"ind-retraite","t":"Indemnité de départ à la retraite","m":["indemnité conventionnelle de départ à la retraite","indemnité de départ à la retraite","indemnité de fin de carrière"],"d":"Allocation versée au salarié qui part à la retraite : au moins six mois de salaire de base, majorés selon l'ancienneté. Elle est distincte de la pension versée par la CNSS.","refs":["ccmc:113","ccmc:58"]},
-{"id":"mutation","t":"Mutation","m":["mutation","muté","mutées"],"d":"Changement de poste ou de lieu de travail décidé par l'employeur. Hors clause de mobilité, une mutation dans une autre localité suppose l'accord du salarié.","refs":["ccmc:44","ccmc:41","ccmc:43"]},
-{"id":"mutation-provisoire","t":"Mutation provisoire","m":["mutation provisoire"],"d":"Affectation momentanée (3 mois maximum) à un poste de catégorie inférieure pour nécessité de service, sans baisse de salaire.","refs":["ccmc:41"]},
-{"id":"reclassement","t":"Reclassement","m":["reclassement","reclasser","reclassé"],"d":"Affectation d'un salarié à une catégorie supérieure (poste vacant + aptitudes requises), ou recherche d'un poste adapté après un accident ou une maladie.","refs":["ccmc:40","ccmc:73","ccmc:54"]},
-{"id":"interim","t":"Intérim d'un emploi supérieur","m":["intérim","interim"],"d":"Remplacement temporaire d'un collègue occupant un poste de niveau supérieur. Il ouvre droit, après un mois, à une prime égale à la différence de salaire, et sa durée est plafonnée.","refs":["ccmc:42","ccmc:80"]},
-{"id":"detache-syndical","t":"Détaché / détachement syndical","m":["détaché syndical","détachement","détaché"],"d":"Salarié mandaté par un syndicat pour exercer une fonction syndicale à plein temps. Il peut réintégrer son entreprise à la fin de son mandat (3 ans, renouvelable une fois).","refs":["ccmc:16"]},
-{"id":"delegue-syndical","t":"Délégué syndical","m":["délégué syndical","délégués syndicaux","délégué"],"d":"Représentant élu des travailleurs dans l'entreprise. Il est protégé (pas de licenciement sans autorisation de l'Inspection), dispose d'heures dédiées et représente l'ensemble du personnel.","refs":["ccmc:12","ccmc:13","ccmc:14"]},
-{"id":"liberte-syndicale","t":"Liberté syndicale","m":["liberté syndicale","libre exercice syndical"],"d":"Droit de chacun d'adhérer ou non à un syndicat et d'y agir librement. L'employeur ne peut fonder aucune décision sur l'appartenance syndicale.","refs":["ccmc:8"]},
-{"id":"entrave","t":"Délit d'entrave","m":["délit d'entrave","entrave"],"d":"Fait d'empêcher les délégués ou l'Inspection d'exercer leur mission. C'est une infraction lourdement sanctionnée.","refs":["ccmc:8"]},
-{"id":"panneaux","t":"Panneaux d'affichage","m":["panneaux d'affichage","panneau d'affichage"],"d":"Emplacements mis à la disposition des syndicats dans l'entreprise pour leurs communications au personnel, à objet strictement professionnel ou syndical.","refs":["ccmc:10"]},
-{"id":"commission-paritaire","t":"Commission paritaire","m":["commission paritaire","commission mixte paritaire"],"d":"Instance composée à parts égales de représentants des employeurs et des travailleurs, chargée de concilier, d'interpréter ou de décider (avancement, service minimum…).","refs":["ccmc:18","ccmc:19","ccmc:23"]},
-{"id":"conciliation","t":"Conciliation","m":["conciliation","concilier"],"d":"Tentative de règlement amiable d'un différend avant tout procès, souvent devant l'Inspection du travail ou une commission paritaire. Un accord acté a force exécutoire.","refs":["ccmc:17","ccmc:18"]},
-{"id":"extension","t":"Extension (d'une convention)","m":["extension","étendue","étendu"],"d":"Décision du Ministre du Travail rendant une convention collective obligatoire pour toutes les entreprises du secteur, même non signataires.","refs":["ccmc:7","ccmc:terminologie"]},
-{"id":"convention-collective","t":"Convention collective","m":["convention collective"],"d":"Accord négocié entre organisations d'employeurs et de travailleurs qui fixe, pour un secteur, des conditions d'emploi et de travail en complément du Code du travail.","refs":["ccmc:1er","ccmc:terminologie","ccmc:3"]},
-{"id":"avantages-acquis","t":"Avantages acquis","m":["avantages acquis","avantages individuels acquis"],"d":"Avantages déjà obtenus par un salarié avant la convention : ils ne peuvent pas être réduits par elle. Pour un même objet, on retient le plus favorable, sans cumul.","refs":["ccmc:5"]},
-{"id":"greve","t":"Grève","m":["grève","grèves","gréviste","grévistes"],"d":"Arrêt collectif du travail décidé par les travailleurs pour appuyer des revendications professionnelles non satisfaites. Elle suspend le contrat sans le rompre.","refs":["ccmc:20","ccmc:26"]},
-{"id":"preavis-greve","t":"Préavis de grève","m":["préavis de grève"],"d":"Avis écrit (10 jours ouvrables) notifié avant une grève, précisant motifs et revendications. Pendant ce délai, l'administration ouvre la négociation.","refs":["ccmc:21","ccmc:22"]},
-{"id":"service-minimum","t":"Service minimum / services essentiels","m":["service minimum","services essentiels","service essentiel"],"d":"Activités qui doivent continuer même en grève pour protéger les personnes, les biens et les installations (eau, électricité, santé, sécurité…).","refs":["ccmc:23"]},
-{"id":"requisition","t":"Réquisition","m":["réquisition","réquisitionné"],"d":"Obligation faite à un travailleur d'assurer un service minimum pendant une grève. Ne pas se présenter alors constitue une faute lourde.","refs":["ccmc:24"]},
-{"id":"lockout","t":"Lock-out","m":["lock-out","lockout"],"d":"Fermeture de l'entreprise décidée par l'employeur en réponse à un conflit collectif. Les parties s'engagent à ne pas y recourir pendant un préavis ou une procédure.","refs":["ccmc:6"]},
-{"id":"suspension","t":"Suspension du contrat","m":["suspension du contrat","suspendu","effet suspensif"],"d":"Situation où les obligations principales (travailler, payer) sont gelées, sans rompre le contrat : maladie, grève, détention, disponibilité… Certaines obligations secondaires continuent.","refs":["ccmc:50","ccmc:52","ccmc:26"]},
-{"id":"disponibilite","t":"Mise en disponibilité","m":["mise en disponibilité","disponibilité"],"d":"Suspension du contrat accordée au salarié pour raisons personnelles (jusqu'à 2 ans), non rémunérée, réservée à ceux ayant un an d'ancienneté.","refs":["ccmc:56"]},
-{"id":"absences-except","t":"Absences exceptionnelles","m":["absences exceptionnelles","absence exceptionnelle"],"d":"Absences de courte durée pour un événement grave touchant le foyer (décès, incendie, maladie grave d'un proche) : elles suspendent le contrat sans le rompre.","refs":["ccmc:51"]},
-{"id":"permissions","t":"Permissions exceptionnelles","m":["permissions exceptionnelles","permission exceptionnelle"],"d":"Jours d'absence payés, non déduits des congés, accordés pour événements familiaux (mariage, naissance, décès…) sur justificatif.","refs":["ccmc:95"]},
-{"id":"conge-detente","t":"Congé de détente","m":["congé de détente"],"d":"Congé rémunéré permettant au salarié en déplacement prolongé (plus de 3 mois) de rejoindre régulièrement sa famille restée sur place.","refs":["ccmc:96"]},
-{"id":"conge-annuel","t":"Congé annuel","m":["congé annuel","congés payés","congés"],"d":"Repos annuel payé, calculé à raison de 2,5 jours ouvrables par mois de travail effectif. Il ne peut pas être cumulé d'une année sur l'autre.","refs":["ccmc:91","ccmc:92"]},
-{"id":"ind-conge","t":"Indemnité compensatrice de congé","m":["indemnité compensatrice de congé","allocation compensatrice de congé"],"d":"Somme versée pour les congés acquis mais non pris lorsque le contrat prend fin, quel que soit le motif de rupture.","refs":["ccmc:93"]},
-{"id":"salaire-base","t":"Salaire de base","m":["salaire de base"],"d":"Rémunération fixe perçue pour les tâches du poste, hors primes et accessoires. Il sert de référence pour de nombreux calculs (ancienneté, indemnités).","refs":["ccmc:68","ccmc:terminologie"]},
-{"id":"smig","t":"Salaire minimum / seuil d'entrée","m":["salaire minimum","smig","seuil d'entrée","salaire de base minimum"],"d":"Rémunération plancher en dessous de laquelle on ne peut pas embaucher. La convention fixe des seuils par catégorie, dont 70 % pour les sous-traitants.","refs":["ccmc:68","ccmc:117","ccmc:70"]},
-{"id":"heures-supp","t":"Heures supplémentaires","m":["heures supplémentaires","heure supplémentaire"],"d":"Heures travaillées au-delà de la durée légale (40 h/semaine). Elles sont majorées (30 %, 60 %, 65 %, et davantage la nuit et les jours fériés) ou compensées par du repos.","refs":["ccmc:74"]},
-{"id":"equivalence","t":"Horaire d'équivalence","m":["horaire d'équivalence","horaires d'équivalence","heures d'équivalence"],"d":"Durée de présence plus longue que 40 h admise pour certains métiers (gardiennage, hôtellerie, chauffeurs…) à cause des temps d'inaction, avant déclenchement des heures supplémentaires.","refs":["ccmc:74"]},
-{"id":"travail-poste","t":"Travail posté / travail de poste (quart)","m":["travail posté","travail de poste","service de poste","quart","système de quart"],"d":"Organisation en équipes tournantes (jour/nuit) pour faire fonctionner l'entreprise en continu. Il ouvre droit à une prime de poste et à un repos compensateur.","refs":["ccmc:75","ccmc:82"]},
-{"id":"astreinte","t":"Astreinte","m":["astreinte","indemnité d'astreinte"],"d":"Période où le salarié, sans travailler, doit rester disponible (à domicile ou en un lieu donné) pour intervenir. Elle est indemnisée.","refs":["ccmc:85"]},
-{"id":"prime-anciennete","t":"Prime d'ancienneté","m":["prime d'ancienneté"],"d":"Prime mensuelle liée aux années de présence : 2 % après deux ans, puis +1 % par an jusqu'à 15 ans, et +0,5 % ensuite, calculée sur le salaire minimum de la catégorie.","refs":["ccmc:77"]},
-{"id":"prime-panier","t":"Prime de panier","m":["prime de panier"],"d":"Prime due quand une prolongation exceptionnelle du travail empêche de prendre son repas habituel. Elle n'est pas versée si un casse-croûte est fourni.","refs":["ccmc:78"]},
-{"id":"prime-assiduite","t":"Prime d'assiduité","m":["prime d'assiduité","assiduité"],"d":"Prime récompensant la présence régulière et l'exécution normale des tâches, pour le personnel d'exécution.","refs":["ccmc:79"]},
-{"id":"gratification","t":"Gratification","m":["gratification","gratification de fin d'année"],"d":"Somme versée au personnel d'encadrement en fin d'année pour récompenser sa manière de servir ; son montant est fixé par la Direction.","refs":["ccmc:79"]},
-{"id":"prime-ct","t":"Prime de conditions de travail","m":["prime de conditions de travail","prime de condition de travail"],"d":"Prime compensant les risques et nuisances d'un poste (poussière, bruit, chaleur…) qui ne peuvent être éliminés. Non cumulable si les PCT sont déjà intégrés au salaire.","refs":["ccmc:81"]},
-{"id":"pct","t":"Points de condition de travail (PCT)","m":["points de condition de travail","pct"],"d":"Valorisation des contraintes d'un poste. Lorsqu'ils sont intégrés au salaire de base, la prime de conditions de travail n'est pas payée en plus.","refs":["ccmc:81"]},
-{"id":"ind-deplacement","t":"Indemnité de déplacement","m":["indemnité de déplacement"],"d":"Compensation des frais engagés lors d'une mission temporaire hors du lieu habituel de travail ; la rémunération normale est maintenue pendant le déplacement.","refs":["ccmc:84","ccmc:83"]},
-{"id":"categorie","t":"Catégorie professionnelle","m":["catégorie professionnelle","catégories professionnelles","catégorie"],"d":"Classement d'un emploi dans une grille selon le poste occupé. Elle détermine le salaire minimum applicable et sert de base à l'évolution de carrière.","refs":["ccmc:72"]},
-{"id":"echelon","t":"Classes et échelons","m":["échelon","échelons","classes et échelons"],"d":"Niveaux d'avancement à l'intérieur d'une catégorie, qui permettent des augmentations régulières selon l'ancienneté et la performance.","refs":["ccmc:72"]},
-{"id":"bulletin","t":"Bulletin de paie","m":["bulletin de paie","bulletin de salaire","bulletin de paye"],"d":"Document remis avec le salaire, détaillant catégorie, taux, heures, primes, indemnités et retenues. Le salarié peut en contester les éléments.","refs":["ccmc:72","ccmc:71"]},
-{"id":"rendement","t":"Rémunération au rendement","m":["rémunération au rendement","salaire au rendement","travail au rendement","à la pièce","à la chaîne"],"d":"Paie calculée sur la production réalisée, à partir du salaire minimum de la catégorie. Les normes sont fixées paritairement et doivent éviter le surmenage.","refs":["ccmc:70"]},
-{"id":"egalite-salaire","t":"À travail égal, salaire égal","m":["à travail égal, salaire égal","égalité de rémunération"],"d":"Principe imposant la même rémunération pour un même travail, sans distinction d'origine, de sexe, d'âge ou de statut.","refs":["ccmc:69"]},
-{"id":"contenu-local","t":"Contenu local","m":["contenu local"],"d":"Politique de priorité à l'emploi et à la promotion des Guinéens. L'employeur doit identifier un successeur guinéen à chaque expatrié sur un poste non statutaire.","refs":["ccmc:46","ccmc:33"]},
-{"id":"expatrie","t":"Expatrié","m":["expatrié","expatriés","expatriation"],"d":"Travailleur recruté à l'étranger. Son contrat a une durée encadrée et un successeur guinéen doit être préparé ; des écarts de salaire liés au recrutement sont admis.","refs":["ccmc:46","ccmc:69"]},
-{"id":"tacheronnat","t":"Tâcheronnat","m":["tâcheronnat","tâcheron","tâcherons"],"d":"Recours à un tâcheron (petit entrepreneur) pour exécuter des travaux, encadré par la loi. Il obéit à des règles de contrat écrit, d'affichage et de transmission à l'Inspection.","refs":["ccmc:48"]},
-{"id":"sous-traitance","t":"Sous-traitance / sous-traitant","m":["sous-traitance","sous-traitant","sous-traitants"],"d":"Confier à une autre entreprise des activités hors cœur de métier. Elle ne doit pas remplacer une main-d'œuvre qualifiée disponible en interne.","refs":["ccmc:48","ccmc:terminologie"]},
-{"id":"non-concurrence","t":"Clause de non-concurrence","m":["clause de non-concurrence","non-concurrence","non – concurrence"],"d":"Interdiction faite au salarié d'exercer une activité concurrente ou de divulguer les informations de l'entreprise, sauf accord écrit de l'employeur.","refs":["ccmc:49"]},
-{"id":"occasionnel","t":"Engagement occasionnel","m":["engagement occasionnel","contrat à terme imprécis","contrats à termes imprécis"],"d":"Embauche temporaire par lettre d'engagement, pour un besoin ponctuel, dans la limite de la durée légale.","refs":["ccmc:36"]},
-{"id":"anciennete","t":"Ancienneté","m":["ancienneté"],"d":"Durée totale de présence du salarié, y compris celle acquise dans d'autres entreprises du secteur minier. Elle ouvre des droits (prime, indemnités) et compte certaines absences autorisées.","refs":["ccmc:45","ccmc:77"]},
-{"id":"accident-travail","t":"Accident du travail","m":["accident du travail","accident de travail","accidents de travail"],"d":"Accident survenu pendant le travail. Le contrat est suspendu jusqu'à consolidation ; l'employeur cherche un reclassement si nécessaire, avec la CNSS.","refs":["ccmc:54","ccmc:73"]},
-{"id":"maladie-pro","t":"Maladie professionnelle","m":["maladie professionnelle","maladies professionnelles"],"d":"Maladie causée par le travail. Elle est prise en charge (CNSS, Service de Santé au Travail) et peut donner lieu à reclassement et au maintien du salaire.","refs":["ccmc:54","ccmc:73","ccmc:116"]},
-{"id":"consolidation","t":"Consolidation","m":["consolidation","consolidée"],"d":"Moment où l'état de santé après un accident se stabilise (guérison ou séquelles fixées). Le contrat, suspendu jusque-là, peut alors reprendre ou donner lieu à reclassement.","refs":["ccmc:54"]},
-{"id":"incapacite","t":"Incapacité temporaire","m":["incapacité temporaire","incapacité"],"d":"Période où le travailleur, blessé ou malade, ne peut pas travailler. Il reçoit une allocation calculée pour maintenir son ancien salaire, en lien avec la sécurité sociale.","refs":["ccmc:54","ccmc:53"]},
-{"id":"visite-medicale","t":"Visite médicale de pré-embauche","m":["visite médicale de pré-embauche","visite médicale"],"d":"Examen médical obligatoire avant l'embauche définitive, pour vérifier la compatibilité entre le poste et l'aptitude physique du candidat.","refs":["ccmc:35"]},
-{"id":"sante-travail","t":"Service de santé au travail","m":["service de santé au travail","services médicaux d'entreprise","médecine du travail"],"d":"Dispositif médical de l'entreprise chargé de protéger la santé des travailleurs, conformément au Code du travail.","refs":["ccmc:104"]},
-{"id":"epi","t":"EPI (Équipements de Protection Individuelle)","m":["équipements de protection individuelle","epi","équipement de protection","matériel de protection individuelle"],"d":"Matériel de protection (casque, gants, lunettes…) fourni gratuitement par l'employeur. Le salarié est tenu de le porter et de l'entretenir.","refs":["ccmc:103","ccmc:terminologie"]},
-{"id":"comite-hs","t":"Comité de Santé & Sécurité au travail","m":["comité de santé & sécurité","comité de santé et sécurité","comité d'hygiène","comité de sécurité"],"d":"Instance chargée d'élaborer les programmes de santé-sécurité et d'en suivre l'application, avec la participation des syndicats.","refs":["ccmc:102"]},
-{"id":"inspection","t":"Inspection du travail","m":["inspection du travail","inspecteur du travail","inspecteur général du travail","inspection générale du travail"],"d":"Administration qui contrôle l'application du droit du travail, conseille, concilie et peut dresser des procès-verbaux. Son autorisation est requise pour licencier un délégué.","refs":["ccmc:14","ccmc:23","ccmc:22"]},
-{"id":"pv","t":"Procès-verbal (PV)","m":["procès-verbal","procès verbal"],"d":"Document officiel constatant des faits (accord de conciliation, échec de négociation, infraction). Un PV d'inspection fait foi jusqu'à preuve du contraire.","refs":["ccmc:22","ccmc:23"]},
-{"id":"detention","t":"Détention provisoire","m":["détention provisoire"],"d":"Incarcération d'un salarié avant jugement. Elle suspend le contrat le temps de la détention, sans le rompre automatiquement.","refs":["ccmc:55"]},
-{"id":"ayants-droit","t":"Ayants droit","m":["ayants droit","ayants-droit","ayant droit"],"d":"Proches en ligne directe du travailleur (conjoint, enfants, parents) qui reçoivent les sommes et indemnités dues en cas de décès, selon le Code de la Sécurité Sociale.","refs":["ccmc:58"]},
-{"id":"cnss","t":"CNSS (Caisse Nationale de Sécurité Sociale)","m":["cnss","caisse nationale de sécurité sociale"],"d":"Organisme qui gère la protection sociale : accidents du travail, maladies professionnelles, pensions de retraite. L'employeur y déclare et cotise pour ses salariés.","refs":["ccmc:114","ccmc:53","ccmc:terminologie"]},
-{"id":"pension","t":"Pension de vieillesse","m":["pension de vieillesse","pension"],"d":"Revenu de retraite calculé et payé par la CNSS, distinct de l'indemnité de départ versée par l'employeur.","refs":["ccmc:114"]},
-{"id":"dialogue-social","t":"Dialogue social","m":["dialogue social"],"d":"Échange organisé entre employeurs, travailleurs et pouvoirs publics pour prévenir et régler les conflits et faire évoluer les règles du travail.","refs":["ccmc:17"]},
-{"id":"apprentissage","t":"Apprentissage","m":["apprentissage","apprenti","apprentis"],"d":"Forme de formation alternant théorie et pratique pour permettre à un jeune d'obtenir une qualification professionnelle sanctionnée par un diplôme.","refs":["ccmc:29"]},
-{"id":"formation-pro","t":"Formation professionnelle","m":["formation professionnelle","perfectionnement"],"d":"Actions de formation et de perfectionnement financées par l'employeur. Une clause peut imposer de rester un temps équivalent au stage, sous peine de remboursement.","refs":["ccmc:30","ccmc:31"]},
-{"id":"forclusion","t":"Forclusion / délai forclos","m":["forclusion","forclos","forclose"],"d":"Expiration d'un délai au-delà duquel un droit ou une sanction ne peut plus être invoqué (ex. une mise à pied après 6 mois).","refs":["ccmc:47","code:523.4"]},
-{"id":"mise-disposition","t":"Travail temporaire / mise à disposition","m":["mise à disposition","travail temporaire","personnel temporaire","intérimaire"],"d":"Recours, via une agence agréée, à du personnel temporaire mis à disposition de l'entreprise, dans les conditions du Code du travail.","refs":["ccmc:36"]},
-{"id":"refere","t":"Référé","m":["référé"],"d":"Procédure d'urgence devant le tribunal du travail, menée par le président seul, pour obtenir rapidement une mesure non sérieusement contestable ou une avance.","refs":["code:522.1"]},
-{"id":"assesseur","t":"Assesseur","m":["assesseur","assesseurs"],"d":"Représentant des employeurs ou des travailleurs qui siège, aux côtés du magistrat, dans la formation de jugement du tribunal du travail.","refs":["code:522.1","code:522.3"]},
-{"id":"cassation","t":"Pourvoi en cassation","m":["pourvoi en cassation","cassation"],"d":"Recours devant la plus haute juridiction, limité aux questions de droit, contre une décision de la cour d'appel.","refs":["code:523.17"]},
-{"id":"opposition","t":"Opposition (jugement par défaut)","m":["opposition","jugement par défaut","par défaut"],"d":"Recours d'une partie condamnée en son absence : formé dans les délais, il efface le jugement par défaut et fait rejuger l'affaire.","refs":["code:523.15","code:523.8"]},
-{"id":"conge-maternite","t":"Congé de maternité","m":["congé de maternité","maternité","femme en couche"],"d":"Congé protégé accordé à la salariée autour de l'accouchement, réglé par le Code du travail ; cette période compte pour les congés.","refs":["ccmc:89","ccmc:91"]}
+ {
+  "id": "preavis",
+  "t": "Préavis",
+  "m": [
+   "préavis"
+  ],
+  "d": "Délai à respecter avant que la rupture du contrat (licenciement ou démission) prenne réellement effet. Pendant ce délai, le contrat continue normalement. Sa durée dépend de la catégorie du salarié.",
+  "refs": [
+   "ccmc:64",
+   "ccmc:63",
+   "ccmc:65"
+  ]
+ },
+ {
+  "id": "ind-preavis",
+  "t": "Indemnité compensatrice de préavis",
+  "m": [
+   "indemnité compensatrice de préavis"
+  ],
+  "d": "Somme versée à la place du préavis lorsqu'on dispense le salarié de l'effectuer : elle équivaut au salaire qu'il aurait perçu pendant ce préavis.",
+  "refs": [
+   "ccmc:65"
+  ]
+ },
+ {
+  "id": "faute-grave",
+  "t": "Faute grave",
+  "m": [
+   "faute grave"
+  ],
+  "d": "Manquement sérieux du salarié qui rend impossible la poursuite du travail et peut justifier un licenciement. Moins lourde que la faute lourde, mais elle prive en principe des indemnités de préavis.",
+  "refs": [
+   "ccmc:65",
+   "ccmc:14",
+   "ccmc:45"
+  ]
+ },
+ {
+  "id": "faute-lourde",
+  "t": "Faute lourde",
+  "m": [
+   "faute lourde"
+  ],
+  "d": "Faute la plus grave, commise avec l'intention de nuire (sabotage, violences, abandon d'un service minimum réquisitionné…). Elle prive le salarié du préavis et de l'indemnité de licenciement.",
+  "refs": [
+   "ccmc:24",
+   "ccmc:25",
+   "ccmc:65",
+   "ccmc:66"
+  ]
+ },
+ {
+  "id": "mise-a-pied",
+  "t": "Mise à pied",
+  "m": [
+   "mise à pied"
+  ],
+  "d": "Sanction (ou mesure conservatoire) qui suspend temporairement le travail et le salaire. Elle va de 1 à 6 jours ; en cas de faute grave d'un délégué, elle peut être conservatoire en attendant la décision de l'Inspection.",
+  "refs": [
+   "ccmc:47",
+   "ccmc:14"
+  ]
+ },
+ {
+  "id": "avertissement",
+  "t": "Avertissement",
+  "m": [
+   "avertissement"
+  ],
+  "d": "Sanction disciplinaire légère, notifiée par écrit. C'est le premier échelon de l'échelle des sanctions ; il ne peut plus être invoqué après 3 mois.",
+  "refs": [
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "blame",
+  "t": "Blâme",
+  "m": [
+   "blâme"
+  ],
+  "d": "Sanction disciplinaire écrite, plus forte que l'avertissement. Comme lui, il ne peut plus être invoqué après 3 mois.",
+  "refs": [
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "sanction",
+  "t": "Sanction disciplinaire",
+  "m": [
+   "sanction disciplinaire",
+   "sanctions disciplinaires"
+  ],
+  "d": "Mesure prise par l'employeur en réponse à une faute : avertissement, blâme, mise à pied ou licenciement. Elle doit être prévue par le règlement intérieur, proportionnée et précédée d'une explication du salarié.",
+  "refs": [
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "reglement-interieur",
+  "t": "Règlement intérieur",
+  "m": [
+   "règlement intérieur"
+  ],
+  "d": "Document interne à l'entreprise qui fixe les règles de discipline, d'hygiène et de sécurité. Il ne peut pas déroger au Code du travail.",
+  "refs": [
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "periode-essai",
+  "t": "Période d'essai",
+  "m": [
+   "période d'essai",
+   "periode d'essai"
+  ],
+  "d": "Première phase du contrat permettant à chacun de vérifier si l'emploi convient. Pendant l'essai, chacun peut rompre sans préavis ni indemnité ; elle doit être écrite et limitée dans le temps.",
+  "refs": [
+   "ccmc:35",
+   "ccmc:37"
+  ]
+ },
+ {
+  "id": "abandon-poste",
+  "t": "Abandon de poste",
+  "m": [
+   "abandon de poste"
+  ],
+  "d": "Absence prolongée et non autorisée du salarié à son poste (8 jours ouvrables dans la convention). Elle est traitée selon le Code du travail et le règlement intérieur.",
+  "refs": [
+   "ccmc:61"
+  ]
+ },
+ {
+  "id": "demission",
+  "t": "Démission",
+  "m": [
+   "démission",
+   "démissionner"
+  ],
+  "d": "Rupture du contrat à l'initiative du salarié. Elle ne se présume pas : elle doit être formelle et écrite, et suppose en principe d'exécuter un préavis.",
+  "refs": [
+   "ccmc:61"
+  ]
+ },
+ {
+  "id": "licenciement",
+  "t": "Licenciement",
+  "m": [
+   "licenciement"
+  ],
+  "d": "Rupture du contrat à l'initiative de l'employeur. Il doit reposer sur un motif réel et sérieux et respecter une procédure (notification écrite, préavis, parfois consultation).",
+  "refs": [
+   "ccmc:66",
+   "ccmc:62",
+   "code:172.6"
+  ]
+ },
+ {
+  "id": "licenciement-eco",
+  "t": "Licenciement collectif (motif économique)",
+  "m": [
+   "licenciement collectif",
+   "licenciements collectifs",
+   "motif économique"
+  ],
+  "d": "Licenciement de plusieurs salariés pour diminution d'activité ou réorganisation. Il suit un ordre (aptitudes, ancienneté, charges de famille) et passe par l'avis des délégués et de l'Inspection.",
+  "refs": [
+   "ccmc:62",
+   "ccmc:33",
+   "ccmc:34"
+  ]
+ },
+ {
+  "id": "ind-licenciement",
+  "t": "Indemnité de licenciement",
+  "m": [
+   "indemnité de licenciement"
+  ],
+  "d": "Somme due au salarié licencié ayant assez d'ancienneté, calculée en pourcentage du salaire moyen par année de présence (33 %, 35 %, 40 %). Elle n'est pas due en cas de faute grave ou lourde.",
+  "refs": [
+   "ccmc:66"
+  ]
+ },
+ {
+  "id": "retraite-anticipee",
+  "t": "Retraite anticipée",
+  "m": [
+   "retraite anticipée",
+   "retraite par anticipation"
+  ],
+  "d": "Départ à la retraite avant l'âge normal, possible sous conditions (années de cotisation, motif économique…), avec intervention de la CNSS.",
+  "refs": [
+   "ccmc:112"
+  ]
+ },
+ {
+  "id": "ind-retraite",
+  "t": "Indemnité de départ à la retraite",
+  "m": [
+   "indemnité conventionnelle de départ à la retraite",
+   "indemnité de départ à la retraite",
+   "indemnité de fin de carrière"
+  ],
+  "d": "Allocation versée au salarié qui part à la retraite : au moins six mois de salaire de base, majorés selon l'ancienneté. Elle est distincte de la pension versée par la CNSS.",
+  "refs": [
+   "ccmc:113",
+   "ccmc:58"
+  ]
+ },
+ {
+  "id": "mutation",
+  "t": "Mutation",
+  "m": [
+   "mutation",
+   "muté",
+   "mutées"
+  ],
+  "d": "Changement de poste ou de lieu de travail décidé par l'employeur. Hors clause de mobilité, une mutation dans une autre localité suppose l'accord du salarié.",
+  "refs": [
+   "ccmc:44",
+   "ccmc:41",
+   "ccmc:43"
+  ]
+ },
+ {
+  "id": "mutation-provisoire",
+  "t": "Mutation provisoire",
+  "m": [
+   "mutation provisoire"
+  ],
+  "d": "Affectation momentanée (3 mois maximum) à un poste de catégorie inférieure pour nécessité de service, sans baisse de salaire.",
+  "refs": [
+   "ccmc:41"
+  ]
+ },
+ {
+  "id": "reclassement",
+  "t": "Reclassement",
+  "m": [
+   "reclassement",
+   "reclasser",
+   "reclassé"
+  ],
+  "d": "Affectation d'un salarié à une catégorie supérieure (poste vacant + aptitudes requises), ou recherche d'un poste adapté après un accident ou une maladie.",
+  "refs": [
+   "ccmc:40",
+   "ccmc:73",
+   "ccmc:54"
+  ]
+ },
+ {
+  "id": "interim",
+  "t": "Intérim d'un emploi supérieur",
+  "m": [
+   "intérim",
+   "interim"
+  ],
+  "d": "Remplacement temporaire d'un collègue occupant un poste de niveau supérieur. Il ouvre droit, après un mois, à une prime égale à la différence de salaire, et sa durée est plafonnée.",
+  "refs": [
+   "ccmc:42",
+   "ccmc:80"
+  ]
+ },
+ {
+  "id": "detache-syndical",
+  "t": "Détaché / détachement syndical",
+  "m": [
+   "détaché syndical",
+   "détachement",
+   "détaché"
+  ],
+  "d": "Salarié mandaté par un syndicat pour exercer une fonction syndicale à plein temps. Il peut réintégrer son entreprise à la fin de son mandat (3 ans, renouvelable une fois).",
+  "refs": [
+   "ccmc:16"
+  ]
+ },
+ {
+  "id": "delegue-syndical",
+  "t": "Délégué syndical",
+  "m": [
+   "délégué syndical",
+   "délégués syndicaux",
+   "délégué"
+  ],
+  "d": "Représentant élu des travailleurs dans l'entreprise. Il est protégé (pas de licenciement sans autorisation de l'Inspection), dispose d'heures dédiées et représente l'ensemble du personnel.",
+  "refs": [
+   "ccmc:12",
+   "ccmc:13",
+   "ccmc:14"
+  ]
+ },
+ {
+  "id": "liberte-syndicale",
+  "t": "Liberté syndicale",
+  "m": [
+   "liberté syndicale",
+   "libre exercice syndical"
+  ],
+  "d": "Droit de chacun d'adhérer ou non à un syndicat et d'y agir librement. L'employeur ne peut fonder aucune décision sur l'appartenance syndicale.",
+  "refs": [
+   "ccmc:8"
+  ]
+ },
+ {
+  "id": "entrave",
+  "t": "Délit d'entrave",
+  "m": [
+   "délit d'entrave",
+   "entrave"
+  ],
+  "d": "Fait d'empêcher les délégués ou l'Inspection d'exercer leur mission. C'est une infraction lourdement sanctionnée.",
+  "refs": [
+   "ccmc:8"
+  ]
+ },
+ {
+  "id": "panneaux",
+  "t": "Panneaux d'affichage",
+  "m": [
+   "panneaux d'affichage",
+   "panneau d'affichage"
+  ],
+  "d": "Emplacements mis à la disposition des syndicats dans l'entreprise pour leurs communications au personnel, à objet strictement professionnel ou syndical.",
+  "refs": [
+   "ccmc:10"
+  ]
+ },
+ {
+  "id": "commission-paritaire",
+  "t": "Commission paritaire",
+  "m": [
+   "commission paritaire",
+   "commission mixte paritaire"
+  ],
+  "d": "Instance composée à parts égales de représentants des employeurs et des travailleurs, chargée de concilier, d'interpréter ou de décider (avancement, service minimum…).",
+  "refs": [
+   "ccmc:18",
+   "ccmc:19",
+   "ccmc:23"
+  ]
+ },
+ {
+  "id": "conciliation",
+  "t": "Conciliation",
+  "m": [
+   "conciliation",
+   "concilier"
+  ],
+  "d": "Tentative de règlement amiable d'un différend avant tout procès, souvent devant l'Inspection du travail ou une commission paritaire. Un accord acté a force exécutoire.",
+  "refs": [
+   "ccmc:17",
+   "ccmc:18"
+  ]
+ },
+ {
+  "id": "extension",
+  "t": "Extension (d'une convention)",
+  "m": [
+   "extension",
+   "étendue",
+   "étendu"
+  ],
+  "d": "Décision du Ministre du Travail rendant une convention collective obligatoire pour toutes les entreprises du secteur, même non signataires.",
+  "refs": [
+   "ccmc:7",
+   "ccmc:terminologie"
+  ]
+ },
+ {
+  "id": "convention-collective",
+  "t": "Convention collective",
+  "m": [
+   "convention collective"
+  ],
+  "d": "Accord négocié entre organisations d'employeurs et de travailleurs qui fixe, pour un secteur, des conditions d'emploi et de travail en complément du Code du travail.",
+  "refs": [
+   "ccmc:1er",
+   "ccmc:terminologie",
+   "ccmc:3"
+  ]
+ },
+ {
+  "id": "avantages-acquis",
+  "t": "Avantages acquis",
+  "m": [
+   "avantages acquis",
+   "avantages individuels acquis"
+  ],
+  "d": "Avantages déjà obtenus par un salarié avant la convention : ils ne peuvent pas être réduits par elle. Pour un même objet, on retient le plus favorable, sans cumul.",
+  "refs": [
+   "ccmc:5"
+  ]
+ },
+ {
+  "id": "greve",
+  "t": "Grève",
+  "m": [
+   "grève",
+   "grèves",
+   "gréviste",
+   "grévistes"
+  ],
+  "d": "Arrêt collectif du travail décidé par les travailleurs pour appuyer des revendications professionnelles non satisfaites. Elle suspend le contrat sans le rompre.",
+  "refs": [
+   "ccmc:20",
+   "ccmc:26"
+  ]
+ },
+ {
+  "id": "preavis-greve",
+  "t": "Préavis de grève",
+  "m": [
+   "préavis de grève"
+  ],
+  "d": "Avis écrit (10 jours ouvrables) notifié avant une grève, précisant motifs et revendications. Pendant ce délai, l'administration ouvre la négociation.",
+  "refs": [
+   "ccmc:21",
+   "ccmc:22"
+  ]
+ },
+ {
+  "id": "service-minimum",
+  "t": "Service minimum / services essentiels",
+  "m": [
+   "service minimum",
+   "services essentiels",
+   "service essentiel"
+  ],
+  "d": "Activités qui doivent continuer même en grève pour protéger les personnes, les biens et les installations (eau, électricité, santé, sécurité…).",
+  "refs": [
+   "ccmc:23"
+  ]
+ },
+ {
+  "id": "requisition",
+  "t": "Réquisition",
+  "m": [
+   "réquisition",
+   "réquisitionné"
+  ],
+  "d": "Obligation faite à un travailleur d'assurer un service minimum pendant une grève. Ne pas se présenter alors constitue une faute lourde.",
+  "refs": [
+   "ccmc:24"
+  ]
+ },
+ {
+  "id": "lockout",
+  "t": "Lock-out",
+  "m": [
+   "lock-out",
+   "lockout"
+  ],
+  "d": "Fermeture de l'entreprise décidée par l'employeur en réponse à un conflit collectif. Les parties s'engagent à ne pas y recourir pendant un préavis ou une procédure.",
+  "refs": [
+   "ccmc:6"
+  ]
+ },
+ {
+  "id": "suspension",
+  "t": "Suspension du contrat",
+  "m": [
+   "suspension du contrat",
+   "suspendu",
+   "effet suspensif"
+  ],
+  "d": "Situation où les obligations principales (travailler, payer) sont gelées, sans rompre le contrat : maladie, grève, détention, disponibilité… Certaines obligations secondaires continuent.",
+  "refs": [
+   "ccmc:50",
+   "ccmc:52",
+   "ccmc:26"
+  ]
+ },
+ {
+  "id": "disponibilite",
+  "t": "Mise en disponibilité",
+  "m": [
+   "mise en disponibilité",
+   "disponibilité"
+  ],
+  "d": "Suspension du contrat accordée au salarié pour raisons personnelles (jusqu'à 2 ans), non rémunérée, réservée à ceux ayant un an d'ancienneté.",
+  "refs": [
+   "ccmc:56"
+  ]
+ },
+ {
+  "id": "absences-except",
+  "t": "Absences exceptionnelles",
+  "m": [
+   "absences exceptionnelles",
+   "absence exceptionnelle"
+  ],
+  "d": "Absences de courte durée pour un événement grave touchant le foyer (décès, incendie, maladie grave d'un proche) : elles suspendent le contrat sans le rompre.",
+  "refs": [
+   "ccmc:51"
+  ]
+ },
+ {
+  "id": "permissions",
+  "t": "Permissions exceptionnelles",
+  "m": [
+   "permissions exceptionnelles",
+   "permission exceptionnelle"
+  ],
+  "d": "Jours d'absence payés, non déduits des congés, accordés pour événements familiaux (mariage, naissance, décès…) sur justificatif.",
+  "refs": [
+   "ccmc:95"
+  ]
+ },
+ {
+  "id": "conge-detente",
+  "t": "Congé de détente",
+  "m": [
+   "congé de détente"
+  ],
+  "d": "Congé rémunéré permettant au salarié en déplacement prolongé (plus de 3 mois) de rejoindre régulièrement sa famille restée sur place.",
+  "refs": [
+   "ccmc:96"
+  ]
+ },
+ {
+  "id": "conge-annuel",
+  "t": "Congé annuel",
+  "m": [
+   "congé annuel",
+   "congés payés",
+   "congés"
+  ],
+  "d": "Repos annuel payé, calculé à raison de 2,5 jours ouvrables par mois de travail effectif. Il ne peut pas être cumulé d'une année sur l'autre.",
+  "refs": [
+   "ccmc:91",
+   "ccmc:92"
+  ]
+ },
+ {
+  "id": "ind-conge",
+  "t": "Indemnité compensatrice de congé",
+  "m": [
+   "indemnité compensatrice de congé",
+   "allocation compensatrice de congé"
+  ],
+  "d": "Somme versée pour les congés acquis mais non pris lorsque le contrat prend fin, quel que soit le motif de rupture.",
+  "refs": [
+   "ccmc:93"
+  ]
+ },
+ {
+  "id": "salaire-base",
+  "t": "Salaire de base",
+  "m": [
+   "salaire de base"
+  ],
+  "d": "Rémunération fixe perçue pour les tâches du poste, hors primes et accessoires. Il sert de référence pour de nombreux calculs (ancienneté, indemnités).",
+  "refs": [
+   "ccmc:68",
+   "ccmc:terminologie"
+  ]
+ },
+ {
+  "id": "smig",
+  "t": "Salaire minimum / seuil d'entrée",
+  "m": [
+   "salaire minimum",
+   "smig",
+   "seuil d'entrée",
+   "salaire de base minimum"
+  ],
+  "d": "Rémunération plancher en dessous de laquelle on ne peut pas embaucher. La convention fixe des seuils par catégorie, dont 70 % pour les sous-traitants.",
+  "refs": [
+   "ccmc:68",
+   "ccmc:117",
+   "ccmc:70"
+  ]
+ },
+ {
+  "id": "heures-supp",
+  "t": "Heures supplémentaires",
+  "m": [
+   "heures supplémentaires",
+   "heure supplémentaire"
+  ],
+  "d": "Heures travaillées au-delà de la durée légale (40 h/semaine). Elles sont majorées (30 %, 60 %, 65 %, et davantage la nuit et les jours fériés) ou compensées par du repos.",
+  "refs": [
+   "ccmc:74"
+  ]
+ },
+ {
+  "id": "equivalence",
+  "t": "Horaire d'équivalence",
+  "m": [
+   "horaire d'équivalence",
+   "horaires d'équivalence",
+   "heures d'équivalence"
+  ],
+  "d": "Durée de présence plus longue que 40 h admise pour certains métiers (gardiennage, hôtellerie, chauffeurs…) à cause des temps d'inaction, avant déclenchement des heures supplémentaires.",
+  "refs": [
+   "ccmc:74"
+  ]
+ },
+ {
+  "id": "travail-poste",
+  "t": "Travail posté / travail de poste (quart)",
+  "m": [
+   "travail posté",
+   "travail de poste",
+   "service de poste",
+   "quart",
+   "système de quart"
+  ],
+  "d": "Organisation en équipes tournantes (jour/nuit) pour faire fonctionner l'entreprise en continu. Il ouvre droit à une prime de poste et à un repos compensateur.",
+  "refs": [
+   "ccmc:75",
+   "ccmc:82"
+  ]
+ },
+ {
+  "id": "astreinte",
+  "t": "Astreinte",
+  "m": [
+   "astreinte",
+   "indemnité d'astreinte"
+  ],
+  "d": "Période où le salarié, sans travailler, doit rester disponible (à domicile ou en un lieu donné) pour intervenir. Elle est indemnisée.",
+  "refs": [
+   "ccmc:85"
+  ]
+ },
+ {
+  "id": "prime-anciennete",
+  "t": "Prime d'ancienneté",
+  "m": [
+   "prime d'ancienneté"
+  ],
+  "d": "Prime mensuelle liée aux années de présence : 2 % après deux ans, puis +1 % par an jusqu'à 15 ans, et +0,5 % ensuite, calculée sur le salaire minimum de la catégorie.",
+  "refs": [
+   "ccmc:77"
+  ]
+ },
+ {
+  "id": "prime-panier",
+  "t": "Prime de panier",
+  "m": [
+   "prime de panier"
+  ],
+  "d": "Prime due quand une prolongation exceptionnelle du travail empêche de prendre son repas habituel. Elle n'est pas versée si un casse-croûte est fourni.",
+  "refs": [
+   "ccmc:78"
+  ]
+ },
+ {
+  "id": "prime-assiduite",
+  "t": "Prime d'assiduité",
+  "m": [
+   "prime d'assiduité",
+   "assiduité"
+  ],
+  "d": "Prime récompensant la présence régulière et l'exécution normale des tâches, pour le personnel d'exécution.",
+  "refs": [
+   "ccmc:79"
+  ]
+ },
+ {
+  "id": "gratification",
+  "t": "Gratification",
+  "m": [
+   "gratification",
+   "gratification de fin d'année"
+  ],
+  "d": "Somme versée au personnel d'encadrement en fin d'année pour récompenser sa manière de servir ; son montant est fixé par la Direction.",
+  "refs": [
+   "ccmc:79"
+  ]
+ },
+ {
+  "id": "prime-ct",
+  "t": "Prime de conditions de travail",
+  "m": [
+   "prime de conditions de travail",
+   "prime de condition de travail"
+  ],
+  "d": "Prime compensant les risques et nuisances d'un poste (poussière, bruit, chaleur…) qui ne peuvent être éliminés. Non cumulable si les PCT sont déjà intégrés au salaire.",
+  "refs": [
+   "ccmc:81"
+  ]
+ },
+ {
+  "id": "pct",
+  "t": "Points de condition de travail (PCT)",
+  "m": [
+   "points de condition de travail",
+   "pct"
+  ],
+  "d": "Valorisation des contraintes d'un poste. Lorsqu'ils sont intégrés au salaire de base, la prime de conditions de travail n'est pas payée en plus.",
+  "refs": [
+   "ccmc:81"
+  ]
+ },
+ {
+  "id": "ind-deplacement",
+  "t": "Indemnité de déplacement",
+  "m": [
+   "indemnité de déplacement"
+  ],
+  "d": "Compensation des frais engagés lors d'une mission temporaire hors du lieu habituel de travail ; la rémunération normale est maintenue pendant le déplacement.",
+  "refs": [
+   "ccmc:84",
+   "ccmc:83"
+  ]
+ },
+ {
+  "id": "categorie",
+  "t": "Catégorie professionnelle",
+  "m": [
+   "catégorie professionnelle",
+   "catégories professionnelles",
+   "catégorie"
+  ],
+  "d": "Classement d'un emploi dans une grille selon le poste occupé. Elle détermine le salaire minimum applicable et sert de base à l'évolution de carrière.",
+  "refs": [
+   "ccmc:72"
+  ]
+ },
+ {
+  "id": "echelon",
+  "t": "Classes et échelons",
+  "m": [
+   "échelon",
+   "échelons",
+   "classes et échelons"
+  ],
+  "d": "Niveaux d'avancement à l'intérieur d'une catégorie, qui permettent des augmentations régulières selon l'ancienneté et la performance.",
+  "refs": [
+   "ccmc:72"
+  ]
+ },
+ {
+  "id": "bulletin",
+  "t": "Bulletin de paie",
+  "m": [
+   "bulletin de paie",
+   "bulletin de salaire",
+   "bulletin de paye"
+  ],
+  "d": "Document remis avec le salaire, détaillant catégorie, taux, heures, primes, indemnités et retenues. Le salarié peut en contester les éléments.",
+  "refs": [
+   "ccmc:72",
+   "ccmc:71"
+  ]
+ },
+ {
+  "id": "rendement",
+  "t": "Rémunération au rendement",
+  "m": [
+   "rémunération au rendement",
+   "salaire au rendement",
+   "travail au rendement",
+   "à la pièce",
+   "à la chaîne"
+  ],
+  "d": "Paie calculée sur la production réalisée, à partir du salaire minimum de la catégorie. Les normes sont fixées paritairement et doivent éviter le surmenage.",
+  "refs": [
+   "ccmc:70"
+  ]
+ },
+ {
+  "id": "egalite-salaire",
+  "t": "À travail égal, salaire égal",
+  "m": [
+   "à travail égal, salaire égal",
+   "égalité de rémunération"
+  ],
+  "d": "Principe imposant la même rémunération pour un même travail, sans distinction d'origine, de sexe, d'âge ou de statut.",
+  "refs": [
+   "ccmc:69"
+  ]
+ },
+ {
+  "id": "contenu-local",
+  "t": "Contenu local",
+  "m": [
+   "contenu local"
+  ],
+  "d": "Politique de priorité à l'emploi et à la promotion des Guinéens. L'employeur doit identifier un successeur guinéen à chaque expatrié sur un poste non statutaire.",
+  "refs": [
+   "ccmc:46",
+   "ccmc:33"
+  ]
+ },
+ {
+  "id": "expatrie",
+  "t": "Expatrié",
+  "m": [
+   "expatrié",
+   "expatriés",
+   "expatriation"
+  ],
+  "d": "Travailleur recruté à l'étranger. Son contrat a une durée encadrée et un successeur guinéen doit être préparé ; des écarts de salaire liés au recrutement sont admis.",
+  "refs": [
+   "ccmc:46",
+   "ccmc:69"
+  ]
+ },
+ {
+  "id": "tacheronnat",
+  "t": "Tâcheronnat",
+  "m": [
+   "tâcheronnat",
+   "tâcheron",
+   "tâcherons"
+  ],
+  "d": "Recours à un tâcheron (petit entrepreneur) pour exécuter des travaux, encadré par la loi. Il obéit à des règles de contrat écrit, d'affichage et de transmission à l'Inspection.",
+  "refs": [
+   "ccmc:48"
+  ]
+ },
+ {
+  "id": "sous-traitance",
+  "t": "Sous-traitance / sous-traitant",
+  "m": [
+   "sous-traitance",
+   "sous-traitant",
+   "sous-traitants"
+  ],
+  "d": "Confier à une autre entreprise des activités hors cœur de métier. Elle ne doit pas remplacer une main-d'œuvre qualifiée disponible en interne.",
+  "refs": [
+   "ccmc:48",
+   "ccmc:terminologie"
+  ]
+ },
+ {
+  "id": "non-concurrence",
+  "t": "Clause de non-concurrence",
+  "m": [
+   "clause de non-concurrence",
+   "non-concurrence",
+   "non – concurrence"
+  ],
+  "d": "Interdiction faite au salarié d'exercer une activité concurrente ou de divulguer les informations de l'entreprise, sauf accord écrit de l'employeur.",
+  "refs": [
+   "ccmc:49"
+  ]
+ },
+ {
+  "id": "occasionnel",
+  "t": "Engagement occasionnel",
+  "m": [
+   "engagement occasionnel",
+   "contrat à terme imprécis",
+   "contrats à termes imprécis"
+  ],
+  "d": "Embauche temporaire par lettre d'engagement, pour un besoin ponctuel, dans la limite de la durée légale.",
+  "refs": [
+   "ccmc:36"
+  ]
+ },
+ {
+  "id": "anciennete",
+  "t": "Ancienneté",
+  "m": [
+   "ancienneté"
+  ],
+  "d": "Durée totale de présence du salarié, y compris celle acquise dans d'autres entreprises du secteur minier. Elle ouvre des droits (prime, indemnités) et compte certaines absences autorisées.",
+  "refs": [
+   "ccmc:45",
+   "ccmc:77"
+  ]
+ },
+ {
+  "id": "accident-travail",
+  "t": "Accident du travail",
+  "m": [
+   "accident du travail",
+   "accident de travail",
+   "accidents de travail"
+  ],
+  "d": "Accident survenu pendant le travail. Le contrat est suspendu jusqu'à consolidation ; l'employeur cherche un reclassement si nécessaire, avec la CNSS.",
+  "refs": [
+   "ccmc:54",
+   "ccmc:73"
+  ]
+ },
+ {
+  "id": "maladie-pro",
+  "t": "Maladie professionnelle",
+  "m": [
+   "maladie professionnelle",
+   "maladies professionnelles"
+  ],
+  "d": "Maladie causée par le travail. Elle est prise en charge (CNSS, Service de Santé au Travail) et peut donner lieu à reclassement et au maintien du salaire.",
+  "refs": [
+   "ccmc:54",
+   "ccmc:73",
+   "ccmc:116"
+  ]
+ },
+ {
+  "id": "consolidation",
+  "t": "Consolidation",
+  "m": [
+   "consolidation",
+   "consolidée"
+  ],
+  "d": "Moment où l'état de santé après un accident se stabilise (guérison ou séquelles fixées). Le contrat, suspendu jusque-là, peut alors reprendre ou donner lieu à reclassement.",
+  "refs": [
+   "ccmc:54"
+  ]
+ },
+ {
+  "id": "incapacite",
+  "t": "Incapacité temporaire",
+  "m": [
+   "incapacité temporaire",
+   "incapacité"
+  ],
+  "d": "Période où le travailleur, blessé ou malade, ne peut pas travailler. Il reçoit une allocation calculée pour maintenir son ancien salaire, en lien avec la sécurité sociale.",
+  "refs": [
+   "ccmc:54",
+   "ccmc:53"
+  ]
+ },
+ {
+  "id": "visite-medicale",
+  "t": "Visite médicale de pré-embauche",
+  "m": [
+   "visite médicale de pré-embauche",
+   "visite médicale"
+  ],
+  "d": "Examen médical obligatoire avant l'embauche définitive, pour vérifier la compatibilité entre le poste et l'aptitude physique du candidat.",
+  "refs": [
+   "ccmc:35"
+  ]
+ },
+ {
+  "id": "sante-travail",
+  "t": "Service de santé au travail",
+  "m": [
+   "service de santé au travail",
+   "services médicaux d'entreprise",
+   "médecine du travail"
+  ],
+  "d": "Dispositif médical de l'entreprise chargé de protéger la santé des travailleurs, conformément au Code du travail.",
+  "refs": [
+   "ccmc:104"
+  ]
+ },
+ {
+  "id": "epi",
+  "t": "EPI (Équipements de Protection Individuelle)",
+  "m": [
+   "équipements de protection individuelle",
+   "epi",
+   "équipement de protection",
+   "matériel de protection individuelle"
+  ],
+  "d": "Matériel de protection (casque, gants, lunettes…) fourni gratuitement par l'employeur. Le salarié est tenu de le porter et de l'entretenir.",
+  "refs": [
+   "ccmc:103",
+   "ccmc:terminologie"
+  ]
+ },
+ {
+  "id": "comite-hs",
+  "t": "Comité de Santé & Sécurité au travail",
+  "m": [
+   "comité de santé & sécurité",
+   "comité de santé et sécurité",
+   "comité d'hygiène",
+   "comité de sécurité"
+  ],
+  "d": "Instance chargée d'élaborer les programmes de santé-sécurité et d'en suivre l'application, avec la participation des syndicats.",
+  "refs": [
+   "ccmc:102"
+  ]
+ },
+ {
+  "id": "inspection",
+  "t": "Inspection du travail",
+  "m": [
+   "inspection du travail",
+   "inspecteur du travail",
+   "inspecteur général du travail",
+   "inspection générale du travail"
+  ],
+  "d": "Administration qui contrôle l'application du droit du travail, conseille, concilie et peut dresser des procès-verbaux. Son autorisation est requise pour licencier un délégué.",
+  "refs": [
+   "ccmc:14",
+   "ccmc:23",
+   "ccmc:22"
+  ]
+ },
+ {
+  "id": "pv",
+  "t": "Procès-verbal (PV)",
+  "m": [
+   "procès-verbal",
+   "procès verbal"
+  ],
+  "d": "Document officiel constatant des faits (accord de conciliation, échec de négociation, infraction). Un PV d'inspection fait foi jusqu'à preuve du contraire.",
+  "refs": [
+   "ccmc:22",
+   "ccmc:23"
+  ]
+ },
+ {
+  "id": "detention",
+  "t": "Détention provisoire",
+  "m": [
+   "détention provisoire"
+  ],
+  "d": "Incarcération d'un salarié avant jugement. Elle suspend le contrat le temps de la détention, sans le rompre automatiquement.",
+  "refs": [
+   "ccmc:55"
+  ]
+ },
+ {
+  "id": "ayants-droit",
+  "t": "Ayants droit",
+  "m": [
+   "ayants droit",
+   "ayants-droit",
+   "ayant droit"
+  ],
+  "d": "Proches en ligne directe du travailleur (conjoint, enfants, parents) qui reçoivent les sommes et indemnités dues en cas de décès, selon le Code de la Sécurité Sociale.",
+  "refs": [
+   "ccmc:58"
+  ]
+ },
+ {
+  "id": "cnss",
+  "t": "CNSS (Caisse Nationale de Sécurité Sociale)",
+  "m": [
+   "cnss",
+   "caisse nationale de sécurité sociale"
+  ],
+  "d": "Organisme qui gère la protection sociale : accidents du travail, maladies professionnelles, pensions de retraite. L'employeur y déclare et cotise pour ses salariés.",
+  "refs": [
+   "ccmc:114",
+   "ccmc:53",
+   "ccmc:terminologie"
+  ]
+ },
+ {
+  "id": "pension",
+  "t": "Pension de vieillesse",
+  "m": [
+   "pension de vieillesse",
+   "pension"
+  ],
+  "d": "Revenu de retraite calculé et payé par la CNSS, distinct de l'indemnité de départ versée par l'employeur.",
+  "refs": [
+   "ccmc:114"
+  ]
+ },
+ {
+  "id": "dialogue-social",
+  "t": "Dialogue social",
+  "m": [
+   "dialogue social"
+  ],
+  "d": "Échange organisé entre employeurs, travailleurs et pouvoirs publics pour prévenir et régler les conflits et faire évoluer les règles du travail.",
+  "refs": [
+   "ccmc:17"
+  ]
+ },
+ {
+  "id": "apprentissage",
+  "t": "Apprentissage",
+  "m": [
+   "apprentissage",
+   "apprenti",
+   "apprentis"
+  ],
+  "d": "Forme de formation alternant théorie et pratique pour permettre à un jeune d'obtenir une qualification professionnelle sanctionnée par un diplôme.",
+  "refs": [
+   "ccmc:29"
+  ]
+ },
+ {
+  "id": "formation-pro",
+  "t": "Formation professionnelle",
+  "m": [
+   "formation professionnelle",
+   "perfectionnement"
+  ],
+  "d": "Actions de formation et de perfectionnement financées par l'employeur. Une clause peut imposer de rester un temps équivalent au stage, sous peine de remboursement.",
+  "refs": [
+   "ccmc:30",
+   "ccmc:31"
+  ]
+ },
+ {
+  "id": "forclusion",
+  "t": "Forclusion / délai forclos",
+  "m": [
+   "forclusion",
+   "forclos",
+   "forclose"
+  ],
+  "d": "Expiration d'un délai au-delà duquel un droit ou une sanction ne peut plus être invoqué (ex. une mise à pied après 6 mois).",
+  "refs": [
+   "ccmc:47",
+   "code:523.4"
+  ]
+ },
+ {
+  "id": "mise-disposition",
+  "t": "Travail temporaire / mise à disposition",
+  "m": [
+   "mise à disposition",
+   "travail temporaire",
+   "personnel temporaire",
+   "intérimaire"
+  ],
+  "d": "Recours, via une agence agréée, à du personnel temporaire mis à disposition de l'entreprise, dans les conditions du Code du travail.",
+  "refs": [
+   "ccmc:36"
+  ]
+ },
+ {
+  "id": "refere",
+  "t": "Référé",
+  "m": [
+   "référé"
+  ],
+  "d": "Procédure d'urgence devant le tribunal du travail, menée par le président seul, pour obtenir rapidement une mesure non sérieusement contestable ou une avance.",
+  "refs": [
+   "code:522.1"
+  ]
+ },
+ {
+  "id": "assesseur",
+  "t": "Assesseur",
+  "m": [
+   "assesseur",
+   "assesseurs"
+  ],
+  "d": "Représentant des employeurs ou des travailleurs qui siège, aux côtés du magistrat, dans la formation de jugement du tribunal du travail.",
+  "refs": [
+   "code:522.1",
+   "code:522.3"
+  ]
+ },
+ {
+  "id": "cassation",
+  "t": "Pourvoi en cassation",
+  "m": [
+   "pourvoi en cassation",
+   "cassation"
+  ],
+  "d": "Recours devant la plus haute juridiction, limité aux questions de droit, contre une décision de la cour d'appel.",
+  "refs": [
+   "code:523.17"
+  ]
+ },
+ {
+  "id": "opposition",
+  "t": "Opposition (jugement par défaut)",
+  "m": [
+   "opposition",
+   "jugement par défaut",
+   "par défaut"
+  ],
+  "d": "Recours d'une partie condamnée en son absence : formé dans les délais, il efface le jugement par défaut et fait rejuger l'affaire.",
+  "refs": [
+   "code:523.15",
+   "code:523.8"
+  ]
+ },
+ {
+  "id": "conge-maternite",
+  "t": "Congé de maternité",
+  "m": [
+   "congé de maternité",
+   "maternité",
+   "femme en couche"
+  ],
+  "d": "Congé protégé accordé à la salariée autour de l'accouchement, réglé par le Code du travail ; cette période compte pour les congés.",
+  "refs": [
+   "ccmc:89",
+   "ccmc:91"
+  ]
+ },
+ {
+  "id": "contrat-travail",
+  "t": "Contrat de travail",
+  "m": [
+   "contrat de travail",
+   "contrat"
+  ],
+  "d": "Accord par lequel une personne (le salarié) s'engage à travailler, sous l'autorité d'un employeur, contre une rémunération. Il peut être écrit ou verbal, à durée déterminée ou indéterminée.",
+  "refs": [
+   "ccmc:2",
+   "code:121.1"
+  ]
+ },
+ {
+  "id": "cdi",
+  "t": "Contrat à durée indéterminée (CDI)",
+  "m": [
+   "contrat à durée indéterminée",
+   "cdi"
+  ],
+  "d": "Contrat sans date de fin prévue. C'est la forme normale de la relation de travail ; il prend fin par démission, licenciement, départ à la retraite ou accord des parties.",
+  "refs": []
+ },
+ {
+  "id": "cdd",
+  "t": "Contrat à durée déterminée (CDD)",
+  "m": [
+   "contrat à durée déterminée",
+   "cdd",
+   "contrat à terme"
+  ],
+  "d": "Contrat conclu pour une durée ou une tâche précise. Il prend fin à l'échéance prévue ; le recours au CDD est encadré par la loi.",
+  "refs": [
+   "code:122.1",
+   "ccmc:36"
+  ]
+ },
+ {
+  "id": "lettre-engagement",
+  "t": "Lettre d'engagement",
+  "m": [
+   "lettre d'engagement"
+  ],
+  "d": "Écrit par lequel l'employeur engage un travailleur, notamment pour un emploi occasionnel ou à terme imprécis, dans la limite de la durée légale.",
+  "refs": [
+   "ccmc:36"
+  ]
+ },
+ {
+  "id": "embauche",
+  "t": "Embauche / embauchage",
+  "m": [
+   "embauche",
+   "embauchage",
+   "embaucher"
+  ],
+  "d": "Fait de recruter un travailleur. La priorité doit être donnée aux Guinéens, conformément à la législation sur le contenu local.",
+  "refs": [
+   "ccmc:33",
+   "ccmc:34"
+  ]
+ },
+ {
+  "id": "priorite-embauche",
+  "t": "Priorité d'embauche / de réembauche",
+  "m": [
+   "priorité d'embauche",
+   "priorité de réembauche",
+   "priorité de recrutement"
+  ],
+  "d": "Droit d'un ancien salarié (licencié pour motif économique ou longue maladie) à être réembauché en priorité pour le même emploi, pendant un délai déterminé.",
+  "refs": [
+   "ccmc:33",
+   "ccmc:34",
+   "ccmc:62"
+  ]
+ },
+ {
+  "id": "clause-mobilite",
+  "t": "Clause de mobilité",
+  "m": [
+   "clause de mobilité"
+  ],
+  "d": "Clause du contrat autorisant l'employeur à muter le salarié dans un autre lieu. Sans elle, une mutation hors de la localité habituelle exige l'accord du salarié.",
+  "refs": [
+   "ccmc:44"
+  ]
+ },
+ {
+  "id": "modification-contrat",
+  "t": "Modification du contrat de travail",
+  "m": [
+   "modification du contrat",
+   "modification substantielle"
+  ],
+  "d": "Changement d'un élément essentiel du contrat (salaire, poste, lieu…). Une modification importante doit être discutée et acceptée ; un refus légitime peut imputer la rupture à l'employeur.",
+  "refs": [
+   "ccmc:39"
+  ]
+ },
+ {
+  "id": "affectation",
+  "t": "Affectation",
+  "m": [
+   "affectation",
+   "affecter"
+  ],
+  "d": "Décision par laquelle l'employeur attribue un poste ou un lieu de travail à un salarié, dans le cadre de son pouvoir de direction et des clauses du contrat.",
+  "refs": [
+   "ccmc:44"
+  ]
+ },
+ {
+  "id": "promotion",
+  "t": "Promotion",
+  "m": [
+   "promotion",
+   "promu"
+  ],
+  "d": "Passage à un poste ou une catégorie supérieure. Elle suppose un poste vacant et les aptitudes requises, et s'opère souvent par évaluation professionnelle.",
+  "refs": [
+   "ccmc:40",
+   "ccmc:32"
+  ]
+ },
+ {
+  "id": "retrogradation",
+  "t": "Rétrogradation",
+  "m": [
+   "rétrogradation",
+   "rétrograder"
+  ],
+  "d": "Affectation à un poste de catégorie inférieure. Hors sanction prévue ou mutation provisoire encadrée, elle constitue une modification du contrat soumise à l'accord du salarié.",
+  "refs": [
+   "ccmc:41"
+  ]
+ },
+ {
+  "id": "avancement",
+  "t": "Avancement",
+  "m": [
+   "avancement",
+   "avancer en échelon"
+  ],
+  "d": "Progression régulière du salarié en classes et échelons à l'intérieur de sa catégorie, souvent liée à l'ancienneté et à la performance.",
+  "refs": [
+   "ccmc:72"
+  ]
+ },
+ {
+  "id": "classification",
+  "t": "Classification des emplois",
+  "m": [
+   "classification",
+   "classification des emplois"
+  ],
+  "d": "Système qui range les emplois en catégories et échelons selon leurs exigences. Il sert de base à la grille des salaires.",
+  "refs": [
+   "ccmc:72"
+  ]
+ },
+ {
+  "id": "grille-salariale",
+  "t": "Grille salariale",
+  "m": [
+   "grille salariale",
+   "grille des salaires"
+  ],
+  "d": "Tableau fixant les salaires minimums par catégorie et échelon. Elle peut être élaborée par l'entreprise en concertation avec les représentants du personnel.",
+  "refs": [
+   "ccmc:72"
+  ]
+ },
+ {
+  "id": "certificat-travail",
+  "t": "Certificat de travail",
+  "m": [
+   "certificat de travail"
+  ],
+  "d": "Document remis au salarié à son départ, indiquant les dates d'emploi, la nature du poste et les catégories occupées. Il ne doit contenir aucune appréciation.",
+  "refs": [
+   "ccmc:67"
+  ]
+ },
+ {
+  "id": "solde-tout-compte",
+  "t": "Reçu pour solde de tout compte",
+  "m": [
+   "solde de tout compte",
+   "reçu pour solde de tout compte"
+  ],
+  "d": "Document récapitulant les sommes versées au salarié lors de la rupture (salaire, congés, indemnités). Sa signature n'empêche pas de contester un calcul erroné.",
+  "refs": []
+ },
+ {
+  "id": "rupture-contrat",
+  "t": "Rupture du contrat de travail",
+  "m": [
+   "rupture du contrat",
+   "rupture"
+  ],
+  "d": "Fin du contrat, à l'initiative de l'employeur (licenciement), du salarié (démission) ou des deux. Elle se notifie par écrit et ouvre, selon le cas, préavis et indemnités.",
+  "refs": [
+   "ccmc:63"
+  ]
+ },
+ {
+  "id": "motif-reel-serieux",
+  "t": "Motif réel et sérieux",
+  "m": [
+   "motif réel et sérieux",
+   "motif légitime"
+  ],
+  "d": "Raison vérifiable et suffisamment grave qui justifie un licenciement. Sans elle, le licenciement est abusif ; c'est à l'employeur de prouver le motif.",
+  "refs": [
+   "code:172.6"
+  ]
+ },
+ {
+  "id": "licenciement-abusif",
+  "t": "Licenciement abusif / injustifié",
+  "m": [
+   "licenciement abusif",
+   "licenciement injustifié"
+  ],
+  "d": "Licenciement sans motif réel et sérieux ou sans procédure régulière. Il ouvre droit à des dommages et intérêts, voire à des sanctions pour l'employeur.",
+  "refs": [
+   "code:172.9",
+   "ccmc:14"
+  ]
+ },
+ {
+  "id": "perte-confiance",
+  "t": "Perte de confiance",
+  "m": [
+   "perte de confiance"
+  ],
+  "d": "À elle seule, elle ne justifie pas un licenciement : seuls les faits précis qui la fondent, s'ils sont fautifs, peuvent le justifier.",
+  "refs": [
+   "ccmc:60"
+  ]
+ },
+ {
+  "id": "insuffisance-pro",
+  "t": "Insuffisance professionnelle",
+  "m": [
+   "insuffisance professionnelle"
+  ],
+  "d": "Incapacité du salarié à tenir correctement son emploi, qui peut constituer un motif personnel de licenciement (distinct de la faute).",
+  "refs": [
+   "code:172.7"
+  ]
+ },
+ {
+  "id": "entretien-prealable",
+  "t": "Entretien préalable / demande d'explication",
+  "m": [
+   "entretien préalable",
+   "demande d'explication"
+  ],
+  "d": "Étape contradictoire avant une sanction : le salarié est invité à s'expliquer, assisté s'il le souhaite, avant toute décision disciplinaire.",
+  "refs": [
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "vice-procedure",
+  "t": "Vice de procédure",
+  "m": [
+   "vice de procédure",
+   "irrégularité de procédure"
+  ],
+  "d": "Non-respect des règles de forme du licenciement. Il est sanctionné (dans la Convention, par trois mois de salaire), cumulable avec l'indemnité pour licenciement injustifié.",
+  "refs": [
+   "ccmc:24",
+   "code:523.24"
+  ]
+ },
+ {
+  "id": "depart-negocie",
+  "t": "Départ négocié / rupture amiable",
+  "m": [
+   "départ négocié",
+   "rupture amiable",
+   "commun accord"
+  ],
+  "d": "Fin du contrat décidée d'un commun accord entre employeur et salarié, chacun pouvant renoncer au préavis et se libérer de ses obligations.",
+  "refs": [
+   "ccmc:61"
+  ]
+ },
+ {
+  "id": "deces-travailleur",
+  "t": "Décès du travailleur",
+  "m": [
+   "décès du travailleur",
+   "travailleur décédé"
+  ],
+  "d": "À la mort du salarié, les sommes acquises reviennent aux ayants droit ; avec un an d'ancienneté, une indemnité est due, et l'employeur rapatrie le corps s'il avait déplacé le salarié.",
+  "refs": [
+   "ccmc:58"
+  ]
+ },
+ {
+  "id": "force-majeure",
+  "t": "Force majeure",
+  "m": [
+   "force majeure",
+   "cas fortuit"
+  ],
+  "d": "Événement imprévisible, irrésistible et extérieur qui empêche l'exécution du contrat (catastrophe, interdiction…). Il peut justifier une suspension ou une rupture sans faute.",
+  "refs": [
+   "ccmc:87"
+  ]
+ },
+ {
+  "id": "salaire",
+  "t": "Salaire / rémunération",
+  "m": [
+   "salaire",
+   "rémunération",
+   "paie"
+  ],
+  "d": "Contrepartie du travail versée par l'employeur. Il comprend le salaire de base et ses accessoires (primes, indemnités), et ne peut être inférieur au minimum.",
+  "refs": [
+   "ccmc:68"
+  ]
+ },
+ {
+  "id": "accessoires-salaire",
+  "t": "Accessoires de salaire",
+  "m": [
+   "accessoires de salaire",
+   "accessoire de salaire"
+  ],
+  "d": "Éléments qui s'ajoutent au salaire de base : primes, indemnités, avantages en nature. Ils n'entrent pas tous dans la même base de calcul des droits.",
+  "refs": [
+   "ccmc:76",
+   "ccmc:83"
+  ]
+ },
+ {
+  "id": "avantages-nature",
+  "t": "Avantages en nature",
+  "m": [
+   "avantages en nature",
+   "avantage en nature"
+  ],
+  "d": "Biens ou services fournis gratuitement par l'employeur (logement, véhicule, nourriture…), qui constituent une forme de rémunération.",
+  "refs": [
+   "ccmc:97"
+  ]
+ },
+ {
+  "id": "prime",
+  "t": "Prime",
+  "m": [
+   "prime",
+   "primes"
+  ],
+  "d": "Somme versée en plus du salaire de base pour récompenser (rendement, assiduité) ou compenser des conditions de travail. Sa liste n'est pas limitative.",
+  "refs": [
+   "ccmc:76"
+  ]
+ },
+ {
+  "id": "indemnite",
+  "t": "Indemnité",
+  "m": [
+   "indemnité",
+   "indemnités"
+  ],
+  "d": "Somme destinée à compenser un frais ou un préjudice (déplacement, logement, licenciement, préavis…), par opposition à la prime qui récompense ou motive.",
+  "refs": [
+   "ccmc:83"
+  ]
+ },
+ {
+  "id": "prime-rendement",
+  "t": "Prime de rendement",
+  "m": [
+   "prime de rendement"
+  ],
+  "d": "Prime liée à la production ou à la performance, calculée à partir du salaire minimum de la catégorie ; les normes de rendement sont fixées paritairement.",
+  "refs": [
+   "ccmc:70"
+  ]
+ },
+ {
+  "id": "retenue-salaire",
+  "t": "Retenue sur salaire",
+  "m": [
+   "retenue sur salaire",
+   "retenues"
+  ],
+  "d": "Somme déduite du salaire (cotisations, impôts, avances, absences non justifiées). Les retenues doivent figurer sur le bulletin de paie.",
+  "refs": [
+   "ccmc:72"
+  ]
+ },
+ {
+  "id": "acompte",
+  "t": "Acompte sur salaire",
+  "m": [
+   "acompte"
+  ],
+  "d": "Paiement anticipé d'une partie du salaire déjà travaillée, avant l'échéance normale de paie.",
+  "refs": []
+ },
+ {
+  "id": "avance",
+  "t": "Avance sur salaire",
+  "m": [
+   "avance sur salaire"
+  ],
+  "d": "Prêt consenti par l'employeur sur un travail non encore effectué, remboursé ensuite par retenues, dans les limites légales.",
+  "refs": []
+ },
+ {
+  "id": "paiement-salaire",
+  "t": "Paiement du salaire",
+  "m": [
+   "paiement du salaire",
+   "paiement des salaires"
+  ],
+  "d": "Versement du salaire selon les délais légaux, pendant les heures et sur le lieu de travail, ou par virement bancaire / microfinance sur le compte du salarié.",
+  "refs": [
+   "ccmc:71"
+  ]
+ },
+ {
+  "id": "indemnite-transport",
+  "t": "Indemnité de transport",
+  "m": [
+   "indemnité de transport"
+  ],
+  "d": "Somme compensant les frais de trajet du salarié, lorsqu'elle est prévue par l'entreprise ou l'accord applicable.",
+  "refs": [
+   "ccmc:83"
+  ]
+ },
+ {
+  "id": "indemnite-logement",
+  "t": "Indemnité / aide au logement",
+  "m": [
+   "indemnité de logement",
+   "aide à l'habitat",
+   "aide au logement"
+  ],
+  "d": "Avantage versé ou fourni pour le logement, notamment quand l'employeur déplace le salarié. Le détail figure au contrat.",
+  "refs": [
+   "ccmc:97",
+   "ccmc:98"
+  ]
+ },
+ {
+  "id": "indemnite-expatriation",
+  "t": "Indemnité d'expatriation",
+  "m": [
+   "indemnité d'expatriation",
+   "expatriation"
+  ],
+  "d": "Somme compensant l'éloignement et les sujétions liées à un emploi hors du pays d'origine du travailleur.",
+  "refs": [
+   "ccmc:83"
+  ]
+ },
+ {
+  "id": "duree-legale",
+  "t": "Durée légale du travail",
+  "m": [
+   "durée légale",
+   "durée du travail",
+   "40 heures"
+  ],
+  "d": "Durée normale de travail fixée à 40 heures par semaine. Au-delà, sauf équivalence ou modulation, les heures sont des heures supplémentaires majorées.",
+  "refs": [
+   "ccmc:74"
+  ]
+ },
+ {
+  "id": "repos-hebdo",
+  "t": "Repos hebdomadaire",
+  "m": [
+   "repos hebdomadaire",
+   "jour de repos"
+  ],
+  "d": "Jour de repos légal accordé chaque semaine. Dans le travail posté, l'équilibre est rétabli par un repos compensateur hebdomadaire.",
+  "refs": [
+   "ccmc:75"
+  ]
+ },
+ {
+  "id": "repos-compensateur",
+  "t": "Repos compensateur",
+  "m": [
+   "repos compensateur"
+  ],
+  "d": "Temps de repos accordé en remplacement de la majoration des heures supplémentaires, ou pour égaliser les horaires du travail posté.",
+  "refs": [
+   "ccmc:74",
+   "ccmc:75"
+  ]
+ },
+ {
+  "id": "jours-feries",
+  "t": "Jours fériés, chômés et payés",
+  "m": [
+   "jours fériés",
+   "jour férié",
+   "chômés et payés"
+  ],
+  "d": "Jours de fête légale non travaillés et payés. Les parties peuvent convenir de « ponts » et de leurs modalités de récupération.",
+  "refs": [
+   "ccmc:88"
+  ]
+ },
+ {
+  "id": "travail-nuit",
+  "t": "Travail de nuit",
+  "m": [
+   "travail de nuit",
+   "heures de nuit"
+  ],
+  "d": "Travail accompli entre 20 h et 6 h. Il ouvre droit à des majorations plus élevées et est interdit aux travailleurs de moins de 18 ans.",
+  "refs": [
+   "ccmc:74",
+   "ccmc:90"
+  ]
+ },
+ {
+  "id": "jour-ouvrable",
+  "t": "Jour ouvrable",
+  "m": [
+   "jour ouvrable",
+   "jours ouvrables"
+  ],
+  "d": "Tout jour de la semaine pouvant être travaillé, sauf le jour de repos légal. Sert de base à de nombreux délais (préavis, congés).",
+  "refs": [
+   "ccmc:terminologie"
+  ]
+ },
+ {
+  "id": "modulation",
+  "t": "Modulation / récupération des heures",
+  "m": [
+   "modulation",
+   "heures de modulation"
+  ],
+  "d": "Répartition des heures de travail sur une période, ou récupération d'heures perdues (intempéries, force majeure), selon la réglementation.",
+  "refs": [
+   "ccmc:87"
+  ]
+ },
+ {
+  "id": "prime-poste",
+  "t": "Prime de poste / d'horaire",
+  "m": [
+   "prime de poste",
+   "prime d'horaire"
+  ],
+  "d": "Prime versée au personnel en travail posté (système de quart), dont la modulation dépend du roulement ; le taux est fixé après avis du syndicat.",
+  "refs": [
+   "ccmc:82"
+  ]
+ },
+ {
+  "id": "conge-paternite",
+  "t": "Congé de naissance / paternité",
+  "m": [
+   "congé de naissance",
+   "congé de paternité",
+   "naissance d'un enfant"
+  ],
+  "d": "Permission exceptionnelle accordée au travailleur à la naissance de son enfant (deux jours dans la Convention), payée et non déduite du congé annuel.",
+  "refs": [
+   "ccmc:95"
+  ]
+ },
+ {
+  "id": "fractionnement-conge",
+  "t": "Fractionnement du congé",
+  "m": [
+   "fractionnement du congé",
+   "congé fractionné"
+  ],
+  "d": "Possibilité de prendre le congé annuel en plusieurs fois dans l'année, par nécessité de service ou convenance, le cumul d'une année sur l'autre étant interdit.",
+  "refs": [
+   "ccmc:91"
+  ]
+ },
+ {
+  "id": "allaitement",
+  "t": "Allaitement",
+  "m": [
+   "allaitement",
+   "allaiter"
+  ],
+  "d": "Temps accordé à la mère pour allaiter, et possibilité de mise en disponibilité à l'issue du congé de maternité.",
+  "refs": [
+   "ccmc:56",
+   "ccmc:89"
+  ]
+ },
+ {
+  "id": "allocations-familiales",
+  "t": "Allocations familiales",
+  "m": [
+   "allocations familiales",
+   "prestations familiales"
+  ],
+  "d": "Prestations sociales versées au titre des enfants à charge, servies dans le cadre de la sécurité sociale (CNSS).",
+  "refs": [
+   "ccmc:62"
+  ]
+ },
+ {
+  "id": "maladie-non-pro",
+  "t": "Maladie / accident non professionnels",
+  "m": [
+   "maladie non professionnelle",
+   "accident non professionnel"
+  ],
+  "d": "Maladie ou accident sans lien avec le travail. Ils suspendent le contrat (jusqu'à six mois) et ouvrent droit à une allocation, l'employeur se faisant rembourser par la CNSS.",
+  "refs": [
+   "ccmc:52",
+   "ccmc:53"
+  ]
+ },
+ {
+  "id": "incapacite-permanente",
+  "t": "Incapacité permanente",
+  "m": [
+   "incapacité permanente",
+   "invalidité permanente"
+  ],
+  "d": "Réduction durable de la capacité de travail après consolidation d'un accident ou d'une maladie, pouvant ouvrir droit à une rente de la sécurité sociale.",
+  "refs": [
+   "ccmc:54"
+  ]
+ },
+ {
+  "id": "aptitude",
+  "t": "Aptitude / inaptitude au poste",
+  "m": [
+   "aptitude",
+   "inaptitude",
+   "apte",
+   "inapte"
+  ],
+  "d": "Capacité médicale à occuper un poste, vérifiée par le service de santé au travail. L'inaptitude impose de rechercher un reclassement adapté.",
+  "refs": [
+   "ccmc:73",
+   "ccmc:35"
+  ]
+ },
+ {
+  "id": "prevoyance",
+  "t": "Prévoyance sociale",
+  "m": [
+   "prévoyance sociale",
+   "prévoyance"
+  ],
+  "d": "Dispositifs couvrant les risques sociaux (maladie, accident, décès) en complément ou dans le cadre de la sécurité sociale.",
+  "refs": [
+   "ccmc:54"
+  ]
+ },
+ {
+  "id": "hygiene-securite",
+  "t": "Hygiène, santé et sécurité au travail",
+  "m": [
+   "hygiène et sécurité",
+   "santé et sécurité",
+   "hygiène, santé, sécurité"
+  ],
+  "d": "Ensemble des règles protégeant l'intégrité physique des travailleurs : EPI, comités de sécurité, procédures d'urgence, surtout renforcées sur les sites miniers.",
+  "refs": [
+   "ccmc:101",
+   "ccmc:102"
+  ]
+ },
+ {
+  "id": "harcelement",
+  "t": "Harcèlement moral ou sexuel",
+  "m": [
+   "harcèlement moral",
+   "harcèlement sexuel",
+   "harcèlement"
+  ],
+  "d": "Comportements répétés portant atteinte à la dignité ou aux conditions de travail d'un salarié. Ils sont proscrits, qu'ils viennent de collègues ou de la hiérarchie.",
+  "refs": [
+   "ccmc:101",
+   "code:7"
+  ]
+ },
+ {
+  "id": "violence-travail",
+  "t": "Violence au travail",
+  "m": [
+   "violence au travail",
+   "violence en milieu de travail"
+  ],
+  "d": "Agressions physiques ou morales en milieu de travail, interdites par la Convention qui engage à prévenir et sanctionner ces comportements.",
+  "refs": [
+   "ccmc:101"
+  ]
+ },
+ {
+  "id": "travail-enfants",
+  "t": "Travail des enfants",
+  "m": [
+   "travail des enfants",
+   "travail des mineurs"
+  ],
+  "d": "Emploi des moins de 18 ans, strictement encadré : pas d'emploi avant 16 ans (sauf apprenti), ni de travail de nuit ou dangereux pour les mineurs.",
+  "refs": [
+   "ccmc:90",
+   "code:137.1"
+  ]
+ },
+ {
+  "id": "travail-force",
+  "t": "Travail forcé",
+  "m": [
+   "travail forcé"
+  ],
+  "d": "Tout travail exigé sous la contrainte ou la menace, sans consentement libre. Son interdiction est un principe fondamental repris par la Convention.",
+  "refs": [
+   "ccmc:preambule"
+  ]
+ },
+ {
+  "id": "syndicat",
+  "t": "Syndicat / organisation syndicale",
+  "m": [
+   "syndicat",
+   "organisation syndicale",
+   "syndicats"
+  ],
+  "d": "Groupement de travailleurs (ou d'employeurs) pour la défense de leurs intérêts professionnels. La liberté d'y adhérer ou non est garantie.",
+  "refs": [
+   "ccmc:8"
+  ]
+ },
+ {
+  "id": "representativite",
+  "t": "Représentativité syndicale",
+  "m": [
+   "représentativité",
+   "syndicat représentatif"
+  ],
+  "d": "Qualité d'un syndicat reconnu comme représentant une part significative des travailleurs, lui donnant le droit de négocier et de signer les conventions.",
+  "refs": [
+   "ccmc:7"
+  ]
+ },
+ {
+  "id": "election-delegues",
+  "t": "Élection des délégués",
+  "m": [
+   "élection des délégués",
+   "élections professionnelles",
+   "collège électoral"
+  ],
+  "d": "Scrutin par lequel les travailleurs désignent leurs délégués syndicaux, selon les règles légales, avec protection des candidats inscrits.",
+  "refs": [
+   "ccmc:12"
+  ]
+ },
+ {
+  "id": "credit-heures",
+  "t": "Crédit d'heures syndicales",
+  "m": [
+   "crédit d'heures",
+   "heures de délégation",
+   "heures syndicales"
+  ],
+  "d": "Temps alloué au délégué pour exercer sa mission (24 heures par mois dans la Convention), imputé sur son horaire normal et payé.",
+  "refs": [
+   "ccmc:13"
+  ]
+ },
+ {
+  "id": "cotisation-syndicale",
+  "t": "Cotisation syndicale",
+  "m": [
+   "cotisation syndicale",
+   "cotisation"
+  ],
+  "d": "Somme versée par l'adhérent à son syndicat. Toute clause portant atteinte à la liberté d'adhérer, de ne pas adhérer ou de quitter un syndicat est nulle.",
+  "refs": [
+   "code:523.29"
+  ]
+ },
+ {
+  "id": "accord-etablissement",
+  "t": "Accord d'établissement",
+  "m": [
+   "accord d'établissement",
+   "accord d'entreprise"
+  ],
+  "d": "Accord conclu au niveau d'une entreprise ou d'un établissement, qui peut prévoir des dispositions plus favorables que la convention de branche.",
+  "refs": [
+   "ccmc:5"
+  ]
+ },
+ {
+  "id": "denonciation",
+  "t": "Dénonciation / révision d'une convention",
+  "m": [
+   "dénonciation",
+   "révision de la convention"
+  ],
+  "d": "Procédure par laquelle une partie met fin à une convention ou en demande la modification, avec un préavis (trois mois) et dans les délais prévus.",
+  "refs": [
+   "ccmc:6"
+  ]
+ },
+ {
+  "id": "adhesion",
+  "t": "Adhésion ultérieure",
+  "m": [
+   "adhésion",
+   "adhérer à la convention"
+  ],
+  "d": "Rattachement ultérieur d'un employeur, d'un syndicat ou d'une entreprise à une convention collective déjà conclue.",
+  "refs": [
+   "ccmc:7"
+  ]
+ },
+ {
+  "id": "comite-relations",
+  "t": "Comité des relations de travail",
+  "m": [
+   "comité des relations de travail"
+  ],
+  "d": "Instance interne réunissant une fois par mois la direction et les délégués syndicaux pour passer en revue les questions sociales et apaiser les relations.",
+  "refs": [
+   "ccmc:19"
+  ]
+ },
+ {
+  "id": "conflit-collectif",
+  "t": "Conflit collectif",
+  "m": [
+   "conflit collectif",
+   "différend collectif"
+  ],
+  "d": "Désaccord opposant un employeur à un ensemble de travailleurs (revendications communes). Il se règle par la conciliation, puis éventuellement la grève ou l'arbitrage.",
+  "refs": [
+   "ccmc:20"
+  ]
+ },
+ {
+  "id": "conflit-individuel",
+  "t": "Conflit individuel",
+  "m": [
+   "conflit individuel",
+   "litige individuel",
+   "différend individuel"
+  ],
+  "d": "Litige entre un employeur et un salarié (contrat, salaire, licenciement…), qui relève du tribunal du travail après tentative de conciliation.",
+  "refs": [
+   "code:520.1",
+   "ccmc:17"
+  ]
+ },
+ {
+  "id": "arbitrage",
+  "t": "Arbitrage",
+  "m": [
+   "arbitrage",
+   "arbitre"
+  ],
+  "d": "Mode de règlement d'un conflit collectif où un tiers tranche le différend. Les règles de conciliation et d'arbitrage relèvent du Code du travail.",
+  "refs": [
+   "ccmc:20"
+  ]
+ },
+ {
+  "id": "tribunal-travail",
+  "t": "Tribunal du travail",
+  "m": [
+   "tribunal du travail",
+   "juridiction du travail"
+  ],
+  "d": "Juridiction spécialisée qui tranche les litiges du travail. Sa formation de jugement associe un magistrat et des assesseurs employeurs et travailleurs.",
+  "refs": [
+   "code:520.1",
+   "code:521.1"
+  ]
+ },
+ {
+  "id": "competence-territoriale",
+  "t": "Compétence territoriale",
+  "m": [
+   "compétence territoriale",
+   "tribunal compétent"
+  ],
+  "d": "Règle désignant le tribunal géographiquement compétent (lieu de travail, du contrat, ou domicile du salarié en cas de rupture). Toute clause contraire est nulle.",
+  "refs": [
+   "code:521.2"
+  ]
+ },
+ {
+  "id": "demande-reconventionnelle",
+  "t": "Demande reconventionnelle",
+  "m": [
+   "demande reconventionnelle",
+   "reconventionnelle"
+  ],
+  "d": "Demande que le défendeur présente à son tour contre le demandeur, devant le même tribunal, pour peu qu'elle relève de sa compétence.",
+  "refs": [
+   "code:523.16"
+  ]
+ },
+ {
+  "id": "execution-provisoire",
+  "t": "Exécution provisoire",
+  "m": [
+   "exécution provisoire",
+   "exécutoire immédiatement"
+  ],
+  "d": "Décision du tribunal de rendre son jugement applicable tout de suite, même en cas d'appel ou d'opposition, parfois sans caution.",
+  "refs": [
+   "code:523.13"
+  ]
+ },
+ {
+  "id": "appel",
+  "t": "Appel",
+  "m": [
+   "appel",
+   "faire appel",
+   "cour d'appel"
+  ],
+  "d": "Recours contre un jugement du tribunal du travail devant la cour d'appel, à former dans les trente jours de la signification.",
+  "refs": [
+   "code:523.14"
+  ]
+ },
+ {
+  "id": "prescription-action",
+  "t": "Prescription de l'action",
+  "m": [
+   "prescription",
+   "délai pour agir"
+  ],
+  "d": "Délai au-delà duquel on ne peut plus agir en justice. Le salarié dispose par exemple de 24 mois pour contester son licenciement.",
+  "refs": [
+   "code:523.4"
+  ]
+ },
+ {
+  "id": "assistance-judiciaire",
+  "t": "Gratuité / assistance judiciaire",
+  "m": [
+   "assistance judiciaire",
+   "gratuité de la procédure"
+  ],
+  "d": "La procédure devant les juridictions du travail est gratuite, et les salariés peuvent être assistés pour faire exécuter les décisions rendues en leur faveur.",
+  "refs": [
+   "code:523.18"
+  ]
+ },
+ {
+  "id": "conciliation-prealable",
+  "t": "Conciliation préalable",
+  "m": [
+   "conciliation préalable",
+   "tentative de conciliation"
+  ],
+  "d": "Tentative de règlement amiable devant l'Inspection du travail avant tout procès ; un accord acté par procès-verbal a force exécutoire.",
+  "refs": [
+   "code:523.1",
+   "ccmc:17"
+  ]
+ },
+ {
+  "id": "saisine-greffe",
+  "t": "Saisine du tribunal (greffe)",
+  "m": [
+   "saisine",
+   "déclaration au greffe",
+   "greffe"
+  ],
+  "d": "Acte qui ouvre le procès : une simple déclaration, écrite ou orale, au greffe du tribunal du travail suffit pour engager l'affaire.",
+  "refs": [
+   "code:523.5"
+  ]
+ },
+ {
+  "id": "non-discrimination",
+  "t": "Non-discrimination",
+  "m": [
+   "non-discrimination",
+   "discrimination",
+   "discriminatoire"
+  ],
+  "d": "Interdiction de traiter défavorablement un travailleur en raison de son origine, sexe, religion, opinions, appartenance syndicale… Les décisions doivent reposer sur des critères objectifs.",
+  "refs": [
+   "code:4",
+   "ccmc:8"
+  ]
+ },
+ {
+  "id": "plus-favorable",
+  "t": "Principe de la disposition la plus favorable",
+  "m": [
+   "disposition la plus favorable",
+   "plus favorable au travailleur"
+  ],
+  "d": "Entre deux règles applicables (loi, convention, contrat), c'est la plus favorable au salarié qui s'applique.",
+  "refs": [
+   "ccmc:3"
+  ]
+ },
+ {
+  "id": "ordre-public",
+  "t": "Disposition d'ordre public",
+  "m": [
+   "ordre public",
+   "d'ordre public"
+  ],
+  "d": "Règle à laquelle on ne peut pas déroger, même par accord : toute clause contraire est nulle (ex. la compétence territoriale du tribunal).",
+  "refs": [
+   "code:521.4"
+  ]
+ },
+ {
+  "id": "pouvoir-direction",
+  "t": "Pouvoir de direction",
+  "m": [
+   "pouvoir de direction",
+   "pouvoir disciplinaire"
+  ],
+  "d": "Droit de l'employeur d'organiser le travail, de donner des instructions et de sanctionner les manquements, dans le respect de la loi et des droits des salariés.",
+  "refs": [
+   "ccmc:8",
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "obligation-loyaute",
+  "t": "Obligation de loyauté",
+  "m": [
+   "obligation de loyauté",
+   "loyauté",
+   "discrétion"
+  ],
+  "d": "Devoir du salarié d'exécuter le contrat de bonne foi : ne pas nuire à l'entreprise, ne pas la concurrencer et garder la confidentialité des informations.",
+  "refs": [
+   "ccmc:49",
+   "ccmc:50"
+  ]
+ },
+ {
+  "id": "periode-reference",
+  "t": "Période de référence",
+  "m": [
+   "période de référence"
+  ],
+  "d": "Durée de travail servant à ouvrir ou calculer un droit (par exemple le droit au congé annuel ou à l'indemnité de licenciement).",
+  "refs": [
+   "ccmc:66"
+  ]
+ },
+ {
+  "id": "anciennete-secteur",
+  "t": "Reprise d'ancienneté",
+  "m": [
+   "reprise d'ancienneté",
+   "ancienneté acquise"
+  ],
+  "d": "Prise en compte de l'ancienneté déjà acquise dans une autre entreprise du secteur minier, avec les avantages qui s'y rattachent, sauf départ pour faute grave.",
+  "refs": [
+   "ccmc:45"
+  ]
+ },
+ {
+  "id": "interim-agence",
+  "t": "Entreprise de travail temporaire",
+  "m": [
+   "entreprise de travail temporaire",
+   "agence d'intérim",
+   "agence de placement"
+  ],
+  "d": "Société qui met du personnel à la disposition d'entreprises utilisatrices. Son activité (et l'exigence d'un agrément) est encadrée par la loi.",
+  "refs": [
+   "code:133.1",
+   "ccmc:36"
+  ]
+ },
+ {
+  "id": "mutation-grossesse",
+  "t": "Mutation de la femme enceinte",
+  "m": [
+   "femme enceinte",
+   "grossesse",
+   "état de grossesse"
+  ],
+  "d": "La travailleuse enceinte mutée pour raison de santé conserve au moins son salaire antérieur et retrouve son poste (ou un poste équivalent) après la grossesse.",
+  "refs": [
+   "ccmc:43"
+  ]
+ },
+ {
+  "id": "logement-fonction",
+  "t": "Logement de fonction",
+  "m": [
+   "logement de fonction",
+   "logement fourni"
+  ],
+  "d": "Logement mis à disposition par l'employeur. Sa libération après la fin du contrat obéit à des délais variables selon le motif de départ.",
+  "refs": [
+   "ccmc:97",
+   "ccmc:98"
+  ]
+ },
+ {
+  "id": "entretien-annuel",
+  "t": "Entretien professionnel annuel",
+  "m": [
+   "entretien professionnel",
+   "entretien annuel",
+   "entretien d'évaluation"
+  ],
+  "d": "Échange annuel entre le salarié et sa hiérarchie sur son activité et ses objectifs, outil de dialogue et d'évaluation prévu par la Convention.",
+  "refs": [
+   "ccmc:99"
+  ]
+ },
+ {
+  "id": "evaluation-pro",
+  "t": "Évaluation professionnelle",
+  "m": [
+   "évaluation professionnelle",
+   "notation"
+  ],
+  "d": "Appréciation des compétences et des résultats du salarié, qui sert de base au reclassement, à l'avancement ou à la promotion.",
+  "refs": [
+   "ccmc:40",
+   "ccmc:72"
+  ]
+ },
+ {
+  "id": "seuil-effectif",
+  "t": "Seuil d'effectif",
+  "m": [
+   "seuil d'effectif",
+   "nombre de salariés"
+  ],
+  "d": "Nombre de salariés à partir duquel naît une obligation (élection de délégués, règlement intérieur…). Les établissements proches peuvent être totalisés.",
+  "refs": [
+   "ccmc:12"
+  ]
+ },
+ {
+  "id": "guide-securite",
+  "t": "Guide de sécurité",
+  "m": [
+   "guide de sécurité",
+   "guides de sécurité"
+  ],
+  "d": "Document remis aux travailleurs présentant les procédures d'hygiène, de santé et de sécurité et les risques du site ainsi que les moyens de les éviter.",
+  "refs": [
+   "ccmc:105"
+  ]
+ },
+ {
+  "id": "procedure-urgence",
+  "t": "Procédure d'urgence",
+  "m": [
+   "procédure d'urgence",
+   "exercice d'évacuation"
+  ],
+  "d": "Consignes et exercices pratiques organisés sur site pour préparer le personnel à réagir en situation critique (accident, incendie…).",
+  "refs": [
+   "ccmc:106"
+  ]
+ },
+ {
+  "id": "declaration-personnel",
+  "t": "Déclaration du personnel",
+  "m": [
+   "déclaration du personnel",
+   "déclaration à la CNSS",
+   "immatriculation"
+  ],
+  "d": "Obligation d'enregistrer les salariés auprès des organismes (CNSS, Inspection) dans les délais ; l'omission est sanctionnée.",
+  "refs": [
+   "code:523.20"
+  ]
+ },
+ {
+  "id": "certificat-medical",
+  "t": "Certificat médical",
+  "m": [
+   "certificat médical",
+   "constat médical"
+  ],
+  "d": "Document du médecin attestant l'état de santé du salarié, exigé notamment pour justifier une absence pour maladie dans les délais.",
+  "refs": [
+   "ccmc:52"
+  ]
+ },
+ {
+  "id": "mise-a-pied-conservatoire",
+  "t": "Mise à pied conservatoire",
+  "m": [
+   "mise à pied conservatoire"
+  ],
+  "d": "Suspension immédiate du travail (et du salaire) d'un salarié, à titre de précaution, en attendant une décision — notamment pour un délégué en cas de faute grave, dans l'attente de l'Inspection.",
+  "refs": [
+   "ccmc:14"
+  ]
+ },
+ {
+  "id": "faute-professionnelle",
+  "t": "Faute professionnelle",
+  "m": [
+   "faute professionnelle",
+   "faute"
+  ],
+  "d": "Manquement du salarié à ses obligations. Selon sa gravité (légère, grave, lourde), elle entraîne des sanctions proportionnées, jusqu'au licenciement.",
+  "refs": [
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "prescription-sanction",
+  "t": "Prescription des sanctions",
+  "m": [
+   "prescription de la sanction",
+   "délai de prescription"
+  ],
+  "d": "Délai au-delà duquel une sanction ne peut plus être invoquée : trois mois pour l'avertissement et le blâme, six mois pour la mise à pied.",
+  "refs": [
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "dommages-interets",
+  "t": "Dommages et intérêts",
+  "m": [
+   "dommages et intérêts",
+   "dommages-intérêts",
+   "réparation"
+  ],
+  "d": "Somme destinée à réparer le préjudice subi, par exemple en cas de licenciement abusif ou de discrimination prouvée.",
+  "refs": [
+   "ccmc:14"
+  ]
+ },
+ {
+  "id": "interessement",
+  "t": "Interruption collective du travail",
+  "m": [
+   "interruption collective",
+   "interruption du travail"
+  ],
+  "d": "Arrêt de travail touchant un groupe pour cause accidentelle, de force majeure ou d'intempéries ; les heures perdues peuvent être récupérées.",
+  "refs": [
+   "ccmc:87"
+  ]
+ },
+ {
+  "id": "casse-croute",
+  "t": "Casse-croûte / prime compensatrice",
+  "m": [
+   "casse-croûte",
+   "prime compensatrice"
+  ],
+  "d": "Collation (et boisson non alcoolisée) due au-delà de huit heures de travail continu, ou prime versée à défaut.",
+  "refs": [
+   "ccmc:75",
+   "ccmc:78"
+  ]
+ },
+ {
+  "id": "stage-professionnel",
+  "t": "Stage professionnel",
+  "m": [
+   "stage professionnel",
+   "stage",
+   "stagiaire"
+  ],
+  "d": "Période de formation pratique en entreprise. Après un stage financé par l'employeur, le salarié doit rester en poste une durée équivalente, sauf à rembourser les frais.",
+  "refs": [
+   "ccmc:30",
+   "ccmc:31"
+  ]
+ },
+ {
+  "id": "contribution-formation",
+  "t": "Contribution à la formation professionnelle",
+  "m": [
+   "contribution à la formation professionnelle",
+   "CFP"
+  ],
+  "d": "Versement dû par l'employeur pour financer la formation professionnelle, en plus de la prise en charge des stages qu'il impose.",
+  "refs": [
+   "ccmc:31"
+  ]
+ },
+ {
+  "id": "seuil-accueil",
+  "t": "Seuil d'accueil à l'embauche",
+  "m": [
+   "seuil d'accueil",
+   "diplôme de référence"
+  ],
+  "d": "Correspondance entre le diplôme du candidat (CEP, BEPC, CAP, BTS, diplôme universitaire) et le niveau du poste proposé à l'embauche.",
+  "refs": [
+   "ccmc:38"
+  ]
+ },
+ {
+  "id": "cloture-poste",
+  "t": "Vacance de poste",
+  "m": [
+   "vacance de poste",
+   "poste vacant",
+   "emploi vacant"
+  ],
+  "d": "Poste disponible dans l'entreprise. Les vacances sont portées à la connaissance du personnel, et ouvrent droit de priorité à certains anciens salariés.",
+  "refs": [
+   "ccmc:34",
+   "ccmc:40"
+  ]
+ },
+ {
+  "id": "commission-interpretation",
+  "t": "Commission d'interprétation et de conciliation",
+  "m": [
+   "commission d'interprétation",
+   "commission de conciliation",
+   "commission d'entreprise"
+  ],
+  "d": "Instance paritaire qui règle à l'amiable les difficultés d'interprétation ou d'application de la Convention, au niveau de l'entreprise puis de la branche.",
+  "refs": [
+   "ccmc:18",
+   "ccmc:19"
+  ]
+ },
+ {
+  "id": "effectif-minimum",
+  "t": "Service essentiel / effectif minimum",
+  "m": [
+   "effectif minimum",
+   "permanence"
+  ],
+  "d": "Nombre minimal de travailleurs maintenus en poste, même en grève, pour assurer la sécurité et la continuité des services essentiels.",
+  "refs": [
+   "ccmc:23"
+  ]
+ },
+ {
+  "id": "autorisation-inspection",
+  "t": "Autorisation de l'Inspection",
+  "m": [
+   "autorisation de l'inspecteur",
+   "autorisation de licenciement"
+  ],
+  "d": "Accord préalable de l'Inspecteur du travail requis avant de licencier un salarié protégé (délégué syndical, assesseur…).",
+  "refs": [
+   "ccmc:14"
+  ]
+ },
+ {
+  "id": "registre-employeur",
+  "t": "Registres obligatoires",
+  "m": [
+   "registres obligatoires",
+   "registre de l'employeur",
+   "registre du personnel"
+  ],
+  "d": "Documents que l'employeur doit tenir et présenter à l'Inspection (paie, effectifs, sécurité). Leur absence lors d'un contrôle est une infraction.",
+  "refs": [
+   "ccmc:9"
+  ]
+ },
+ {
+  "id": "secret-professionnel",
+  "t": "Secret professionnel (Inspection)",
+  "m": [
+   "secret professionnel",
+   "secret de fabrication"
+  ],
+  "d": "Obligation des inspecteurs de ne pas divulguer les secrets de l'entreprise ni l'identité des plaignants ; sa violation engage leur responsabilité.",
+  "refs": [
+   "ccmc:terminologie",
+   "code:513.12"
+  ]
+ },
+ {
+  "id": "operations-minieres",
+  "t": "Opérations minières",
+  "m": [
+   "opérations minières",
+   "activités minières"
+  ],
+  "d": "Ensemble des activités du secteur (recherche, développement, exploitation, transport, traitement, transformation, commercialisation) qui déterminent le champ de la Convention.",
+  "refs": [
+   "ccmc:terminologie",
+   "ccmc:1er"
+  ]
+ },
+ {
+  "id": "societe-mere",
+  "t": "Société mère / sous-traitant",
+  "m": [
+   "société mère",
+   "sociétés mères"
+  ],
+  "d": "La Convention s'impose aux sociétés exploitantes comme à leurs sous-traitants ; pour ces derniers, le salaire minimum d'entrée est fixé à 70 % de celui des sociétés mères.",
+  "refs": [
+   "ccmc:68",
+   "ccmc:48"
+  ]
+ },
+ {
+  "id": "bareme-indemnite",
+  "t": "Barème de l'indemnité",
+  "m": [
+   "barème",
+   "barème de l'indemnité"
+  ],
+  "d": "Grille de pourcentages servant à calculer une indemnité selon l'ancienneté (par exemple 33/35/40 % pour l'indemnité de licenciement dans la Convention).",
+  "refs": [
+   "ccmc:66",
+   "ccmc:113"
+  ]
+ },
+ {
+  "id": "salaire-brut",
+  "t": "Salaire brut / salaire net",
+  "m": [
+   "salaire brut",
+   "salaire net",
+   "salaire mensuel brut"
+  ],
+  "d": "Le salaire brut est la rémunération avant retenues (cotisations, impôts) ; le net est ce que le salarié perçoit effectivement. Les indemnités se calculent souvent sur le brut moyen.",
+  "refs": [
+   "ccmc:66"
+  ]
+ },
+ {
+  "id": "heures-equivalence",
+  "t": "Heures d'équivalence",
+  "m": [
+   "heures d'équivalence",
+   "horaire équivalent"
+  ],
+  "d": "Durée de présence supérieure à 40 h admise pour certains métiers (gardiennage, hôtellerie, chauffeurs) avant que ne se déclenchent les heures supplémentaires.",
+  "refs": [
+   "ccmc:74"
+  ]
+ },
+ {
+  "id": "indemnite-fin-carriere",
+  "t": "Indemnité de fin de carrière",
+  "m": [
+   "indemnité de fin de carrière",
+   "allocation de retraite"
+  ],
+  "d": "Somme versée au départ à la retraite (indemnité conventionnelle de départ), distincte de la pension payée par la CNSS.",
+  "refs": [
+   "ccmc:113",
+   "ccmc:58"
+  ]
+ },
+ {
+  "id": "age-retraite",
+  "t": "Âge de départ à la retraite",
+  "m": [
+   "âge de la retraite",
+   "âge de départ à la retraite",
+   "60 ans",
+   "65 ans"
+  ],
+  "d": "Âge fixé par la Convention : 60 ans pour l'exécution et la maîtrise, 65 ans pour les cadres. Partir à la retraite n'est pas un licenciement.",
+  "refs": [
+   "ccmc:111"
+  ]
+ },
+ {
+  "id": "visite-depart-retraite",
+  "t": "Visite médicale de départ à la retraite",
+  "m": [
+   "visite médicale de départ à la retraite",
+   "examen médical de fin de carrière"
+  ],
+  "d": "Examen réalisé un an avant le départ pour détecter d'éventuelles affections d'origine professionnelle ; les résultats sont conservés vingt ans.",
+  "refs": [
+   "ccmc:116"
+  ]
+ },
+ {
+  "id": "dossier-retraite",
+  "t": "Constitution du dossier de retraite",
+  "m": [
+   "dossier de retraite",
+   "liquidation de la pension"
+  ],
+  "d": "Démarches ouvrant droit à la pension ; l'employeur est tenu d'assister le futur retraité pour monter ce dossier auprès de la CNSS.",
+  "refs": [
+   "ccmc:114",
+   "ccmc:115"
+  ]
+ },
+ {
+  "id": "salaire-rendement",
+  "t": "Travail au rendement / à la pièce",
+  "m": [
+   "travail au rendement",
+   "à la pièce",
+   "à la chaîne"
+  ],
+  "d": "Rémunération calculée sur la production, à partir du salaire minimum de la catégorie, avec des garde-fous contre le surmenage.",
+  "refs": [
+   "ccmc:70"
+  ]
+ },
+ {
+  "id": "interruption-grossesse",
+  "t": "Repos de maternité",
+  "m": [
+   "repos de maternité",
+   "congé de maternité",
+   "femme en couche"
+  ],
+  "d": "Période de repos protégée autour de l'accouchement, réglée par le Code ; elle compte pour le calcul des congés.",
+  "refs": [
+   "ccmc:89",
+   "ccmc:91"
+  ]
+ },
+ {
+  "id": "mise-conformite",
+  "t": "Mise en conformité",
+  "m": [
+   "mise en conformité",
+   "mise aux normes"
+  ],
+  "d": "Obligation de corriger une installation ou une pratique non conforme dans le délai fixé par l'Inspecteur, sous peine de procès-verbal.",
+  "refs": [
+   "ccmc:102"
+  ]
+ },
+ {
+  "id": "affichage-obligatoire",
+  "t": "Affichage obligatoire",
+  "m": [
+   "affichage obligatoire",
+   "affichage"
+  ],
+  "d": "Information que l'employeur doit porter à la connaissance du personnel par voie d'affichage ou électronique (emplois vacants, règlement intérieur, horaires…).",
+  "refs": [
+   "ccmc:34",
+   "ccmc:10"
+  ]
+ },
+ {
+  "id": "demande-explication",
+  "t": "Demande d'explication",
+  "m": [
+   "demande d'explication",
+   "explication écrite"
+  ],
+  "d": "Invitation faite au salarié de s'expliquer par écrit ou lors d'un entretien avant toute sanction : c'est une garantie du contradictoire.",
+  "refs": [
+   "ccmc:47"
+  ]
+ },
+ {
+  "id": "faute-lourde-greve",
+  "t": "Abus du droit de grève",
+  "m": [
+   "abus du droit de grève",
+   "faute lourde grève",
+   "piquet de grève"
+  ],
+  "d": "Actes interdits pendant une grève (entrave par menace, violence, sabotage) qui font perdre la protection et peuvent justifier un licenciement pour faute lourde.",
+  "refs": [
+   "ccmc:25"
+  ]
+ },
+ {
+  "id": "effet-suspensif-greve",
+  "t": "Effet suspensif de la grève",
+  "m": [
+   "effet suspensif de la grève",
+   "grève suspend le contrat"
+  ],
+  "d": "La grève suspend le contrat sans le rompre : le gréviste retrouve son emploi à la fin et ne peut être sanctionné, mais n'est pas payé pour les jours de grève.",
+  "refs": [
+   "ccmc:26"
+  ]
+ }
 ]
