@@ -279,6 +279,10 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 /* ---- Lexicon terms in text + popover ---- */
 .term{border-bottom:1.5px dotted var(--exp-accent);cursor:help}
 .term:hover{background:var(--exp-bg)}
+.xref{color:var(--accent-ink);font-weight:600;cursor:pointer;text-decoration:none;border-bottom:1px solid var(--accent);border-radius:2px;padding:0 1px}
+.xref:hover{background:var(--accent-tint)}
+.xref.conv{color:var(--conv-ink);border-bottom-color:var(--conv)}
+.xref.conv:hover{background:var(--conv-tint)}
 #lexpop{position:absolute;z-index:60;max-width:330px;background:var(--surface);border:1px solid var(--exp-line);border-left:3px solid var(--exp-accent);border-radius:10px;box-shadow:var(--shadow);padding:14px 16px;font-family:var(--sans);display:none}
 #lexpop .pt{font-family:var(--serif);font-weight:600;font-size:15px;color:var(--ink);margin-bottom:5px;padding-right:18px}
 #lexpop .pd{font-size:13px;line-height:1.55;color:var(--ink-soft)}
@@ -486,6 +490,35 @@ function linkTermsHtml(html, seen){
   return html.replace(/>([^<]+)</g,(m,txt)=> '>'+linkTermsText(txt,seen)+'<');
 }
 
+/* ---------- Renvois cliquables entre articles ----------
+   On ne touche qu'au texte officiel. On ne crée un lien que vers un
+   article réellement chargé (UIDS) : un numéro cité qui n'existe pas
+   dans les données reste en texte simple. Source par défaut = celle de
+   l'article lu, sauf mention explicite « Convention » ou « Code ». */
+function linkRefs(html, selfSrc){
+  if(!UIDS || !UIDS.size) return html;
+  const listRe = /(\barticles?\s+)((?:\d+er|\d+(?:\.\d+){0,2})(?:\s*(?:,|;|et|ou|à|aux?|&)\s*(?:\d+er|\d+(?:\.\d+){0,2}))*)/gi;
+  const tokRe  = /\d+er|\d+(?:\.\d+){0,2}/g;
+  return html.replace(/>([^<]+)</g, (whole, text) => {
+    const linked = text.replace(listRe, (m, pre, list, offset) => {
+      let src = selfSrc;
+      const after = text.slice(offset + m.length, offset + m.length + 42).toLowerCase();
+      const ci = after.indexOf('convention'), di = after.indexOf('code');
+      if(ci>=0 && (di<0 || ci<di)) src='ccmc';
+      else if(di>=0 && (ci<0 || di<ci)) src='code';
+      tokRe.lastIndex=0;
+      const processed = list.replace(tokRe, tok => {
+        if(!UIDS.has(src+':'+tok)) return tok;
+        const cl = src==='ccmc' ? 'xref conv' : 'xref';
+        const tt = src==='ccmc' ? ' (Convention)' : '';
+        return '<a class="'+cl+'" data-open="'+src+':'+esc(tok)+'" title="Voir l\'article '+esc(tok)+tt+'">'+tok+'</a>';
+      });
+      return pre + processed;
+    });
+    return '>' + linked + '<';
+  });
+}
+
 /* ---------- Sidebar nav ---------- */
 function buildNav(){
   const nav = document.getElementById('nav');
@@ -601,7 +634,7 @@ function badgeText(a){
 function articleCard(a, term){
   const isConv = a.src==='ccmc';
   const seen=new Set();
-  const body = linkTermsHtml(paras(a.text), seen);
+  const body = linkTermsHtml(linkRefs(paras(a.text), a.src), seen);
   const expHtml = a.e
     ? `<div class="panel exp"><span class="lab">${iconBook()} Explication</span><p>${esc(a.e)}</p></div>`
     : `<div class="panel pending"><p>Explication en cours de rédaction.</p></div>`;
