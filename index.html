@@ -130,6 +130,9 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 
 .content{flex:1;padding:28px 28px 80px}
 .inner{max-width:860px;margin:0 auto}
+.sitefoot{max-width:860px;margin:48px auto 0;padding:16px 4px 4px;border-top:1px solid var(--line);font-size:11.5px;line-height:1.5;color:var(--ink-soft);text-align:center}
+.sitefoot #footcopy{font-weight:600;color:var(--ink)}
+.sitefoot .footsep{opacity:.5;margin:0 2px}
 
 /* ---- Results meta ---- */
 .resmeta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:2px 0 18px;flex-wrap:wrap}
@@ -406,7 +409,9 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
         <span><b>Par mot-clé&nbsp;:</b> <code>licenciement</code>, <code>prime</code>, <code>retraite</code>…</span>
       </div>
     </div>
-    <div class="content"><div class="inner" id="results"></div></div>
+    <div class="content"><div class="inner" id="results"></div>
+      <footer class="sitefoot"><span id="footcopy">© 2026 Fodé Bangaly Chérif.</span> Explications, conseils RH, lexique et conception. <span class="footsep">·</span> Textes officiels reproduits à titre documentaire.</footer>
+    </div>
   </div>
 </div>
 <div id="lexpop"></div>
@@ -1358,6 +1363,7 @@ function route(){
 window.addEventListener('hashchange', ()=>{ if(A.length && !location.hash.startsWith('#art-')) route(); });
 initTheme();
 initFilter();
+(function(){ const f=document.getElementById('footcopy'); if(f) f.textContent='© '+new Date().getFullYear()+' Fodé Bangaly Chérif.'; })();
 results.innerHTML='<div style="padding:70px 20px;text-align:center;color:var(--ink-soft)">Chargement des textes…</div>';
 Promise.all([
   fetch('articles.json').then(r=>r.json()),
