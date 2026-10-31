@@ -92,7 +92,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 .conv-btn.active .ln{color:var(--conv-ink)}
 .nav-lex svg{color:var(--exp-accent)}
 .nav-btn.active.nav-lex svg{color:var(--accent-ink)}
-.viewhead{margin:0 0 16px}
+.viewhead{margin:0 0 16px;display:flex;gap:8px;flex-wrap:wrap}
 .backbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-soft);font-family:var(--sans);font-size:13px;font-weight:600;padding:7px 14px 7px 10px;border-radius:9px;cursor:pointer;transition:all .13s}
 .backbtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
 .backbtn svg{width:16px;height:16px}
@@ -415,6 +415,7 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 let CODE=[], CONV=[], THEMES=[], A=[], CONV_TITRES=[];
 let GLOSS=[], GMAP={}, GRE=null, UIDS=new Set();
 let SRC='all';
+let BACK=[];   /* pile de navigation : d'où l'on vient avant d'ouvrir un article */
 
 /* ---- Local storage: favorites + history ---- */
 function lsGet(k,def){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):def; }catch(e){ return def; } }
@@ -817,6 +818,29 @@ function gotoArticle(uid){
   setTimeout(()=>{ const el=document.getElementById(elId(a)); if(el){ el.scrollIntoView(); history.replaceState(null,'','#'+elId(a)); } },60);
 }
 
+/* ---------- Navigation : ouvrir un article en gardant d'où l'on vient ---------- */
+function navTo(uid){
+  const cur=(location.hash||'').replace(/^#/,'');
+  /* on empile seulement un contexte réel, et jamais le même article */
+  if(cur && cur!=='accueil' && cur!=='a='+uid) BACK.push(cur);
+  showArticle(uid);
+}
+function goBack(){
+  const prev=BACK.pop();
+  if(prev===undefined || prev===''){ qEl.value=''; showHome(); return; }
+  location.hash='#'+prev;   /* déclenche route() via hashchange */
+}
+function backLabel(){
+  if(!BACK.length) return '';
+  const prev=BACK[BACK.length-1];
+  if(prev.startsWith('a=')){ const a=artByUid(prev.slice(2)); return a?('Retour à l\'art. '+a.id):'Retour'; }
+  if(prev.startsWith('q=')) return 'Retour à la recherche';
+  if(prev.startsWith('mine')) return 'Retour à mes articles';
+  if(prev.startsWith('cmp')) return 'Retour au comparateur';
+  if(prev.startsWith('livre=')||prev.startsWith('conv=')) return 'Retour à la liste';
+  return 'Retour';
+}
+
 /* ---------- Single article (focused) ---------- */
 function showArticle(uid){
   const a=artByUid(uid); if(!a){ showHome(); return; }
@@ -824,10 +848,14 @@ function showArticle(uid){
   history.replaceState(null,'','#a='+uid);
   setActiveNav(null);
   const pill = a.src==='ccmc'?'<span class="srcpill conv">Convention</span>':'<span class="srcpill code">Code</span>';
-  results.innerHTML = backBar()
+  const bar = `<div class="viewhead">`
+    + (BACK.length?`<button class="backbtn" id="backprev">${iconArrow()} ${esc(backLabel())}</button>`:'')
+    + `<button class="backbtn" id="backhome">${iconHome()} Accueil</button></div>`;
+  results.innerHTML = bar
     + `<div class="resmeta"><h2>${pill}${esc(badgeText(a))}</h2><button class="ctxlink" id="ctxlink">Voir dans son ${a.src==='ccmc'?'titre':'livre'} ›</button></div>`
     + articleCard(a);
-  wireBack();
+  const bp=document.getElementById('backprev'); if(bp) bp.onclick=goBack;
+  const bh=document.getElementById('backhome'); if(bh) bh.onclick=()=>{ BACK=[]; qEl.value=''; showHome(); };
   const cl=document.getElementById('ctxlink'); if(cl) cl.onclick=()=>gotoArticle(uid);
   window.scrollTo(0,0);
 }
@@ -1252,7 +1280,7 @@ async function shareImage(a, mode){
 /* ---------- Open article / toggle favorite ---------- */
 document.addEventListener('click',e=>{
   const ob=e.target.closest('[data-open]');
-  if(ob){ e.preventDefault(); showArticle(ob.dataset.open); return; }
+  if(ob){ e.preventDefault(); navTo(ob.dataset.open); return; }
   const fb=e.target.closest('[data-fav]');
   if(fb){ e.preventDefault(); const uid=fb.dataset.fav; const added=toggleFav(uid);
     fb.classList.toggle('on',added); toast(added?'Ajouté aux favoris':'Retiré des favoris');
