@@ -204,6 +204,20 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 .sharebtn{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);width:32px;height:32px;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .13s}
 .sharebtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
 .sharebtn svg{width:16px;height:16px}
+.playbtn{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);width:32px;height:32px;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .13s}
+.playbtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
+.playbtn.on{border-color:var(--accent);color:#fff;background:var(--accent)}
+.playbtn svg{width:16px;height:16px}
+#audiobar{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:70;max-width:calc(100% - 24px);display:none;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;box-shadow:var(--shadow);padding:9px 12px;font-family:var(--sans)}
+#audiobar.show{display:flex}
+#audiobar .ab-lab{font-size:12.5px;font-weight:600;color:var(--ink);max-width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#audiobar .ab-btn{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);width:34px;height:34px;border-radius:9px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+#audiobar .ab-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
+#audiobar .ab-btn svg{width:17px;height:17px}
+#audiobar .ab-rate{display:flex;gap:3px;border-left:1px solid var(--line);padding-left:8px}
+#audiobar .ab-rate button{border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);font-family:var(--sans);font-size:11.5px;font-weight:600;padding:5px 8px;border-radius:7px;cursor:pointer}
+#audiobar .ab-rate button.on{border-color:var(--accent);color:#fff;background:var(--accent)}
+@media(max-width:560px){#audiobar .ab-lab{max-width:92px}}
 #sharemenu{position:absolute;z-index:60;min-width:210px;background:var(--surface);border:1px solid var(--line-strong);border-radius:11px;box-shadow:var(--shadow);padding:6px;display:none}
 #sharemenu button{width:100%;text-align:left;border:0;background:none;color:var(--ink);font-family:var(--sans);font-size:13.5px;font-weight:500;padding:9px 11px;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:10px}
 #sharemenu button:hover{background:var(--surface-2)}
@@ -416,6 +430,7 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 </div>
 <div id="lexpop"></div>
 <div id="sharemenu"></div>
+<div id="audiobar" role="region" aria-label="Lecture audio"></div>
 <div id="toast"></div>
 
 <script>
@@ -649,7 +664,7 @@ function articleCard(a, term){
   const rhHtml = a.r ? `<div class="panel rh"><span class="lab">${iconBriefcase()} Conseil RH</span><p>${esc(a.r)}</p></div>` : '';
   const title = (isConv && a.titre_court && !isSpecial(a)) ? `<div class="arttitle">${esc(a.titre_court)}</div>` : '';
   const html = `<article class="card${isConv?' ccmc':''}" id="${elId(a)}">
-    <div class="head"><button class="badge badgebtn${isConv?' conv':''}" data-open="${a.src}:${esc(a.id)}" title="Ouvrir cet article">${esc(badgeText(a))}</button><div class="crumb">${crumb(a)}</div><div class="cardactions"><button class="favbtn${isFav(a.src+':'+a.id)?' on':''}" data-fav="${a.src}:${esc(a.id)}" title="Favori" aria-label="Favori">${iconStar()}</button><button class="sharebtn" data-asrc="${a.src}" data-aid="${esc(a.id)}" title="Partager cet article" aria-label="Partager">${iconShare()}</button></div></div>
+    <div class="head"><button class="badge badgebtn${isConv?' conv':''}" data-open="${a.src}:${esc(a.id)}" title="Ouvrir cet article">${esc(badgeText(a))}</button><div class="crumb">${crumb(a)}</div><div class="cardactions"><button class="playbtn" data-speak="${a.src}:${esc(a.id)}" title="Écouter l'article" aria-label="Écouter">${iconSpeaker()}</button><button class="favbtn${isFav(a.src+':'+a.id)?' on':''}" data-fav="${a.src}:${esc(a.id)}" title="Favori" aria-label="Favori">${iconStar()}</button><button class="sharebtn" data-asrc="${a.src}" data-aid="${esc(a.id)}" title="Partager cet article" aria-label="Partager">${iconShare()}</button></div></div>
     ${title}
     <div class="artbody">${body}</div>
     <div class="panels">${expHtml}${rhHtml}</div>
@@ -666,6 +681,10 @@ function iconScale(){return '<svg viewBox="0 0 24 24" fill="none" stroke="curren
 function iconPick(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12 3 21"/><path d="M3.5 8.5C7 6 12 5 20.5 5.5c-2 4-6 7.5-12 8"/><path d="M12 12c-.5-3 .5-6 2-8"/></svg>';}
 function iconDict(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/><path d="M10 7h5M10 10h5"/></svg>';}
 function iconShare(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>';}
+function iconSpeaker(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a4 4 0 0 1 0 7"/><path d="M18.5 6a7 7 0 0 1 0 12"/></svg>';}
+function iconPause(){return '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';}
+function iconPlay(){return '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5v14l12-7z"/></svg>';}
+function iconStop(){return '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg>';}
 function iconWhatsapp(){return '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.2 8.2 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm-2.34 4.3c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.77 2.7 4.3 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.16-.48-.29-.25-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.38-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42z"/></svg>';}
 function iconLink(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>';}
 function iconCopy(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';}
@@ -1293,8 +1312,69 @@ async function shareImage(a, mode){
   },'image/jpeg',0.92);
 }
 
+/* ---------- Lecture audio (synthèse vocale du navigateur) ---------- */
+const AP={ uid:null, chunks:[], i:0, rate:1, paused:false };
+const RATES=[['Lent',0.8],['Normal',1],['Rapide',1.25]];
+function ttsSupported(){ return typeof window!=='undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance!=='undefined'; }
+function frVoice(){ try{ const vs=speechSynthesis.getVoices()||[]; return vs.find(v=>/^fr\b/i.test(v.lang)||/^fr[-_]/i.test(v.lang)) || vs.find(v=>/fran[cç]ais/i.test(v.name)) || null; }catch(e){ return null; } }
+function speechText(a){
+  const parts=['Article '+a.id+'.', (a.text||'')];
+  if(a.e) parts.push('Explication.', a.e);
+  if(a.r) parts.push('Conseil ressources humaines.', a.r);
+  return parts.join(' ');
+}
+function chunkText(txt){ return (txt.replace(/\s+/g,' ').match(/[^.!?…]+[.!?…]*/g)||[txt]).map(s=>s.trim()).filter(Boolean); }
+function apStart(uid){
+  if(!ttsSupported()){ toast("La lecture audio n'est pas disponible sur cet appareil"); return; }
+  speechSynthesis.cancel();
+  const a=artByUid(uid); if(!a) return;
+  if(AP.uid===uid){ apStop(); return; }   /* re-clic sur le même = arrêt */
+  AP.uid=uid; AP.chunks=chunkText(speechText(a)); AP.i=0; AP.paused=false;
+  markPlaying(uid); showAudioBar(a); apNext();
+}
+function apNext(){
+  if(AP.uid===null) return;
+  if(AP.i>=AP.chunks.length){ apStop(); return; }
+  const u=new SpeechSynthesisUtterance(AP.chunks[AP.i]);
+  u.lang='fr-FR'; u.rate=AP.rate; const v=frVoice(); if(v) u.voice=v;
+  u.onend=()=>{ if(AP.paused||AP.uid===null) return; AP.i++; apNext(); };
+  u.onerror=()=>{ if(AP.uid!==null && !AP.paused){ AP.i++; apNext(); } };
+  try{ speechSynthesis.speak(u); }catch(e){}
+  updateAudioBar();
+}
+function apPauseToggle(){
+  if(speechSynthesis.speaking && !speechSynthesis.paused){ speechSynthesis.pause(); AP.paused=true; }
+  else if(speechSynthesis.paused){ speechSynthesis.resume(); AP.paused=false; }
+  updateAudioBar();
+}
+function apStop(){ const had=AP.uid; AP.uid=null; AP.paused=false; try{speechSynthesis.cancel();}catch(e){} hideAudioBar(); if(had) markPlaying(null); }
+function apSetRate(r){ AP.rate=r; if(AP.uid!==null){ const at=AP.i; try{speechSynthesis.cancel();}catch(e){} AP.paused=false; AP.i=at; apNext(); } else updateAudioBar(); }
+function markPlaying(uid){ document.querySelectorAll('.playbtn').forEach(b=>b.classList.toggle('on', uid!==null && b.dataset.speak===uid)); }
+const audiobar=document.getElementById('audiobar');
+function showAudioBar(a){ updateAudioBar(a); audiobar.classList.add('show'); }
+function hideAudioBar(){ audiobar.classList.remove('show'); audiobar.innerHTML=''; }
+function updateAudioBar(a){
+  if(!audiobar.classList.contains('show') && !a) {}
+  const art=a||artByUid(AP.uid); if(!art){ return; }
+  const paused=AP.paused;
+  const rateBtns=RATES.map(r=>`<button data-rate="${r[1]}" class="${AP.rate===r[1]?'on':''}">${r[0]}</button>`).join('');
+  audiobar.innerHTML=`<span class="ab-lab">${iconSpeaker()} ${esc('Art. '+art.id)}</span>`
+    + `<button class="ab-btn" id="ab-pp" title="${paused?'Reprendre':'Pause'}" aria-label="${paused?'Reprendre':'Pause'}">${paused?iconPlay():iconPause()}</button>`
+    + `<button class="ab-btn" id="ab-stop" title="Arrêter" aria-label="Arrêter">${iconStop()}</button>`
+    + `<span class="ab-rate">${rateBtns}</span>`;
+  const pp=document.getElementById('ab-pp'); if(pp) pp.onclick=apPauseToggle;
+  const st=document.getElementById('ab-stop'); if(st) st.onclick=apStop;
+  audiobar.querySelectorAll('.ab-rate button').forEach(b=>b.onclick=()=>apSetRate(parseFloat(b.dataset.rate)));
+}
+/* Pré-charge la liste des voix (certaines ne sont dispo qu'après cet événement) */
+if(ttsSupported() && typeof speechSynthesis.onvoiceschanged!=='undefined'){ speechSynthesis.onvoiceschanged=()=>{}; frVoice(); }
+/* Coupe la lecture si on quitte la page */
+window.addEventListener('beforeunload',()=>{ try{speechSynthesis.cancel();}catch(e){} });
+
 /* ---------- Open article / toggle favorite ---------- */
 document.addEventListener('click',e=>{
+  const spk=e.target.closest('[data-speak]');
+  if(spk){ e.preventDefault(); e.stopPropagation(); apStart(spk.dataset.speak); return; }
   const ob=e.target.closest('[data-open]');
   if(ob){ e.preventDefault();
     const card=ob.closest('.card'); let anchor=null, fromUid=null;
