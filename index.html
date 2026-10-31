@@ -283,6 +283,8 @@ mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2p
 .xref:hover{background:var(--accent-tint)}
 .xref.conv{color:var(--conv-ink);border-bottom-color:var(--conv)}
 .xref.conv:hover{background:var(--conv-tint)}
+.xflash{animation:xflash 1.4s ease}
+@keyframes xflash{0%,45%{box-shadow:0 0 0 3px var(--accent)}100%{box-shadow:0 0 0 0 transparent}}
 #lexpop{position:absolute;z-index:60;max-width:330px;background:var(--surface);border:1px solid var(--exp-line);border-left:3px solid var(--exp-accent);border-radius:10px;box-shadow:var(--shadow);padding:14px 16px;font-family:var(--sans);display:none}
 #lexpop .pt{font-family:var(--serif);font-weight:600;font-size:15px;color:var(--ink);margin-bottom:5px;padding-right:18px}
 #lexpop .pd{font-size:13px;line-height:1.55;color:var(--ink-soft)}
@@ -818,26 +820,35 @@ function gotoArticle(uid){
   setTimeout(()=>{ const el=document.getElementById(elId(a)); if(el){ el.scrollIntoView(); history.replaceState(null,'','#'+elId(a)); } },60);
 }
 
-/* ---------- Navigation : ouvrir un article en gardant d'où l'on vient ---------- */
-function navTo(uid){
+/* ---------- Navigation : ouvrir un article en gardant d'où l'on vient ----------
+   BACK empile des objets { h:hash du contexte, anchor:id de la carte lue,
+   uid:article lu }. Au retour on restaure la vue ET on défile jusqu'à la
+   carte exacte où l'on était (pas le haut de la liste). */
+function navTo(uid, anchor, fromUid){
   const cur=(location.hash||'').replace(/^#/,'');
-  /* on empile seulement un contexte réel, et jamais le même article */
-  if(cur && cur!=='accueil' && cur!=='a='+uid) BACK.push(cur);
+  if(cur && cur!=='accueil' && cur!=='a='+uid){
+    BACK.push({h:cur, anchor:anchor||null, uid:fromUid||null});
+  }
   showArticle(uid);
 }
 function goBack(){
   const prev=BACK.pop();
-  if(prev===undefined || prev===''){ qEl.value=''; showHome(); return; }
-  location.hash='#'+prev;   /* déclenche route() via hashchange */
+  if(!prev || !prev.h){ qEl.value=''; showHome(); return; }
+  const anchor=prev.anchor;
+  const scroll=()=>{ if(!anchor) return; const el=document.getElementById(anchor);
+    if(el){ el.scrollIntoView({block:'center'}); el.classList.add('xflash'); setTimeout(()=>el.classList.remove('xflash'),1400); } };
+  if(('#'+prev.h)===location.hash){ route(); setTimeout(scroll,60); }
+  else { location.hash='#'+prev.h; setTimeout(scroll,120); }
 }
 function backLabel(){
   if(!BACK.length) return '';
   const prev=BACK[BACK.length-1];
-  if(prev.startsWith('a=')){ const a=artByUid(prev.slice(2)); return a?('Retour à l\'art. '+a.id):'Retour'; }
-  if(prev.startsWith('q=')) return 'Retour à la recherche';
-  if(prev.startsWith('mine')) return 'Retour à mes articles';
-  if(prev.startsWith('cmp')) return 'Retour au comparateur';
-  if(prev.startsWith('livre=')||prev.startsWith('conv=')) return 'Retour à la liste';
+  if(prev.uid){ const a=artByUid(prev.uid); if(a) return 'Retour à l\'art. '+a.id; }
+  const h=prev.h||'';
+  if(h.startsWith('a=')){ const a=artByUid(h.slice(2)); return a?('Retour à l\'art. '+a.id):'Retour'; }
+  if(h.startsWith('q=')) return 'Retour à la recherche';
+  if(h.startsWith('mine')) return 'Retour à mes articles';
+  if(h.startsWith('cmp')) return 'Retour au comparateur';
   return 'Retour';
 }
 
@@ -1280,7 +1291,10 @@ async function shareImage(a, mode){
 /* ---------- Open article / toggle favorite ---------- */
 document.addEventListener('click',e=>{
   const ob=e.target.closest('[data-open]');
-  if(ob){ e.preventDefault(); navTo(ob.dataset.open); return; }
+  if(ob){ e.preventDefault();
+    const card=ob.closest('.card'); let anchor=null, fromUid=null;
+    if(card){ anchor=card.id||null; const bdg=card.querySelector('[data-open]'); fromUid=bdg?bdg.dataset.open:null; }
+    navTo(ob.dataset.open, anchor, fromUid); return; }
   const fb=e.target.closest('[data-fav]');
   if(fb){ e.preventDefault(); const uid=fb.dataset.fav; const added=toggleFav(uid);
     fb.classList.toggle('on',added); toast(added?'Ajouté aux favoris':'Retiré des favoris');
